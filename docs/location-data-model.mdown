@@ -10,25 +10,21 @@ In an attempt to establish consistent fields and data formats, I propose the fol
 
 #### Year (date_year)
 
-**Integer**
-
-**Required** for sorting.
+**Integer**, **Required** for sorting.
 
 #### Month (date_month)
 
-**Integer, 2 digits**
-
-**Required** for sorting, even if it defaults to 01.
+**Integer, 2 digits**, **Required** for sorting, even if it defaults to 01.
 
 #### Date (date_day)
 
-**Integer, 2 digits**
-
-**Required** for sorting, even if it defaults to 01.
+**Integer, 2 digits**, **Required** for sorting, even if it defaults to 01.
 
 #### Season (season)
 
-* `null`
+**Text**, from the following:
+
+* `null` (empty)
 * `winter`
 * `spring`
 * `summer`
@@ -36,19 +32,19 @@ In an attempt to establish consistent fields and data formats, I propose the fol
 
 #### Exact Month? (date_month_exact)
 
-**Boolean**
+**Boolean**, **Required**
 
 If `false`, we should aspire to group such events on a timeline per **Season** (if provided) or **Year**.
 
 #### Exact Date? (date_day_exact)
 
-**Boolean**
+**Boolean**, **Required**
 
 If `false`, we should aspire to group such events on a timeline per **Month**.
 
 #### Descriptive Date (date_descriptive)
 
-**Text**
+**Text**, Optional
 
 Matches the value provided in the initial spreadsheets.
 
@@ -56,7 +52,7 @@ Matches the value provided in the initial spreadsheets.
 
 #### Parish
 
-**Text**
+**Text**, Optional
 
 Matches the value provided in the initial spreadsheets. Displayed as metadata / is not used in timeline or location mapping.
 
@@ -66,25 +62,25 @@ Questions:
 
 #### Location (location_descriptive)
 
-**Text**
+**Text**, Optional
 
 Matches the value provided in the initial spreadsheets. Displayed as metadata / is not used in timeline or location mapping.
 
 #### Location: Latitude (location_latitude)
 
-**Float**
+**Float**, **Required**
 
 It will be necessary to obtain and store a latitude for each location on the map.
 
 #### Location: Longitude (location_longitude)
 
-**Float**
+**Float**, **Required**
 
 It will be necessary to obtain and store a longitude for each location on the map.
 
 #### Page Number (source_page)
 
-**Text**
+**Text**, Optional
 
 Matches the value provided in the initial spreadsheets. Displayed as metadata / is not used in timeline or location mapping. Corresponds to an identified source.
 
@@ -92,7 +88,7 @@ Matches the value provided in the initial spreadsheets. Displayed as metadata / 
 
 #### Source
 
-**Integer**
+**Integer**, Optional
 
 Source should be an integer ID value corresponding to another dataset of sources. Displayed as metadata / is not used in timeline or location mapping. May be used to group location/event points on a timeline or map.
 
@@ -104,6 +100,6 @@ ID | Title | Author | Editor | Published | Location | Citation
 
 #### Notes
 
-**Text**
+**Text**, Optional
 
 Freetext notes that match the values provided in the initial spreadsheets. Displayed as metadata / not used in timeline or location mapping.
