@@ -103,3 +103,7 @@ ID | Title | Author | Editor | Published | Location | Citation
 **Text**, Optional
 
 Freetext notes that match the values provided in the initial spreadsheets. Displayed as metadata / not used in timeline or location mapping.
+
+#### Burial Numbers ()
+
+It would be best to have these as pure numbers. Currently there are some notational characters in the fields. See
