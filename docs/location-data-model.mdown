@@ -98,7 +98,7 @@ ID | Title | Author | Editor | Published | Location | Citation
 ---|-------|--------|--------|-----------|----------|---------
 1|A Journal of the Plague Year|Defoe, Daniel|Ed. Cynthia Wall|Penguin, 2003|New York|Defoe, Daniel. A Journal of the Plague Year. Ed. Cynthia Wall. New York: Penguin, 2003.
 
-#### Notes
+#### Notes (notes)
 
 **Text**, Optional
 
