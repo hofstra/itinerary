@@ -50,7 +50,7 @@ Matches the value provided in the initial spreadsheets.
 
 *Ex: "End of November-Beginning of December", "January 10-17"*
 
-#### Parish
+#### Parish (parish)
 
 **Text**, Optional
 
@@ -86,7 +86,7 @@ Matches the value provided in the initial spreadsheets. Displayed as metadata / 
 
 *Ex: "84", "86-87"*
 
-#### Source
+#### Source (source)
 
 **Integer**, Optional
 
