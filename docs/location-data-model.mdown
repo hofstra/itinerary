@@ -106,4 +106,4 @@ Freetext notes that match the values provided in the initial spreadsheets. Displ
 
 #### Burial Numbers ()
 
-It would be best to have these as pure numbers. Currently there are some notational characters in the fields. See [a-frightful-number-plage.csv](https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-plague.csv)
+It would be best to have these as pure numbers. Currently there are some notational characters in the fields. See [a-frightful-number-plague.csv](https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-plague.csv)
