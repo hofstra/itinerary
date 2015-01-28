@@ -107,3 +107,13 @@ Freetext notes that match the values provided in the initial spreadsheets. Displ
 #### Burial Numbers ()
 
 It would be best to have these as pure numbers. Currently there are some notational characters in the fields. See [a-frightful-number-plague.csv](https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-plague.csv)
+
+***
+
+> The first one - https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-hf.csv - is a good starting point for desired data. Not all rows are complete, and I filled in a lot of the date values based on the descriptive dates I was seeing. Where the date value is not 01, it's likely that Adam provided a real date. You'll see real dates are few and far between.
+
+> The three kinsmen is similar, but a much smaller sheet - https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-the-three-kinsmen.csv
+
+> If you look at line 14 in https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-plague.csv, what we need to do is split Adam's value in the `burial_change` field into a number, and then indicate increase or decrease in the next field.
+
+> Wherever possible, new data should follow the formatting I've prescribed. My methodology was to download Adam's Google Docs sheet, open it locally in Numbers, do some default formatting on columns/cells, fill in data where I could based on prescriptive data, and then save that out as a CSV.
