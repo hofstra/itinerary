@@ -29,3 +29,22 @@ That URL is referenced in our Leaflet/MapBox JavaScript code to render the map i
 
 * To plot a sample event on my demo, I put a marker on a MapBox map and captured its lat and long values. Anyone on the team can do this via [Google Maps](http://maps.google.com) or [OpenStreetMap](http://www.openstreetmap.org) to fill in the CSV files. Our intent is to load timeline events on the map directly from the CSV.
 * That said, Map Warper reveals the lat & long of each control point I established to rectify the map. If the team's process of rectifying the map includes using a sample of the itinerary data as control points, some of those lat and long values needed in the CSV data could come from that exercise.
+
+### Demo Notes
+
+See http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com/
+
+Features include:
+
+* The ability to zoom and pan our map
+* The ability to toggle between the 1667 Surveigh map and the current OpenStreetMap map
+* The ability to implement a custom annotation on the map (bottom right)
+* The ability to plot a point with metadata popup via JavaScript code
+
+The 2015 layer is a MapBox map from my MapBox account.
+
+* That account is free.
+* That map ID can be changed easily and can come from a DRC account.
+* There was no configuration done there. I just needed a Map ID.
+* That said, down the road, MapBox can be used to customize the modern map layer. (Color palette, markers, etc)
+* We're controlling the default center & zoom in our code. The NYPL example does describe how to "snap" the map's bounds to fit the markers loaded (from the CSV data in our case).
