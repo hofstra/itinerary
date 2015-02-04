@@ -22,7 +22,7 @@ That URL is referenced in our Leaflet/MapBox JavaScript code to render the map i
 
 ### Notes on Image Preparation or Specifications
 
-* The higher the historical map image's resolution, the easier it is to zoom in, read text in the map image and identify a greater number of control points, which will result in a more accurate rectified map. Again, in many cases, I derived control points from street and place name labels, where map topography would not have visually mapped up sufficiently otherwise.
+* The higher the historical map image's resolution, the easier it is to zoom in, read text in the map image and identify a greater number of control points, which will result in a more accurate rectified map. Again, in many cases, I derived control points from street and place name labels, where map topography would not have visually matched up sufficiently otherwise.
 * Similarly, the higher the resolution of the map image, the more zoom levels it will support with clarity in our rendered itinerary/timeline map. Because, as I understand it, Map Warper is converting our source image into PNG map tiles, any concerns about filesize *should* be managed by Map Warper. The better source material we can give it, the better detail we can provide when users of the MVP zoom in.
 
 ### Notes on Deriving Lat & Long
