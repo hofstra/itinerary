@@ -27,5 +27,5 @@ That URL is referenced in our Leaflet/MapBox JavaScript code to render the map i
 
 ### Notes on Deriving Lat & Long
 
-* To plot a sample event on my demo, I put a marker on a MapBox map and captured its lat and long values. Anyone on the team can do this via maps.google.com or www.openstreetmap.org to fill in the CSV files. Our intent is to load timeline events on the map directly from the CSV.
+* To plot a sample event on my demo, I put a marker on a MapBox map and captured its lat and long values. Anyone on the team can do this via [Google Maps](http://maps.google.com) or [OpenStreetMap](http://www.openstreetmap.org) to fill in the CSV files. Our intent is to load timeline events on the map directly from the CSV.
 * That said, Map Warper reveals the lat & long of each control point I established to rectify the map. If the team's process of rectifying the map includes using a sample of the itinerary data as control points, some of those lat and long values needed in the CSV data could come from that exercise.
