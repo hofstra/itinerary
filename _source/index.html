@@ -1,9 +1,15 @@
-<html>
+---
+---
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
     <style type="text/css">
     #map {
-        width:100%;
-        height:80%;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 400px;
     }
 
     dt {
@@ -14,9 +20,26 @@
         margin-left: 0;
         padding-left: 0;
     }
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    table {
+        border-spacing: 2px;
+        border-collapse: separate;
+    }
+    th {
+        font-size: 14px;
+        text-align: left;
+    }
+    td {
+        font-size: 14px;
+        padding: 4px;
+    }
+    tr.odd td {
+        background: #efefef;
+    }
     </style>
-    <!--script type="text/javascript" src="http://api.tiles.mapbox.com/mapbox.js/v1.5.0/mapbox.js"></script>
-    <link type="text/css" rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v1.5.0/mapbox.css" media="all" /-->
     <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js"></script>
     <link type="text/css" rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css" media="all" />
 </head>
@@ -47,7 +70,7 @@
         L.control.layers(baseMaps).addTo(map);
 
         // zoom and center in
-        map.setView([51.51315, -0.0881481171],16);
+        map.setView([51.51315, -0.0881481171],15);
 
         // 51.5133631072273, -0.0889500975608826
         var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
@@ -71,6 +94,45 @@
 
     </script>
 
-
+    <div class="itinerary">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <th width="15%">Parish</th>
+                <th width="5%">Year</th>
+                <th width="15%">Date</th>
+                <th width="5%">Buried</th>
+                <th width="20%">Location</th>
+                <th width="40%">Notes</th>
+            </tr>
+        {% for event in site.data.a-frightful-number-plague %}
+            {% case event.parish %}
+                {% when "St. Brides" %}
+                {% assign color = 'rgba(0, 116, 217, .6)' %}
+                {% when "St. James Clarkenwell" %}
+                {% assign color = 'rgba(154, 15, 2, .6)' %}
+                {% when "St. Giles's" %}
+                {% assign color = 'rgba(3, 137, 17, .6)' %}
+                {% when "St. Andrew's" %}
+                {% assign color = 'rgba(66, 66, 76, .6)' %}
+                {% when "St. Mary-Wool-Church" %}
+                {% assign color = 'rgba(152, 102, 197, .6)' %}
+                {% when "St. Andrew's-Holborn" %}
+                {% assign color = 'rgba(160, 66, 66, .6)' %}
+                {% when "St. Clement's-Danes" %}
+                {% assign color = 'rgba(251, 107, 2, .6)' %}
+                {% else %}
+                {% assign color = "" %}
+            {% endcase %}
+            <tr class="{% cycle 'odd', 'even' %}">
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.parish }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_total }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.location_descriptive }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.notes }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </div>
 </body>
 </html>

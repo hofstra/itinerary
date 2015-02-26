@@ -1,0 +1,21 @@
+# Site settings
+title: "Hofstra Digital Research Center: Mapping the Plague"
+email: mjr@clearbold.com
+description: ""
+baseurl: ""
+url: "#"
+twitter_username: tbd
+github_username:  hofstra
+
+# Where things are
+destination:      ./_site
+source:           ./_source
+
+
+# Handling Reading
+exclude:           ["Gemfile", "Gemfile.lock", "README.md", "LICENSE"]
+
+# Conversion
+markdown: kramdown
+
+# $ bundle exec jekyll serve --watch

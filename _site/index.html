@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <style type="text/css">
+    #map {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 400px;
+    }
+
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    table {
+        border-spacing: 2px;
+        border-collapse: separate;
+    }
+    th {
+        font-size: 14px;
+        text-align: left;
+    }
+    td {
+        font-size: 14px;
+        padding: 4px;
+    }
+    tr.odd td {
+        background: #efefef;
+    }
+    </style>
+    <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css" media="all" />
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+    <script type="text/javascript">
+        var attribution_1667 = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_2015 = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+
+        // use a variable for the 1667 tile set
+        var survey_1667 = L.tileLayer( 'http://mapwarper.net/maps/tile/8221/{z}/{x}/{y}.png' , { attribution: attribution_1667 } );
+
+        var london_2015 = L.tileLayer( 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png',{id: 'clearbold.l4gjpd88',attribution: attribution_2015});
+
+        // create the map with the default the tileset
+        var map = L.map('map', {layers:survey_1667});
+
+        // create a variable to hold all tile sets and name them so we can use it for the toggler
+        var baseMaps = {
+            "London 2015": london_2015,
+            "Surveigh 1667": survey_1667
+        };
+
+        // add the tile set switcher control
+        L.control.layers(baseMaps).addTo(map);
+
+        // zoom and center in
+        map.setView([51.51315, -0.0881481171],15);
+
+        // 51.5133631072273, -0.0889500975608826
+        var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
+        testMarker.bindPopup("This is <b>formatted</b> content about this location.").openPopup();
+
+        var testParish = L.polygon([ [51.5157266666, -0.1005667448], [51.5150456532, -0.0973373652], [51.5137837484, -0.097348094], [51.513670242, -0.0994938612], [51.5125752248, -0.104418397], [51.513523351, -0.1050943136], [51.5141776801, -0.1043218374] ], { color: '#0074d9' }).addTo(map);
+
+        testParish.bindPopup('<div style="max-height: 175px; overflow-y: scroll;">'
+                + '<h3>St. Brides</h3>'
+                + '<dl>'
+                    + '<dt>December 20-27</dt>'
+                    + '<dd><b>Buried: 0.</b> Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5).</dd>'
+                    + '<dt>December 27-January 3</dt>'
+                    + '<dd><b>Buried: 6.</b></dd>'
+                    + '<dt>January 3-10</dt>'
+                    + '<dd><b>Buried: 11</b></dd>'
+                    + '<dt>January 10-17</dt>'
+                    + '<dd><b>Buried: 12</b></dd>'
+                + '</dl>'
+            + '</div>').openPopup();
+
+    </script>
+
+    <div class="itinerary">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <th width="15%">Parish</th>
+                <th width="5%">Year</th>
+                <th width="15%">Date</th>
+                <th width="5%">Buried</th>
+                <th width="20%">Location</th>
+                <th width="40%">Notes</th>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1663</td>
+                <td ></td>
+                <td ></td>
+                <td >Amsterdam, Holland</td>
+                <td >The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1663</td>
+                <td ></td>
+                <td ></td>
+                <td >Rotterdam, Holland</td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1664</td>
+                <td >End of November-Beginning of December</td>
+                <td ></td>
+                <td >Long Acre, Upper End of Drury-Lane</td>
+                <td >2 Frenchmen die.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1664</td>
+                <td >Last Week of December</td>
+                <td ></td>
+                <td >Long Acre, Upper End of Drury-Lane</td>
+                <td >Another man dies in the same house.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >February 12</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that a man died in a different house, but in the same parish and also of the plague.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1664</td>
+                <td style="background: rgba(0, 116, 217, .6);">December 20-27</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);">Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1664</td>
+                <td style="background: rgba(154, 15, 2, .6);">December 20-27</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1664</td>
+                <td >December 20-27</td>
+                <td >291</td>
+                <td ></td>
+                <td >H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1664</td>
+                <td style="background: rgba(3, 137, 17, .6);">December 27-January 3</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1664</td>
+                <td style="background: rgba(66, 66, 76, .6);">December 27-January 3</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1664</td>
+                <td style="background: rgba(0, 116, 217, .6);">December 27-January 3</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1664</td>
+                <td style="background: rgba(154, 15, 2, .6);">December 27-January 3</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1664</td>
+                <td >December 27-January 3</td>
+                <td >349</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">January 3-10</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1665</td>
+                <td style="background: rgba(66, 66, 76, .6);">January 3-10</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1665</td>
+                <td style="background: rgba(0, 116, 217, .6);">January 3-10</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1665</td>
+                <td style="background: rgba(154, 15, 2, .6);">January 3-10</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >January 3-10</td>
+                <td >394</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">January 10-17</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1665</td>
+                <td style="background: rgba(66, 66, 76, .6);">January 10-17</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1665</td>
+                <td style="background: rgba(0, 116, 217, .6);">January 10-17</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1665</td>
+                <td style="background: rgba(154, 15, 2, .6);">January 10-17</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >January 10-17</td>
+                <td >415</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">January 17-24</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1665</td>
+                <td style="background: rgba(66, 66, 76, .6);">January 17-24</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1665</td>
+                <td style="background: rgba(0, 116, 217, .6);">January 17-24</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1665</td>
+                <td style="background: rgba(154, 15, 2, .6);">January 17-24</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >January 17-24</td>
+                <td >474</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">January 24-31</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1665</td>
+                <td style="background: rgba(66, 66, 76, .6);">January 24-31</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1665</td>
+                <td style="background: rgba(0, 116, 217, .6);">January 24-31</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1665</td>
+                <td style="background: rgba(154, 15, 2, .6);">January 24-31</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">January 30-February 7</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);">In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1665</td>
+                <td style="background: rgba(66, 66, 76, .6);">January 30-February 7</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1665</td>
+                <td style="background: rgba(0, 116, 217, .6);">January 30-February 7</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1665</td>
+                <td style="background: rgba(154, 15, 2, .6);">January 30-February 7</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">February 7-14</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</td>
+                <td style="background: rgba(0, 116, 217, .6);">1665</td>
+                <td style="background: rgba(0, 116, 217, .6);">February 7-14</td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+                <td style="background: rgba(0, 116, 217, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(154, 15, 2, .6);">St. James Clarkenwell</td>
+                <td style="background: rgba(154, 15, 2, .6);">1665</td>
+                <td style="background: rgba(154, 15, 2, .6);">February 7-14</td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+                <td style="background: rgba(154, 15, 2, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">April 2-9</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">April 10-17</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">April 18-25</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);">8 die from spotted fever, which H.F. notes was often considered the same as the plague.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >April 26-May 2</td>
+                <td >388</td>
+                <td ></td>
+                <td >4 die from spotted fever.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(152, 102, 197, .6);">St. Mary-Wool-Church</td>
+                <td style="background: rgba(152, 102, 197, .6);">1665</td>
+                <td style="background: rgba(152, 102, 197, .6);">May 1-8</td>
+                <td style="background: rgba(152, 102, 197, .6);"></td>
+                <td style="background: rgba(152, 102, 197, .6);">Bearbinder-lane, near the Stocks-market</td>
+                <td style="background: rgba(152, 102, 197, .6);">This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(160, 66, 66, .6);">St. Andrew's-Holborn</td>
+                <td style="background: rgba(160, 66, 66, .6);">1665</td>
+                <td style="background: rgba(160, 66, 66, .6);">May 1-8</td>
+                <td style="background: rgba(160, 66, 66, .6);"></td>
+                <td style="background: rgba(160, 66, 66, .6);"></td>
+                <td style="background: rgba(160, 66, 66, .6);">6 total die from spotted fever.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(251, 107, 2, .6);">St. Clement's-Danes</td>
+                <td style="background: rgba(251, 107, 2, .6);">1665</td>
+                <td style="background: rgba(251, 107, 2, .6);">May 1-8</td>
+                <td style="background: rgba(251, 107, 2, .6);"></td>
+                <td style="background: rgba(251, 107, 2, .6);"></td>
+                <td style="background: rgba(251, 107, 2, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >May 1-8</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >May 1-8</td>
+                <td >347</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">May 9-16</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(66, 66, 76, .6);">St. Andrew's</td>
+                <td style="background: rgba(66, 66, 76, .6);">1665</td>
+                <td style="background: rgba(66, 66, 76, .6);">May 9-16</td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+                <td style="background: rgba(66, 66, 76, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The Town</td>
+                <td >1665</td>
+                <td >May 9-16</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >May 9-16</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >May 9-16</td>
+                <td >343</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">May 17-22</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >May 17-22</td>
+                <td >385</td>
+                <td ></td>
+                <td >The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="even">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">May 23-30</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);">The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >May 23-30</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >June 1-8</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as "Feaver, Spotted-Feaver, and Teeth."</td>
+            </tr>
+        
+            
+                
+                
+            <tr class="odd">
+                <td style="background: rgba(3, 137, 17, .6);">St. Giles's</td>
+                <td style="background: rgba(3, 137, 17, .6);">1665</td>
+                <td style="background: rgba(3, 137, 17, .6);">June 9-16</td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);"></td>
+                <td style="background: rgba(3, 137, 17, .6);">H.F. suspects the actual number of dead from the plague is closer to 100.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >June 9-16</td>
+                <td ></td>
+                <td >Wood-street</td>
+                <td >H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >June 9-16</td>
+                <td ></td>
+                <td >Fenchurch-street</td>
+                <td >The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >June 9-16</td>
+                <td ></td>
+                <td >Crooked-lane</td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Southwark</td>
+                <td >1665</td>
+                <td >June 9-16</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >Mid-July</td>
+                <td >1268</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >Mid-July</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Southwark, incl. Lambeth</td>
+                <td >1665</td>
+                <td >Mid-July</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles in the Fields</td>
+                <td >1665</td>
+                <td >July 4-11</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Martins in the Fields</td>
+                <td >1665</td>
+                <td >July 4-11</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Aldgate</td>
+                <td >1665</td>
+                <td >July 4-11</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Whitechapel</td>
+                <td >1665</td>
+                <td >July 4-11</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >July 4-11</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td >1761</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Southwark</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Cripplegate</td>
+                <td >1665</td>
+                <td >2nd week of August</td>
+                <td >868</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Clerkenwell</td>
+                <td >1665</td>
+                <td >2nd week of August</td>
+                <td >155</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Algate</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >White Chappel</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Kath Towers</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Trin. Minories</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Len. Shoreditch</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td >342</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. But. Bishopsg.</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td >342</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles Crippl.</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td >342</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Algate</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >White Chappel</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Kath Towers</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Trin. Minories</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Len. Shoreditch</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td >610</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. But. Bishopsg.</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td >610</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles Crippl.</td>
+                <td >1665</td>
+                <td >July 19-26</td>
+                <td >610</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Algate</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >White Chappel</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Kath Towers</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Trin. Minories</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Len. Shoreditch</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td >780</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. But. Bishopsg.</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td >780</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles Crippl.</td>
+                <td >1665</td>
+                <td >July 27-August 3</td>
+                <td >780</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Islington</td>
+                <td >1665</td>
+                <td >July 4-11</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Islington</td>
+                <td >1665</td>
+                <td >July 11-18</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >July 25</td>
+                <td >550</td>
+                <td ></td>
+                <td >H.F. cites this weekly number for roughly the end of July.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td ></td>
+                <td >4000</td>
+                <td ></td>
+                <td >It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Aug. 8 - 15</td>
+                <td >59,870</td>
+                <td ></td>
+                <td >H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97).</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Aug. 15 - 22</td>
+                <td >59,870</td>
+                <td ></td>
+                <td >H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97).</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Aug. 22 - 29</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Aug. 29 - Sept. 5</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Sept. 5 - 12</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Sept. 12 - 19</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Sept. 19 - 26</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Sept. 26 - Oct. 3</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >London and Suburbs</td>
+                <td >1665</td>
+                <td >Oct. 3 - 10</td>
+                <td >59,870</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Algate</td>
+                <td >1665</td>
+                <td >Beginning of Sept.</td>
+                <td >1000</td>
+                <td ></td>
+                <td >H.F. speculates that the parish buried over a 1000 a week for two weeks.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >White Chapel</td>
+                <td >1665</td>
+                <td >Beginning of Sept.</td>
+                <td >600</td>
+                <td ></td>
+                <td >H.F. speculates that the number was twice the 600 that was officially recorded.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1664</td>
+                <td >December</td>
+                <td ></td>
+                <td >Long-Acre, Drury-Lane</td>
+                <td >H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The Town</td>
+                <td >1665</td>
+                <td >February - May</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Giles's in the Fields</td>
+                <td >1665</td>
+                <td >August 8 - 15</td>
+                <td >4030*</td>
+                <td ></td>
+                <td >H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Cripplegate</td>
+                <td >1665</td>
+                <td >August 8 - 15</td>
+                <td >4030*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >August 8 - 15</td>
+                <td >4030*</td>
+                <td ></td>
+                <td >These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Mag. Bermondsey</td>
+                <td >1665</td>
+                <td >August 8 - 15</td>
+                <td >4030*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Rotherhith</td>
+                <td >1665</td>
+                <td >August 8 - 15</td>
+                <td >4030*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles's in the Fields</td>
+                <td >1665</td>
+                <td >August 15 - 22</td>
+                <td >5319*</td>
+                <td ></td>
+                <td >H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Cripplegate</td>
+                <td >1665</td>
+                <td >August 15 - 22</td>
+                <td >5319*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >August 15 - 22</td>
+                <td >5319*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Mag. Bermondsey</td>
+                <td >1665</td>
+                <td >August 15 - 22</td>
+                <td >5319*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Rotherhith</td>
+                <td >1665</td>
+                <td >August 15 - 22</td>
+                <td >5319*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Norwood, Camberwell, Dullege, Lusum</td>
+                <td >1665</td>
+                <td >Sept. and Oct.</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Enfield</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Hornsey</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Newington</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Tottenham</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Edmonton</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Barnet and Hadly</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Albans</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Watford</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Uxbridge</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Hertford</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Ware</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Hodsdon</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Waltham-Abby</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Epping</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Deptford</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Greenwich</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Eltham and Lusum</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Croydon</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Brent-Wood</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Rumford</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Barking abt.</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Branford</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Kingston</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Stanes</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Chertsey</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Windsor</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >August 22 - 29</td>
+                <td >38195*</td>
+                <td ></td>
+                <td >H.F. believes the weekly numbers are closer to 10,000.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >August 29 - September 7</td>
+                <td >38195*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >September 7 - 12</td>
+                <td >38195*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >38195*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >38195*</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Giles's, Westminister</td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. locates the origin of the plague here.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles in the Fields, St. Andrew's Holborn, St. Clement-Danes, St. Martins in the Fields, Westminster</td>
+                <td >1665</td>
+                <td >Middle of July</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that this was when the plague was at its height in this part of London.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Cripplegate, St. Sepulchers, St. Ja. Clarkenwell, St. Brides, Aldersgate</td>
+                <td ></td>
+                <td >End of July</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes), Southwark (All Parishes), Stepney, White-Chapel, Aldgate, Wapping, Ratcliff</td>
+                <td ></td>
+                <td >End of July</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that, at the same time, these parishes were barely affected by the plague.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Giles Cripplegate</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Sepulchers</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Clarkenwell</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Bishopsgate</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Shoreditch</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Aldgate</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >White-Chappel</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Southwark (All Parishes)</td>
+                <td >1665</td>
+                <td >July 25 - August 1</td>
+                <td >1889</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >The City (97 Parishes), Southwark (All Parishes)</td>
+                <td >1665</td>
+                <td >Beginning of September</td>
+                <td ></td>
+                <td >Eastern Suburbs</td>
+                <td >H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles's Cripplegate</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td >H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Giles in the Fields</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Clarkenwell</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Sepulchers</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Leonard Shoreditch</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Aldgate</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >White-Chapel</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Southwark (8 Parishes)</td>
+                <td >1665</td>
+                <td >September 12 - 19</td>
+                <td >6060</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles's Cripplegate</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td >H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183).</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Giles in the Fields</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Clarkenwell</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Sepulchers</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Leonard Shoreditch</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Aldgate</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >White-Chapel</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Southwark (8 Parishes)</td>
+                <td >1665</td>
+                <td >September 19 - 26</td>
+                <td >4900</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Giles's Cripplegate</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Giles in the Fields</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Clarkenwell</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >St. Sepulchers</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >St. Leonard Shoreditch</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Stepney</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Aldgate</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >White-Chapel</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Southwark (8 Parishes)</td>
+                <td >1665</td>
+                <td >September 26 - October 3</td>
+                <td >4328</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >The City (97 Parishes)</td>
+                <td >1665</td>
+                <td >- July 1</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. refers here to the entire period of the plague up to this date.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Liberties</td>
+                <td >1665</td>
+                <td >- July 1</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td >Southwark (8 Parishes)</td>
+                <td >1665</td>
+                <td >- July 1</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td >Stepney, Aldgate, White-Chappel</td>
+                <td >1665</td>
+                <td >- July 1</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >2nd to Last Week of September</td>
+                <td >8297</td>
+                <td ></td>
+                <td >H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >Last Week of September</td>
+                <td >6460</td>
+                <td ></td>
+                <td >H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >First Week of October</td>
+                <td >5720</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td >Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >Another Week of October</td>
+                <td >2665</td>
+                <td ></td>
+                <td >It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >Next Week of October</td>
+                <td >(1000-1800)</td>
+                <td ></td>
+                <td >H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >First Week of November</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >November</td>
+                <td >905</td>
+                <td ></td>
+                <td ></td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >December</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >First Three Weeks of September</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >To the End of the Year</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes that there were still deaths from the plague to the end of 1665.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="even">
+                <td ></td>
+                <td >1665</td>
+                <td >First Week of October?</td>
+                <td ></td>
+                <td ></td>
+                <td >H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.</td>
+            </tr>
+        
+            
+                
+            
+            <tr class="odd">
+                <td ></td>
+                <td >1665</td>
+                <td >Last Three Weeks</td>
+                <td >(30,000)</td>
+                <td ></td>
+                <td >H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.</td>
+            </tr>
+        
+        </table>
+    </div>
+</body>
+</html>
