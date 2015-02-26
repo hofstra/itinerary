@@ -99,11 +99,12 @@
     <div class="itinerary">
         <table border="0" cellpadding="0" cellspacing="0">
             <tr>
-                <th width="15%">Parish</th>
+                <th width="14%">Parish</th>
                 <th width="5%">Year</th>
-                <th width="15%">Date</th>
-                <th width="5%">Buried</th>
-                <th width="20%">Location</th>
+                <th width="14%">Date</th>
+                <th width="6%">Buried Parish</th>
+                <th width="6%">Buried Total</th>
+                <th width="15%">Location</th>
                 <th width="40%">Notes</th>
             </tr>
         {% for event in site.data.a-frightful-number-plague %}
@@ -129,6 +130,7 @@
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.parish }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_parish_total }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_total }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.location_descriptive }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.notes }}</td>
