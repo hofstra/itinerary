@@ -98,7 +98,7 @@
         testParish.bindPopup('<div style="max-height: 175px; overflow-y: scroll;">'
                 + '<h3>St. Brides</h3>'
                 + '<dl>'
-                    + '<dt>December 20-27</dt>'
+                    + '<dt><a href="#event-6">December 20-27</a></dt>'
                     + '<dd><b>Buried: 0.</b> Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5).</dd>'
                     + '<dt>December 27-January 3</dt>'
                     + '<dd><b>Buried: 6.</b></dd>'
@@ -119,16 +119,16 @@
                 <th><h3>{{ year.name }}</h3></th>
             </tr>
         </table>
-        <table border="0" cellpadding="0" cellspacing="0" class="responsive">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive">
             <tr>
-                <th width="12%">Date</th>
+                <th width="8%">Date</th>
                 <th width="12%">Parish</th>
                 <!-- <th width="5%">Year</th> -->
-                <th>Buried Plague</th>
-                <th>Buried Parish</th>
-                <th>Buried Plague Total</th>
-                <th>Buried Total</th>
-                <th width="15%">Location</th>
+                <th width="8%">Buried Plague</th>
+                <th width="6%">Buried Parish</th>
+                <th width="8%">Buried Plague Total</th>
+                <th width="6%">Buried Total</th>
+                <th width="12%">Location</th>
                 <th width="40%">Notes</th>
             </tr>
 
@@ -152,7 +152,7 @@
                 {% assign color = "" %}
             {% endcase %}
             <tr class="{% cycle 'odd', 'even' %}">
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
+                <td id="event-{{ event.sequence }}" {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.parish }}</td>
                 <!-- <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td> -->
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_plague }}</td>
@@ -163,8 +163,8 @@
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.notes }}</td>
             </tr>
             {% endfor %}
-        {% endfor %}
         </table>
+        {% endfor %}
     </div>
 </body>
 </html>
