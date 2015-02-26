@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <style type="text/css">
     #map {
+        background: #efefef;
         margin-bottom: 20px;
         width: 100%;
         height: 400px;
@@ -76,6 +77,11 @@
 
         // create the map with the default the tileset
         var map = L.map('map', {layers:survey_1667});
+
+        map.dragging.enable();
+        map.touchZoom.disable();
+        map.doubleClickZoom.enable();
+        map.scrollWheelZoom.disable();
 
         // create a variable to hold all tile sets and name them so we can use it for the toggler
         var baseMaps = {
