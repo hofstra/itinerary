@@ -153,7 +153,7 @@
             {% endcase %}
             <tr class="{% cycle 'odd', 'even' %}">
                 <td id="event-{{ event.sequence }}" {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.parish }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{% if event.parish == "St. Brides" %}<a href="#" onclick="javascript:testParish.openPopup();">{% endif %}{{ event.parish }}{% if event.parish == "St. Brides" %}</a>{% endif %}</td>
                 <!-- <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td> -->
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_plague }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_parish_total }}</td>
