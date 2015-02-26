@@ -99,15 +99,20 @@
     <div class="itinerary">
         <table border="0" cellpadding="0" cellspacing="0">
             <tr>
-                <th width="14%">Parish</th>
-                <th width="5%">Year</th>
-                <th width="14%">Date</th>
-                <th width="6%">Buried Parish</th>
-                <th width="6%">Buried Total</th>
+                <th width="15%">Date</th>
+                <th width="15%">Parish</th>
+                <!-- <th width="5%">Year</th> -->
+                <th width="8%">Buried Parish</th>
+                <th width="7%">Buried Total</th>
                 <th width="15%">Location</th>
                 <th width="40%">Notes</th>
             </tr>
-        {% for event in site.data.a-frightful-number-plague %}
+        {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
+        {% for year in events %}
+            <tr>
+                <td colspan="7"><h3>{{ year.name }}</h3></td>
+            </tr>
+            {% for event in year.items %}
             {% case event.parish %}
                 {% when "St. Brides" %}
                 {% assign color = 'rgba(0, 116, 217, .6)' %}
@@ -127,14 +132,15 @@
                 {% assign color = "" %}
             {% endcase %}
             <tr class="{% cycle 'odd', 'even' %}">
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.parish }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
+                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.parish }}</td>
+                <!-- <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td> -->
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_parish_total }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_total }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.location_descriptive }}</td>
                 <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.notes }}</td>
             </tr>
+            {% endfor %}
         {% endfor %}
         </table>
     </div>
