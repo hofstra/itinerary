@@ -67,11 +67,10 @@
     </div>
     <script type="text/javascript">
     // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
-    var popupContents;
-
     {% for parish in site.data.parishes %}
         // Fetch GeoJSON markers for parish polygon vertices
         $.getJSON( "parish-{{ parish.id }}.geojson", function (data) {
+            var popupContents;
             var vertices = [];
             $.each( data.features, function(i, feature) {
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
