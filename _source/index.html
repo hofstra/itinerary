@@ -6,158 +6,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <style type="text/css">
-    * {
-        -webkit-text-size-adjust:none !important; -ms-text-size-adjust:none !important;
-    }
-    #map {
-        background: #efefef;
-        margin-bottom: 20px;
-        width: 100%;
-        height: 400px;
-    }
-
-    dt {
-        font-weight: bold;
-    }
-    dd {
-        margin-bottom: 10px;
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        padding-right: 40px;
-        padding-left: 40px;
-    }
-
-    table {
-        border-spacing: 2px;
-        border-collapse: separate;
-    }
-    th {
-        font-size: 14px;
-        text-align: left;
-    }
-    td {
-        font-size: 14px;
-        padding: 4px;
-    }
-    tr.odd td {
-        background: #efefef;
-    }
-    h3 {
-        font-size: 36px;
-    }
-    @media screen and (max-width: 600px) {
-        body {
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-    }
-    </style>
+    <link type="text/css" media="screen" rel="stylesheet" href="ui/css/styles.css" />
     <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js"></script>
     <link type="text/css" rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css" media="all" />
 
-    <link type="text/css" media="screen" rel="stylesheet" href="responsive-tables.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="ui/css/responsive-tables.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="responsive-tables.js"></script>
+    <script type="text/javascript" src="ui/js/responsive-tables.js"></script>
 
+    <style type="text/css">
+        /* Dynamically set up CSS styles for event data in the timeline based on corresponding parishes */
+    {% for parish in site.data.parishes %}
+        tr.parish-{{ parish.id }} td { background: {{ parish.background-color }}; }
+    {% endfor %}
+    </style>
 </head>
 
 <body>
 
     <div id="map"></div>
 
-    <script type="text/javascript">
-        var attribution_1667 = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
-        var attribution_1720 = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
-        var attribution_2015 = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
-
-        // use a variable for the 1667 tile set
-        var survey_1667 = L.tileLayer( 'http://mapwarper.net/maps/tile/8221/{z}/{x}/{y}.png' , { attribution: attribution_1667 } );
-        var survey_1720 = L.tileLayer( 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png' , { attribution: attribution_1720 } );
-
-        var london_2015 = L.tileLayer( 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png',{id: 'clearbold.l4gjpd88',attribution: attribution_2015});
-
-        // create the map with the default the tileset
-        var map = L.map('map', {layers:survey_1720});
-
-        map.dragging.enable();
-        map.touchZoom.disable();
-        map.doubleClickZoom.enable();
-        map.scrollWheelZoom.disable();
-
-        // create a variable to hold all tile sets and name them so we can use it for the toggler
-        var baseMaps = {
-            "London 2015": london_2015,
-            "Surveigh 1720": survey_1720
-        };
-
-        // add the tile set switcher control
-        L.control.layers(baseMaps).addTo(map);
-
-        // zoom and center in
-        map.setView([51.514, -0.0881481171],14);
-
-        // 51.5133631072273, -0.0889500975608826
-        // var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
-        // testMarker.bindPopup("This is <b>formatted</b> content about this location.").openPopup();
-
-        var testParish = L.polygon([ [51.52205560021884,-0.12211561203002931],
-[51.519091526339075,-0.12033462524414064],
-[51.51918499107367,-0.11999130249023438],
-[51.51780970491161,-0.11988401412963867],
-[51.51783640989265,-0.11917591094970702],
-[51.51767617977159,-0.11904716491699219],
-[51.51807675401733,-0.11595726013183594],
-[51.51588690512807,-0.11434793472290038],
-[51.51572666814879,-0.11394023895263672],
-[51.51658125885788,-0.11072158813476562],
-[51.518423915513914,-0.1105499267578125],
-[51.51853073390357,-0.11142969131469727],
-[51.51925175148097,-0.11132240295410155],
-[51.519278455616465,-0.11089324951171875],
-[51.518624199789016,-0.1109790802001953],
-[51.51866425653834,-0.11045336723327637],
-[51.51915828688337,-0.11022806167602539],
-[51.51858414300445,-0.11006712913513184],
-[51.51861084753141,-0.10914444923400878],
-[51.51915161083334,-0.10896205902099608],
-[51.519138258730365,-0.10841488838195801],
-[51.51848400088891,-0.10856509208679199],
-[51.51843726782632,-0.10821104049682617],
-[51.51918499107367,-0.10801792144775389],
-[51.519198343162955,-0.10778188705444335],
-[51.51845729628758,-0.1075458526611328],
-[51.5181702208344,-0.10594725608825682],
-[51.51876439825753,-0.10561466217041016],
-[51.51881113098446,-0.10435938835144043],
-[51.520286525279815,-0.10491728782653809],
-[51.52341740732051,-0.1067197322845459],
-[51.52465901947907,-0.10784626007080078],
-[51.524325256096915,-0.11185884475708008],
-[51.523570941841115,-0.11392951011657715],
-[51.523657721993324,-0.11419773101806642],
-[51.52295680065267,-0.11684775352478029],
-[51.52302355553092,-0.11825323104858398] ], { color: '#0074d9' }).addTo(map);
-
-        testParish.bindPopup('<div style="max-height: 175px; overflow-y: scroll;">'
-                + '<h3>St. Andrew\'s-Holborn</h3>'
-                + '<dl>'
-                    + '<dt><a href="#event-6">December 20-27</a></dt>'
-                    + '<dd><b>Buried: 0.</b> Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5).</dd>'
-                    + '<dt>December 27-January 3</dt>'
-                    + '<dd><b>Buried: 6.</b></dd>'
-                    + '<dt>January 3-10</dt>'
-                    + '<dd><b>Buried: 11</b></dd>'
-                    + '<dt>January 10-17</dt>'
-                    + '<dd><b>Buried: 12</b></dd>'
-                + '</dl>'
-            + '</div>');//.openPopup();
-
-    </script>
+    <script type="text/javascript" src="ui/js/script.js"></script>
 
     <div class="itinerary">
         {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
@@ -171,7 +40,6 @@
             <tr>
                 <th width="8%">Date</th>
                 <th width="12%">Parish</th>
-                <!-- <th width="5%">Year</th> -->
                 <th width="8%">Buried Plague</th>
                 <th width="6%">Buried Parish</th>
                 <th width="8%">Buried Plague Total</th>
@@ -181,38 +49,44 @@
             </tr>
 
             {% for event in year.items %}
-            {% case event.parish %}
-                {% when "St. Brides" %}
-                {% assign color = 'rgba(0, 116, 217, .6)' %}
-                {% when "St. James Clarkenwell" %}
-                {% assign color = 'rgba(154, 15, 2, .6)' %}
-                {% when "St. Giles's" %}
-                {% assign color = 'rgba(3, 137, 17, .6)' %}
-                {% when "St. Andrew's" %}
-                {% assign color = 'rgba(66, 66, 76, .6)' %}
-                {% when "St. Mary-Wool-Church" %}
-                {% assign color = 'rgba(152, 102, 197, .6)' %}
-                {% when "St. Andrew's-Holborn" %}
-                {% assign color = 'rgba(160, 66, 66, .6)' %}
-                {% when "St. Clement's-Danes" %}
-                {% assign color = 'rgba(251, 107, 2, .6)' %}
-                {% else %}
-                {% assign color = "" %}
-            {% endcase %}
-            <tr class="{% cycle 'odd', 'even' %}">
-                <td id="event-{{ event.sequence }}" {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_descriptive }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{% if event.parish == "St. Andrew's-Holborn" %}<a href="#" onclick="javascript:testParish.openPopup();">{% endif %}{{ event.parish }}{% if event.parish == "St. Brides" %}</a>{% endif %}</td>
-                <!-- <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.date_year }}</td> -->
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_plague }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_parish_total }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_plague_total }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.buried_total }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.location_descriptive }}</td>
-                <td {% if color != empty %}style="background: {{ color }};"{% endif %}>{{ event.notes }}</td>
+            <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
+                <td id="event-{{ event.sequence }}">{{ event.date_descriptive }}</td>
+                <td>{% if event.parish_id != null %}<a href="#" onclick="javascript:parishPolygon{{ event.parish_id }}.openPopup();">{% endif %}{{ event.parish }}{% if event.parish != null %}</a>{% endif %}</td>
+                <td>{{ event.buried_plague }}</td>
+                <td>{{ event.buried_parish_total }}</td>
+                <td>{{ event.buried_plague_total }}</td>
+                <td>{{ event.buried_total }}</td>
+                <td>{{ event.location_descriptive }}</td>
+                <td>{{ event.notes }}</td>
             </tr>
             {% endfor %}
         </table>
         {% endfor %}
     </div>
+    <script type="text/javascript">
+    // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
+    var popupContents;
+
+    {% for parish in site.data.parishes %}
+        // Fetch GeoJSON markers for parish polygon vertices
+        $.getJSON( "parish-{{ parish.id }}.geojson", function (data) {
+            var vertices = [];
+            $.each( data.features, function(i, feature) {
+                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
+            })
+            var parishPolygon{{ parish.id }} = L.polygon([ vertices ], { color: "{{ parish.color }}" }).addTo(map);
+
+            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
+            popupContents += "<h3>{{ parish.parish-name }}</h3>";
+            popupContents += "<dl>";
+            {% assign events = site.data.a-frightful-number-plague | where:"parish_id",{{parish.id}} %}
+            {% for event in events %}
+            popupContents += '<dt><a href="#event-{{ event.sequence }}">{{ event.date_descriptive }}</a></dt>'
+            popupContents += "<dd><b>Buried Plague: {{ event.buried_plague }}.</b> {{ event.notes }}</dd>";
+            {% endfor %}
+            parishPolygon{{ parish.id }}.bindPopup( popupContents );
+        } )
+    {% endfor %}
+    </script>
 </body>
 </html>
