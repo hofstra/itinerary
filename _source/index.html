@@ -53,7 +53,7 @@
             {% for event in year.items %}
             <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
                 <td id="event-{{ event.sequence }}">{{ event.date_descriptive }}</td>
-                <td>{% if event.parish_id != null %}<a href="#" onclick="javascript:parishPolygon{{ event.parish_id }}.openPopup();">{% endif %}{{ event.parish }}{% if event.parish != null %}</a>{% endif %}</td>
+                <td>{% if event.parish_id != null %}<a href="#" onclick="javascript:parishPolygon{{ event.parish_id }}.openPopup();">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
                 <td>{{ event.buried_plague }}</td>
                 <td>{{ event.buried_parish_total }}</td>
                 <td>{{ event.buried_plague_total }}</td>
@@ -69,13 +69,14 @@
     // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
     {% for parish in site.data.parishes %}
         // Fetch GeoJSON markers for parish polygon vertices
+        var parishPolygon{{ parish.id }};
         $.getJSON( "parish-{{ parish.id }}.geojson", function (data) {
             var popupContents;
             var vertices = [];
             $.each( data.features, function(i, feature) {
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
-            var parishPolygon{{ parish.id }} = L.polygon([ vertices ], { color: "{{ parish.color }}" }).addTo(map);
+            parishPolygon{{ parish.id }} = L.polygon([ vertices ], { color: "{{ parish.color }}" }).addTo(map);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>{{ parish.parish-name }}</h3>";
