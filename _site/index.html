@@ -70,15 +70,17 @@
 
     <script type="text/javascript">
         var attribution_1667 = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_1720 = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
         var attribution_2015 = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
 
         // use a variable for the 1667 tile set
         var survey_1667 = L.tileLayer( 'http://mapwarper.net/maps/tile/8221/{z}/{x}/{y}.png' , { attribution: attribution_1667 } );
+        var survey_1720 = L.tileLayer( 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png' , { attribution: attribution_1720 } );
 
         var london_2015 = L.tileLayer( 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png',{id: 'clearbold.l4gjpd88',attribution: attribution_2015});
 
         // create the map with the default the tileset
-        var map = L.map('map', {layers:survey_1667});
+        var map = L.map('map', {layers:survey_1720});
 
         map.dragging.enable();
         map.touchZoom.disable();
@@ -88,23 +90,59 @@
         // create a variable to hold all tile sets and name them so we can use it for the toggler
         var baseMaps = {
             "London 2015": london_2015,
-            "Surveigh 1667": survey_1667
+            "Surveigh 1720": survey_1720
         };
 
         // add the tile set switcher control
         L.control.layers(baseMaps).addTo(map);
 
         // zoom and center in
-        map.setView([51.51315, -0.0881481171],15);
+        map.setView([51.514, -0.0881481171],14);
 
         // 51.5133631072273, -0.0889500975608826
-        var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
-        testMarker.bindPopup("This is <b>formatted</b> content about this location.").openPopup();
+        // var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
+        // testMarker.bindPopup("This is <b>formatted</b> content about this location.").openPopup();
 
-        var testParish = L.polygon([ [51.5157266666, -0.1005667448], [51.5150456532, -0.0973373652], [51.5137837484, -0.097348094], [51.513670242, -0.0994938612], [51.5125752248, -0.104418397], [51.513523351, -0.1050943136], [51.5141776801, -0.1043218374] ], { color: '#0074d9' }).addTo(map);
+        var testParish = L.polygon([ [51.52205560021884,-0.12211561203002931],
+[51.519091526339075,-0.12033462524414064],
+[51.51918499107367,-0.11999130249023438],
+[51.51780970491161,-0.11988401412963867],
+[51.51783640989265,-0.11917591094970702],
+[51.51767617977159,-0.11904716491699219],
+[51.51807675401733,-0.11595726013183594],
+[51.51588690512807,-0.11434793472290038],
+[51.51572666814879,-0.11394023895263672],
+[51.51658125885788,-0.11072158813476562],
+[51.518423915513914,-0.1105499267578125],
+[51.51853073390357,-0.11142969131469727],
+[51.51925175148097,-0.11132240295410155],
+[51.519278455616465,-0.11089324951171875],
+[51.518624199789016,-0.1109790802001953],
+[51.51866425653834,-0.11045336723327637],
+[51.51915828688337,-0.11022806167602539],
+[51.51858414300445,-0.11006712913513184],
+[51.51861084753141,-0.10914444923400878],
+[51.51915161083334,-0.10896205902099608],
+[51.519138258730365,-0.10841488838195801],
+[51.51848400088891,-0.10856509208679199],
+[51.51843726782632,-0.10821104049682617],
+[51.51918499107367,-0.10801792144775389],
+[51.519198343162955,-0.10778188705444335],
+[51.51845729628758,-0.1075458526611328],
+[51.5181702208344,-0.10594725608825682],
+[51.51876439825753,-0.10561466217041016],
+[51.51881113098446,-0.10435938835144043],
+[51.520286525279815,-0.10491728782653809],
+[51.52341740732051,-0.1067197322845459],
+[51.52465901947907,-0.10784626007080078],
+[51.524325256096915,-0.11185884475708008],
+[51.523570941841115,-0.11392951011657715],
+[51.523657721993324,-0.11419773101806642],
+[51.52295680065267,-0.11684775352478029],
+[51.52302355553092,-0.11825323104858398] ], { color: '#0074d9' }).addTo(map);
 
         testParish.bindPopup('<div style="max-height: 175px; overflow-y: scroll;">'
-                + '<h3>St. Brides</h3>'
+                + '<h3>St. Andrew\'s-Holborn</h3>'
                 + '<dl>'
                     + '<dt><a href="#event-6">December 20-27</a></dt>'
                     + '<dd><b>Buried: 0.</b> Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5).</dd>'
@@ -227,7 +265,7 @@
                 
             <tr class="odd">
                 <td id="event-6" style="background: rgba(0, 116, 217, .6);">December 20-27</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1664</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">0</td>
@@ -302,7 +340,7 @@
                 
             <tr class="even">
                 <td id="event-11" style="background: rgba(0, 116, 217, .6);">December 27-January 3</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1664</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">6</td>
@@ -428,7 +466,7 @@
                 
             <tr class="odd">
                 <td id="event-16" style="background: rgba(0, 116, 217, .6);">January 3-10</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1665</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">11</td>
@@ -503,7 +541,7 @@
                 
             <tr class="even">
                 <td id="event-21" style="background: rgba(0, 116, 217, .6);">January 10-17</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1665</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">12</td>
@@ -578,7 +616,7 @@
                 
             <tr class="odd">
                 <td id="event-26" style="background: rgba(0, 116, 217, .6);">January 17-24</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1665</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">9</td>
@@ -653,7 +691,7 @@
                 
             <tr class="even">
                 <td id="event-31" style="background: rgba(0, 116, 217, .6);">January 24-31</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1665</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">8</td>
@@ -713,7 +751,7 @@
                 
             <tr class="even">
                 <td id="event-35" style="background: rgba(0, 116, 217, .6);">January 30-February 7</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1665</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">13</td>
@@ -758,7 +796,7 @@
                 
             <tr class="odd">
                 <td id="event-38" style="background: rgba(0, 116, 217, .6);">February 7-14</td>
-                <td style="background: rgba(0, 116, 217, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Brides</a></td>
+                <td style="background: rgba(0, 116, 217, .6);">St. Brides</a></td>
                 <!-- <td style="background: rgba(0, 116, 217, .6);">1665</td> -->
                 <td style="background: rgba(0, 116, 217, .6);"></td>
                 <td style="background: rgba(0, 116, 217, .6);">12</td>
@@ -863,7 +901,7 @@
                 
             <tr class="even">
                 <td id="event-45" style="background: rgba(160, 66, 66, .6);">May 1-8</td>
-                <td style="background: rgba(160, 66, 66, .6);">St. Andrew's-Holborn</td>
+                <td style="background: rgba(160, 66, 66, .6);"><a href="#" onclick="javascript:testParish.openPopup();">St. Andrew's-Holborn</td>
                 <!-- <td style="background: rgba(160, 66, 66, .6);">1665</td> -->
                 <td style="background: rgba(160, 66, 66, .6);"></td>
                 <td style="background: rgba(160, 66, 66, .6);"></td>
