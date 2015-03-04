@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <h1>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Dafoe&rsquo;s A Journal of the Plague Year</h1>
 
     <div id="map"></div>
 
@@ -84,6 +85,7 @@
             popupContents += '<dt><a href="#event-{{ event.sequence }}">{{ event.date_descriptive }}</a></dt>'
             popupContents += "<dd><b>Buried Plague: {% if event.buried_plague != null %}{{ event.buried_plague }}{% else %}0{% endif %}.</b> {{ event.notes }}</dd>";
             {% endfor %}
+            popupContents += '</dl></div>';
             parishPolygon{{ parish.id }}.bindPopup( popupContents );
         } )
     {% endfor %}
