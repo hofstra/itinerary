@@ -1,0 +1,2886 @@
+{
+    "events":
+    [
+    
+    
+    
+    {
+        "year" : "1663",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "Amsterdam, Holland",
+        "notes" : "The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin."
+    },
+    
+    {
+        "year" : "1663",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "Rotterdam, Holland",
+        "notes" : ""
+    }
+    ,
+    
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "End of November-Beginning of December",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "2",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "Long Acre, Upper End of Drury-Lane",
+        "notes" : "2 Frenchmen die."
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "Last Week of December",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "Long Acre, Upper End of Drury-Lane",
+        "notes" : "Another man dies in the same house."
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 20-27",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "0",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) ."
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 20-27",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "8",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 20-27",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "291",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers."
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 27-January 3",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "16",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 27-January 3",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "17",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 27-January 3",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "6",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 27-January 3",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "9",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December 27-January 3",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "349",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1664",
+        "date_descriptive" : "December",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "Long-Acre, Drury-Lane",
+        "notes" : "H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City."
+    }
+    ,
+    
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "February 12",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that a man died in a different house, but in the same parish and also of the plague."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 3-10",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "12",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 3-10",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "25",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 3-10",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "11",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 3-10",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "7",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 3-10",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "394",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 10-17",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "18",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 10-17",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "18",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 10-17",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "12",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 10-17",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "9",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 10-17",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "415",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 17-24",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "23",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 17-24",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "16",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 17-24",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "9",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 17-24",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "15",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 17-24",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "474",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 24-31",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "24",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 24-31",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "15",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 24-31",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "8",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 24-31",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "12",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 30-February 7",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "21",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "In second bills of mortality for St. Brides and St. James, the date reads Jan. 31."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 30-February 7",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "23",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 30-February 7",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "13",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "January 30-February 7",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "5",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "February 7-14",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "1",
+        "buried_parish_total" : "24",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "February 7-14",
+        "parish_id" : "990",
+        "parish" : "St. Brides",
+        "buried_plague" : "",
+        "buried_parish_total" : "12",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "February 7-14",
+        "parish_id" : "991",
+        "parish" : "St. James Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "6",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "April 2-9",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "25",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "April 10-17",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "",
+        "buried_parish_total" : "25",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "April 18-25",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "2",
+        "buried_parish_total" : "30",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "8 die from spotted fever, which H.F. notes was often considered the same as the plague."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "April 26-May 2",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "0",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "388",
+        "location_descriptive" : "",
+        "notes" : "4 die from spotted fever."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 1-8",
+        "parish_id" : "994",
+        "parish" : "St. Mary-Wool-Church",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "9",
+        "buried_total" : "",
+        "location_descriptive" : "Bearbinder-lane, near the Stocks-market",
+        "notes" : "This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 1-8",
+        "parish_id" : "1",
+        "parish" : "St. Andrew's-Holborn",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "9",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "6 total die from spotted fever."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 1-8",
+        "parish_id" : "995",
+        "parish" : "St. Clement's-Danes",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "9",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 1-8",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "54",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 1-8",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "347",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 9-16",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "1",
+        "buried_parish_total" : "32",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 9-16",
+        "parish_id" : "993",
+        "parish" : "St. Andrew's",
+        "buried_plague" : "",
+        "buried_parish_total" : "15",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 9-16",
+        "parish_id" : "",
+        "parish" : "The Town",
+        "buried_plague" : "",
+        "buried_parish_total" : "3*",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 9-16",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "0*",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 9-16",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "343",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 17-22",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "14",
+        "buried_parish_total" : "40",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 17-22",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "14 (50)",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "385",
+        "location_descriptive" : "",
+        "notes" : "The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 23-30",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "9 (20)",
+        "buried_parish_total" : "53",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "May 23-30",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "17",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "June 1-8",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "June 9-16",
+        "parish_id" : "992",
+        "parish" : "St. Giles's",
+        "buried_plague" : "68 (100)",
+        "buried_parish_total" : "120",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. suspects the actual number of dead from the plague is closer to 100."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "June 9-16",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "4",
+        "buried_total" : "",
+        "location_descriptive" : "Wood-street",
+        "notes" : "H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "June 9-16",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "4",
+        "buried_total" : "",
+        "location_descriptive" : "Fenchurch-street",
+        "notes" : "The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "June 9-16",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "2",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "4",
+        "buried_total" : "",
+        "location_descriptive" : "Crooked-lane",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "June 9-16",
+        "parish_id" : "",
+        "parish" : "Southwark",
+        "buried_plague" : "0",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Mid-July",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "(900)",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "1268",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Mid-July",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "28",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Mid-July",
+        "parish_id" : "",
+        "parish" : "Southwark, incl. Lambeth",
+        "buried_plague" : "19",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 4-11",
+        "parish_id" : "",
+        "parish" : "St. Giles in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "421",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 4-11",
+        "parish_id" : "",
+        "parish" : "St. Martins in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "421",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 4-11",
+        "parish_id" : "",
+        "parish" : "Aldgate",
+        "buried_plague" : "4",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 4-11",
+        "parish_id" : "",
+        "parish" : "Whitechapel",
+        "buried_plague" : "3",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 4-11",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "1761",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "Southwark",
+        "buried_plague" : "16",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "2nd week of August",
+        "parish_id" : "",
+        "parish" : "Cripplegate",
+        "buried_plague" : "(850)",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "868",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "2nd week of August",
+        "parish_id" : "",
+        "parish" : "Clerkenwell",
+        "buried_plague" : "145",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "155",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "Algate",
+        "buried_plague" : "14",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "71",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "33",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "71",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "White Chappel",
+        "buried_plague" : "21",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "71",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "St. Kath Towers",
+        "buried_plague" : "2",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "71",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "Trin. Minories",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "71",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "St. Len. Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "64",
+        "buried_plague_total" : "",
+        "buried_total" : "342",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "St. But. Bishopsg.",
+        "buried_plague" : "",
+        "buried_parish_total" : "65",
+        "buried_plague_total" : "",
+        "buried_total" : "342",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "St. Giles Crippl.",
+        "buried_plague" : "",
+        "buried_parish_total" : "213",
+        "buried_plague_total" : "",
+        "buried_total" : "342",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "Algate",
+        "buried_plague" : "34",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "145",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "58",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "145",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "White Chappel",
+        "buried_plague" : "48",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "145",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "St. Kath Towers",
+        "buried_plague" : "4",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "145",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "Trin. Minories",
+        "buried_plague" : "1",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "145",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "St. Len. Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "84",
+        "buried_plague_total" : "",
+        "buried_total" : "610",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "St. But. Bishopsg.",
+        "buried_plague" : "",
+        "buried_parish_total" : "105",
+        "buried_plague_total" : "",
+        "buried_total" : "610",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 19-26",
+        "parish_id" : "",
+        "parish" : "St. Giles Crippl.",
+        "buried_plague" : "",
+        "buried_parish_total" : "421",
+        "buried_plague_total" : "",
+        "buried_total" : "610",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "Algate",
+        "buried_plague" : "65",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "228",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "76",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "228",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "White Chappel",
+        "buried_plague" : "79",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "228",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "St. Kath Towers",
+        "buried_plague" : "4",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "228",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "Trin. Minories",
+        "buried_plague" : "4",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "228",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "St. Len. Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "110",
+        "buried_plague_total" : "",
+        "buried_total" : "780",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "St. But. Bishopsg.",
+        "buried_plague" : "",
+        "buried_parish_total" : "116",
+        "buried_plague_total" : "",
+        "buried_total" : "780",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 27-August 3",
+        "parish_id" : "",
+        "parish" : "St. Giles Crippl.",
+        "buried_plague" : "",
+        "buried_parish_total" : "554",
+        "buried_plague_total" : "",
+        "buried_total" : "780",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 4-11",
+        "parish_id" : "",
+        "parish" : "Islington",
+        "buried_plague" : "2",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 11-18",
+        "parish_id" : "",
+        "parish" : "Islington",
+        "buried_plague" : "14",
+        "buried_parish_total" : "17",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "550",
+        "location_descriptive" : "",
+        "notes" : "H.F. cites this weekly number for roughly the end of July."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "4000",
+        "location_descriptive" : "",
+        "notes" : "It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Aug. 8 - 15",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "3880",
+        "buried_parish_total" : "5319",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : "H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97)."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Aug. 15 - 22",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "4237",
+        "buried_parish_total" : "5568",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : "H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97)."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Aug. 22 - 29",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "6102",
+        "buried_parish_total" : "7496",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Aug. 29 - Sept. 5",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "6988",
+        "buried_parish_total" : "8252",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Sept. 5 - 12",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "6544",
+        "buried_parish_total" : "7690",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Sept. 12 - 19",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "7169",
+        "buried_parish_total" : "8297",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Sept. 19 - 26",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "5533",
+        "buried_parish_total" : "6460",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Sept. 26 - Oct. 3",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "4929",
+        "buried_parish_total" : "5720",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Oct. 3 - 10",
+        "parish_id" : "",
+        "parish" : "London and Suburbs",
+        "buried_plague" : "4227",
+        "buried_parish_total" : "5068",
+        "buried_plague_total" : "49709",
+        "buried_total" : "59870",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. speculates that between 1500 and 1700 people died a day from the plague during its height."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Beginning of Sept.",
+        "parish_id" : "",
+        "parish" : "Algate",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "1000",
+        "location_descriptive" : "",
+        "notes" : "H.F. speculates that the parish buried over a 1000 a week for two weeks."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Beginning of Sept.",
+        "parish_id" : "",
+        "parish" : "White Chapel",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "600",
+        "location_descriptive" : "",
+        "notes" : "H.F. speculates that the number was twice the 600 that was officially recorded."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "February - May",
+        "parish_id" : "",
+        "parish" : "The Town",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 8 - 15",
+        "parish_id" : "",
+        "parish" : "St. Giles's in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "242*",
+        "buried_plague_total" : "",
+        "buried_total" : "4030*",
+        "location_descriptive" : "",
+        "notes" : "H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 8 - 15",
+        "parish_id" : "",
+        "parish" : "Cripplegate",
+        "buried_plague" : "",
+        "buried_parish_total" : "886*",
+        "buried_plague_total" : "",
+        "buried_total" : "4030*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 8 - 15",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "",
+        "buried_parish_total" : "197*",
+        "buried_plague_total" : "",
+        "buried_total" : "4030*",
+        "location_descriptive" : "",
+        "notes" : "These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 8 - 15",
+        "parish_id" : "",
+        "parish" : "St. Mag. Bermondsey",
+        "buried_plague" : "",
+        "buried_parish_total" : "24*",
+        "buried_plague_total" : "",
+        "buried_total" : "4030*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 8 - 15",
+        "parish_id" : "",
+        "parish" : "Rotherhith",
+        "buried_plague" : "",
+        "buried_parish_total" : "3*",
+        "buried_plague_total" : "",
+        "buried_total" : "4030*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 15 - 22",
+        "parish_id" : "",
+        "parish" : "St. Giles's in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "175*",
+        "buried_plague_total" : "",
+        "buried_total" : "5319*",
+        "location_descriptive" : "",
+        "notes" : "H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 15 - 22",
+        "parish_id" : "",
+        "parish" : "Cripplegate",
+        "buried_plague" : "",
+        "buried_parish_total" : "847*",
+        "buried_plague_total" : "",
+        "buried_total" : "5319*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 15 - 22",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "",
+        "buried_parish_total" : "273*",
+        "buried_plague_total" : "",
+        "buried_total" : "5319*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 15 - 22",
+        "parish_id" : "",
+        "parish" : "St. Mag. Bermondsey",
+        "buried_plague" : "",
+        "buried_parish_total" : "36*",
+        "buried_plague_total" : "",
+        "buried_total" : "5319*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 15 - 22",
+        "parish_id" : "",
+        "parish" : "Rotherhith",
+        "buried_plague" : "",
+        "buried_parish_total" : "2*",
+        "buried_plague_total" : "",
+        "buried_total" : "5319*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Sept. and Oct.",
+        "parish_id" : "",
+        "parish" : "Norwood, Camberwell, Dullege, Lusum",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Enfield",
+        "buried_plague" : "32",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Hornsey",
+        "buried_plague" : "58",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Newington",
+        "buried_plague" : "17",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Tottenham",
+        "buried_plague" : "42",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Edmonton",
+        "buried_plague" : "19",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Barnet and Hadly",
+        "buried_plague" : "43",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "St. Albans",
+        "buried_plague" : "121",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Watford",
+        "buried_plague" : "45",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Uxbridge",
+        "buried_plague" : "117",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Hertford",
+        "buried_plague" : "90",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Ware",
+        "buried_plague" : "160",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Hodsdon",
+        "buried_plague" : "30",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Waltham-Abby",
+        "buried_plague" : "23",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Epping",
+        "buried_plague" : "26",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Deptford",
+        "buried_plague" : "623",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Greenwich",
+        "buried_plague" : "231",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Eltham and Lusum",
+        "buried_plague" : "85",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Croydon",
+        "buried_plague" : "61",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Brent-Wood",
+        "buried_plague" : "70",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Rumford",
+        "buried_plague" : "109",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Barking abt.",
+        "buried_plague" : "200",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Branford",
+        "buried_plague" : "432",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Kingston",
+        "buried_plague" : "122",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Stanes",
+        "buried_plague" : "82",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Chertsey",
+        "buried_plague" : "18",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "Windsor",
+        "buried_plague" : "103",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 22 - 29",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "7496*",
+        "buried_plague_total" : "",
+        "buried_total" : "38195*",
+        "location_descriptive" : "",
+        "notes" : "H.F. believes the weekly numbers are closer to 10,000."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "August 29 - September 7",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "8252*",
+        "buried_plague_total" : "",
+        "buried_total" : "38195*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 7 - 12",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "7690*",
+        "buried_plague_total" : "",
+        "buried_total" : "38195*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "8297*",
+        "buried_plague_total" : "",
+        "buried_total" : "38195*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "6460*",
+        "buried_plague_total" : "",
+        "buried_total" : "38195*",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "St. Giles's, Westminister",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. locates the origin of the plague here."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Middle of July",
+        "parish_id" : "",
+        "parish" : "St. Giles in the Fields, St. Andrew's Holborn, St. Clement-Danes, St. Martins in the Fields, Westminster",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that this was when the plague was at its height in this part of London."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "End of July",
+        "parish_id" : "",
+        "parish" : "Cripplegate, St. Sepulchers, St. Ja. Clarkenwell, St. Brides, Aldersgate",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "End of July",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes), Southwark (All Parishes), Stepney, White-Chapel, Aldgate, Wapping, Ratcliff",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that, at the same time, these parishes were barely affected by the plague."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "St. Giles Cripplegate",
+        "buried_plague" : "",
+        "buried_parish_total" : "554",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "St. Sepulchers",
+        "buried_plague" : "",
+        "buried_parish_total" : "250",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "103",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "Bishopsgate",
+        "buried_plague" : "",
+        "buried_parish_total" : "116",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "110",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "",
+        "buried_parish_total" : "127",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "Aldgate",
+        "buried_plague" : "",
+        "buried_parish_total" : "92",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "White-Chappel",
+        "buried_plague" : "",
+        "buried_parish_total" : "104",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "228",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "July 25 - August 1",
+        "parish_id" : "",
+        "parish" : "Southwark (All Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "205",
+        "buried_plague_total" : "",
+        "buried_total" : "1889",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Beginning of September",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes), Southwark (All Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "Eastern Suburbs",
+        "notes" : "H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "St. Giles's Cripplegate",
+        "buried_plague" : "",
+        "buried_parish_total" : "456",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : "H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "St. Giles in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "140",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "77",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "St. Sepulchers",
+        "buried_plague" : "",
+        "buried_parish_total" : "214",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "St. Leonard Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "183",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "",
+        "buried_parish_total" : "716",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "Aldgate",
+        "buried_plague" : "",
+        "buried_parish_total" : "623",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "White-Chapel",
+        "buried_plague" : "",
+        "buried_parish_total" : "532",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "1493",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 12 - 19",
+        "parish_id" : "",
+        "parish" : "Southwark (8 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "1636",
+        "buried_plague_total" : "",
+        "buried_total" : "6060",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "St. Giles's Cripplegate",
+        "buried_plague" : "",
+        "buried_parish_total" : "277",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : "H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183)."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "St. Giles in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "119",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "76",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "St. Sepulchers",
+        "buried_plague" : "",
+        "buried_parish_total" : "193",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "St. Leonard Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "146",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "",
+        "buried_parish_total" : "616",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "Aldgate",
+        "buried_plague" : "",
+        "buried_parish_total" : "496",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "White-Chapel",
+        "buried_plague" : "",
+        "buried_parish_total" : "346",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "1268",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 19 - 26",
+        "parish_id" : "",
+        "parish" : "Southwark (8 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "1390",
+        "buried_plague_total" : "",
+        "buried_total" : "4900",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "St. Giles's Cripplegate",
+        "buried_plague" : "",
+        "buried_parish_total" : "196",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "St. Giles in the Fields",
+        "buried_plague" : "",
+        "buried_parish_total" : "95",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "Clarkenwell",
+        "buried_plague" : "",
+        "buried_parish_total" : "48",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "St. Sepulchers",
+        "buried_plague" : "",
+        "buried_parish_total" : "137",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "St. Leonard Shoreditch",
+        "buried_plague" : "",
+        "buried_parish_total" : "128",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "Stepney",
+        "buried_plague" : "",
+        "buried_parish_total" : "674",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "Aldgate",
+        "buried_plague" : "",
+        "buried_parish_total" : "372",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "White-Chapel",
+        "buried_plague" : "",
+        "buried_parish_total" : "328",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "1149",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "September 26 - October 3",
+        "parish_id" : "",
+        "parish" : "Southwark (8 Parishes)",
+        "buried_plague" : "",
+        "buried_parish_total" : "1201",
+        "buried_plague_total" : "",
+        "buried_total" : "4328",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "- July 1",
+        "parish_id" : "",
+        "parish" : "The City (97 Parishes)",
+        "buried_plague" : "7*",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. refers here to the entire period of the plague up to this date."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "- July 1",
+        "parish_id" : "",
+        "parish" : "Liberties",
+        "buried_plague" : "60*",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "- July 1",
+        "parish_id" : "",
+        "parish" : "Southwark (8 Parishes)",
+        "buried_plague" : "2*",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "- July 1",
+        "parish_id" : "",
+        "parish" : "Stepney, Aldgate, White-Chappel",
+        "buried_plague" : "1*",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "2nd to Last Week of September",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "8297",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Last Week of September",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "6460",
+        "location_descriptive" : "",
+        "notes" : "H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "First Week of October",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "5720",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Another Week of October",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "2665",
+        "location_descriptive" : "",
+        "notes" : "It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Next Week of October",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "(1000-1800)",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "First Week of November",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "November",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "905",
+        "location_descriptive" : "",
+        "notes" : ""
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "December",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "First Three Weeks of September",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "To the End of the Year",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "(2-300)",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes that there were still deaths from the plague to the end of 1665."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "First Week of October?",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "",
+        "location_descriptive" : "",
+        "notes" : "H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned."
+    },
+    
+    {
+        "year" : "1665",
+        "date_descriptive" : "Last Three Weeks",
+        "parish_id" : "",
+        "parish" : "",
+        "buried_plague" : "",
+        "buried_parish_total" : "",
+        "buried_plague_total" : "",
+        "buried_total" : "(30,000)",
+        "location_descriptive" : "",
+        "notes" : "H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills."
+    }
+    
+    
+    ]
+}

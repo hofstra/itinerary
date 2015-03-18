@@ -27,8 +27,37 @@
     <h1>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</h1>
 
     <div id="map"></div>
-
     <script type="text/javascript" src="ui/js/script.js"></script>
+
+    <div id="stepper">
+        <a href="#" id="step-prev">&laquo;</a>
+        <h2></h2>
+        <p></p>
+        <a href="#" id="step-next">&raquo;</a>
+    </div>
+    <style type="text/css">
+        #stepper {
+            position: relative;
+        }
+        #stepper h2,
+        #stepper p {
+            line-height: 1em;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        #stepper a {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+        #stepper a:first-child {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+    </style>
+
+
 
     <div class="itinerary">
         {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
@@ -70,7 +99,7 @@
     {% for parish in site.data.parishes %}
         // Fetch GeoJSON markers for parish polygon vertices
         var parishPolygon{{ parish.id }};
-        $.getJSON( "parish-{{ parish.id }}.geojson", function (data) {
+        $.getJSON( "geojson/parish-{{ parish.id }}.geojson", function (data) {
             var popupContents;
             var vertices = [];
             $.each( data.features, function(i, feature) {
@@ -87,9 +116,58 @@
             popupContents += "<dd><b>Buried Plague: {% if event.buried_plague != null %}{{ event.buried_plague }}{% else %}0{% endif %}.</b> {{ event.notes }}</dd>";
             {% endfor %}
             popupContents += '</dl></div>';
+            //console.log('{{ parish.id }} ' + popupContents);
             parishPolygon{{ parish.id }}.bindPopup( popupContents );
+            console.log('parishPolygon{{ parish.id }}');
         } )
     {% endfor %}
+    </script>
+
+    <script type="text/javascript">
+        var $itineraryData;
+        var $stepperEnabled = false;
+        $.getJSON( "datajson/a-frightful-number-plague.json", function (data) {
+            console.log('json fetched');
+            $itineraryData = data.events;
+            $stepperEnabled = true;
+            currentEvent(0);
+        })
+        .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+        });
+        $itineraryIndex = 0;
+        $('#stepper a:first-child').on('click', function(e) {
+            e.preventDefault();
+            console.log('prev clicked');
+            if ( $itineraryIndex > 0 && $stepperEnabled) {
+                $itineraryIndex--;
+                currentEvent($itineraryIndex);
+            }
+            console.log($itineraryIndex);
+        });
+        $('#stepper a:last-child').on('click', function(e) {
+            e.preventDefault();
+            console.log('next clicked');
+            if ( $itineraryIndex < $itineraryData.length && $stepperEnabled) {
+                $itineraryIndex++;
+                currentEvent($itineraryIndex);
+            }
+            console.log($itineraryIndex);
+        });
+        function currentEvent($itineraryIndex) {
+            $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
+            $('#stepper p').fadeOut(function() { $(this).html($itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish).fadeIn() });
+            console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
+
+            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
+            //map.removeLayer(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
+            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
+            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options.color = '#d31603';
+            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
+
+
+        }
     </script>
 </body>
 </html>

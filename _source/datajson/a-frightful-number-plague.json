@@ -1,0 +1,24 @@
+---
+---
+{
+    "events":
+    [
+    {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
+    {% for year in events %}
+    {% for event in year.items %}
+    {
+        "year" : "{{ year.name }}",
+        "date_descriptive" : "{{ event.date_descriptive }}",
+        "parish_id" : "{{ event.parish_id }}",
+        "parish" : "{{ event.parish }}",
+        "buried_plague" : "{{ event.buried_plague }}",
+        "buried_parish_total" : "{{ event.buried_parish_total }}",
+        "buried_plague_total" : "{{ event.buried_plague_total }}",
+        "buried_total" : "{{ event.buried_total }}",
+        "location_descriptive" : "{{ event.location_descriptive | strip_newlines | replace: '', '' | replace: '"', '\"' }}",
+        "notes" : "{{ event.notes | strip_newlines | replace: '', '' | replace: '"', '\"' }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}
