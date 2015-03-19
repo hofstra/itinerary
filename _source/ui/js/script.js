@@ -128,7 +128,8 @@ $(document).ready(function() {
         });
 
         // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
-        $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
+        if ($('#stepper h2').text() != $itineraryData[$itineraryIndex].year)
+            $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
         $('#stepper p').fadeOut(
             function() {
                 // Update the HTML contents with the prev/next itinerary event
