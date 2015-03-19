@@ -2566,6 +2566,7 @@
     </div>
     <script type="text/javascript">
     // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
+    var $parishPolygons = [];
     
         // Fetch GeoJSON markers for parish polygon vertices
         var parishPolygon1;
@@ -2576,6 +2577,12 @@
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
             parishPolygon1 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
+
+            $parishPolygons.push( [
+                parishPolygon1,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>St. Andrew's-Holborn</h3>";
@@ -2588,7 +2595,7 @@
             popupContents += '</dl></div>';
             //console.log('1 ' + popupContents);
             parishPolygon1.bindPopup( popupContents );
-            console.log('parishPolygon1');
+            //console.log('parishPolygon1');
         } )
     
         // Fetch GeoJSON markers for parish polygon vertices
@@ -2600,6 +2607,12 @@
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
             parishPolygon990 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
+
+            $parishPolygons.push( [
+                parishPolygon990,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>Test Parish 990</h3>";
@@ -2633,7 +2646,7 @@
             popupContents += '</dl></div>';
             //console.log('990 ' + popupContents);
             parishPolygon990.bindPopup( popupContents );
-            console.log('parishPolygon990');
+            //console.log('parishPolygon990');
         } )
     
         // Fetch GeoJSON markers for parish polygon vertices
@@ -2645,6 +2658,12 @@
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
             parishPolygon991 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
+
+            $parishPolygons.push( [
+                parishPolygon991,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>Test Parish 991</h3>";
@@ -2678,7 +2697,7 @@
             popupContents += '</dl></div>';
             //console.log('991 ' + popupContents);
             parishPolygon991.bindPopup( popupContents );
-            console.log('parishPolygon991');
+            //console.log('parishPolygon991');
         } )
     
         // Fetch GeoJSON markers for parish polygon vertices
@@ -2690,6 +2709,12 @@
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
             parishPolygon992 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
+
+            $parishPolygons.push( [
+                parishPolygon992,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>Test Parish 992</h3>";
@@ -2741,7 +2766,7 @@
             popupContents += '</dl></div>';
             //console.log('992 ' + popupContents);
             parishPolygon992.bindPopup( popupContents );
-            console.log('parishPolygon992');
+            //console.log('parishPolygon992');
         } )
     
         // Fetch GeoJSON markers for parish polygon vertices
@@ -2753,6 +2778,12 @@
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
             parishPolygon993 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
+
+            $parishPolygons.push( [
+                parishPolygon993,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>Test Parish 993</h3>";
@@ -2783,7 +2814,7 @@
             popupContents += '</dl></div>';
             //console.log('993 ' + popupContents);
             parishPolygon993.bindPopup( popupContents );
-            console.log('parishPolygon993');
+            //console.log('parishPolygon993');
         } )
     
         // Fetch GeoJSON markers for parish polygon vertices
@@ -2796,6 +2827,12 @@
             })
             parishPolygon994 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
 
+            $parishPolygons.push( [
+                parishPolygon994,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
+
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>Test Parish 994</h3>";
             popupContents += "<dl>";
@@ -2807,7 +2844,7 @@
             popupContents += '</dl></div>';
             //console.log('994 ' + popupContents);
             parishPolygon994.bindPopup( popupContents );
-            console.log('parishPolygon994');
+            //console.log('parishPolygon994');
         } )
     
         // Fetch GeoJSON markers for parish polygon vertices
@@ -2820,6 +2857,12 @@
             })
             parishPolygon995 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
 
+            $parishPolygons.push( [
+                parishPolygon995,
+                'rgb(0, 116, 217)'
+            ] );
+            //console.log($parishPolygons);
+
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>Test Parish 995</h3>";
             popupContents += "<dl>";
@@ -2831,7 +2874,7 @@
             popupContents += '</dl></div>';
             //console.log('995 ' + popupContents);
             parishPolygon995.bindPopup( popupContents );
-            console.log('parishPolygon995');
+            //console.log('parishPolygon995');
         } )
     
     </script>
@@ -2857,7 +2900,7 @@
                 $itineraryIndex--;
                 currentEvent($itineraryIndex);
             }
-            console.log($itineraryIndex);
+            //console.log($itineraryIndex);
         });
         $('#stepper a:last-child').on('click', function(e) {
             e.preventDefault();
@@ -2866,18 +2909,28 @@
                 $itineraryIndex++;
                 currentEvent($itineraryIndex);
             }
-            console.log($itineraryIndex);
+            //console.log($itineraryIndex);
         });
         function currentEvent($itineraryIndex) {
+            // reset all polygons
+            console.log('currentEvent');
+            //console.log($parishPolygons);
+            $.each( $parishPolygons, function( $i, polygon) {
+                polygon[0].setStyle({'color': polygon[1]});
+                console.log(polygon[0]);
+                console.log(polygon[1]);
+            });
+
+            // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
             $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
             $('#stepper p').fadeOut(function() { $(this).html($itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish).fadeIn() });
-            console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
 
-            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
-            //map.removeLayer(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
-            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
-            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options.color = '#d31603';
-            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
+            //console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
+
+            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
+            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
+            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).setStyle({'color': '#d31603'});
+            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
 
 
         }

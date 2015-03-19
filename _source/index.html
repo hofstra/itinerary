@@ -96,6 +96,7 @@
     </div>
     <script type="text/javascript">
     // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
+    var $parishPolygons = [];
     {% for parish in site.data.parishes %}
         // Fetch GeoJSON markers for parish polygon vertices
         var parishPolygon{{ parish.id }};
@@ -106,6 +107,12 @@
                 vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
             })
             parishPolygon{{ parish.id }} = L.polygon([ vertices ], { color: "{{ parish.color }}" }).addTo(map);
+
+            $parishPolygons.push( [
+                parishPolygon{{ parish.id }},
+                '{{ parish.color }}'
+            ] );
+            //console.log($parishPolygons);
 
             popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
             popupContents += "<h3>{{ parish.parish-name }}</h3>";
@@ -118,7 +125,7 @@
             popupContents += '</dl></div>';
             //console.log('{{ parish.id }} ' + popupContents);
             parishPolygon{{ parish.id }}.bindPopup( popupContents );
-            console.log('parishPolygon{{ parish.id }}');
+            //console.log('parishPolygon{{ parish.id }}');
         } )
     {% endfor %}
     </script>
@@ -144,7 +151,7 @@
                 $itineraryIndex--;
                 currentEvent($itineraryIndex);
             }
-            console.log($itineraryIndex);
+            //console.log($itineraryIndex);
         });
         $('#stepper a:last-child').on('click', function(e) {
             e.preventDefault();
@@ -153,18 +160,28 @@
                 $itineraryIndex++;
                 currentEvent($itineraryIndex);
             }
-            console.log($itineraryIndex);
+            //console.log($itineraryIndex);
         });
         function currentEvent($itineraryIndex) {
+            // reset all polygons
+            console.log('currentEvent');
+            //console.log($parishPolygons);
+            $.each( $parishPolygons, function( $i, polygon) {
+                polygon[0].setStyle({'color': polygon[1]});
+                console.log(polygon[0]);
+                console.log(polygon[1]);
+            });
+
+            // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
             $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
             $('#stepper p').fadeOut(function() { $(this).html($itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish).fadeIn() });
-            console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
 
-            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
-            //map.removeLayer(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
-            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
-            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options.color = '#d31603';
-            console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
+            //console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
+
+            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
+            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
+            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).setStyle({'color': '#d31603'});
+            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
 
 
         }
