@@ -1,0 +1,14 @@
+---
+---
+{
+    "parishes":
+    [
+    {% for parish in site.data.parishes %}
+    {
+        "id" : "{{ parish.id }}",
+        "color" : "{{ parish.color }}",
+        "parish_name" : "{{ parish.parish-name }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}

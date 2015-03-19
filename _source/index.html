@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</title>
+    {% assign data_title = "A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year" %}
+    <title>{{ data_title }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -17,17 +18,37 @@
 
     <style type="text/css">
         /* Dynamically set up CSS styles for event data in the timeline based on corresponding parishes */
+        /* This is Jekyll-based, so it lives in the HTML file. */
     {% for parish in site.data.parishes %}
         tr.parish-{{ parish.id }} td { background: {{ parish.background-color }}; }
     {% endfor %}
     </style>
+    <!--
+         Here's where we set things up!
+    -->
+    {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
+    <script type="text/javascript">
+        // Set datajson file that matches the source data specified for {{ events }}
+        var datajson = 'a-frightful-number-plague.json';
+
+        // Set map values for this page that will be used in script.js
+        var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+
+        var tile_layer_historic = 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png';
+        var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+
+        var mapbox_id = 'clearbold.l4gjpd88';
+
+        var historic_toggle_label = 'London 1720';
+        var modern_toggle_label = 'London 2015';
+    </script>
 </head>
 
 <body>
-    <h1>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</h1>
+    <h1>{{ data_title }}</h1>
 
-    <div id="map"></div>
-    <script type="text/javascript" src="ui/js/script.js"></script>
+    <div id="map-container"></div>
 
     <div id="stepper">
         <a href="#" id="step-prev">&laquo;</a>
@@ -35,32 +56,16 @@
         <p></p>
         <a href="#" id="step-next">&raquo;</a>
     </div>
-    <style type="text/css">
-        #stepper {
-            position: relative;
-        }
-        #stepper h2,
-        #stepper p {
-            line-height: 1em;
-            margin-bottom: 0;
-            text-align: center;
-        }
-        #stepper a {
-            position: absolute;
-            top: 10px;
-            right: 0px;
-        }
-        #stepper a:first-child {
-            position: absolute;
-            top: 10px;
-            left: 0px;
-        }
-    </style>
-
-
 
     <div class="itinerary">
-        {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
+        <!--
+             Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
+             so that we have a page loaded with content if JS is an issue.
+        -->
+        <!--
+             Note that the HTML structure here is dependent on the structure of the data.
+             Some data has different fields/schema.
+        -->
         {% for year in events %}
         <table border="0" cellpadding="0" cellspacing="0">
             <tr>
@@ -82,7 +87,7 @@
             {% for event in year.items %}
             <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
                 <td id="event-{{ event.sequence }}">{{ event.date_descriptive }}</td>
-                <td>{% if event.parish_id != null %}<a href="#" onclick="javascript:parishPolygon{{ event.parish_id }}.openPopup();">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
+                <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
                 <td>{{ event.buried_plague }}</td>
                 <td>{{ event.buried_parish_total }}</td>
                 <td>{{ event.buried_plague_total }}</td>
@@ -94,97 +99,8 @@
         </table>
         {% endfor %}
     </div>
-    <script type="text/javascript">
-    // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
-    var $parishPolygons = [];
-    {% for parish in site.data.parishes %}
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon{{ parish.id }};
-        $.getJSON( "geojson/parish-{{ parish.id }}.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon{{ parish.id }} = L.polygon([ vertices ], { color: "{{ parish.color }}" }).addTo(map);
+    <script type="text/javascript" src="ui/js/script.js"></script>
+    <!-- In progress: Moving this to script file & document.ready() -->
 
-            $parishPolygons.push( [
-                parishPolygon{{ parish.id }},
-                '{{ parish.color }}'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>{{ parish.parish-name }}</h3>";
-            popupContents += "<dl>";
-            {% assign events = site.data.a-frightful-number-plague | where:"parish_id",{{parish.id}} %}
-            {% for event in events %}
-            popupContents += '<dt><a href="#event-{{ event.sequence }}">{{ event.date_descriptive }}</a></dt>'
-            popupContents += "<dd><b>Buried Plague: {% if event.buried_plague != null %}{{ event.buried_plague }}{% else %}0{% endif %}.</b> {{ event.notes }}</dd>";
-            {% endfor %}
-            popupContents += '</dl></div>';
-            //console.log('{{ parish.id }} ' + popupContents);
-            parishPolygon{{ parish.id }}.bindPopup( popupContents );
-            //console.log('parishPolygon{{ parish.id }}');
-        } )
-    {% endfor %}
-    </script>
-
-    <script type="text/javascript">
-        var $itineraryData;
-        var $stepperEnabled = false;
-        $.getJSON( "datajson/a-frightful-number-plague.json", function (data) {
-            console.log('json fetched');
-            $itineraryData = data.events;
-            $stepperEnabled = true;
-            currentEvent(0);
-        })
-        .fail(function( jqxhr, textStatus, error ) {
-            var err = textStatus + ", " + error;
-            console.log( "Request Failed: " + err );
-        });
-        $itineraryIndex = 0;
-        $('#stepper a:first-child').on('click', function(e) {
-            e.preventDefault();
-            console.log('prev clicked');
-            if ( $itineraryIndex > 0 && $stepperEnabled) {
-                $itineraryIndex--;
-                currentEvent($itineraryIndex);
-            }
-            //console.log($itineraryIndex);
-        });
-        $('#stepper a:last-child').on('click', function(e) {
-            e.preventDefault();
-            console.log('next clicked');
-            if ( $itineraryIndex < $itineraryData.length && $stepperEnabled) {
-                $itineraryIndex++;
-                currentEvent($itineraryIndex);
-            }
-            //console.log($itineraryIndex);
-        });
-        function currentEvent($itineraryIndex) {
-            // reset all polygons
-            console.log('currentEvent');
-            //console.log($parishPolygons);
-            $.each( $parishPolygons, function( $i, polygon) {
-                polygon[0].setStyle({'color': polygon[1]});
-                console.log(polygon[0]);
-                console.log(polygon[1]);
-            });
-
-            // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
-            $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
-            $('#stepper p').fadeOut(function() { $(this).html($itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish).fadeIn() });
-
-            //console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
-
-            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
-            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
-            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).setStyle({'color': '#d31603'});
-            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
-
-
-        }
-    </script>
 </body>
 </html>

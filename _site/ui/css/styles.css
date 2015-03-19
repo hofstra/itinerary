@@ -1,7 +1,7 @@
 * {
     -webkit-text-size-adjust:none !important; -ms-text-size-adjust:none !important;
 }
-#map {
+#map-container {
     background: #efefef;
     margin-bottom: 20px;
     width: 100%;
@@ -46,4 +46,27 @@ h3 {
         padding-right: 0px;
         padding-left: 0px;
     }
+}
+
+#stepper {
+    position: relative;
+}
+#stepper h2,
+#stepper p {
+    line-height: 1em;
+    margin-bottom: 0;
+    text-align: center;
+}
+#stepper a {
+    color: #333;
+    font-size: 48px;
+    position: absolute;
+    text-decoration: none;
+    top: 10px;
+    right: 0px;
+}
+#stepper a:first-child {
+    position: absolute;
+    top: 10px;
+    left: 0px;
 }

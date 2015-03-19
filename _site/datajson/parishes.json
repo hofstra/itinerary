@@ -1,0 +1,48 @@
+{
+    "parishes":
+    [
+    
+    {
+        "id" : "1",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Andrew's-Holborn"
+    },
+    
+    {
+        "id" : "990",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Test Parish 990"
+    },
+    
+    {
+        "id" : "991",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Test Parish 991"
+    },
+    
+    {
+        "id" : "992",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Test Parish 992"
+    },
+    
+    {
+        "id" : "993",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Test Parish 993"
+    },
+    
+    {
+        "id" : "994",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Test Parish 994"
+    },
+    
+    {
+        "id" : "995",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Test Parish 995"
+    }
+    
+    ]
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,6 +16,7 @@
 
     <style type="text/css">
         /* Dynamically set up CSS styles for event data in the timeline based on corresponding parishes */
+        /* This is Jekyll-based, so it lives in the HTML file. */
     
         tr.parish-1 td { background: rgba(0, 116, 217, .6); }
     
@@ -31,13 +33,32 @@
         tr.parish-995 td { background: rgba(0, 116, 217, .6); }
     
     </style>
+    <!--
+         Here's where we set things up!
+    -->
+    
+    <script type="text/javascript">
+        // Set datajson file that matches the source data specified for {"name"=>"1663", "items"=>[{"date_year"=>"1663", "sequence"=>"1", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"FALSE", "date_day_exact"=>"FALSE", "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>"Amsterdam, Holland", "source_page"=>"3", "source"=>"1", "notes"=>"The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1663", "sequence"=>"2", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"FALSE", "date_day_exact"=>"FALSE", "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>"Rotterdam, Holland", "source_page"=>"3", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}]}{"name"=>"1664", "items"=>[{"date_year"=>"1664", "sequence"=>"3", "date_month"=>"12", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"End of November-Beginning of December", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>"Long Acre, Upper End of Drury-Lane", "source_page"=>"3", "source"=>"1", "notes"=>"2 Frenchmen die.", "buried_plague"=>"2", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"4", "date_month"=>"12", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Last Week of December", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>"Long Acre, Upper End of Drury-Lane", "source_page"=>"4", "source"=>"1", "notes"=>"Another man dies in the same house.", "buried_plague"=>"1", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"6", "date_month"=>"12", "date_day"=>"20", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 20-27", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>"Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"0", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"7", "date_month"=>"12", "date_day"=>"20", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 20-27", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"8", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"8", "date_month"=>"12", "date_day"=>"20", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 20-27", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>"H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"291", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"9", "date_month"=>"12", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 27-January 3", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"16", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"10", "date_month"=>"12", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 27-January 3", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"17", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"11", "date_month"=>"12", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 27-January 3", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"6", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"12", "date_month"=>"12", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 27-January 3", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"9", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"13", "date_month"=>"12", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"December 27-January 3", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"349", "buried_change"=>"58/increase", "buried_change_direction"=>nil}, {"date_year"=>"1664", "sequence"=>"116", "date_month"=>"12", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"December", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>"Long-Acre, Drury-Lane", "source_page"=>"109", "source"=>"1", "notes"=>"H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}]}{"name"=>"1665", "items"=>[{"date_year"=>"1665", "sequence"=>"5", "date_month"=>"2", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"February 12", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"4", "source"=>"1", "notes"=>"H.F. notes that a man died in a different house, but in the same parish and also of the plague.", "buried_plague"=>"1", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"14", "date_month"=>"1", "date_day"=>"3", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 3-10", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"12", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"15", "date_month"=>"1", "date_day"=>"3", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 3-10", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"25", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"16", "date_month"=>"1", "date_day"=>"3", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 3-10", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"11", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"17", "date_month"=>"1", "date_day"=>"3", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 3-10", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"7", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"18", "date_month"=>"1", "date_day"=>"3", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 3-10", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"394", "buried_change"=>"45/increase", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"19", "date_month"=>"1", "date_day"=>"10", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 10-17", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"18", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"20", "date_month"=>"1", "date_day"=>"10", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 10-17", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"18", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"21", "date_month"=>"1", "date_day"=>"10", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 10-17", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"12", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"22", "date_month"=>"1", "date_day"=>"10", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 10-17", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"9", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"23", "date_month"=>"1", "date_day"=>"10", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 10-17", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"415", "buried_change"=>"21/increase", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"24", "date_month"=>"1", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 17-24", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"23", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"25", "date_month"=>"1", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 17-24", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"16", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"26", "date_month"=>"1", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 17-24", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"9", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"27", "date_month"=>"1", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 17-24", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"15", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"28", "date_month"=>"1", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 17-24", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"474", "buried_change"=>"59/increase", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"29", "date_month"=>"1", "date_day"=>"24", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 24-31", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"24", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"30", "date_month"=>"1", "date_day"=>"24", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 24-31", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"15", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"31", "date_month"=>"1", "date_day"=>"24", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 24-31", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"8", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"32", "date_month"=>"1", "date_day"=>"24", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 24-31", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"12", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"33", "date_month"=>"1", "date_day"=>"30", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 30-February 7", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>"In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"21", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"34", "date_month"=>"1", "date_day"=>"30", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 30-February 7", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"23", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"35", "date_month"=>"1", "date_day"=>"30", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 30-February 7", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"13", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"36", "date_month"=>"1", "date_day"=>"30", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"January 30-February 7", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"5", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"37", "date_month"=>"2", "date_day"=>"7", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"February 7-14", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>"1", "buried_plague_total"=>nil, "buried_parish_total"=>"24", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"38", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"February 7-14", "parish_id"=>"990", "parish"=>"St. Brides", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"12", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"39", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"February 7-14", "parish_id"=>"991", "parish"=>"St. James Clarkenwell", "location_descriptive"=>nil, "source_page"=>"5-6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"6", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"40", "date_month"=>"4", "date_day"=>"2", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"April 2-9", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"25", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"41", "date_month"=>"4", "date_day"=>"10", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"April 10-17", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"6", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"25", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"42", "date_month"=>"4", "date_day"=>"18", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"April 18-25", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"6", "source"=>"1", "notes"=>"8 die from spotted fever, which H.F. notes was often considered the same as the plague.", "buried_plague"=>"2", "buried_plague_total"=>nil, "buried_parish_total"=>"30", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"43", "date_month"=>"4", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"April 26-May 2", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>"4 die from spotted fever.", "buried_plague"=>"0", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"388", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"44", "date_month"=>"5", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 1-8", "parish_id"=>"994", "parish"=>"St. Mary-Wool-Church", "location_descriptive"=>"Bearbinder-lane, near the Stocks-market", "source_page"=>"7", "source"=>"1", "notes"=>"This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.", "buried_plague"=>"1", "buried_plague_total"=>"9", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"45", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 1-8", "parish_id"=>"1", "parish"=>"St. Andrew's-Holborn", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>"6 total die from spotted fever.", "buried_plague"=>nil, "buried_plague_total"=>"9", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"46", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 1-8", "parish_id"=>"995", "parish"=>"St. Clement's-Danes", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>"9", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"47", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 1-8", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"54", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"48", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 1-8", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"347", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"49", "date_month"=>"5", "date_day"=>"9", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 9-16", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>"1", "buried_plague_total"=>nil, "buried_parish_total"=>"32", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"50", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 9-16", "parish_id"=>"993", "parish"=>"St. Andrew's", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"15", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"51", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 9-16", "parish_id"=>nil, "parish"=>"The Town", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"3*", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"52", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 9-16", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"0*", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"53", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 9-16", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"7", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"343", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"54", "date_month"=>"5", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 17-22", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"8", "source"=>"1", "notes"=>nil, "buried_plague"=>"14", "buried_plague_total"=>nil, "buried_parish_total"=>"40", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"55", "date_month"=>"5", "date_day"=>"17", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 17-22", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"8", "source"=>"1", "notes"=>"The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.", "buried_plague"=>"14 (50)", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"385", "buried_change"=>"32/increase", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"56", "date_month"=>"5", "date_day"=>"23", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 23-30", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"8", "source"=>"1", "notes"=>"The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.", "buried_plague"=>"9 (20)", "buried_plague_total"=>nil, "buried_parish_total"=>"53", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"57", "date_month"=>"5", "date_day"=>"23", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"May 23-30", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"8", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>"17", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"58", "date_month"=>"6", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"June 1-8", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"8", "source"=>"1", "notes"=>"H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\"", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"59", "date_month"=>"6", "date_day"=>"9", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"June 9-16", "parish_id"=>"992", "parish"=>"St. Giles's", "location_descriptive"=>nil, "source_page"=>"8", "source"=>"1", "notes"=>"H.F. suspects the actual number of dead from the plague is closer to 100.", "buried_plague"=>"68 (100)", "buried_plague_total"=>nil, "buried_parish_total"=>"120", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"60", "date_month"=>"6", "date_day"=>"9", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"June 9-16", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>"Wood-street", "source_page"=>"9", "source"=>"1", "notes"=>"H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.", "buried_plague"=>"1", "buried_plague_total"=>"4", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"61", "date_month"=>"6", "date_day"=>"9", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"June 9-16", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>"Fenchurch-street", "source_page"=>"9", "source"=>"1", "notes"=>"The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.", "buried_plague"=>"1", "buried_plague_total"=>"4", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"62", "date_month"=>"6", "date_day"=>"9", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"June 9-16", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>"Crooked-lane", "source_page"=>"9", "source"=>"1", "notes"=>nil, "buried_plague"=>"2", "buried_plague_total"=>"4", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"63", "date_month"=>"6", "date_day"=>"9", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"June 9-16", "parish_id"=>nil, "parish"=>"Southwark", "location_descriptive"=>nil, "source_page"=>"9", "source"=>"1", "notes"=>nil, "buried_plague"=>"0", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"64", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Mid-July", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"(900)", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"1268", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"65", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Mid-July", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"28", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"66", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Mid-July", "parish_id"=>nil, "parish"=>"Southwark, incl. Lambeth", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"19", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"67", "date_month"=>"7", "date_day"=>"4", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"July 4-11", "parish_id"=>nil, "parish"=>"St. Giles in the Fields", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>"H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.", "buried_plague"=>nil, "buried_plague_total"=>"421", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"68", "date_month"=>"7", "date_day"=>"4", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 4-11", "parish_id"=>nil, "parish"=>"St. Martins in the Fields", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>"421", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"69", "date_month"=>"7", "date_day"=>"4", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 4-11", "parish_id"=>nil, "parish"=>"Aldgate", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>"H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.", "buried_plague"=>"4", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"70", "date_month"=>"7", "date_day"=>"4", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 4-11", "parish_id"=>nil, "parish"=>"Whitechapel", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"3", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"71", "date_month"=>"7", "date_day"=>"4", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 4-11", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"1", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"72", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"1761", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"73", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"Southwark", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"16", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"74", "date_month"=>"8", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"2nd week of August", "parish_id"=>nil, "parish"=>"Cripplegate", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"(850)", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"868", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"75", "date_month"=>"8", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"2nd week of August", "parish_id"=>nil, "parish"=>"Clerkenwell", "location_descriptive"=>nil, "source_page"=>"16", "source"=>"1", "notes"=>nil, "buried_plague"=>"145", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"155", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"76", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"Algate", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"14", "buried_plague_total"=>"71", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"77", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"33", "buried_plague_total"=>"71", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"78", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"White Chappel", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"21", "buried_plague_total"=>"71", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"79", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"St. Kath Towers", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"2", "buried_plague_total"=>"71", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"80", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"Trin. Minories", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"1", "buried_plague_total"=>"71", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"81", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"St. Len. Shoreditch", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"64", "buried_total"=>"342", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"82", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"St. But. Bishopsg.", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"65", "buried_total"=>"342", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"83", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"St. Giles Crippl.", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"213", "buried_total"=>"342", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"84", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"Algate", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"34", "buried_plague_total"=>"145", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"85", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"58", "buried_plague_total"=>"145", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"86", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"White Chappel", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"48", "buried_plague_total"=>"145", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"87", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"St. Kath Towers", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"4", "buried_plague_total"=>"145", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"88", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"Trin. Minories", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"1", "buried_plague_total"=>"145", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"89", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"St. Len. Shoreditch", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"84", "buried_total"=>"610", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"90", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"St. But. Bishopsg.", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"105", "buried_total"=>"610", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"91", "date_month"=>"7", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 19-26", "parish_id"=>nil, "parish"=>"St. Giles Crippl.", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"421", "buried_total"=>"610", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"92", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"Algate", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"65", "buried_plague_total"=>"228", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"93", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"76", "buried_plague_total"=>"228", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"94", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"White Chappel", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"79", "buried_plague_total"=>"228", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"95", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"St. Kath Towers", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"4", "buried_plague_total"=>"228", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"96", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"Trin. Minories", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>"4", "buried_plague_total"=>"228", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"97", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"St. Len. Shoreditch", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"110", "buried_total"=>"780", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"98", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"St. But. Bishopsg.", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"116", "buried_total"=>"780", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"99", "date_month"=>"7", "date_day"=>"27", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 27-August 3", "parish_id"=>nil, "parish"=>"St. Giles Crippl.", "location_descriptive"=>nil, "source_page"=>"47", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"554", "buried_total"=>"780", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"100", "date_month"=>"7", "date_day"=>"4", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 4-11", "parish_id"=>nil, "parish"=>"Islington", "location_descriptive"=>nil, "source_page"=>"71", "source"=>"1", "notes"=>nil, "buried_plague"=>"2", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"101", "date_month"=>"7", "date_day"=>"11", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 11-18", "parish_id"=>nil, "parish"=>"Islington", "location_descriptive"=>nil, "source_page"=>"71", "source"=>"1", "notes"=>nil, "buried_plague"=>"14", "buried_plague_total"=>nil, "buried_parish_total"=>"17", "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"102", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"84", "source"=>"1", "notes"=>"H.F. cites this weekly number for roughly the end of July.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"550", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"103", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>"FALSE", "date_day_exact"=>"FALSE", "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"86", "source"=>"1", "notes"=>"It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"4000", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"104", "date_month"=>"8", "date_day"=>"8", "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>"Aug. 8 - 15", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>"H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97).", "buried_plague"=>"3880", "buried_plague_total"=>"49709", "buried_parish_total"=>"5319", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"105", "date_month"=>"8", "date_day"=>"15", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Aug. 15 - 22", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>"H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97).", "buried_plague"=>"4237", "buried_plague_total"=>"49709", "buried_parish_total"=>"5568", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"106", "date_month"=>"8", "date_day"=>"22", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Aug. 22 - 29", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"6102", "buried_plague_total"=>"49709", "buried_parish_total"=>"7496", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"107", "date_month"=>"8", "date_day"=>"29", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Aug. 29 - Sept. 5", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"6988", "buried_plague_total"=>"49709", "buried_parish_total"=>"8252", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"108", "date_month"=>"9", "date_day"=>"5", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Sept. 5 - 12", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"6544", "buried_plague_total"=>"49709", "buried_parish_total"=>"7690", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"109", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Sept. 12 - 19", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"7169", "buried_plague_total"=>"49709", "buried_parish_total"=>"8297", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"110", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Sept. 19 - 26", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"5533", "buried_plague_total"=>"49709", "buried_parish_total"=>"6460", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"111", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Sept. 26 - Oct. 3", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"4929", "buried_plague_total"=>"49709", "buried_parish_total"=>"5720", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"112", "date_month"=>"10", "date_day"=>"3", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"Oct. 3 - 10", "parish_id"=>nil, "parish"=>"London and Suburbs", "location_descriptive"=>nil, "source_page"=>"96", "source"=>"1", "notes"=>nil, "buried_plague"=>"4227", "buried_plague_total"=>"49709", "buried_parish_total"=>"5068", "buried_total"=>"59870", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"113", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"98", "source"=>"1", "notes"=>"H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"114", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Beginning of Sept.", "parish_id"=>nil, "parish"=>"Algate", "location_descriptive"=>nil, "source_page"=>"99", "source"=>"1", "notes"=>"H.F. speculates that the parish buried over a 1000 a week for two weeks.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"1000", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"115", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Beginning of Sept.", "parish_id"=>nil, "parish"=>"White Chapel", "location_descriptive"=>nil, "source_page"=>"99", "source"=>"1", "notes"=>"H.F. speculates that the number was twice the 600 that was officially recorded.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"600", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"117", "date_month"=>"2", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"February - May", "parish_id"=>nil, "parish"=>"The Town", "location_descriptive"=>nil, "source_page"=>"109", "source"=>"1", "notes"=>"H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"118", "date_month"=>"8", "date_day"=>"8", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 8 - 15", "parish_id"=>nil, "parish"=>"St. Giles's in the Fields", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>"H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"242*", "buried_total"=>"4030*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"119", "date_month"=>"8", "date_day"=>"8", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 8 - 15", "parish_id"=>nil, "parish"=>"Cripplegate", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"886*", "buried_total"=>"4030*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"120", "date_month"=>"8", "date_day"=>"8", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 8 - 15", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>"These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"197*", "buried_total"=>"4030*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"121", "date_month"=>"8", "date_day"=>"8", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 8 - 15", "parish_id"=>nil, "parish"=>"St. Mag. Bermondsey", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"24*", "buried_total"=>"4030*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"122", "date_month"=>"8", "date_day"=>"8", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 8 - 15", "parish_id"=>nil, "parish"=>"Rotherhith", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"3*", "buried_total"=>"4030*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"123", "date_month"=>"8", "date_day"=>"15", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 15 - 22", "parish_id"=>nil, "parish"=>"St. Giles's in the Fields", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>"H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"175*", "buried_total"=>"5319*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"124", "date_month"=>"8", "date_day"=>"15", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 15 - 22", "parish_id"=>nil, "parish"=>"Cripplegate", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"847*", "buried_total"=>"5319*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"125", "date_month"=>"8", "date_day"=>"15", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 15 - 22", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"273*", "buried_total"=>"5319*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"126", "date_month"=>"8", "date_day"=>"15", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 15 - 22", "parish_id"=>nil, "parish"=>"St. Mag. Bermondsey", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"36*", "buried_total"=>"5319*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"127", "date_month"=>"8", "date_day"=>"15", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 15 - 22", "parish_id"=>nil, "parish"=>"Rotherhith", "location_descriptive"=>nil, "source_page"=>"110", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"2*", "buried_total"=>"5319*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"128", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Sept. and Oct.", "parish_id"=>nil, "parish"=>"Norwood, Camberwell, Dullege, Lusum", "location_descriptive"=>nil, "source_page"=>"110-111", "source"=>"1", "notes"=>"H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"129", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Enfield", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"32", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"130", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Hornsey", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"58", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"131", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Newington", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"17", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"132", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Tottenham", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"42", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"133", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Edmonton", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"19", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"134", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Barnet and Hadly", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"43", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"135", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"St. Albans", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"121", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"136", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Watford", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"45", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"137", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Uxbridge", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"117", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"138", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Hertford", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"90", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"139", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Ware", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"160", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"140", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Hodsdon", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"30", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"141", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Waltham-Abby", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"23", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"142", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Epping", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"26", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"143", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Deptford", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"623", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"144", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Greenwich", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"231", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"145", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Eltham and Lusum", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"85", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"146", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Croydon", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"61", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"147", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Brent-Wood", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"70", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"148", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Rumford", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"109", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"149", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Barking abt.", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"200", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"150", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Branford", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"432", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"151", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Kingston", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"122", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"152", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Stanes", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"82", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"153", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Chertsey", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"18", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"154", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"Windsor", "location_descriptive"=>nil, "source_page"=>"148", "source"=>"1", "notes"=>nil, "buried_plague"=>"103", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"155", "date_month"=>"8", "date_day"=>"22", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 22 - 29", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"172", "source"=>"1", "notes"=>"H.F. believes the weekly numbers are closer to 10,000.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"7496*", "buried_total"=>"38195*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"156", "date_month"=>"8", "date_day"=>"29", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"August 29 - September 7", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"172", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"8252*", "buried_total"=>"38195*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"157", "date_month"=>"9", "date_day"=>"7", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 7 - 12", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"172", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"7690*", "buried_total"=>"38195*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"158", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"172", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"8297*", "buried_total"=>"38195*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"159", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"172", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"6460*", "buried_total"=>"38195*", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"160", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>"St. Giles's, Westminister", "location_descriptive"=>nil, "source_page"=>"179", "source"=>"1", "notes"=>"H.F. locates the origin of the plague here.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"161", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Middle of July", "parish_id"=>nil, "parish"=>"St. Giles in the Fields, St. Andrew's Holborn, St. Clement-Danes, St. Martins in the Fields, Westminster", "location_descriptive"=>nil, "source_page"=>"179", "source"=>"1", "notes"=>"H.F. notes that this was when the plague was at its height in this part of London.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"162", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"End of July", "parish_id"=>nil, "parish"=>"Cripplegate, St. Sepulchers, St. Ja. Clarkenwell, St. Brides, Aldersgate", "location_descriptive"=>nil, "source_page"=>"179", "source"=>"1", "notes"=>"H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"163", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"End of July", "parish_id"=>nil, "parish"=>"The City (97 Parishes), Southwark (All Parishes), Stepney, White-Chapel, Aldgate, Wapping, Ratcliff", "location_descriptive"=>nil, "source_page"=>"179", "source"=>"1", "notes"=>"H.F. notes that, at the same time, these parishes were barely affected by the plague.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"164", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"St. Giles Cripplegate", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"554", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"165", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"St. Sepulchers", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"250", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"166", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"Clarkenwell", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"103", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"167", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"Bishopsgate", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"116", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"168", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"Shoreditch", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"110", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"169", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"127", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"170", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"Aldgate", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"92", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"171", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"White-Chappel", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"104", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"172", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"228", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"173", "date_month"=>"7", "date_day"=>"25", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"July 25 - August 1", "parish_id"=>nil, "parish"=>"Southwark (All Parishes)", "location_descriptive"=>nil, "source_page"=>"180", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"205", "buried_total"=>"1889", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"174", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Beginning of September", "parish_id"=>nil, "parish"=>"The City (97 Parishes), Southwark (All Parishes)", "location_descriptive"=>"Eastern Suburbs", "source_page"=>"180-81", "source"=>"1", "notes"=>"H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"175", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"St. Giles's Cripplegate", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>"H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"456", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"176", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"St. Giles in the Fields", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"140", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"177", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"Clarkenwell", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"77", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"178", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"St. Sepulchers", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"214", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"179", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"St. Leonard Shoreditch", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"183", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"180", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"716", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"181", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"Aldgate", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"623", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"182", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"White-Chapel", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"532", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"183", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"1493", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"184", "date_month"=>"9", "date_day"=>"12", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 12 - 19", "parish_id"=>nil, "parish"=>"Southwark (8 Parishes)", "location_descriptive"=>nil, "source_page"=>"181", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"1636", "buried_total"=>"6060", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"185", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"St. Giles's Cripplegate", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>"H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183).", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"277", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"186", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"St. Giles in the Fields", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"119", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"187", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"Clarkenwell", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"76", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"188", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"St. Sepulchers", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"193", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"189", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"St. Leonard Shoreditch", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"146", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"190", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"616", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"191", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"Aldgate", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"496", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"192", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"White-Chapel", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"346", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"193", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"1268", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"194", "date_month"=>"9", "date_day"=>"19", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 19 - 26", "parish_id"=>nil, "parish"=>"Southwark (8 Parishes)", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"1390", "buried_total"=>"4900", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"195", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"St. Giles's Cripplegate", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"196", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"196", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"St. Giles in the Fields", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"95", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"197", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"Clarkenwell", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"48", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"198", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"St. Sepulchers", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"137", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"199", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"St. Leonard Shoreditch", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"128", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"200", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"Stepney", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"674", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"201", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"Aldgate", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"372", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"202", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"White-Chapel", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"328", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"203", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"1149", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"204", "date_month"=>"9", "date_day"=>"26", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"TRUE", "date_descriptive"=>"September 26 - October 3", "parish_id"=>nil, "parish"=>"Southwark (8 Parishes)", "location_descriptive"=>nil, "source_page"=>"182", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>"1201", "buried_total"=>"4328", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"205", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"- July 1", "parish_id"=>nil, "parish"=>"The City (97 Parishes)", "location_descriptive"=>nil, "source_page"=>"206", "source"=>"1", "notes"=>"H.F. refers here to the entire period of the plague up to this date.", "buried_plague"=>"7*", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"206", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"- July 1", "parish_id"=>nil, "parish"=>"Liberties", "location_descriptive"=>nil, "source_page"=>"206", "source"=>"1", "notes"=>nil, "buried_plague"=>"60*", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"207", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"- July 1", "parish_id"=>nil, "parish"=>"Southwark (8 Parishes)", "location_descriptive"=>nil, "source_page"=>"206", "source"=>"1", "notes"=>nil, "buried_plague"=>"2*", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"208", "date_month"=>"7", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"- July 1", "parish_id"=>nil, "parish"=>"Stepney, Aldgate, White-Chappel", "location_descriptive"=>nil, "source_page"=>"206", "source"=>"1", "notes"=>nil, "buried_plague"=>"1*", "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"209", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"2nd to Last Week of September", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"215", "source"=>"1", "notes"=>"H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"8297", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"210", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Last Week of September", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"215", "source"=>"1", "notes"=>"H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"6460", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"211", "date_month"=>"10", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"First Week of October", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"215", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"5720", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"212", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>nil, "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"216", "source"=>"1", "notes"=>"Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"213", "date_month"=>"10", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Another Week of October", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"216", "source"=>"1", "notes"=>"It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"2665", "buried_change"=>"1849/decrease", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"214", "date_month"=>"10", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"Next Week of October", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"216", "source"=>"1", "notes"=>"H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"(1000-1800)", "buried_change"=>"1413/decrease", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"215", "date_month"=>"11", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"First Week of November", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"218", "source"=>"1", "notes"=>"H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>"400/increase", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"216", "date_month"=>"11", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"November", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"219", "source"=>"1", "notes"=>nil, "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"905", "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"217", "date_month"=>"12", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"December", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"219", "source"=>"1", "notes"=>"H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>"100/increase", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"218", "date_month"=>"9", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"First Three Weeks of September", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"228", "source"=>"1", "notes"=>"H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"219", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>"To the End of the Year", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"231", "source"=>"1", "notes"=>"H.F. notes that there were still deaths from the plague to the end of 1665.", "buried_plague"=>nil, "buried_plague_total"=>"(2-300)", "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>nil, "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"220", "date_month"=>"10", "date_day"=>"1", "season"=>nil, "date_month_exact"=>"TRUE", "date_day_exact"=>"FALSE", "date_descriptive"=>"First Week of October?", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"234", "source"=>"1", "notes"=>"H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>nil, "buried_change"=>"1843/decrease", "buried_change_direction"=>nil}, {"date_year"=>"1665", "sequence"=>"221", "date_month"=>nil, "date_day"=>nil, "season"=>nil, "date_month_exact"=>nil, "date_day_exact"=>nil, "date_descriptive"=>"Last Three Weeks", "parish_id"=>nil, "parish"=>nil, "location_descriptive"=>nil, "source_page"=>"235", "source"=>"1", "notes"=>"H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.", "buried_plague"=>nil, "buried_plague_total"=>nil, "buried_parish_total"=>nil, "buried_total"=>"(30,000)", "buried_change"=>nil, "buried_change_direction"=>nil}]}
+        var datajson = 'a-frightful-number-plague.json';
+
+        // Set map values for this page that will be used in script.js
+        var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+
+        var tile_layer_historic = 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png';
+        var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+
+        var mapbox_id = 'clearbold.l4gjpd88';
+
+        var historic_toggle_label = 'London 1720';
+        var modern_toggle_label = 'London 2015';
+    </script>
 </head>
 
 <body>
     <h1>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</h1>
 
-    <div id="map"></div>
-    <script type="text/javascript" src="ui/js/script.js"></script>
+    <div id="map-container"></div>
 
     <div id="stepper">
         <a href="#" id="step-prev">&laquo;</a>
@@ -45,32 +66,16 @@
         <p></p>
         <a href="#" id="step-next">&raquo;</a>
     </div>
-    <style type="text/css">
-        #stepper {
-            position: relative;
-        }
-        #stepper h2,
-        #stepper p {
-            line-height: 1em;
-            margin-bottom: 0;
-            text-align: center;
-        }
-        #stepper a {
-            position: absolute;
-            top: 10px;
-            right: 0px;
-        }
-        #stepper a:first-child {
-            position: absolute;
-            top: 10px;
-            left: 0px;
-        }
-    </style>
-
-
 
     <div class="itinerary">
-        
+        <!--
+             Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
+             so that we have a page loaded with content if JS is an issue.
+        -->
+        <!--
+             Note that the HTML structure here is dependent on the structure of the data.
+             Some data has different fields/schema.
+        -->
         
         <table border="0" cellpadding="0" cellspacing="0">
             <tr>
@@ -156,7 +161,7 @@
             
             <tr class="odd parish-990">
                 <td id="event-6">December 20-27</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>0</td>
                 <td></td>
@@ -167,7 +172,7 @@
             
             <tr class="even parish-991">
                 <td id="event-7">December 20-27</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>8</td>
                 <td></td>
@@ -189,7 +194,7 @@
             
             <tr class="even parish-992">
                 <td id="event-9">December 27-January 3</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>16</td>
                 <td></td>
@@ -200,7 +205,7 @@
             
             <tr class="odd parish-993">
                 <td id="event-10">December 27-January 3</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>17</td>
                 <td></td>
@@ -211,7 +216,7 @@
             
             <tr class="even parish-990">
                 <td id="event-11">December 27-January 3</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>6</td>
                 <td></td>
@@ -222,7 +227,7 @@
             
             <tr class="odd parish-991">
                 <td id="event-12">December 27-January 3</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>9</td>
                 <td></td>
@@ -286,7 +291,7 @@
             
             <tr class="odd parish-992">
                 <td id="event-14">January 3-10</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>12</td>
                 <td></td>
@@ -297,7 +302,7 @@
             
             <tr class="even parish-993">
                 <td id="event-15">January 3-10</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>25</td>
                 <td></td>
@@ -308,7 +313,7 @@
             
             <tr class="odd parish-990">
                 <td id="event-16">January 3-10</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>11</td>
                 <td></td>
@@ -319,7 +324,7 @@
             
             <tr class="even parish-991">
                 <td id="event-17">January 3-10</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>7</td>
                 <td></td>
@@ -341,7 +346,7 @@
             
             <tr class="even parish-992">
                 <td id="event-19">January 10-17</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>18</td>
                 <td></td>
@@ -352,7 +357,7 @@
             
             <tr class="odd parish-993">
                 <td id="event-20">January 10-17</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>18</td>
                 <td></td>
@@ -363,7 +368,7 @@
             
             <tr class="even parish-990">
                 <td id="event-21">January 10-17</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>12</td>
                 <td></td>
@@ -374,7 +379,7 @@
             
             <tr class="odd parish-991">
                 <td id="event-22">January 10-17</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>9</td>
                 <td></td>
@@ -396,7 +401,7 @@
             
             <tr class="odd parish-992">
                 <td id="event-24">January 17-24</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>23</td>
                 <td></td>
@@ -407,7 +412,7 @@
             
             <tr class="even parish-993">
                 <td id="event-25">January 17-24</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>16</td>
                 <td></td>
@@ -418,7 +423,7 @@
             
             <tr class="odd parish-990">
                 <td id="event-26">January 17-24</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>9</td>
                 <td></td>
@@ -429,7 +434,7 @@
             
             <tr class="even parish-991">
                 <td id="event-27">January 17-24</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>15</td>
                 <td></td>
@@ -451,7 +456,7 @@
             
             <tr class="even parish-992">
                 <td id="event-29">January 24-31</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>24</td>
                 <td></td>
@@ -462,7 +467,7 @@
             
             <tr class="odd parish-993">
                 <td id="event-30">January 24-31</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>15</td>
                 <td></td>
@@ -473,7 +478,7 @@
             
             <tr class="even parish-990">
                 <td id="event-31">January 24-31</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>8</td>
                 <td></td>
@@ -484,7 +489,7 @@
             
             <tr class="odd parish-991">
                 <td id="event-32">January 24-31</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>12</td>
                 <td></td>
@@ -495,7 +500,7 @@
             
             <tr class="even parish-992">
                 <td id="event-33">January 30-February 7</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>21</td>
                 <td></td>
@@ -506,7 +511,7 @@
             
             <tr class="odd parish-993">
                 <td id="event-34">January 30-February 7</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>23</td>
                 <td></td>
@@ -517,7 +522,7 @@
             
             <tr class="even parish-990">
                 <td id="event-35">January 30-February 7</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>13</td>
                 <td></td>
@@ -528,7 +533,7 @@
             
             <tr class="odd parish-991">
                 <td id="event-36">January 30-February 7</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>5</td>
                 <td></td>
@@ -539,7 +544,7 @@
             
             <tr class="even parish-992">
                 <td id="event-37">February 7-14</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td>1</td>
                 <td>24</td>
                 <td></td>
@@ -550,7 +555,7 @@
             
             <tr class="odd parish-990">
                 <td id="event-38">February 7-14</td>
-                <td><a href="#" onclick="javascript:parishPolygon990.openPopup();">St. Brides</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
                 <td></td>
                 <td>12</td>
                 <td></td>
@@ -561,7 +566,7 @@
             
             <tr class="even parish-991">
                 <td id="event-39">February 7-14</td>
-                <td><a href="#" onclick="javascript:parishPolygon991.openPopup();">St. James Clarkenwell</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
                 <td></td>
                 <td>6</td>
                 <td></td>
@@ -572,7 +577,7 @@
             
             <tr class="odd parish-992">
                 <td id="event-40">April 2-9</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>25</td>
                 <td></td>
@@ -583,7 +588,7 @@
             
             <tr class="even parish-992">
                 <td id="event-41">April 10-17</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td></td>
                 <td>25</td>
                 <td></td>
@@ -594,7 +599,7 @@
             
             <tr class="odd parish-992">
                 <td id="event-42">April 18-25</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td>2</td>
                 <td>30</td>
                 <td></td>
@@ -616,7 +621,7 @@
             
             <tr class="odd parish-994">
                 <td id="event-44">May 1-8</td>
-                <td><a href="#" onclick="javascript:parishPolygon994.openPopup();">St. Mary-Wool-Church</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="994">St. Mary-Wool-Church</a></td>
                 <td>1</td>
                 <td></td>
                 <td>9</td>
@@ -627,7 +632,7 @@
             
             <tr class="even parish-1">
                 <td id="event-45">May 1-8</td>
-                <td><a href="#" onclick="javascript:parishPolygon1.openPopup();">St. Andrew's-Holborn</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="1">St. Andrew's-Holborn</a></td>
                 <td></td>
                 <td></td>
                 <td>9</td>
@@ -638,7 +643,7 @@
             
             <tr class="odd parish-995">
                 <td id="event-46">May 1-8</td>
-                <td><a href="#" onclick="javascript:parishPolygon995.openPopup();">St. Clement's-Danes</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="995">St. Clement's-Danes</a></td>
                 <td></td>
                 <td></td>
                 <td>9</td>
@@ -671,7 +676,7 @@
             
             <tr class="even parish-992">
                 <td id="event-49">May 9-16</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td>1</td>
                 <td>32</td>
                 <td></td>
@@ -682,7 +687,7 @@
             
             <tr class="odd parish-993">
                 <td id="event-50">May 9-16</td>
-                <td><a href="#" onclick="javascript:parishPolygon993.openPopup();">St. Andrew's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
                 <td></td>
                 <td>15</td>
                 <td></td>
@@ -726,7 +731,7 @@
             
             <tr class="odd parish-992">
                 <td id="event-54">May 17-22</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td>14</td>
                 <td>40</td>
                 <td></td>
@@ -748,7 +753,7 @@
             
             <tr class="odd parish-992">
                 <td id="event-56">May 23-30</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td>9 (20)</td>
                 <td>53</td>
                 <td></td>
@@ -781,7 +786,7 @@
             
             <tr class="even parish-992">
                 <td id="event-59">June 9-16</td>
-                <td><a href="#" onclick="javascript:parishPolygon992.openPopup();">St. Giles's</a></td>
+                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
                 <td>68 (100)</td>
                 <td>120</td>
                 <td></td>
@@ -2564,376 +2569,8 @@
         </table>
         
     </div>
-    <script type="text/javascript">
-    // Dynamically add parishes to the map and load in their data/content based on Jekyll data files.
-    var $parishPolygons = [];
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon1;
-        $.getJSON( "geojson/parish-1.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon1 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
+    <script type="text/javascript" src="ui/js/script.js"></script>
+    <!-- In progress: Moving this to script file & document.ready() -->
 
-            $parishPolygons.push( [
-                parishPolygon1,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>St. Andrew's-Holborn</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-45">May 1-8</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> 6 total die from spotted fever.</dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('1 ' + popupContents);
-            parishPolygon1.bindPopup( popupContents );
-            //console.log('parishPolygon1');
-        } )
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon990;
-        $.getJSON( "geojson/parish-990.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon990 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
-
-            $parishPolygons.push( [
-                parishPolygon990,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>Test Parish 990</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-6">December 20-27</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .</dd>";
-            
-            popupContents += '<dt><a href="#event-11">December 27-January 3</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-16">January 3-10</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-21">January 10-17</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-26">January 17-24</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-31">January 24-31</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-35">January 30-February 7</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-38">February 7-14</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('990 ' + popupContents);
-            parishPolygon990.bindPopup( popupContents );
-            //console.log('parishPolygon990');
-        } )
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon991;
-        $.getJSON( "geojson/parish-991.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon991 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
-
-            $parishPolygons.push( [
-                parishPolygon991,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>Test Parish 991</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-7">December 20-27</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-12">December 27-January 3</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-17">January 3-10</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-22">January 10-17</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-27">January 17-24</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-32">January 24-31</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-36">January 30-February 7</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-39">February 7-14</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('991 ' + popupContents);
-            parishPolygon991.bindPopup( popupContents );
-            //console.log('parishPolygon991');
-        } )
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon992;
-        $.getJSON( "geojson/parish-992.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon992 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
-
-            $parishPolygons.push( [
-                parishPolygon992,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>Test Parish 992</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-9">December 27-January 3</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-14">January 3-10</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-19">January 10-17</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-24">January 17-24</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-29">January 24-31</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-33">January 30-February 7</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.</dd>";
-            
-            popupContents += '<dt><a href="#event-37">February 7-14</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 1.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-40">April 2-9</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-41">April 10-17</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-42">April 18-25</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 2.</b> 8 die from spotted fever, which H.F. notes was often considered the same as the plague.</dd>";
-            
-            popupContents += '<dt><a href="#event-49">May 9-16</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 1.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-54">May 17-22</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 14.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-56">May 23-30</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 9 (20).</b> The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.</dd>";
-            
-            popupContents += '<dt><a href="#event-59">June 9-16</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 68 (100).</b> H.F. suspects the actual number of dead from the plague is closer to 100.</dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('992 ' + popupContents);
-            parishPolygon992.bindPopup( popupContents );
-            //console.log('parishPolygon992');
-        } )
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon993;
-        $.getJSON( "geojson/parish-993.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon993 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
-
-            $parishPolygons.push( [
-                parishPolygon993,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>Test Parish 993</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-10">December 27-January 3</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-15">January 3-10</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-20">January 10-17</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-25">January 17-24</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-30">January 24-31</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-34">January 30-February 7</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '<dt><a href="#event-50">May 9-16</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('993 ' + popupContents);
-            parishPolygon993.bindPopup( popupContents );
-            //console.log('parishPolygon993');
-        } )
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon994;
-        $.getJSON( "geojson/parish-994.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon994 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
-
-            $parishPolygons.push( [
-                parishPolygon994,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>Test Parish 994</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-44">May 1-8</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 1.</b> This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.</dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('994 ' + popupContents);
-            parishPolygon994.bindPopup( popupContents );
-            //console.log('parishPolygon994');
-        } )
-    
-        // Fetch GeoJSON markers for parish polygon vertices
-        var parishPolygon995;
-        $.getJSON( "geojson/parish-995.geojson", function (data) {
-            var popupContents;
-            var vertices = [];
-            $.each( data.features, function(i, feature) {
-                vertices.push([ feature.geometry.coordinates[1], feature.geometry.coordinates[0] ])
-            })
-            parishPolygon995 = L.polygon([ vertices ], { color: "rgb(0, 116, 217)" }).addTo(map);
-
-            $parishPolygons.push( [
-                parishPolygon995,
-                'rgb(0, 116, 217)'
-            ] );
-            //console.log($parishPolygons);
-
-            popupContents =  '<div style="max-height: 175px; overflow-y: scroll;">';
-            popupContents += "<h3>Test Parish 995</h3>";
-            popupContents += "<dl>";
-            
-            
-            popupContents += '<dt><a href="#event-46">May 1-8</a></dt>'
-            popupContents += "<dd><b>Buried Plague: 0.</b> </dd>";
-            
-            popupContents += '</dl></div>';
-            //console.log('995 ' + popupContents);
-            parishPolygon995.bindPopup( popupContents );
-            //console.log('parishPolygon995');
-        } )
-    
-    </script>
-
-    <script type="text/javascript">
-        var $itineraryData;
-        var $stepperEnabled = false;
-        $.getJSON( "datajson/a-frightful-number-plague.json", function (data) {
-            console.log('json fetched');
-            $itineraryData = data.events;
-            $stepperEnabled = true;
-            currentEvent(0);
-        })
-        .fail(function( jqxhr, textStatus, error ) {
-            var err = textStatus + ", " + error;
-            console.log( "Request Failed: " + err );
-        });
-        $itineraryIndex = 0;
-        $('#stepper a:first-child').on('click', function(e) {
-            e.preventDefault();
-            console.log('prev clicked');
-            if ( $itineraryIndex > 0 && $stepperEnabled) {
-                $itineraryIndex--;
-                currentEvent($itineraryIndex);
-            }
-            //console.log($itineraryIndex);
-        });
-        $('#stepper a:last-child').on('click', function(e) {
-            e.preventDefault();
-            console.log('next clicked');
-            if ( $itineraryIndex < $itineraryData.length && $stepperEnabled) {
-                $itineraryIndex++;
-                currentEvent($itineraryIndex);
-            }
-            //console.log($itineraryIndex);
-        });
-        function currentEvent($itineraryIndex) {
-            // reset all polygons
-            console.log('currentEvent');
-            //console.log($parishPolygons);
-            $.each( $parishPolygons, function( $i, polygon) {
-                polygon[0].setStyle({'color': polygon[1]});
-                console.log(polygon[0]);
-                console.log(polygon[1]);
-            });
-
-            // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
-            $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
-            $('#stepper p').fadeOut(function() { $(this).html($itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish).fadeIn() });
-
-            //console.log('parishPolygon' + $itineraryData[$itineraryIndex].parish_id);
-
-            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id));
-            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
-            eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).setStyle({'color': '#d31603'});
-            //console.log(eval('parishPolygon' + $itineraryData[$itineraryIndex].parish_id).options['color']);
-
-
-        }
-    </script>
 </body>
 </html>
