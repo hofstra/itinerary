@@ -29,30 +29,35 @@ $(document).ready(function() {
     // testMarker.bindPopup("This is <b>formatted</b> content about this location.").openPopup();
 
     $.getJSON( 'datajson/'+datajson, function (events) {
+        // Store all our events
         var $itineraryData = events.events;
+        // And set a pointer for prev/next
         $itineraryIndex = 0;
 
         // Let's put some parishes on the map!
         var $parishPolygons = new Array();
 
+        // Fetch all the parishes to put them on the map
         $.getJSON( "datajson/parishes.json", function (parishes) {
             $.each( parishes.parishes, function(i, $parish) {
+                // Reset the vertices for each parish
                 var $vertices = [];
+                // Reset the default popup content for each parish
                 var $parishPopUp = '';
+                // Knowing we have our itinerary data, lets get the vertices for each parish as geoJson
                 $.getJSON( "geojson/parish-"+$parish.id+".geojson", function (geodata) {
+                    // For each vertex in the parish polygon, get its coordinates
                     $.each(geodata.features, function(i, $feature) {
                         $vertices.push([ $feature.geometry.coordinates[1], $feature.geometry.coordinates[0] ]);
                     })
 
-                    /*$parishPolygons[$parish.id] = {
-                        'id' : $parish.id,
-                        'polygon' : L.polygon([ $vertices ], { color: $parish.color }).addTo(map),
-                        'color' : $parish.color
-                    };*/
+                    // Create a map polygon with that data and the color for that parish
                     var $polygon = L.polygon([ $vertices ], { color: $parish.color }).addTo(map);
+                    // Load up our default infoPanel content
                     $parishPopUp =  '<div style="max-height: 175px; overflow-y: scroll;">';
                     $parishPopUp += "<h3>" + $parish.parish_name + "</h3>";
                     $parishPopUp += '</div>';
+                    // Push the new map polygon into an array to access it later on
                     $parishPolygons.push(
                         {
                             'id' : $parish.id,
@@ -70,6 +75,8 @@ $(document).ready(function() {
             })
             // After all our parishes are drawn...
             // Let's load up our timeline stepper!
+            // currentEvent lights up a parish, but also refreshes the timeline stepper
+            // Set up our first event
             currentEvent(0, $parishPolygons, $itineraryData);
 
         }).fail(function( jqxhr, textStatus, error ) {
@@ -77,6 +84,7 @@ $(document).ready(function() {
             console.log( "Request Failed: " + err );
         })
 
+        // When prev is clicked
         $('#stepper a:first-child').on('click', function(e) {
             e.preventDefault();
             if ( $itineraryIndex > 0) {
@@ -85,6 +93,7 @@ $(document).ready(function() {
             }
         });
 
+        // When next is clicked
         $('#stepper a:last-child').on('click', function(e) {
             e.preventDefault();
             if ( $itineraryIndex < $itineraryData.length) {
@@ -93,6 +102,7 @@ $(document).ready(function() {
             }
         });
 
+        // When a parish in the data table is clicked
         $("a.parish-name").on('click', function(e) {
             //e.preventDefault(); // Let the # link scroll us to the top
             var $parishId = $(this).data('parish-id');
@@ -110,7 +120,7 @@ $(document).ready(function() {
 
     function currentEvent($itineraryIndex, $parishPolygons, $itineraryData) {
 
-        // reset all polygons
+        // reset all polygons on each step
         $.each( $parishPolygons, function( $i, polygon) {
             polygon.polygon.setStyle({'color': polygon.color});
             polygon.polygon.closePopup();
@@ -121,10 +131,12 @@ $(document).ready(function() {
         $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
         $('#stepper p').fadeOut(
             function() {
+                // Update the HTML contents with the prev/next itinerary event
                 $(this).html(
                     $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish
                 ).fadeIn();
                 $.each( $parishPolygons, function( $i, polygon) {
+                    // Find the current parish polygon, light it up and change its content
                     if (polygon.id==$itineraryData[$itineraryIndex].parish_id) {
                         polygon.polygon.setStyle({'color': '#d31603'});
                         var $itineraryEventContent = '';
@@ -142,6 +154,7 @@ $(document).ready(function() {
             })
     }
 
+    // Not used...yet?
     function getParish($parishPolygons, $parishId)
     {
         $.each( $parishPolygons, function( $i, polygon) {
