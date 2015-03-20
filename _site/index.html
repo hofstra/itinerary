@@ -57,2535 +57,2540 @@
 </head>
 
 <body>
-    <h1>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</h1>
+    <div class="logo-header-wrapper"><div class="logo-header">
+        <img src="ui/img/drc.logo.horizontal.png" width="247" height="42" alt="Digital Research Center at Hofstra" />
+    </div></div>
+    <div class="wrapper">
+        <h1>A &ldquo;Frightful Number&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</h1>
 
-    <div class="nav">
-        
-        <a href="index.html">Map: Plague
-        
-        <a href="#">Map: HF
-        
-        <a href="#">About the Project
-        
-        <a href="#">About the Maps
-        
-    </div>
+        <div class="nav">
+            
+            <a href="index.html">Map: Plague
+            
+            <a href="#">Map: HF
+            
+            <a href="#">About the Project
+            
+            <a href="#">About the Maps
+            
+        </div>
 
-    <div id="map-container"><noscript>
-        <p>An interactive map resides here.</p>
-    </noscript></div>
+        <div id="map-container"><noscript>
+            <p>An interactive map resides here.</p>
+        </noscript></div>
 
-    <div id="stepper">
-        <a href="#" id="step-prev">&laquo;</a>
-        <h2></h2>
-        <p></p>
-        <noscript>
-            <p>An interactive timeline tool resides here.</p>
-        </noscript>
-        <a href="#" id="step-next">&raquo;</a>
-    </div>
-    <div class="itinerary">
-        <!--
-             Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
-             so that we have a page loaded with content if JS is an issue.
-        -->
-        <!--
-             Note that the HTML structure here is dependent on the structure of the data.
-             Some data has different fields/schema.
-        -->
-        <h2>The Data</h2>
-        
-        <table border="0" cellpadding="0" cellspacing="0" class="year">
-            <tr>
-                <th><h3>1663</h3></th>
-            </tr>
-        </table>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-            <tr>
-                <th width="8%">Date</th>
-                <th width="12%">Parish</th>
-                <th width="8%">Buried Plague</th>
-                <th width="6%">Buried Parish</th>
-                <th width="8%">Buried Plague Total</th>
-                <th width="6%">Buried Total</th>
-                <th width="12%">Location</th>
-                <th width="40%">Notes</th>
-            </tr>
+        <div id="stepper">
+            <a href="#" id="step-prev">&laquo;</a>
+            <h2></h2>
+            <p></p>
+            <noscript>
+                <p>An interactive timeline tool resides here.</p>
+            </noscript>
+            <a href="#" id="step-next">&raquo;</a>
+        </div>
+        <div class="itinerary">
+            <!--
+                 Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
+                 so that we have a page loaded with content if JS is an issue.
+            -->
+            <!--
+                 Note that the HTML structure here is dependent on the structure of the data.
+                 Some data has different fields/schema.
+            -->
+            <h2>The Data</h2>
+            
+            <table border="0" cellpadding="0" cellspacing="0" class="year">
+                <tr>
+                    <th><h3>1663</h3></th>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <tr>
+                    <th width="8%">Date</th>
+                    <th width="12%">Parish</th>
+                    <th width="8%">Buried Plague</th>
+                    <th width="6%">Buried Parish</th>
+                    <th width="8%">Buried Plague Total</th>
+                    <th width="6%">Buried Total</th>
+                    <th width="12%">Location</th>
+                    <th width="40%">Notes</th>
+                </tr>
 
+                
+                <tr class="odd parish-">
+                    <td id="event-1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Amsterdam, Holland</td>
+                    <td>The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Rotterdam, Holland</td>
+                    <td></td>
+                </tr>
+                
+            </table>
             
-            <tr class="odd parish-">
-                <td id="event-1"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Amsterdam, Holland</td>
-                <td>The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-2"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Rotterdam, Holland</td>
-                <td></td>
-            </tr>
-            
-        </table>
-        
-        <table border="0" cellpadding="0" cellspacing="0" class="year">
-            <tr>
-                <th><h3>1664</h3></th>
-            </tr>
-        </table>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-            <tr>
-                <th width="8%">Date</th>
-                <th width="12%">Parish</th>
-                <th width="8%">Buried Plague</th>
-                <th width="6%">Buried Parish</th>
-                <th width="8%">Buried Plague Total</th>
-                <th width="6%">Buried Total</th>
-                <th width="12%">Location</th>
-                <th width="40%">Notes</th>
-            </tr>
+            <table border="0" cellpadding="0" cellspacing="0" class="year">
+                <tr>
+                    <th><h3>1664</h3></th>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <tr>
+                    <th width="8%">Date</th>
+                    <th width="12%">Parish</th>
+                    <th width="8%">Buried Plague</th>
+                    <th width="6%">Buried Parish</th>
+                    <th width="8%">Buried Plague Total</th>
+                    <th width="6%">Buried Total</th>
+                    <th width="12%">Location</th>
+                    <th width="40%">Notes</th>
+                </tr>
 
+                
+                <tr class="odd parish-">
+                    <td id="event-3">End of November-Beginning of December</td>
+                    <td></td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Long Acre, Upper End of Drury-Lane</td>
+                    <td>2 Frenchmen die.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-4">Last Week of December</td>
+                    <td></td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Long Acre, Upper End of Drury-Lane</td>
+                    <td>Another man dies in the same house.</td>
+                </tr>
+                
+                <tr class="odd parish-990">
+                    <td id="event-6">December 20-27</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .</td>
+                </tr>
+                
+                <tr class="even parish-991">
+                    <td id="event-7">December 20-27</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-8">December 20-27</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>291</td>
+                    <td></td>
+                    <td>H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.</td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-9">December 27-January 3</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-993">
+                    <td id="event-10">December 27-January 3</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-990">
+                    <td id="event-11">December 27-January 3</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-991">
+                    <td id="event-12">December 27-January 3</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-13">December 27-January 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>349</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-116">December</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Long-Acre, Drury-Lane</td>
+                    <td>H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.</td>
+                </tr>
+                
+            </table>
             
-            <tr class="odd parish-">
-                <td id="event-3">End of November-Beginning of December</td>
-                <td></td>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Long Acre, Upper End of Drury-Lane</td>
-                <td>2 Frenchmen die.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-4">Last Week of December</td>
-                <td></td>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Long Acre, Upper End of Drury-Lane</td>
-                <td>Another man dies in the same house.</td>
-            </tr>
-            
-            <tr class="odd parish-990">
-                <td id="event-6">December 20-27</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>0</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .</td>
-            </tr>
-            
-            <tr class="even parish-991">
-                <td id="event-7">December 20-27</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-8">December 20-27</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>291</td>
-                <td></td>
-                <td>H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.</td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-9">December 27-January 3</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>16</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-993">
-                <td id="event-10">December 27-January 3</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>17</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-990">
-                <td id="event-11">December 27-January 3</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>6</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-991">
-                <td id="event-12">December 27-January 3</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-13">December 27-January 3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>349</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-116">December</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Long-Acre, Drury-Lane</td>
-                <td>H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.</td>
-            </tr>
-            
-        </table>
-        
-        <table border="0" cellpadding="0" cellspacing="0" class="year">
-            <tr>
-                <th><h3>1665</h3></th>
-            </tr>
-        </table>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-            <tr>
-                <th width="8%">Date</th>
-                <th width="12%">Parish</th>
-                <th width="8%">Buried Plague</th>
-                <th width="6%">Buried Parish</th>
-                <th width="8%">Buried Plague Total</th>
-                <th width="6%">Buried Total</th>
-                <th width="12%">Location</th>
-                <th width="40%">Notes</th>
-            </tr>
+            <table border="0" cellpadding="0" cellspacing="0" class="year">
+                <tr>
+                    <th><h3>1665</h3></th>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <tr>
+                    <th width="8%">Date</th>
+                    <th width="12%">Parish</th>
+                    <th width="8%">Buried Plague</th>
+                    <th width="6%">Buried Parish</th>
+                    <th width="8%">Buried Plague Total</th>
+                    <th width="6%">Buried Total</th>
+                    <th width="12%">Location</th>
+                    <th width="40%">Notes</th>
+                </tr>
 
-            
-            <tr class="even parish-">
-                <td id="event-5">February 12</td>
-                <td></td>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that a man died in a different house, but in the same parish and also of the plague.</td>
-            </tr>
-            
-            <tr class="odd parish-992">
-                <td id="event-14">January 3-10</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>12</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-993">
-                <td id="event-15">January 3-10</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>25</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-990">
-                <td id="event-16">January 3-10</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>11</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-991">
-                <td id="event-17">January 3-10</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>7</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-18">January 3-10</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>394</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-19">January 10-17</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>18</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-993">
-                <td id="event-20">January 10-17</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>18</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-990">
-                <td id="event-21">January 10-17</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>12</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-991">
-                <td id="event-22">January 10-17</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-23">January 10-17</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>415</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-992">
-                <td id="event-24">January 17-24</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>23</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-993">
-                <td id="event-25">January 17-24</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>16</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-990">
-                <td id="event-26">January 17-24</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-991">
-                <td id="event-27">January 17-24</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>15</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-28">January 17-24</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>474</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-29">January 24-31</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>24</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-993">
-                <td id="event-30">January 24-31</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>15</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-990">
-                <td id="event-31">January 24-31</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-991">
-                <td id="event-32">January 24-31</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>12</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-33">January 30-February 7</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>21</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.</td>
-            </tr>
-            
-            <tr class="odd parish-993">
-                <td id="event-34">January 30-February 7</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>23</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-990">
-                <td id="event-35">January 30-February 7</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>13</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-991">
-                <td id="event-36">January 30-February 7</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-37">February 7-14</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td>1</td>
-                <td>24</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-990">
-                <td id="event-38">February 7-14</td>
-                <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
-                <td></td>
-                <td>12</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-991">
-                <td id="event-39">February 7-14</td>
-                <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
-                <td></td>
-                <td>6</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-992">
-                <td id="event-40">April 2-9</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>25</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-41">April 10-17</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td></td>
-                <td>25</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-992">
-                <td id="event-42">April 18-25</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td>2</td>
-                <td>30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>8 die from spotted fever, which H.F. notes was often considered the same as the plague.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-43">April 26-May 2</td>
-                <td></td>
-                <td>0</td>
-                <td></td>
-                <td></td>
-                <td>388</td>
-                <td></td>
-                <td>4 die from spotted fever.</td>
-            </tr>
-            
-            <tr class="odd parish-994">
-                <td id="event-44">May 1-8</td>
-                <td><a href="#" class="parish-name" data-parish-id="994">St. Mary-Wool-Church</a></td>
-                <td>1</td>
-                <td></td>
-                <td>9</td>
-                <td></td>
-                <td>Bearbinder-lane, near the Stocks-market</td>
-                <td>This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.</td>
-            </tr>
-            
-            <tr class="even parish-1">
-                <td id="event-45">May 1-8</td>
-                <td><a href="#" class="parish-name" data-parish-id="1">St. Andrew's-Holborn</a></td>
-                <td></td>
-                <td></td>
-                <td>9</td>
-                <td></td>
-                <td></td>
-                <td>6 total die from spotted fever.</td>
-            </tr>
-            
-            <tr class="odd parish-995">
-                <td id="event-46">May 1-8</td>
-                <td><a href="#" class="parish-name" data-parish-id="995">St. Clement's-Danes</a></td>
-                <td></td>
-                <td></td>
-                <td>9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-47">May 1-8</td>
-                <td>The City (97 Parishes)</td>
-                <td></td>
-                <td>54</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-48">May 1-8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>347</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-49">May 9-16</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td>1</td>
-                <td>32</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-993">
-                <td id="event-50">May 9-16</td>
-                <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
-                <td></td>
-                <td>15</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-51">May 9-16</td>
-                <td>The Town</td>
-                <td></td>
-                <td>3*</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-52">May 9-16</td>
-                <td>The City (97 Parishes)</td>
-                <td></td>
-                <td>0*</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-53">May 9-16</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>343</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-992">
-                <td id="event-54">May 17-22</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td>14</td>
-                <td>40</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-55">May 17-22</td>
-                <td></td>
-                <td>14 (50)</td>
-                <td></td>
-                <td></td>
-                <td>385</td>
-                <td></td>
-                <td>The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.</td>
-            </tr>
-            
-            <tr class="odd parish-992">
-                <td id="event-56">May 23-30</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td>9 (20)</td>
-                <td>53</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-57">May 23-30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>17</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-58">June 1-8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as "Feaver, Spotted-Feaver, and Teeth."</td>
-            </tr>
-            
-            <tr class="even parish-992">
-                <td id="event-59">June 9-16</td>
-                <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
-                <td>68 (100)</td>
-                <td>120</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. suspects the actual number of dead from the plague is closer to 100.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-60">June 9-16</td>
-                <td>The City (97 Parishes)</td>
-                <td>1</td>
-                <td></td>
-                <td>4</td>
-                <td></td>
-                <td>Wood-street</td>
-                <td>H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-61">June 9-16</td>
-                <td>The City (97 Parishes)</td>
-                <td>1</td>
-                <td></td>
-                <td>4</td>
-                <td></td>
-                <td>Fenchurch-street</td>
-                <td>The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-62">June 9-16</td>
-                <td>The City (97 Parishes)</td>
-                <td>2</td>
-                <td></td>
-                <td>4</td>
-                <td></td>
-                <td>Crooked-lane</td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-63">June 9-16</td>
-                <td>Southwark</td>
-                <td>0</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-64">Mid-July</td>
-                <td></td>
-                <td>(900)</td>
-                <td></td>
-                <td></td>
-                <td>1268</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-65">Mid-July</td>
-                <td>The City (97 Parishes)</td>
-                <td>28</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-66">Mid-July</td>
-                <td>Southwark, incl. Lambeth</td>
-                <td>19</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-67">July 4-11</td>
-                <td>St. Giles in the Fields</td>
-                <td></td>
-                <td></td>
-                <td>421</td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-68">July 4-11</td>
-                <td>St. Martins in the Fields</td>
-                <td></td>
-                <td></td>
-                <td>421</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-69">July 4-11</td>
-                <td>Aldgate</td>
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-70">July 4-11</td>
-                <td>Whitechapel</td>
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-71">July 4-11</td>
-                <td>Stepney</td>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-72">July 11-18</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1761</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-73">July 11-18</td>
-                <td>Southwark</td>
-                <td>16</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-74">2nd week of August</td>
-                <td>Cripplegate</td>
-                <td>(850)</td>
-                <td></td>
-                <td></td>
-                <td>868</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-75">2nd week of August</td>
-                <td>Clerkenwell</td>
-                <td>145</td>
-                <td></td>
-                <td></td>
-                <td>155</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-76">July 11-18</td>
-                <td>Algate</td>
-                <td>14</td>
-                <td></td>
-                <td>71</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-77">July 11-18</td>
-                <td>Stepney</td>
-                <td>33</td>
-                <td></td>
-                <td>71</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-78">July 11-18</td>
-                <td>White Chappel</td>
-                <td>21</td>
-                <td></td>
-                <td>71</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-79">July 11-18</td>
-                <td>St. Kath Towers</td>
-                <td>2</td>
-                <td></td>
-                <td>71</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-80">July 11-18</td>
-                <td>Trin. Minories</td>
-                <td>1</td>
-                <td></td>
-                <td>71</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-81">July 11-18</td>
-                <td>St. Len. Shoreditch</td>
-                <td></td>
-                <td>64</td>
-                <td></td>
-                <td>342</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-82">July 11-18</td>
-                <td>St. But. Bishopsg.</td>
-                <td></td>
-                <td>65</td>
-                <td></td>
-                <td>342</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-83">July 11-18</td>
-                <td>St. Giles Crippl.</td>
-                <td></td>
-                <td>213</td>
-                <td></td>
-                <td>342</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-84">July 19-26</td>
-                <td>Algate</td>
-                <td>34</td>
-                <td></td>
-                <td>145</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-85">July 19-26</td>
-                <td>Stepney</td>
-                <td>58</td>
-                <td></td>
-                <td>145</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-86">July 19-26</td>
-                <td>White Chappel</td>
-                <td>48</td>
-                <td></td>
-                <td>145</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-87">July 19-26</td>
-                <td>St. Kath Towers</td>
-                <td>4</td>
-                <td></td>
-                <td>145</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-88">July 19-26</td>
-                <td>Trin. Minories</td>
-                <td>1</td>
-                <td></td>
-                <td>145</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-89">July 19-26</td>
-                <td>St. Len. Shoreditch</td>
-                <td></td>
-                <td>84</td>
-                <td></td>
-                <td>610</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-90">July 19-26</td>
-                <td>St. But. Bishopsg.</td>
-                <td></td>
-                <td>105</td>
-                <td></td>
-                <td>610</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-91">July 19-26</td>
-                <td>St. Giles Crippl.</td>
-                <td></td>
-                <td>421</td>
-                <td></td>
-                <td>610</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-92">July 27-August 3</td>
-                <td>Algate</td>
-                <td>65</td>
-                <td></td>
-                <td>228</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-93">July 27-August 3</td>
-                <td>Stepney</td>
-                <td>76</td>
-                <td></td>
-                <td>228</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-94">July 27-August 3</td>
-                <td>White Chappel</td>
-                <td>79</td>
-                <td></td>
-                <td>228</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-95">July 27-August 3</td>
-                <td>St. Kath Towers</td>
-                <td>4</td>
-                <td></td>
-                <td>228</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-96">July 27-August 3</td>
-                <td>Trin. Minories</td>
-                <td>4</td>
-                <td></td>
-                <td>228</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-97">July 27-August 3</td>
-                <td>St. Len. Shoreditch</td>
-                <td></td>
-                <td>110</td>
-                <td></td>
-                <td>780</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-98">July 27-August 3</td>
-                <td>St. But. Bishopsg.</td>
-                <td></td>
-                <td>116</td>
-                <td></td>
-                <td>780</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-99">July 27-August 3</td>
-                <td>St. Giles Crippl.</td>
-                <td></td>
-                <td>554</td>
-                <td></td>
-                <td>780</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-100">July 4-11</td>
-                <td>Islington</td>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-101">July 11-18</td>
-                <td>Islington</td>
-                <td>14</td>
-                <td>17</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-102">July 25</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>550</td>
-                <td></td>
-                <td>H.F. cites this weekly number for roughly the end of July.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-103"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>4000</td>
-                <td></td>
-                <td>It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-104">Aug. 8 - 15</td>
-                <td>London and Suburbs</td>
-                <td>3880</td>
-                <td>5319</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td>H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97).</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-105">Aug. 15 - 22</td>
-                <td>London and Suburbs</td>
-                <td>4237</td>
-                <td>5568</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td>H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97).</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-106">Aug. 22 - 29</td>
-                <td>London and Suburbs</td>
-                <td>6102</td>
-                <td>7496</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-107">Aug. 29 - Sept. 5</td>
-                <td>London and Suburbs</td>
-                <td>6988</td>
-                <td>8252</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-108">Sept. 5 - 12</td>
-                <td>London and Suburbs</td>
-                <td>6544</td>
-                <td>7690</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-109">Sept. 12 - 19</td>
-                <td>London and Suburbs</td>
-                <td>7169</td>
-                <td>8297</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-110">Sept. 19 - 26</td>
-                <td>London and Suburbs</td>
-                <td>5533</td>
-                <td>6460</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-111">Sept. 26 - Oct. 3</td>
-                <td>London and Suburbs</td>
-                <td>4929</td>
-                <td>5720</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-112">Oct. 3 - 10</td>
-                <td>London and Suburbs</td>
-                <td>4227</td>
-                <td>5068</td>
-                <td>49709</td>
-                <td>59870</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-113"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-114">Beginning of Sept.</td>
-                <td>Algate</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1000</td>
-                <td></td>
-                <td>H.F. speculates that the parish buried over a 1000 a week for two weeks.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-115">Beginning of Sept.</td>
-                <td>White Chapel</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>600</td>
-                <td></td>
-                <td>H.F. speculates that the number was twice the 600 that was officially recorded.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-117">February - May</td>
-                <td>The Town</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-118">August 8 - 15</td>
-                <td>St. Giles's in the Fields</td>
-                <td></td>
-                <td>242*</td>
-                <td></td>
-                <td>4030*</td>
-                <td></td>
-                <td>H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-119">August 8 - 15</td>
-                <td>Cripplegate</td>
-                <td></td>
-                <td>886*</td>
-                <td></td>
-                <td>4030*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-120">August 8 - 15</td>
-                <td>Stepney</td>
-                <td></td>
-                <td>197*</td>
-                <td></td>
-                <td>4030*</td>
-                <td></td>
-                <td>These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-121">August 8 - 15</td>
-                <td>St. Mag. Bermondsey</td>
-                <td></td>
-                <td>24*</td>
-                <td></td>
-                <td>4030*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-122">August 8 - 15</td>
-                <td>Rotherhith</td>
-                <td></td>
-                <td>3*</td>
-                <td></td>
-                <td>4030*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-123">August 15 - 22</td>
-                <td>St. Giles's in the Fields</td>
-                <td></td>
-                <td>175*</td>
-                <td></td>
-                <td>5319*</td>
-                <td></td>
-                <td>H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-124">August 15 - 22</td>
-                <td>Cripplegate</td>
-                <td></td>
-                <td>847*</td>
-                <td></td>
-                <td>5319*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-125">August 15 - 22</td>
-                <td>Stepney</td>
-                <td></td>
-                <td>273*</td>
-                <td></td>
-                <td>5319*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-126">August 15 - 22</td>
-                <td>St. Mag. Bermondsey</td>
-                <td></td>
-                <td>36*</td>
-                <td></td>
-                <td>5319*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-127">August 15 - 22</td>
-                <td>Rotherhith</td>
-                <td></td>
-                <td>2*</td>
-                <td></td>
-                <td>5319*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-128">Sept. and Oct.</td>
-                <td>Norwood, Camberwell, Dullege, Lusum</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-129"></td>
-                <td>Enfield</td>
-                <td>32</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-130"></td>
-                <td>Hornsey</td>
-                <td>58</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-131"></td>
-                <td>Newington</td>
-                <td>17</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-132"></td>
-                <td>Tottenham</td>
-                <td>42</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-133"></td>
-                <td>Edmonton</td>
-                <td>19</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-134"></td>
-                <td>Barnet and Hadly</td>
-                <td>43</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-135"></td>
-                <td>St. Albans</td>
-                <td>121</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-136"></td>
-                <td>Watford</td>
-                <td>45</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-137"></td>
-                <td>Uxbridge</td>
-                <td>117</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-138"></td>
-                <td>Hertford</td>
-                <td>90</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-139"></td>
-                <td>Ware</td>
-                <td>160</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-140"></td>
-                <td>Hodsdon</td>
-                <td>30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-141"></td>
-                <td>Waltham-Abby</td>
-                <td>23</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-142"></td>
-                <td>Epping</td>
-                <td>26</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-143"></td>
-                <td>Deptford</td>
-                <td>623</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-144"></td>
-                <td>Greenwich</td>
-                <td>231</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-145"></td>
-                <td>Eltham and Lusum</td>
-                <td>85</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-146"></td>
-                <td>Croydon</td>
-                <td>61</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-147"></td>
-                <td>Brent-Wood</td>
-                <td>70</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-148"></td>
-                <td>Rumford</td>
-                <td>109</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-149"></td>
-                <td>Barking abt.</td>
-                <td>200</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-150"></td>
-                <td>Branford</td>
-                <td>432</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-151"></td>
-                <td>Kingston</td>
-                <td>122</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-152"></td>
-                <td>Stanes</td>
-                <td>82</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-153"></td>
-                <td>Chertsey</td>
-                <td>18</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-154"></td>
-                <td>Windsor</td>
-                <td>103</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-155">August 22 - 29</td>
-                <td></td>
-                <td></td>
-                <td>7496*</td>
-                <td></td>
-                <td>38195*</td>
-                <td></td>
-                <td>H.F. believes the weekly numbers are closer to 10,000.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-156">August 29 - September 7</td>
-                <td></td>
-                <td></td>
-                <td>8252*</td>
-                <td></td>
-                <td>38195*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-157">September 7 - 12</td>
-                <td></td>
-                <td></td>
-                <td>7690*</td>
-                <td></td>
-                <td>38195*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-158">September 12 - 19</td>
-                <td></td>
-                <td></td>
-                <td>8297*</td>
-                <td></td>
-                <td>38195*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-159">September 19 - 26</td>
-                <td></td>
-                <td></td>
-                <td>6460*</td>
-                <td></td>
-                <td>38195*</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-160"></td>
-                <td>St. Giles's, Westminister</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. locates the origin of the plague here.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-161">Middle of July</td>
-                <td>St. Giles in the Fields, St. Andrew's Holborn, St. Clement-Danes, St. Martins in the Fields, Westminster</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that this was when the plague was at its height in this part of London.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-162">End of July</td>
-                <td>Cripplegate, St. Sepulchers, St. Ja. Clarkenwell, St. Brides, Aldersgate</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-163">End of July</td>
-                <td>The City (97 Parishes), Southwark (All Parishes), Stepney, White-Chapel, Aldgate, Wapping, Ratcliff</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that, at the same time, these parishes were barely affected by the plague.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-164">July 25 - August 1</td>
-                <td>St. Giles Cripplegate</td>
-                <td></td>
-                <td>554</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-165">July 25 - August 1</td>
-                <td>St. Sepulchers</td>
-                <td></td>
-                <td>250</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-166">July 25 - August 1</td>
-                <td>Clarkenwell</td>
-                <td></td>
-                <td>103</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-167">July 25 - August 1</td>
-                <td>Bishopsgate</td>
-                <td></td>
-                <td>116</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-168">July 25 - August 1</td>
-                <td>Shoreditch</td>
-                <td></td>
-                <td>110</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-169">July 25 - August 1</td>
-                <td>Stepney</td>
-                <td></td>
-                <td>127</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-170">July 25 - August 1</td>
-                <td>Aldgate</td>
-                <td></td>
-                <td>92</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-171">July 25 - August 1</td>
-                <td>White-Chappel</td>
-                <td></td>
-                <td>104</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-172">July 25 - August 1</td>
-                <td>The City (97 Parishes)</td>
-                <td></td>
-                <td>228</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-173">July 25 - August 1</td>
-                <td>Southwark (All Parishes)</td>
-                <td></td>
-                <td>205</td>
-                <td></td>
-                <td>1889</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-174">Beginning of September</td>
-                <td>The City (97 Parishes), Southwark (All Parishes)</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Eastern Suburbs</td>
-                <td>H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-175">September 12 - 19</td>
-                <td>St. Giles's Cripplegate</td>
-                <td></td>
-                <td>456</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td>H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-176">September 12 - 19</td>
-                <td>St. Giles in the Fields</td>
-                <td></td>
-                <td>140</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-177">September 12 - 19</td>
-                <td>Clarkenwell</td>
-                <td></td>
-                <td>77</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-178">September 12 - 19</td>
-                <td>St. Sepulchers</td>
-                <td></td>
-                <td>214</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-179">September 12 - 19</td>
-                <td>St. Leonard Shoreditch</td>
-                <td></td>
-                <td>183</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-180">September 12 - 19</td>
-                <td>Stepney</td>
-                <td></td>
-                <td>716</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-181">September 12 - 19</td>
-                <td>Aldgate</td>
-                <td></td>
-                <td>623</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-182">September 12 - 19</td>
-                <td>White-Chapel</td>
-                <td></td>
-                <td>532</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-183">September 12 - 19</td>
-                <td>The City (97 Parishes)</td>
-                <td></td>
-                <td>1493</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-184">September 12 - 19</td>
-                <td>Southwark (8 Parishes)</td>
-                <td></td>
-                <td>1636</td>
-                <td></td>
-                <td>6060</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-185">September 19 - 26</td>
-                <td>St. Giles's Cripplegate</td>
-                <td></td>
-                <td>277</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td>H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183).</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-186">September 19 - 26</td>
-                <td>St. Giles in the Fields</td>
-                <td></td>
-                <td>119</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-187">September 19 - 26</td>
-                <td>Clarkenwell</td>
-                <td></td>
-                <td>76</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-188">September 19 - 26</td>
-                <td>St. Sepulchers</td>
-                <td></td>
-                <td>193</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-189">September 19 - 26</td>
-                <td>St. Leonard Shoreditch</td>
-                <td></td>
-                <td>146</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-190">September 19 - 26</td>
-                <td>Stepney</td>
-                <td></td>
-                <td>616</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-191">September 19 - 26</td>
-                <td>Aldgate</td>
-                <td></td>
-                <td>496</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-192">September 19 - 26</td>
-                <td>White-Chapel</td>
-                <td></td>
-                <td>346</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-193">September 19 - 26</td>
-                <td>The City (97 Parishes)</td>
-                <td></td>
-                <td>1268</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-194">September 19 - 26</td>
-                <td>Southwark (8 Parishes)</td>
-                <td></td>
-                <td>1390</td>
-                <td></td>
-                <td>4900</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-195">September 26 - October 3</td>
-                <td>St. Giles's Cripplegate</td>
-                <td></td>
-                <td>196</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-196">September 26 - October 3</td>
-                <td>St. Giles in the Fields</td>
-                <td></td>
-                <td>95</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-197">September 26 - October 3</td>
-                <td>Clarkenwell</td>
-                <td></td>
-                <td>48</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-198">September 26 - October 3</td>
-                <td>St. Sepulchers</td>
-                <td></td>
-                <td>137</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-199">September 26 - October 3</td>
-                <td>St. Leonard Shoreditch</td>
-                <td></td>
-                <td>128</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-200">September 26 - October 3</td>
-                <td>Stepney</td>
-                <td></td>
-                <td>674</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-201">September 26 - October 3</td>
-                <td>Aldgate</td>
-                <td></td>
-                <td>372</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-202">September 26 - October 3</td>
-                <td>White-Chapel</td>
-                <td></td>
-                <td>328</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-203">September 26 - October 3</td>
-                <td>The City (97 Parishes)</td>
-                <td></td>
-                <td>1149</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-204">September 26 - October 3</td>
-                <td>Southwark (8 Parishes)</td>
-                <td></td>
-                <td>1201</td>
-                <td></td>
-                <td>4328</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-205">- July 1</td>
-                <td>The City (97 Parishes)</td>
-                <td>7*</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. refers here to the entire period of the plague up to this date.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-206">- July 1</td>
-                <td>Liberties</td>
-                <td>60*</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-207">- July 1</td>
-                <td>Southwark (8 Parishes)</td>
-                <td>2*</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-208">- July 1</td>
-                <td>Stepney, Aldgate, White-Chappel</td>
-                <td>1*</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-209">2nd to Last Week of September</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>8297</td>
-                <td></td>
-                <td>H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-210">Last Week of September</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>6460</td>
-                <td></td>
-                <td>H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-211">First Week of October</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>5720</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-212"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-213">Another Week of October</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2665</td>
-                <td></td>
-                <td>It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-214">Next Week of October</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>(1000-1800)</td>
-                <td></td>
-                <td>H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-215">First Week of November</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-216">November</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>905</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-217">December</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-218">First Three Weeks of September</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-219">To the End of the Year</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>(2-300)</td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes that there were still deaths from the plague to the end of 1665.</td>
-            </tr>
-            
-            <tr class="even parish-">
-                <td id="event-220">First Week of October?</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.</td>
-            </tr>
-            
-            <tr class="odd parish-">
-                <td id="event-221">Last Three Weeks</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>(30,000)</td>
-                <td></td>
-                <td>H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.</td>
-            </tr>
-            
-        </table>
-        
+                
+                <tr class="even parish-">
+                    <td id="event-5">February 12</td>
+                    <td></td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that a man died in a different house, but in the same parish and also of the plague.</td>
+                </tr>
+                
+                <tr class="odd parish-992">
+                    <td id="event-14">January 3-10</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-993">
+                    <td id="event-15">January 3-10</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>25</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-990">
+                    <td id="event-16">January 3-10</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-991">
+                    <td id="event-17">January 3-10</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-18">January 3-10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>394</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-19">January 10-17</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>18</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-993">
+                    <td id="event-20">January 10-17</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>18</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-990">
+                    <td id="event-21">January 10-17</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-991">
+                    <td id="event-22">January 10-17</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-23">January 10-17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>415</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-992">
+                    <td id="event-24">January 17-24</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-993">
+                    <td id="event-25">January 17-24</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-990">
+                    <td id="event-26">January 17-24</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-991">
+                    <td id="event-27">January 17-24</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-28">January 17-24</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>474</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-29">January 24-31</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>24</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-993">
+                    <td id="event-30">January 24-31</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-990">
+                    <td id="event-31">January 24-31</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-991">
+                    <td id="event-32">January 24-31</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-33">January 30-February 7</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.</td>
+                </tr>
+                
+                <tr class="odd parish-993">
+                    <td id="event-34">January 30-February 7</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-990">
+                    <td id="event-35">January 30-February 7</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>13</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-991">
+                    <td id="event-36">January 30-February 7</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-37">February 7-14</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td>1</td>
+                    <td>24</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-990">
+                    <td id="event-38">February 7-14</td>
+                    <td><a href="#" class="parish-name" data-parish-id="990">St. Brides</a></td>
+                    <td></td>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-991">
+                    <td id="event-39">February 7-14</td>
+                    <td><a href="#" class="parish-name" data-parish-id="991">St. James Clarkenwell</a></td>
+                    <td></td>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-992">
+                    <td id="event-40">April 2-9</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>25</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-41">April 10-17</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td></td>
+                    <td>25</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-992">
+                    <td id="event-42">April 18-25</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td>2</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8 die from spotted fever, which H.F. notes was often considered the same as the plague.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-43">April 26-May 2</td>
+                    <td></td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td>388</td>
+                    <td></td>
+                    <td>4 die from spotted fever.</td>
+                </tr>
+                
+                <tr class="odd parish-994">
+                    <td id="event-44">May 1-8</td>
+                    <td><a href="#" class="parish-name" data-parish-id="994">St. Mary-Wool-Church</a></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>9</td>
+                    <td></td>
+                    <td>Bearbinder-lane, near the Stocks-market</td>
+                    <td>This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.</td>
+                </tr>
+                
+                <tr class="even parish-1">
+                    <td id="event-45">May 1-8</td>
+                    <td><a href="#" class="parish-name" data-parish-id="1">St. Andrew's-Holborn</a></td>
+                    <td></td>
+                    <td></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td>6 total die from spotted fever.</td>
+                </tr>
+                
+                <tr class="odd parish-995">
+                    <td id="event-46">May 1-8</td>
+                    <td><a href="#" class="parish-name" data-parish-id="995">St. Clement's-Danes</a></td>
+                    <td></td>
+                    <td></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-47">May 1-8</td>
+                    <td>The City (97 Parishes)</td>
+                    <td></td>
+                    <td>54</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-48">May 1-8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>347</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-49">May 9-16</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td>1</td>
+                    <td>32</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-993">
+                    <td id="event-50">May 9-16</td>
+                    <td><a href="#" class="parish-name" data-parish-id="993">St. Andrew's</a></td>
+                    <td></td>
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-51">May 9-16</td>
+                    <td>The Town</td>
+                    <td></td>
+                    <td>3*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-52">May 9-16</td>
+                    <td>The City (97 Parishes)</td>
+                    <td></td>
+                    <td>0*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-53">May 9-16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>343</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-992">
+                    <td id="event-54">May 17-22</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td>14</td>
+                    <td>40</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-55">May 17-22</td>
+                    <td></td>
+                    <td>14 (50)</td>
+                    <td></td>
+                    <td></td>
+                    <td>385</td>
+                    <td></td>
+                    <td>The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.</td>
+                </tr>
+                
+                <tr class="odd parish-992">
+                    <td id="event-56">May 23-30</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td>9 (20)</td>
+                    <td>53</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-57">May 23-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-58">June 1-8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as "Feaver, Spotted-Feaver, and Teeth."</td>
+                </tr>
+                
+                <tr class="even parish-992">
+                    <td id="event-59">June 9-16</td>
+                    <td><a href="#" class="parish-name" data-parish-id="992">St. Giles's</a></td>
+                    <td>68 (100)</td>
+                    <td>120</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. suspects the actual number of dead from the plague is closer to 100.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-60">June 9-16</td>
+                    <td>The City (97 Parishes)</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>4</td>
+                    <td></td>
+                    <td>Wood-street</td>
+                    <td>H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-61">June 9-16</td>
+                    <td>The City (97 Parishes)</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>4</td>
+                    <td></td>
+                    <td>Fenchurch-street</td>
+                    <td>The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-62">June 9-16</td>
+                    <td>The City (97 Parishes)</td>
+                    <td>2</td>
+                    <td></td>
+                    <td>4</td>
+                    <td></td>
+                    <td>Crooked-lane</td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-63">June 9-16</td>
+                    <td>Southwark</td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-64">Mid-July</td>
+                    <td></td>
+                    <td>(900)</td>
+                    <td></td>
+                    <td></td>
+                    <td>1268</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-65">Mid-July</td>
+                    <td>The City (97 Parishes)</td>
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-66">Mid-July</td>
+                    <td>Southwark, incl. Lambeth</td>
+                    <td>19</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-67">July 4-11</td>
+                    <td>St. Giles in the Fields</td>
+                    <td></td>
+                    <td></td>
+                    <td>421</td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-68">July 4-11</td>
+                    <td>St. Martins in the Fields</td>
+                    <td></td>
+                    <td></td>
+                    <td>421</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-69">July 4-11</td>
+                    <td>Aldgate</td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-70">July 4-11</td>
+                    <td>Whitechapel</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-71">July 4-11</td>
+                    <td>Stepney</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-72">July 11-18</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1761</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-73">July 11-18</td>
+                    <td>Southwark</td>
+                    <td>16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-74">2nd week of August</td>
+                    <td>Cripplegate</td>
+                    <td>(850)</td>
+                    <td></td>
+                    <td></td>
+                    <td>868</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-75">2nd week of August</td>
+                    <td>Clerkenwell</td>
+                    <td>145</td>
+                    <td></td>
+                    <td></td>
+                    <td>155</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-76">July 11-18</td>
+                    <td>Algate</td>
+                    <td>14</td>
+                    <td></td>
+                    <td>71</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-77">July 11-18</td>
+                    <td>Stepney</td>
+                    <td>33</td>
+                    <td></td>
+                    <td>71</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-78">July 11-18</td>
+                    <td>White Chappel</td>
+                    <td>21</td>
+                    <td></td>
+                    <td>71</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-79">July 11-18</td>
+                    <td>St. Kath Towers</td>
+                    <td>2</td>
+                    <td></td>
+                    <td>71</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-80">July 11-18</td>
+                    <td>Trin. Minories</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>71</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-81">July 11-18</td>
+                    <td>St. Len. Shoreditch</td>
+                    <td></td>
+                    <td>64</td>
+                    <td></td>
+                    <td>342</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-82">July 11-18</td>
+                    <td>St. But. Bishopsg.</td>
+                    <td></td>
+                    <td>65</td>
+                    <td></td>
+                    <td>342</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-83">July 11-18</td>
+                    <td>St. Giles Crippl.</td>
+                    <td></td>
+                    <td>213</td>
+                    <td></td>
+                    <td>342</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-84">July 19-26</td>
+                    <td>Algate</td>
+                    <td>34</td>
+                    <td></td>
+                    <td>145</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-85">July 19-26</td>
+                    <td>Stepney</td>
+                    <td>58</td>
+                    <td></td>
+                    <td>145</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-86">July 19-26</td>
+                    <td>White Chappel</td>
+                    <td>48</td>
+                    <td></td>
+                    <td>145</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-87">July 19-26</td>
+                    <td>St. Kath Towers</td>
+                    <td>4</td>
+                    <td></td>
+                    <td>145</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-88">July 19-26</td>
+                    <td>Trin. Minories</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>145</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-89">July 19-26</td>
+                    <td>St. Len. Shoreditch</td>
+                    <td></td>
+                    <td>84</td>
+                    <td></td>
+                    <td>610</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-90">July 19-26</td>
+                    <td>St. But. Bishopsg.</td>
+                    <td></td>
+                    <td>105</td>
+                    <td></td>
+                    <td>610</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-91">July 19-26</td>
+                    <td>St. Giles Crippl.</td>
+                    <td></td>
+                    <td>421</td>
+                    <td></td>
+                    <td>610</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-92">July 27-August 3</td>
+                    <td>Algate</td>
+                    <td>65</td>
+                    <td></td>
+                    <td>228</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-93">July 27-August 3</td>
+                    <td>Stepney</td>
+                    <td>76</td>
+                    <td></td>
+                    <td>228</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-94">July 27-August 3</td>
+                    <td>White Chappel</td>
+                    <td>79</td>
+                    <td></td>
+                    <td>228</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-95">July 27-August 3</td>
+                    <td>St. Kath Towers</td>
+                    <td>4</td>
+                    <td></td>
+                    <td>228</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-96">July 27-August 3</td>
+                    <td>Trin. Minories</td>
+                    <td>4</td>
+                    <td></td>
+                    <td>228</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-97">July 27-August 3</td>
+                    <td>St. Len. Shoreditch</td>
+                    <td></td>
+                    <td>110</td>
+                    <td></td>
+                    <td>780</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-98">July 27-August 3</td>
+                    <td>St. But. Bishopsg.</td>
+                    <td></td>
+                    <td>116</td>
+                    <td></td>
+                    <td>780</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-99">July 27-August 3</td>
+                    <td>St. Giles Crippl.</td>
+                    <td></td>
+                    <td>554</td>
+                    <td></td>
+                    <td>780</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-100">July 4-11</td>
+                    <td>Islington</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-101">July 11-18</td>
+                    <td>Islington</td>
+                    <td>14</td>
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-102">July 25</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>550</td>
+                    <td></td>
+                    <td>H.F. cites this weekly number for roughly the end of July.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-103"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>4000</td>
+                    <td></td>
+                    <td>It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-104">Aug. 8 - 15</td>
+                    <td>London and Suburbs</td>
+                    <td>3880</td>
+                    <td>5319</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td>H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97).</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-105">Aug. 15 - 22</td>
+                    <td>London and Suburbs</td>
+                    <td>4237</td>
+                    <td>5568</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td>H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97).</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-106">Aug. 22 - 29</td>
+                    <td>London and Suburbs</td>
+                    <td>6102</td>
+                    <td>7496</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-107">Aug. 29 - Sept. 5</td>
+                    <td>London and Suburbs</td>
+                    <td>6988</td>
+                    <td>8252</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-108">Sept. 5 - 12</td>
+                    <td>London and Suburbs</td>
+                    <td>6544</td>
+                    <td>7690</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-109">Sept. 12 - 19</td>
+                    <td>London and Suburbs</td>
+                    <td>7169</td>
+                    <td>8297</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-110">Sept. 19 - 26</td>
+                    <td>London and Suburbs</td>
+                    <td>5533</td>
+                    <td>6460</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-111">Sept. 26 - Oct. 3</td>
+                    <td>London and Suburbs</td>
+                    <td>4929</td>
+                    <td>5720</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-112">Oct. 3 - 10</td>
+                    <td>London and Suburbs</td>
+                    <td>4227</td>
+                    <td>5068</td>
+                    <td>49709</td>
+                    <td>59870</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-113"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-114">Beginning of Sept.</td>
+                    <td>Algate</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1000</td>
+                    <td></td>
+                    <td>H.F. speculates that the parish buried over a 1000 a week for two weeks.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-115">Beginning of Sept.</td>
+                    <td>White Chapel</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>600</td>
+                    <td></td>
+                    <td>H.F. speculates that the number was twice the 600 that was officially recorded.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-117">February - May</td>
+                    <td>The Town</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-118">August 8 - 15</td>
+                    <td>St. Giles's in the Fields</td>
+                    <td></td>
+                    <td>242*</td>
+                    <td></td>
+                    <td>4030*</td>
+                    <td></td>
+                    <td>H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-119">August 8 - 15</td>
+                    <td>Cripplegate</td>
+                    <td></td>
+                    <td>886*</td>
+                    <td></td>
+                    <td>4030*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-120">August 8 - 15</td>
+                    <td>Stepney</td>
+                    <td></td>
+                    <td>197*</td>
+                    <td></td>
+                    <td>4030*</td>
+                    <td></td>
+                    <td>These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-121">August 8 - 15</td>
+                    <td>St. Mag. Bermondsey</td>
+                    <td></td>
+                    <td>24*</td>
+                    <td></td>
+                    <td>4030*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-122">August 8 - 15</td>
+                    <td>Rotherhith</td>
+                    <td></td>
+                    <td>3*</td>
+                    <td></td>
+                    <td>4030*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-123">August 15 - 22</td>
+                    <td>St. Giles's in the Fields</td>
+                    <td></td>
+                    <td>175*</td>
+                    <td></td>
+                    <td>5319*</td>
+                    <td></td>
+                    <td>H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-124">August 15 - 22</td>
+                    <td>Cripplegate</td>
+                    <td></td>
+                    <td>847*</td>
+                    <td></td>
+                    <td>5319*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-125">August 15 - 22</td>
+                    <td>Stepney</td>
+                    <td></td>
+                    <td>273*</td>
+                    <td></td>
+                    <td>5319*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-126">August 15 - 22</td>
+                    <td>St. Mag. Bermondsey</td>
+                    <td></td>
+                    <td>36*</td>
+                    <td></td>
+                    <td>5319*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-127">August 15 - 22</td>
+                    <td>Rotherhith</td>
+                    <td></td>
+                    <td>2*</td>
+                    <td></td>
+                    <td>5319*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-128">Sept. and Oct.</td>
+                    <td>Norwood, Camberwell, Dullege, Lusum</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-129"></td>
+                    <td>Enfield</td>
+                    <td>32</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-130"></td>
+                    <td>Hornsey</td>
+                    <td>58</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-131"></td>
+                    <td>Newington</td>
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-132"></td>
+                    <td>Tottenham</td>
+                    <td>42</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-133"></td>
+                    <td>Edmonton</td>
+                    <td>19</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-134"></td>
+                    <td>Barnet and Hadly</td>
+                    <td>43</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-135"></td>
+                    <td>St. Albans</td>
+                    <td>121</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-136"></td>
+                    <td>Watford</td>
+                    <td>45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-137"></td>
+                    <td>Uxbridge</td>
+                    <td>117</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-138"></td>
+                    <td>Hertford</td>
+                    <td>90</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-139"></td>
+                    <td>Ware</td>
+                    <td>160</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-140"></td>
+                    <td>Hodsdon</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-141"></td>
+                    <td>Waltham-Abby</td>
+                    <td>23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-142"></td>
+                    <td>Epping</td>
+                    <td>26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-143"></td>
+                    <td>Deptford</td>
+                    <td>623</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-144"></td>
+                    <td>Greenwich</td>
+                    <td>231</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-145"></td>
+                    <td>Eltham and Lusum</td>
+                    <td>85</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-146"></td>
+                    <td>Croydon</td>
+                    <td>61</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-147"></td>
+                    <td>Brent-Wood</td>
+                    <td>70</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-148"></td>
+                    <td>Rumford</td>
+                    <td>109</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-149"></td>
+                    <td>Barking abt.</td>
+                    <td>200</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-150"></td>
+                    <td>Branford</td>
+                    <td>432</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-151"></td>
+                    <td>Kingston</td>
+                    <td>122</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-152"></td>
+                    <td>Stanes</td>
+                    <td>82</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-153"></td>
+                    <td>Chertsey</td>
+                    <td>18</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-154"></td>
+                    <td>Windsor</td>
+                    <td>103</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-155">August 22 - 29</td>
+                    <td></td>
+                    <td></td>
+                    <td>7496*</td>
+                    <td></td>
+                    <td>38195*</td>
+                    <td></td>
+                    <td>H.F. believes the weekly numbers are closer to 10,000.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-156">August 29 - September 7</td>
+                    <td></td>
+                    <td></td>
+                    <td>8252*</td>
+                    <td></td>
+                    <td>38195*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-157">September 7 - 12</td>
+                    <td></td>
+                    <td></td>
+                    <td>7690*</td>
+                    <td></td>
+                    <td>38195*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-158">September 12 - 19</td>
+                    <td></td>
+                    <td></td>
+                    <td>8297*</td>
+                    <td></td>
+                    <td>38195*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-159">September 19 - 26</td>
+                    <td></td>
+                    <td></td>
+                    <td>6460*</td>
+                    <td></td>
+                    <td>38195*</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-160"></td>
+                    <td>St. Giles's, Westminister</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. locates the origin of the plague here.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-161">Middle of July</td>
+                    <td>St. Giles in the Fields, St. Andrew's Holborn, St. Clement-Danes, St. Martins in the Fields, Westminster</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that this was when the plague was at its height in this part of London.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-162">End of July</td>
+                    <td>Cripplegate, St. Sepulchers, St. Ja. Clarkenwell, St. Brides, Aldersgate</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-163">End of July</td>
+                    <td>The City (97 Parishes), Southwark (All Parishes), Stepney, White-Chapel, Aldgate, Wapping, Ratcliff</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that, at the same time, these parishes were barely affected by the plague.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-164">July 25 - August 1</td>
+                    <td>St. Giles Cripplegate</td>
+                    <td></td>
+                    <td>554</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-165">July 25 - August 1</td>
+                    <td>St. Sepulchers</td>
+                    <td></td>
+                    <td>250</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-166">July 25 - August 1</td>
+                    <td>Clarkenwell</td>
+                    <td></td>
+                    <td>103</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-167">July 25 - August 1</td>
+                    <td>Bishopsgate</td>
+                    <td></td>
+                    <td>116</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-168">July 25 - August 1</td>
+                    <td>Shoreditch</td>
+                    <td></td>
+                    <td>110</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-169">July 25 - August 1</td>
+                    <td>Stepney</td>
+                    <td></td>
+                    <td>127</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-170">July 25 - August 1</td>
+                    <td>Aldgate</td>
+                    <td></td>
+                    <td>92</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-171">July 25 - August 1</td>
+                    <td>White-Chappel</td>
+                    <td></td>
+                    <td>104</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-172">July 25 - August 1</td>
+                    <td>The City (97 Parishes)</td>
+                    <td></td>
+                    <td>228</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-173">July 25 - August 1</td>
+                    <td>Southwark (All Parishes)</td>
+                    <td></td>
+                    <td>205</td>
+                    <td></td>
+                    <td>1889</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-174">Beginning of September</td>
+                    <td>The City (97 Parishes), Southwark (All Parishes)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Eastern Suburbs</td>
+                    <td>H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-175">September 12 - 19</td>
+                    <td>St. Giles's Cripplegate</td>
+                    <td></td>
+                    <td>456</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td>H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-176">September 12 - 19</td>
+                    <td>St. Giles in the Fields</td>
+                    <td></td>
+                    <td>140</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-177">September 12 - 19</td>
+                    <td>Clarkenwell</td>
+                    <td></td>
+                    <td>77</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-178">September 12 - 19</td>
+                    <td>St. Sepulchers</td>
+                    <td></td>
+                    <td>214</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-179">September 12 - 19</td>
+                    <td>St. Leonard Shoreditch</td>
+                    <td></td>
+                    <td>183</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-180">September 12 - 19</td>
+                    <td>Stepney</td>
+                    <td></td>
+                    <td>716</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-181">September 12 - 19</td>
+                    <td>Aldgate</td>
+                    <td></td>
+                    <td>623</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-182">September 12 - 19</td>
+                    <td>White-Chapel</td>
+                    <td></td>
+                    <td>532</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-183">September 12 - 19</td>
+                    <td>The City (97 Parishes)</td>
+                    <td></td>
+                    <td>1493</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-184">September 12 - 19</td>
+                    <td>Southwark (8 Parishes)</td>
+                    <td></td>
+                    <td>1636</td>
+                    <td></td>
+                    <td>6060</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-185">September 19 - 26</td>
+                    <td>St. Giles's Cripplegate</td>
+                    <td></td>
+                    <td>277</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td>H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183).</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-186">September 19 - 26</td>
+                    <td>St. Giles in the Fields</td>
+                    <td></td>
+                    <td>119</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-187">September 19 - 26</td>
+                    <td>Clarkenwell</td>
+                    <td></td>
+                    <td>76</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-188">September 19 - 26</td>
+                    <td>St. Sepulchers</td>
+                    <td></td>
+                    <td>193</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-189">September 19 - 26</td>
+                    <td>St. Leonard Shoreditch</td>
+                    <td></td>
+                    <td>146</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-190">September 19 - 26</td>
+                    <td>Stepney</td>
+                    <td></td>
+                    <td>616</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-191">September 19 - 26</td>
+                    <td>Aldgate</td>
+                    <td></td>
+                    <td>496</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-192">September 19 - 26</td>
+                    <td>White-Chapel</td>
+                    <td></td>
+                    <td>346</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-193">September 19 - 26</td>
+                    <td>The City (97 Parishes)</td>
+                    <td></td>
+                    <td>1268</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-194">September 19 - 26</td>
+                    <td>Southwark (8 Parishes)</td>
+                    <td></td>
+                    <td>1390</td>
+                    <td></td>
+                    <td>4900</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-195">September 26 - October 3</td>
+                    <td>St. Giles's Cripplegate</td>
+                    <td></td>
+                    <td>196</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-196">September 26 - October 3</td>
+                    <td>St. Giles in the Fields</td>
+                    <td></td>
+                    <td>95</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-197">September 26 - October 3</td>
+                    <td>Clarkenwell</td>
+                    <td></td>
+                    <td>48</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-198">September 26 - October 3</td>
+                    <td>St. Sepulchers</td>
+                    <td></td>
+                    <td>137</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-199">September 26 - October 3</td>
+                    <td>St. Leonard Shoreditch</td>
+                    <td></td>
+                    <td>128</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-200">September 26 - October 3</td>
+                    <td>Stepney</td>
+                    <td></td>
+                    <td>674</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-201">September 26 - October 3</td>
+                    <td>Aldgate</td>
+                    <td></td>
+                    <td>372</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-202">September 26 - October 3</td>
+                    <td>White-Chapel</td>
+                    <td></td>
+                    <td>328</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-203">September 26 - October 3</td>
+                    <td>The City (97 Parishes)</td>
+                    <td></td>
+                    <td>1149</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-204">September 26 - October 3</td>
+                    <td>Southwark (8 Parishes)</td>
+                    <td></td>
+                    <td>1201</td>
+                    <td></td>
+                    <td>4328</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-205">- July 1</td>
+                    <td>The City (97 Parishes)</td>
+                    <td>7*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. refers here to the entire period of the plague up to this date.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-206">- July 1</td>
+                    <td>Liberties</td>
+                    <td>60*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-207">- July 1</td>
+                    <td>Southwark (8 Parishes)</td>
+                    <td>2*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-208">- July 1</td>
+                    <td>Stepney, Aldgate, White-Chappel</td>
+                    <td>1*</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-209">2nd to Last Week of September</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8297</td>
+                    <td></td>
+                    <td>H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-210">Last Week of September</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>6460</td>
+                    <td></td>
+                    <td>H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-211">First Week of October</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>5720</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-212"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-213">Another Week of October</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>2665</td>
+                    <td></td>
+                    <td>It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-214">Next Week of October</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(1000-1800)</td>
+                    <td></td>
+                    <td>H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-215">First Week of November</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-216">November</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>905</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-217">December</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-218">First Three Weeks of September</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-219">To the End of the Year</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(2-300)</td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes that there were still deaths from the plague to the end of 1665.</td>
+                </tr>
+                
+                <tr class="even parish-">
+                    <td id="event-220">First Week of October?</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.</td>
+                </tr>
+                
+                <tr class="odd parish-">
+                    <td id="event-221">Last Three Weeks</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(30,000)</td>
+                    <td></td>
+                    <td>H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.</td>
+                </tr>
+                
+            </table>
+            
+        </div>
     </div>
     <script type="text/javascript" src="ui/js/script.js"></script>
 </body>

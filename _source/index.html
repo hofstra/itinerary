@@ -47,69 +47,74 @@
 </head>
 
 <body>
-    <h1>{{ data_title }}</h1>
+    <div class="logo-header-wrapper"><div class="logo-header">
+        <img src="ui/img/drc.logo.horizontal.png" width="247" height="42" alt="Digital Research Center at Hofstra" />
+    </div></div>
+    <div class="wrapper">
+        <h1>{{ data_title }}</h1>
 
-    <div class="nav">
-        {% for link in site.data.nav %}
-        <a href="{{ link.link-href }}">{{ link.link-name }}
-        {% endfor %}
-    </div>
-
-    <div id="map-container"><noscript>
-        <p>An interactive map resides here.</p>
-    </noscript></div>
-
-    <div id="stepper">
-        <a href="#" id="step-prev">&laquo;</a>
-        <h2></h2>
-        <p></p>
-        <noscript>
-            <p>An interactive timeline tool resides here.</p>
-        </noscript>
-        <a href="#" id="step-next">&raquo;</a>
-    </div>
-    <div class="itinerary">
-        <!--
-             Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
-             so that we have a page loaded with content if JS is an issue.
-        -->
-        <!--
-             Note that the HTML structure here is dependent on the structure of the data.
-             Some data has different fields/schema.
-        -->
-        <h2>The Data</h2>
-        {% for year in events %}
-        <table border="0" cellpadding="0" cellspacing="0" class="year">
-            <tr>
-                <th><h3>{{ year.name }}</h3></th>
-            </tr>
-        </table>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-            <tr>
-                <th width="8%">Date</th>
-                <th width="12%">Parish</th>
-                <th width="8%">Buried Plague</th>
-                <th width="6%">Buried Parish</th>
-                <th width="8%">Buried Plague Total</th>
-                <th width="6%">Buried Total</th>
-                <th width="12%">Location</th>
-                <th width="40%">Notes</th>
-            </tr>
-
-            {% for event in year.items %}
-            <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
-                <td id="event-{{ event.sequence }}">{{ event.date_descriptive }}</td>
-                <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
-                <td>{{ event.buried_plague }}</td>
-                <td>{{ event.buried_parish_total }}</td>
-                <td>{{ event.buried_plague_total }}</td>
-                <td>{{ event.buried_total }}</td>
-                <td>{{ event.location_descriptive }}</td>
-                <td>{{ event.notes }}</td>
-            </tr>
+        <div class="nav">
+            {% for link in site.data.nav %}
+            <a href="{{ link.link-href }}">{{ link.link-name }}
             {% endfor %}
-        </table>
-        {% endfor %}
+        </div>
+
+        <div id="map-container"><noscript>
+            <p>An interactive map resides here.</p>
+        </noscript></div>
+
+        <div id="stepper">
+            <a href="#" id="step-prev">&laquo;</a>
+            <h2></h2>
+            <p></p>
+            <noscript>
+                <p>An interactive timeline tool resides here.</p>
+            </noscript>
+            <a href="#" id="step-next">&raquo;</a>
+        </div>
+        <div class="itinerary">
+            <!--
+                 Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
+                 so that we have a page loaded with content if JS is an issue.
+            -->
+            <!--
+                 Note that the HTML structure here is dependent on the structure of the data.
+                 Some data has different fields/schema.
+            -->
+            <h2>The Data</h2>
+            {% for year in events %}
+            <table border="0" cellpadding="0" cellspacing="0" class="year">
+                <tr>
+                    <th><h3>{{ year.name }}</h3></th>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <tr>
+                    <th width="8%">Date</th>
+                    <th width="12%">Parish</th>
+                    <th width="8%">Buried Plague</th>
+                    <th width="6%">Buried Parish</th>
+                    <th width="8%">Buried Plague Total</th>
+                    <th width="6%">Buried Total</th>
+                    <th width="12%">Location</th>
+                    <th width="40%">Notes</th>
+                </tr>
+
+                {% for event in year.items %}
+                <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
+                    <td id="event-{{ event.sequence }}">{{ event.date_descriptive }}</td>
+                    <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
+                    <td>{{ event.buried_plague }}</td>
+                    <td>{{ event.buried_parish_total }}</td>
+                    <td>{{ event.buried_plague_total }}</td>
+                    <td>{{ event.buried_total }}</td>
+                    <td>{{ event.location_descriptive }}</td>
+                    <td>{{ event.notes }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endfor %}
+        </div>
     </div>
     <script type="text/javascript" src="ui/js/script.js"></script>
 </body>
