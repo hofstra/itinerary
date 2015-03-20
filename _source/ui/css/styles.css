@@ -11,13 +11,25 @@
    font-family: 'IM Fell DW Pica SC', serif;
 */
 
+a {
+    color: #2632c2;
+}
+
 h1 {
     border-bottom: 3px solid #3d3934;
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 32px;
+    font-weight: 400;
     margin-bottom: 20px;
     padding-bottom: .5em;
     width: 100%;
+}
+
+.itinerary h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
 }
 
 #map-container {
@@ -51,11 +63,13 @@ table {
     border-collapse: separate;
 }
 th {
-    font-size: 14px;
-    text-align: left;
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 16px;
+    font-weight: 400 !important; /* Not sure what's overriding this...*/
+    text-align: center !important;
 }
 td {
-    font-size: 14px;
+    font-size: 13px;
     padding: 4px;
 }
 tr.odd td {
@@ -64,7 +78,12 @@ tr.odd td {
 h3 {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 36px;
+    font-weight: 400;
 }
+    .leaflet-popup-content h3 {
+        color: #3d3934;
+        font-weight: 400;
+    }
 @media screen and (max-width: 600px) {
     body {
         padding-right: 0px;
@@ -78,6 +97,7 @@ h3 {
 }
 #stepper h2 {
     font-family: 'IM Fell DW Pica SC', serif;
+    font-weight: 400;
 }
 #stepper h2,
 #stepper p {
@@ -85,18 +105,24 @@ h3 {
     margin-bottom: 0;
     text-align: center;
 }
+#stepper p {
+    font-family: 'IM Fell DW Pica', serif;
+}
 #stepper a {
     color: #333;
     display: block;
+    font-family: 'IM Fell DW Pica', serif;
     font-size: 48px;
     position: absolute;
+    right: 0px;
+    text-align: left;
     text-decoration: none;
     top: 10px;
-    right: 0px;
-    width: 100px;
+    width: 30%;
 }
 #stepper a:first-child {
+    left: 0px;
     position: absolute;
     top: 10px;
-    left: 0px;
+    text-align: right;
 }
