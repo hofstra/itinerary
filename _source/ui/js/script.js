@@ -153,9 +153,14 @@ $(document).ready(function() {
                         $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
                         $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
                         $itineraryEventContent += '<p>';
-                        $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
-                        $itineraryEventContent += $itineraryData[$itineraryIndex].location_descriptive + '<br />';
-                        $itineraryEventContent += '<span>Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
+                        if ($itineraryData[$itineraryIndex].date_descriptive != '')
+                            $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
+                        if ($itineraryData[$itineraryIndex].location_descriptive != '')
+                            $itineraryEventContent += $itineraryData[$itineraryIndex].location_descriptive + '<br />';
+                        if ($itineraryData[$itineraryIndex].buried_parish_total != '')
+                            $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
+                        if ($itineraryData[$itineraryIndex].notes != '')
+                            $itineraryEventContent += $itineraryData[$itineraryIndex].notes + '<br />';
                         $itineraryEventContent += '</p>';
                         $itineraryEventContent += '</div>';
                         polygon.polygon.bindPopup( $itineraryEventContent );
