@@ -41,6 +41,8 @@
 
         var mapbox_id = 'clearbold.l4gjpd88';
 
+        // Need to find a way to do this; These are on the left side of object assignment
+        // [variable] worked in Firefox, but halted the JS in Chrome
         var historic_toggle_label = 'London 1720';
         var modern_toggle_label = 'London 2015';
     </script>
@@ -55,7 +57,7 @@
 
         <div class="nav">
             {% for link in site.data.nav %}
-            <a href="{{ link.link-href }}">{{ link.link-name }}
+            <a href="{{ link.link-href }}">{{ link.link-name }}</a>
             {% endfor %}
         </div>
     </div>
