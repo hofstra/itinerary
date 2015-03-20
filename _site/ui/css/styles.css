@@ -73,6 +73,7 @@ h3 {
 }
 
 #stepper {
+    min-height: 200px;
     position: relative;
 }
 #stepper h2 {
@@ -86,11 +87,13 @@ h3 {
 }
 #stepper a {
     color: #333;
+    display: block;
     font-size: 48px;
     position: absolute;
     text-decoration: none;
     top: 10px;
     right: 0px;
+    width: 100px;
 }
 #stepper a:first-child {
     position: absolute;

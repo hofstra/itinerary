@@ -95,6 +95,7 @@ $(document).ready(function() {
 
         // When next is clicked
         $('#stepper a:last-child').on('click', function(e) {
+            console.log('click');
             e.preventDefault();
             if ( $itineraryIndex < $itineraryData.length) {
                 $itineraryIndex++;
