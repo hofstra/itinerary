@@ -143,7 +143,7 @@ $(document).ready(function() {
             function() {
                 // Update the HTML contents with the prev/next itinerary event
                 $(this).html(
-                    $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + " " + $itineraryData[$itineraryIndex].parish
+                    $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + " " + $itineraryData[$itineraryIndex].parish + '<span class="buried-parish">' + $itineraryData[$itineraryIndex].buried_parish_total + '</span>'
                 ).fadeIn($speed);
                 $.each( $parishPolygons, function( $i, polygon) {
                     // Find the current parish polygon, light it up and change its content
@@ -155,6 +155,7 @@ $(document).ready(function() {
                         $itineraryEventContent += '<p>';
                         $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
                         $itineraryEventContent += $itineraryData[$itineraryIndex].location_descriptive + '<br />';
+                        $itineraryEventContent += '<span>Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
                         $itineraryEventContent += '</p>';
                         $itineraryEventContent += '</div>';
                         polygon.polygon.bindPopup( $itineraryEventContent );
