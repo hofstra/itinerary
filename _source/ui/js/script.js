@@ -127,15 +127,16 @@ $(document).ready(function() {
             polygon.polygon.bindPopup( polygon.content );
         });
 
+        // Ultimately this should all use a template system (http://underscorejs.org/#template) but MVP!
         // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
         if ($('#stepper h2').text() != $itineraryData[$itineraryIndex].year)
-            $('#stepper h2').fadeOut(function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn() });
-        $('#stepper p').fadeOut(
+            $('#stepper h2').fadeOut('fast', function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn('fast') });
+        $('#stepper p').fadeOut('fast',
             function() {
                 // Update the HTML contents with the prev/next itinerary event
                 $(this).html(
                     $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish
-                ).fadeIn();
+                ).fadeIn('fast');
                 $.each( $parishPolygons, function( $i, polygon) {
                     // Find the current parish polygon, light it up and change its content
                     if (polygon.id==$itineraryData[$itineraryIndex].parish_id) {
