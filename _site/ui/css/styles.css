@@ -130,19 +130,20 @@ h3 {
 }
 #stepper a {
     color: #333;
-    display: block;
+    display: inline-block;
     font-family: 'IM Fell DW Pica', serif;
     font-size: 48px;
     position: absolute;
-    right: 0px;
-    text-align: left;
     text-decoration: none;
-    top: 10px;
     width: 30%;
 }
-#stepper a:first-child {
+#stepper a#step-prev {
     left: 0px;
-    position: absolute;
-    top: 10px;
     text-align: right;
+    top: 10px;
+}
+#stepper a#step-next {
+    right: 0px;
+    top: 10px;
+    text-align: left;
 }
