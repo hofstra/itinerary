@@ -12,9 +12,14 @@ $(document).ready(function() {
     map.scrollWheelZoom.disable();
 
     // Create a variable to hold all tile sets and name them so we can use it for the toggler
-    var baseMaps = {
+    // Chrome is balking at this!!!
+    /*var baseMaps = {
         [modern_toggle_label]: map_mapbox,
         [historic_toggle_label]: map_historic
+    };*/
+    var baseMaps = {
+        'London 2015': map_mapbox,
+        'Historic Map': map_historic
     };
 
     // Add the tile layer switcher control (toggler)

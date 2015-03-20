@@ -49,6 +49,12 @@
 <body>
     <h1>{{ data_title }}</h1>
 
+    <div class="nav">
+        {% for link in site.data.nav %}
+        <a href="{{ link.link-href }}">{{ link.link-name }}
+        {% endfor %}
+    </div>
+
     <div id="map-container"><noscript>
         <p>An interactive map resides here.</p>
     </noscript></div>
