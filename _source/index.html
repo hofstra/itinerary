@@ -21,7 +21,7 @@
         /* Dynamically set up CSS styles for event data in the timeline based on corresponding parishes */
         /* This is Jekyll-based, so it lives in the HTML file. */
     {% for parish in site.data.parishes %}
-        tr.parish-{{ parish.id }} td { background: {{ parish.background-color }}; }
+        .itinerary tr.parish-{{ parish.id }} td { background: {{ parish.background-color }}; }
     {% endfor %}
     </style>
     <!--
