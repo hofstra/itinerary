@@ -49,9 +49,11 @@ h1 {
     }
 
 .itinerary h2 {
+    border-top: 3px solid #3d3934;
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 32px;
     font-weight: 400;
+    padding-top: 1.5em;
     text-align: center;
 }
 
@@ -64,10 +66,10 @@ h1 {
     height: 400px;
 }
 
-dt {
+.leaflet-popup-content dt {
     font-weight: bold;
 }
-dd {
+.leaflet-popup-content dd {
     margin-bottom: 10px;
     margin-left: 0;
     padding-left: 0;
@@ -80,26 +82,27 @@ table {
     table.data {
         margin-bottom: 40px;
     }
-th {
+.itinerary th {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 16px;
     font-weight: 400 !important; /* Not sure what's overriding this...*/
     text-align: center !important;
 }
-td {
+.itinerary td {
     font-size: 13px;
     padding: 4px;
 }
-tr.odd td {
+.itinerary tr.odd td {
     background: #f2ebd3;
 }
-h3 {
+.itinerary h3 {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 36px;
     font-weight: 400;
 }
     .leaflet-popup-content h3 {
         color: #3d3934;
+        font-family: 'IM Fell DW Pica SC', serif;
         font-weight: 400;
     }
     .leaflet-popup-content p {
@@ -108,7 +111,7 @@ h3 {
     }
 
 #stepper {
-    min-height: 200px;
+    min-height: 140px;
     position: relative;
 }
 #stepper h2 {
