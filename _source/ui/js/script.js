@@ -90,7 +90,7 @@ $(document).ready(function() {
         })
 
         // When prev is clicked
-        $('#stepper a:first-child').on('click', function(e) {
+        $('#stepper a#step-prev').on('click', function(e) {
             e.preventDefault();
             if ( $itineraryIndex > 0) {
                 $itineraryIndex--;
@@ -99,7 +99,7 @@ $(document).ready(function() {
         });
 
         // When next is clicked
-        $('#stepper a:last-child').on('click', function(e) {
+        $('#stepper a#step-next').on('click', function(e) {
             console.log('click');
             e.preventDefault();
             if ( $itineraryIndex < $itineraryData.length) {
@@ -133,16 +133,18 @@ $(document).ready(function() {
             polygon.polygon.bindPopup( polygon.content );
         });
 
+        $speed = 175;
+
         // Ultimately this should all use a template system (http://underscorejs.org/#template) but MVP!
         // Use fadeOut / fadeIn so it's clear we're stepping when the date and parish name might be the same as previous
         if ($('#stepper h2').text() != $itineraryData[$itineraryIndex].year)
-            $('#stepper h2').fadeOut('fast', function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn('fast') });
-        $('#stepper p').fadeOut('fast',
+            $('#stepper h2').fadeOut($speed, function(){ $(this).text($itineraryData[$itineraryIndex].year).fadeIn($speed) });
+        $('#stepper p').fadeOut($speed,
             function() {
                 // Update the HTML contents with the prev/next itinerary event
                 $(this).html(
-                    $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + $itineraryData[$itineraryIndex].parish
-                ).fadeIn('fast');
+                    $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + " " + $itineraryData[$itineraryIndex].parish
+                ).fadeIn($speed);
                 $.each( $parishPolygons, function( $i, polygon) {
                     // Find the current parish polygon, light it up and change its content
                     if (polygon.id==$itineraryData[$itineraryIndex].parish_id) {
