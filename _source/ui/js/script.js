@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     // Zoom and center in
     // TODO: Make this dynamic based on the map's contents
-    map.setView([51.514, -0.0881481171],14);
+    map.setView(map_center, map_zoom);
 
     // TODO: Code for single location markers
     // var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
@@ -39,6 +39,41 @@ $(document).ready(function() {
         // And set a pointer for prev/next
         $itineraryIndex = 0;
 
+        // Let's put locations on the map!
+
+        var $locationMarkers = new Array();
+
+        $.each( $itineraryData, function(i, $event) {
+            if ($event.location_latitude != '' && $event.location_longitude != '')
+            {
+                var $marker = L.marker([$event.location_latitude, $event.location_longitude]).addTo(map);
+
+                var $itineraryEventContent = '';
+                $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
+                $itineraryEventContent += "<h3>" + $event.parish + "</h3>";
+                $itineraryEventContent += '<p>';
+                if ($event.date_descriptive != '')
+                    $itineraryEventContent += $event.date_descriptive + '<br />';
+                if ($event.location_descriptive != '')
+                    $itineraryEventContent += $event.location_descriptive + '<br />';
+                if ($event.buried_parish_total != '')
+                    $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $event.buried_parish_total + '</span><br />';
+                if ($event.notes != '')
+                    $itineraryEventContent += $event.notes + '<br />';
+                $itineraryEventContent += '</p>';
+                $itineraryEventContent += '</div>';
+                $marker.bindPopup( $itineraryEventContent );
+
+                $locationMarkers.push(
+                    {
+                        'marker' : $marker,
+                        'latitude' : $event.location_latitude,
+                        'longitude' : $event.location_longitude
+                    }
+                )
+            }
+        })
+
         // Let's put some parishes on the map!
         var $parishPolygons = new Array();
 
@@ -49,8 +84,10 @@ $(document).ready(function() {
                 var $vertices = [];
                 // Reset the default popup content for each parish
                 var $parishPopUp = '';
+
                 // Knowing we have our itinerary data, lets get the vertices for each parish as geoJson
                 $.getJSON( "geojson/parish-"+$parish.id+".geojson", function (geodata) {
+
                     // For each vertex in the parish polygon, get its coordinates
                     $.each(geodata.features, function(i, $feature) {
                         $vertices.push([ $feature.geometry.coordinates[1], $feature.geometry.coordinates[0] ]);
@@ -82,7 +119,7 @@ $(document).ready(function() {
             // Let's load up our timeline stepper!
             // currentEvent lights up a parish, but also refreshes the timeline stepper
             // Set up our first event
-            currentEvent(0, $parishPolygons, $itineraryData);
+            currentEvent(0, $parishPolygons, $itineraryData, $locationMarkers);
 
         }).fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
@@ -94,7 +131,7 @@ $(document).ready(function() {
             e.preventDefault();
             if ( $itineraryIndex > 0) {
                 $itineraryIndex--;
-                currentEvent($itineraryIndex, $parishPolygons, $itineraryData);
+                currentEvent($itineraryIndex, $parishPolygons, $itineraryData, $locationMarkers);
             }
         });
 
@@ -104,7 +141,7 @@ $(document).ready(function() {
             e.preventDefault();
             if ( $itineraryIndex < $itineraryData.length) {
                 $itineraryIndex++;
-                currentEvent($itineraryIndex, $parishPolygons, $itineraryData);
+                currentEvent($itineraryIndex, $parishPolygons, $itineraryData, $locationMarkers);
             }
         });
 
@@ -124,7 +161,7 @@ $(document).ready(function() {
         console.log( "Request Failed: " + err );
     });
 
-    function currentEvent($itineraryIndex, $parishPolygons, $itineraryData) {
+    function currentEvent($itineraryIndex, $parishPolygons, $itineraryData, $locationMarkers) {
 
         // reset all polygons on each step
         $.each( $parishPolygons, function( $i, polygon) {
@@ -145,7 +182,13 @@ $(document).ready(function() {
                 $(this).html(
                     $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + " " + $itineraryData[$itineraryIndex].parish + '<span class="buried-parish">' + $itineraryData[$itineraryIndex].buried_parish_total + '</span>'
                 ).fadeIn($speed);
-                $.each( $parishPolygons, function( $i, polygon) {
+                $.each( $locationMarkers, function( $i, marker ) {
+                    console.log($itineraryData[$itineraryIndex].location_latitude);
+                    if (marker.latitude == $itineraryData[$itineraryIndex].location_latitude && marker.longitude == $itineraryData[$itineraryIndex].location_longitude) {
+                        marker.marker.openPopup();
+                    }
+                })
+                $.each( $parishPolygons, function( $i, polygon ) {
                     // Find the current parish polygon, light it up and change its content
                     if (polygon.id==$itineraryData[$itineraryIndex].parish_id) {
                         polygon.polygon.setStyle({'color': '#d31603'});
