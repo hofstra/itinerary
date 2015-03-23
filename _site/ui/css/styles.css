@@ -46,6 +46,10 @@ h1 {
     padding-bottom: .5em;
     width: 100%;
 }
+    h1 em {
+        font-family: 'IM Fell DW Pica', serif;
+        font-style: italic;
+    }
 
 .nav {
     margin-bottom: 20px;
