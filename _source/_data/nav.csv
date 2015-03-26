@@ -1,5 +1,5 @@
-link-name,link-href
-"Map: Plague",index.html
-"Map: HF",#
-"About the Project",#
-"About the Maps",#
+page-nav,link-name,link-href
+"map-plague","Map: Plague",/
+"map-hf","Map: HF",#
+"about-the-project","About the Project",/about-the-project
+"about-the-maps","About the Maps",/about-the-maps

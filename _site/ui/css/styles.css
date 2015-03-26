@@ -61,18 +61,46 @@ h1 {
         padding-right: 20px;
         text-decoration: none;
     }
-    .nav a:hover {
+    .nav a:hover,
+    .nav a.active {
         text-decoration: underline;
     }
 
-.itinerary h2 {
-    border-top: 3px solid #3d3934;
+.itinerary h2,
+.content h2 {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 32px;
     font-weight: 400;
     padding-top: 1.5em;
     text-align: center;
 }
+    .content h2 {
+        margin-bottom: 1em;
+    }
+.content {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 18px;
+    padding-bottom: 32px;
+}
+    .content h3 {
+        margin-bottom: .5em;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .content h4 {
+        margin-bottom: .5em;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .content p {
+        margin-bottom: 1em;
+    }
+    .content ul {
+        margin-bottom: 1em;
+    }
+        .content ul li {
+            margin-bottom: .5em;
+        }
 
 #map-container {
     border-top: 3px solid #3d3934;
@@ -171,6 +199,28 @@ table {
     font-size: 32px;
     line-height: 1.2em;
 }
+
+.timeline {
+    border-bottom: 3px solid #3d3934;
+    height: 30px;
+    text-align: center;
+}
+.timeline-event {
+    display: inline-block;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+.timeline-event > span {
+    background-color: #3d3934;
+    display: inline-block;
+    font-size: 0;
+    height: 26px;
+    line-height: 0;
+    width: 100%;
+}
+    .timeline-event > span.active {
+        background-color: #d31603;
+    }
 
 @media screen and (max-width: 800px) {
     #stepper a {

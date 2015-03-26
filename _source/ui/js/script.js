@@ -40,10 +40,18 @@ $(document).ready(function() {
         $itineraryIndex = 0;
 
         // Let's put locations on the map!
-
         var $locationMarkers = new Array();
 
+        $timelineEventWidth = 100 / $itineraryData.length;
+        console.log($timelineEventWidth);
+
         $.each( $itineraryData, function(i, $event) {
+
+            var $timelineEventShape = '';
+            //$timelineEventShape = '<span class="timeline-event" style="width: ' + $timelineEventWidth + '%;"><span></span></span>';
+            $timelineEventShape = '<span class="timeline-event" style="width: 4px;"><span></span></span>';
+            $( $timelineEventShape ).appendTo(".timeline");
+
             if ($event.location_latitude != '' && $event.location_longitude != '')
             {
                 var $marker = L.marker([$event.location_latitude, $event.location_longitude]).addTo(map);
@@ -188,6 +196,10 @@ $(document).ready(function() {
                         marker.marker.openPopup();
                     }
                 })
+
+                $('.timeline-event span').removeClass('active');
+                $('.timeline-event:nth-child('+($itineraryIndex+1)+') span').addClass('active');
+
                 $.each( $parishPolygons, function( $i, polygon ) {
                     // Find the current parish polygon, light it up and change its content
                     if (polygon.id==$itineraryData[$itineraryIndex].parish_id) {
