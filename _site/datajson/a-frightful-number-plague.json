@@ -69,7 +69,7 @@
     {
         "year" : "1664",
         "date_descriptive" : "December 20-27",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "0",
@@ -144,7 +144,7 @@
     {
         "year" : "1664",
         "date_descriptive" : "December 27-January 3",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "6",
@@ -251,7 +251,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 3-10",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "11",
@@ -326,7 +326,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 10-17",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "12",
@@ -401,7 +401,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 17-24",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "9",
@@ -476,7 +476,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 24-31",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "8",
@@ -536,7 +536,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 30-February 7",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "13",
@@ -581,7 +581,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "February 7-14",
-        "parish_id" : "990",
+        "parish_id" : "2",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "12",

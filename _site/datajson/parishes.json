@@ -9,6 +9,12 @@
     },
     
     {
+        "id" : "2",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Brides"
+    },
+    
+    {
         "id" : "990",
         "color" : "rgb(0, 116, 217)",
         "parish_name" : "Test Parish 990"
