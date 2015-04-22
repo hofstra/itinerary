@@ -36,6 +36,11 @@ a {
     padding-right: 40px;
     padding-left: 40px;
 }
+.wrapper-content {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px;
+}
 
 h1 {
     border-bottom: 3px solid #3d3934;
@@ -79,7 +84,7 @@ h1 {
     }
 .content {
     font-family: 'IM Fell DW Pica', serif;
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 32px;
 }
     .content h3 {
@@ -93,12 +98,14 @@ h1 {
         font-weight: 400;
     }
     .content p {
-        margin-bottom: 1em;
+        line-height: 1.5em;
+        margin-bottom: 2em;
     }
     .content ul {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
         .content ul li {
+            line-height: 1.5em;
             margin-bottom: .5em;
         }
 
@@ -210,6 +217,9 @@ table {
     padding-right: 1px;
     padding-left: 1px;
 }
+.timeline-event:hover > span {
+    background-color: rgb(0, 116, 217);
+}
 .timeline-event > span {
     background-color: #3d3934;
     display: inline-block;
@@ -226,6 +236,9 @@ table {
     #stepper a {
         width: 20%;
     }
+    .content {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 600px) {
     body {
@@ -235,6 +248,10 @@ table {
     .wrapper {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .wrapper-content {
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .logo-header,
     h1, .nav {

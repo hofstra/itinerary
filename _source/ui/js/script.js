@@ -43,13 +43,13 @@ $(document).ready(function() {
         var $locationMarkers = new Array();
 
         $timelineEventWidth = 100 / $itineraryData.length;
-        console.log($timelineEventWidth);
+        //console.log($timelineEventWidth);
 
         $.each( $itineraryData, function(i, $event) {
 
             var $timelineEventShape = '';
             //$timelineEventShape = '<span class="timeline-event" style="width: ' + $timelineEventWidth + '%;"><span></span></span>';
-            $timelineEventShape = '<span class="timeline-event" style="width: 4px;"><span></span></span>';
+            $timelineEventShape = '<a href="#" class="timeline-event" style="width: 4px;"><span></span></a>';
             $( $timelineEventShape ).appendTo(".timeline");
 
             if ($event.location_latitude != '' && $event.location_longitude != '')
@@ -120,7 +120,7 @@ $(document).ready(function() {
 
                 }).fail(function( jqxhr, textStatus, error ) {
                     var err = textStatus + ", " + error;
-                    console.log( "Request Failed: " + err );
+                    //console.log( "Request Failed: " + err );
                 })
             })
             // After all our parishes are drawn...
@@ -131,7 +131,7 @@ $(document).ready(function() {
 
         }).fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
-            console.log( "Request Failed: " + err );
+            //console.log( "Request Failed: " + err );
         })
 
         // When prev is clicked
@@ -145,13 +145,20 @@ $(document).ready(function() {
 
         // When next is clicked
         $('#stepper a#step-next').on('click', function(e) {
-            console.log('click');
+            //console.log('click');
             e.preventDefault();
             if ( $itineraryIndex < $itineraryData.length) {
                 $itineraryIndex++;
                 currentEvent($itineraryIndex, $parishPolygons, $itineraryData, $locationMarkers);
             }
         });
+
+        $('.timeline-event').on('click', function(e) {
+            e.preventDefault();
+            console.log($(this).index());
+            $itineraryIndex = $(this).index();
+            currentEvent($(this).index(), $parishPolygons, $itineraryData, $locationMarkers);
+        })
 
         // When a parish in the data table is clicked
         $("a.parish-name").on('click', function(e) {
@@ -166,7 +173,7 @@ $(document).ready(function() {
 
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
-        console.log( "Request Failed: " + err );
+        //console.log( "Request Failed: " + err );
     });
 
     function currentEvent($itineraryIndex, $parishPolygons, $itineraryData, $locationMarkers) {
@@ -191,7 +198,7 @@ $(document).ready(function() {
                     $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + " " + $itineraryData[$itineraryIndex].parish + '<span class="buried-parish">' + $itineraryData[$itineraryIndex].buried_parish_total + '</span>'
                 ).fadeIn($speed);
                 $.each( $locationMarkers, function( $i, marker ) {
-                    console.log($itineraryData[$itineraryIndex].location_latitude);
+                    //console.log($itineraryData[$itineraryIndex].location_latitude);
                     if (marker.latitude == $itineraryData[$itineraryIndex].location_latitude && marker.longitude == $itineraryData[$itineraryIndex].location_longitude) {
                         marker.marker.openPopup();
                     }
