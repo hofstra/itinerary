@@ -69,7 +69,7 @@
     {
         "year" : "1664",
         "date_descriptive" : "December 20-27",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "0",
@@ -114,7 +114,7 @@
     {
         "year" : "1664",
         "date_descriptive" : "December 27-January 3",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "16",
@@ -144,7 +144,7 @@
     {
         "year" : "1664",
         "date_descriptive" : "December 27-January 3",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "6",
@@ -221,7 +221,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 3-10",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "12",
@@ -251,7 +251,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 3-10",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "11",
@@ -296,7 +296,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 10-17",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "18",
@@ -326,7 +326,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 10-17",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "12",
@@ -371,7 +371,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 17-24",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "23",
@@ -401,7 +401,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 17-24",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "9",
@@ -446,7 +446,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 24-31",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "24",
@@ -476,7 +476,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 24-31",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "8",
@@ -506,7 +506,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 30-February 7",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "21",
@@ -536,7 +536,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "January 30-February 7",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "13",
@@ -566,7 +566,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "February 7-14",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "1",
         "buried_parish_total" : "24",
@@ -581,7 +581,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "February 7-14",
-        "parish_id" : "2",
+        "parish_id" : "16",
         "parish" : "St. Brides",
         "buried_plague" : "",
         "buried_parish_total" : "12",
@@ -611,7 +611,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "April 2-9",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "25",
@@ -626,7 +626,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "April 10-17",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "25",
@@ -641,7 +641,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "April 18-25",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "2",
         "buried_parish_total" : "30",
@@ -686,7 +686,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "May 1-8",
-        "parish_id" : "1",
+        "parish_id" : "13",
         "parish" : "St. Andrew's-Holborn",
         "buried_plague" : "",
         "buried_parish_total" : "",
@@ -716,7 +716,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "May 1-8",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "54",
@@ -746,7 +746,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "May 9-16",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "1",
         "buried_parish_total" : "32",
@@ -791,7 +791,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "May 9-16",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "0*",
@@ -821,7 +821,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "May 17-22",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "14",
         "buried_parish_total" : "40",
@@ -851,7 +851,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "May 23-30",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "9 (20)",
         "buried_parish_total" : "53",
@@ -896,7 +896,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "992",
+        "parish_id" : "9916",
         "parish" : "St. Giles's",
         "buried_plague" : "68 (100)",
         "buried_parish_total" : "120",
@@ -911,7 +911,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "1",
         "buried_parish_total" : "",
@@ -926,7 +926,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "1",
         "buried_parish_total" : "",
@@ -941,7 +941,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "2",
         "buried_parish_total" : "",
@@ -986,7 +986,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "Mid-July",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "28",
         "buried_parish_total" : "",
@@ -1016,7 +1016,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 4-11",
-        "parish_id" : "",
+        "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
         "buried_plague" : "",
         "buried_parish_total" : "",
@@ -1031,7 +1031,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 4-11",
-        "parish_id" : "",
+        "parish_id" : "25",
         "parish" : "St. Martins in the Fields",
         "buried_plague" : "",
         "buried_parish_total" : "",
@@ -1046,7 +1046,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 4-11",
-        "parish_id" : "",
+        "parish_id" : "10",
         "parish" : "Aldgate",
         "buried_plague" : "4",
         "buried_parish_total" : "",
@@ -1181,7 +1181,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 11-18",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White Chappel",
         "buried_plague" : "21",
         "buried_parish_total" : "",
@@ -1211,7 +1211,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 11-18",
-        "parish_id" : "",
+        "parish_id" : "11",
         "parish" : "Trin. Minories",
         "buried_plague" : "1",
         "buried_parish_total" : "",
@@ -1301,7 +1301,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 19-26",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White Chappel",
         "buried_plague" : "48",
         "buried_parish_total" : "",
@@ -1331,7 +1331,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 19-26",
-        "parish_id" : "",
+        "parish_id" : "11",
         "parish" : "Trin. Minories",
         "buried_plague" : "1",
         "buried_parish_total" : "",
@@ -1421,7 +1421,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 27-August 3",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White Chappel",
         "buried_plague" : "79",
         "buried_parish_total" : "",
@@ -1451,7 +1451,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 27-August 3",
-        "parish_id" : "",
+        "parish_id" : "11",
         "parish" : "Trin. Minories",
         "buried_plague" : "4",
         "buried_parish_total" : "",
@@ -1736,7 +1736,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "Beginning of Sept.",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White Chapel",
         "buried_plague" : "",
         "buried_parish_total" : "",
@@ -1811,7 +1811,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "August 8 - 15",
-        "parish_id" : "",
+        "parish_id" : "26",
         "parish" : "St. Mag. Bermondsey",
         "buried_plague" : "",
         "buried_parish_total" : "24*",
@@ -1886,7 +1886,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "August 15 - 22",
-        "parish_id" : "",
+        "parish_id" : "26",
         "parish" : "St. Mag. Bermondsey",
         "buried_plague" : "",
         "buried_parish_total" : "36*",
@@ -2456,7 +2456,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 25 - August 1",
-        "parish_id" : "",
+        "parish_id" : "20",
         "parish" : "St. Giles Cripplegate",
         "buried_plague" : "",
         "buried_parish_total" : "554",
@@ -2471,7 +2471,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 25 - August 1",
-        "parish_id" : "",
+        "parish_id" : "29",
         "parish" : "St. Sepulchers",
         "buried_plague" : "",
         "buried_parish_total" : "250",
@@ -2546,7 +2546,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 25 - August 1",
-        "parish_id" : "",
+        "parish_id" : "10",
         "parish" : "Aldgate",
         "buried_plague" : "",
         "buried_parish_total" : "92",
@@ -2561,7 +2561,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 25 - August 1",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White-Chappel",
         "buried_plague" : "",
         "buried_parish_total" : "104",
@@ -2576,7 +2576,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "July 25 - August 1",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "228",
@@ -2621,7 +2621,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "20",
         "parish" : "St. Giles's Cripplegate",
         "buried_plague" : "",
         "buried_parish_total" : "456",
@@ -2636,7 +2636,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
         "buried_plague" : "",
         "buried_parish_total" : "140",
@@ -2666,7 +2666,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "29",
         "parish" : "St. Sepulchers",
         "buried_plague" : "",
         "buried_parish_total" : "214",
@@ -2711,7 +2711,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "10",
         "parish" : "Aldgate",
         "buried_plague" : "",
         "buried_parish_total" : "623",
@@ -2726,7 +2726,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White-Chapel",
         "buried_plague" : "",
         "buried_parish_total" : "532",
@@ -2741,7 +2741,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "1493",
@@ -2756,7 +2756,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 12 - 19",
-        "parish_id" : "",
+        "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "1636",
@@ -2786,7 +2786,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 19 - 26",
-        "parish_id" : "",
+        "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
         "buried_plague" : "",
         "buried_parish_total" : "119",
@@ -2816,7 +2816,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 19 - 26",
-        "parish_id" : "",
+        "parish_id" : "29",
         "parish" : "St. Sepulchers",
         "buried_plague" : "",
         "buried_parish_total" : "193",
@@ -2861,7 +2861,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 19 - 26",
-        "parish_id" : "",
+        "parish_id" : "10",
         "parish" : "Aldgate",
         "buried_plague" : "",
         "buried_parish_total" : "496",
@@ -2876,7 +2876,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 19 - 26",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White-Chapel",
         "buried_plague" : "",
         "buried_parish_total" : "346",
@@ -2891,7 +2891,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 19 - 26",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "1268",
@@ -2906,7 +2906,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 19 - 26",
-        "parish_id" : "",
+        "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "1390",
@@ -2936,7 +2936,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 26 - October 3",
-        "parish_id" : "",
+        "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
         "buried_plague" : "",
         "buried_parish_total" : "95",
@@ -2966,7 +2966,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 26 - October 3",
-        "parish_id" : "",
+        "parish_id" : "29",
         "parish" : "St. Sepulchers",
         "buried_plague" : "",
         "buried_parish_total" : "137",
@@ -3011,7 +3011,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 26 - October 3",
-        "parish_id" : "",
+        "parish_id" : "10",
         "parish" : "Aldgate",
         "buried_plague" : "",
         "buried_parish_total" : "372",
@@ -3026,7 +3026,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 26 - October 3",
-        "parish_id" : "",
+        "parish_id" : "28",
         "parish" : "White-Chapel",
         "buried_plague" : "",
         "buried_parish_total" : "328",
@@ -3041,7 +3041,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 26 - October 3",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "1149",
@@ -3056,7 +3056,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "September 26 - October 3",
-        "parish_id" : "",
+        "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
         "buried_plague" : "",
         "buried_parish_total" : "1201",
@@ -3071,7 +3071,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "- July 1",
-        "parish_id" : "",
+        "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "7*",
         "buried_parish_total" : "",
@@ -3101,7 +3101,7 @@
     {
         "year" : "1665",
         "date_descriptive" : "- July 1",
-        "parish_id" : "",
+        "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
         "buried_plague" : "2*",
         "buried_parish_total" : "",

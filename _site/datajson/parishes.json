@@ -3,51 +3,165 @@
     [
     
     {
-        "id" : "1",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
         "parish_name" : "St. Andrew's-Holborn"
     },
     
     {
-        "id" : "2",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
         "parish_name" : "St. Brides"
     },
     
     {
-        "id" : "990",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
-        "parish_name" : "Test Parish 990"
+        "parish_name" : "St. James Clarkenwell"
     },
     
     {
-        "id" : "991",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
-        "parish_name" : "Test Parish 991"
+        "parish_name" : "St. Giles"
     },
     
     {
-        "id" : "992",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
-        "parish_name" : "Test Parish 992"
+        "parish_name" : "St. Andrew's"
     },
     
     {
-        "id" : "993",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
-        "parish_name" : "Test Parish 993"
+        "parish_name" : "St. Mary-Wool-Church"
     },
     
     {
-        "id" : "994",
+        "id" : "0",
         "color" : "rgb(0, 116, 217)",
-        "parish_name" : "Test Parish 994"
+        "parish_name" : "St. Clement's-Danes"
     },
     
     {
-        "id" : "995",
+        "id" : "10",
         "color" : "rgb(0, 116, 217)",
-        "parish_name" : "Test Parish 995"
+        "parish_name" : "Aldgate"
+    },
+    
+    {
+        "id" : "11",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Trin. Minories"
+    },
+    
+    {
+        "id" : "12",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "Southwark (8 Parishes)"
+    },
+    
+    {
+        "id" : "13",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Andrew's-Holborn"
+    },
+    
+    {
+        "id" : "14",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "16",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Brides"
+    },
+    
+    {
+        "id" : "17",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "18",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "19",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "20",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Giles Cripplegate"
+    },
+    
+    {
+        "id" : "21",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Giles in the Fields"
+    },
+    
+    {
+        "id" : "22",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "23",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "24",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "25",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Martins in the Fields"
+    },
+    
+    {
+        "id" : "26",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Mag. Bermondsey"
+    },
+    
+    {
+        "id" : "27",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : ""
+    },
+    
+    {
+        "id" : "28",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Mary White Chappel"
+    },
+    
+    {
+        "id" : "29",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Sepulchers"
+    },
+    
+    {
+        "id" : "30",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "The City (97 Parishes)"
     }
     
     ]
