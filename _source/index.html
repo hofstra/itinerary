@@ -67,6 +67,7 @@ page_nav: 'map-plague'
                  Some data has different fields/schema.
             -->
             <h2>The Data</h2>
+            {% assign i = 0 %}
             {% for year in events %}
             <table border="0" cellpadding="0" cellspacing="0" class="year">
                 <tr>
@@ -87,8 +88,8 @@ page_nav: 'map-plague'
 
                 {% for event in year.items %}
                 <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
-                    <td id="event-{{ event.sequence }}">{{ event.date_descriptive }}</td>
-                    <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
+                    <td id="event-{{ i }}">{{ event.date_descriptive }}</td>
+                    <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-event-id="{{ i }}" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
                     <td>{{ event.buried_plague }}</td>
                     <td>{{ event.buried_parish_total }}</td>
                     <td>{{ event.buried_plague_total }}</td>
@@ -96,6 +97,7 @@ page_nav: 'map-plague'
                     <td>{{ event.location_descriptive }}</td>
                     <td>{{ event.notes }}</td>
                 </tr>
+                {% assign i = i| plus:'1' %}
                 {% endfor %}
             </table>
             {% endfor %}

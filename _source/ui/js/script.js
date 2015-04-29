@@ -164,11 +164,13 @@ $(document).ready(function() {
         $("a.parish-name").on('click', function(e) {
             //e.preventDefault(); // Let the # link scroll us to the top
             var $parishId = $(this).data('parish-id');
-            $.each( $parishPolygons, function( $i, polygon) {
+            var $itinerarySequence = $(this).data('event-id');
+            currentEvent($itinerarySequence, $parishPolygons, $itineraryData, $locationMarkers);
+            /*$.each( $parishPolygons, function( $i, polygon) {
                 if (polygon.id==$parishId) {
                     polygon.polygon.openPopup();
                 }
-            })
+            })*/
         })
 
     }).fail(function( jqxhr, textStatus, error ) {

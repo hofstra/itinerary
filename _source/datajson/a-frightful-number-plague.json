@@ -8,6 +8,7 @@
     {% for event in year.items %}
     {
         "year" : "{{ year.name }}",
+        "sequence" : "{{ event.sequence }}",
         "date_descriptive" : "{{ event.date_descriptive }}",
         "parish_id" : "{{ event.parish_id }}",
         "parish" : "{{ event.parish }}",

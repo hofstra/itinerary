@@ -6,6 +6,7 @@
     
     {
         "year" : "1663",
+        "sequence" : "1",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "",
@@ -21,6 +22,7 @@
     
     {
         "year" : "1663",
+        "sequence" : "2",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "",
@@ -38,6 +40,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "3",
         "date_descriptive" : "End of November-Beginning of December",
         "parish_id" : "",
         "parish" : "",
@@ -53,6 +56,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "4",
         "date_descriptive" : "Last Week of December",
         "parish_id" : "",
         "parish" : "",
@@ -68,6 +72,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "6",
         "date_descriptive" : "December 20-27",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -83,8 +88,9 @@
     
     {
         "year" : "1664",
+        "sequence" : "7",
         "date_descriptive" : "December 20-27",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "8",
@@ -98,6 +104,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "8",
         "date_descriptive" : "December 20-27",
         "parish_id" : "",
         "parish" : "",
@@ -113,8 +120,9 @@
     
     {
         "year" : "1664",
+        "sequence" : "9",
         "date_descriptive" : "December 27-January 3",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "16",
@@ -128,8 +136,9 @@
     
     {
         "year" : "1664",
+        "sequence" : "10",
         "date_descriptive" : "December 27-January 3",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "17",
@@ -143,6 +152,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "11",
         "date_descriptive" : "December 27-January 3",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -158,8 +168,9 @@
     
     {
         "year" : "1664",
+        "sequence" : "12",
         "date_descriptive" : "December 27-January 3",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "9",
@@ -173,6 +184,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "13",
         "date_descriptive" : "December 27-January 3",
         "parish_id" : "",
         "parish" : "",
@@ -188,6 +200,7 @@
     
     {
         "year" : "1664",
+        "sequence" : "116",
         "date_descriptive" : "December",
         "parish_id" : "",
         "parish" : "",
@@ -205,6 +218,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "5",
         "date_descriptive" : "February 12",
         "parish_id" : "",
         "parish" : "",
@@ -220,8 +234,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "14",
         "date_descriptive" : "January 3-10",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "12",
@@ -235,8 +250,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "15",
         "date_descriptive" : "January 3-10",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "25",
@@ -250,6 +266,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "16",
         "date_descriptive" : "January 3-10",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -265,8 +282,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "17",
         "date_descriptive" : "January 3-10",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "7",
@@ -280,6 +298,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "18",
         "date_descriptive" : "January 3-10",
         "parish_id" : "",
         "parish" : "",
@@ -295,8 +314,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "19",
         "date_descriptive" : "January 10-17",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "18",
@@ -310,8 +330,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "20",
         "date_descriptive" : "January 10-17",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "18",
@@ -325,6 +346,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "21",
         "date_descriptive" : "January 10-17",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -340,8 +362,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "22",
         "date_descriptive" : "January 10-17",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "9",
@@ -355,6 +378,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "23",
         "date_descriptive" : "January 10-17",
         "parish_id" : "",
         "parish" : "",
@@ -370,8 +394,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "24",
         "date_descriptive" : "January 17-24",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "23",
@@ -385,8 +410,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "25",
         "date_descriptive" : "January 17-24",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "16",
@@ -400,6 +426,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "26",
         "date_descriptive" : "January 17-24",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -415,8 +442,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "27",
         "date_descriptive" : "January 17-24",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "15",
@@ -430,6 +458,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "28",
         "date_descriptive" : "January 17-24",
         "parish_id" : "",
         "parish" : "",
@@ -445,8 +474,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "29",
         "date_descriptive" : "January 24-31",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "24",
@@ -460,8 +490,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "30",
         "date_descriptive" : "January 24-31",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "15",
@@ -475,6 +506,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "31",
         "date_descriptive" : "January 24-31",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -490,8 +522,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "32",
         "date_descriptive" : "January 24-31",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "12",
@@ -505,8 +538,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "33",
         "date_descriptive" : "January 30-February 7",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "21",
@@ -520,8 +554,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "34",
         "date_descriptive" : "January 30-February 7",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "23",
@@ -535,6 +570,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "35",
         "date_descriptive" : "January 30-February 7",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -550,8 +586,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "36",
         "date_descriptive" : "January 30-February 7",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "5",
@@ -565,8 +602,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "37",
         "date_descriptive" : "February 7-14",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "1",
         "buried_parish_total" : "24",
@@ -580,6 +618,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "38",
         "date_descriptive" : "February 7-14",
         "parish_id" : "16",
         "parish" : "St. Brides",
@@ -595,8 +634,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "39",
         "date_descriptive" : "February 7-14",
-        "parish_id" : "991",
+        "parish_id" : "",
         "parish" : "St. James Clarkenwell",
         "buried_plague" : "",
         "buried_parish_total" : "6",
@@ -610,8 +650,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "40",
         "date_descriptive" : "April 2-9",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "25",
@@ -625,8 +666,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "41",
         "date_descriptive" : "April 10-17",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "",
         "buried_parish_total" : "25",
@@ -640,8 +682,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "42",
         "date_descriptive" : "April 18-25",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "2",
         "buried_parish_total" : "30",
@@ -655,6 +698,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "43",
         "date_descriptive" : "April 26-May 2",
         "parish_id" : "",
         "parish" : "",
@@ -670,8 +714,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "44",
         "date_descriptive" : "May 1-8",
-        "parish_id" : "994",
+        "parish_id" : "",
         "parish" : "St. Mary-Wool-Church",
         "buried_plague" : "1",
         "buried_parish_total" : "",
@@ -685,6 +730,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "45",
         "date_descriptive" : "May 1-8",
         "parish_id" : "13",
         "parish" : "St. Andrew's-Holborn",
@@ -700,8 +746,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "46",
         "date_descriptive" : "May 1-8",
-        "parish_id" : "995",
+        "parish_id" : "",
         "parish" : "St. Clement's-Danes",
         "buried_plague" : "",
         "buried_parish_total" : "",
@@ -715,6 +762,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "47",
         "date_descriptive" : "May 1-8",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -730,6 +778,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "48",
         "date_descriptive" : "May 1-8",
         "parish_id" : "",
         "parish" : "",
@@ -745,8 +794,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "49",
         "date_descriptive" : "May 9-16",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "1",
         "buried_parish_total" : "32",
@@ -760,8 +810,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "50",
         "date_descriptive" : "May 9-16",
-        "parish_id" : "993",
+        "parish_id" : "",
         "parish" : "St. Andrew's",
         "buried_plague" : "",
         "buried_parish_total" : "15",
@@ -775,6 +826,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "51",
         "date_descriptive" : "May 9-16",
         "parish_id" : "",
         "parish" : "The Town",
@@ -790,6 +842,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "52",
         "date_descriptive" : "May 9-16",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -805,6 +858,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "53",
         "date_descriptive" : "May 9-16",
         "parish_id" : "",
         "parish" : "",
@@ -820,8 +874,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "54",
         "date_descriptive" : "May 17-22",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "14",
         "buried_parish_total" : "40",
@@ -835,6 +890,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "55",
         "date_descriptive" : "May 17-22",
         "parish_id" : "",
         "parish" : "",
@@ -850,8 +906,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "56",
         "date_descriptive" : "May 23-30",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "9 (20)",
         "buried_parish_total" : "53",
@@ -865,6 +922,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "57",
         "date_descriptive" : "May 23-30",
         "parish_id" : "",
         "parish" : "",
@@ -880,6 +938,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "58",
         "date_descriptive" : "June 1-8",
         "parish_id" : "",
         "parish" : "",
@@ -895,8 +954,9 @@
     
     {
         "year" : "1665",
+        "sequence" : "59",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "9916",
+        "parish_id" : "",
         "parish" : "St. Giles's",
         "buried_plague" : "68 (100)",
         "buried_parish_total" : "120",
@@ -910,6 +970,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "60",
         "date_descriptive" : "June 9-16",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -925,6 +986,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "61",
         "date_descriptive" : "June 9-16",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -940,6 +1002,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "62",
         "date_descriptive" : "June 9-16",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -955,6 +1018,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "63",
         "date_descriptive" : "June 9-16",
         "parish_id" : "",
         "parish" : "Southwark",
@@ -970,6 +1034,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "64",
         "date_descriptive" : "Mid-July",
         "parish_id" : "",
         "parish" : "",
@@ -985,6 +1050,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "65",
         "date_descriptive" : "Mid-July",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -1000,6 +1066,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "66",
         "date_descriptive" : "Mid-July",
         "parish_id" : "",
         "parish" : "Southwark, incl. Lambeth",
@@ -1015,6 +1082,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "67",
         "date_descriptive" : "July 4-11",
         "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
@@ -1030,6 +1098,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "68",
         "date_descriptive" : "July 4-11",
         "parish_id" : "25",
         "parish" : "St. Martins in the Fields",
@@ -1045,6 +1114,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "69",
         "date_descriptive" : "July 4-11",
         "parish_id" : "10",
         "parish" : "Aldgate",
@@ -1060,6 +1130,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "70",
         "date_descriptive" : "July 4-11",
         "parish_id" : "",
         "parish" : "Whitechapel",
@@ -1075,6 +1146,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "71",
         "date_descriptive" : "July 4-11",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -1090,6 +1162,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "72",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "",
@@ -1105,6 +1178,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "73",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "Southwark",
@@ -1120,6 +1194,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "74",
         "date_descriptive" : "2nd week of August",
         "parish_id" : "",
         "parish" : "Cripplegate",
@@ -1135,6 +1210,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "75",
         "date_descriptive" : "2nd week of August",
         "parish_id" : "",
         "parish" : "Clerkenwell",
@@ -1150,6 +1226,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "76",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "Algate",
@@ -1165,6 +1242,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "77",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -1180,6 +1258,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "78",
         "date_descriptive" : "July 11-18",
         "parish_id" : "28",
         "parish" : "White Chappel",
@@ -1195,6 +1274,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "79",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "St. Kath Towers",
@@ -1210,6 +1290,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "80",
         "date_descriptive" : "July 11-18",
         "parish_id" : "11",
         "parish" : "Trin. Minories",
@@ -1225,6 +1306,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "81",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "St. Len. Shoreditch",
@@ -1240,6 +1322,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "82",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "St. But. Bishopsg.",
@@ -1255,6 +1338,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "83",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "St. Giles Crippl.",
@@ -1270,6 +1354,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "84",
         "date_descriptive" : "July 19-26",
         "parish_id" : "",
         "parish" : "Algate",
@@ -1285,6 +1370,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "85",
         "date_descriptive" : "July 19-26",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -1300,6 +1386,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "86",
         "date_descriptive" : "July 19-26",
         "parish_id" : "28",
         "parish" : "White Chappel",
@@ -1315,6 +1402,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "87",
         "date_descriptive" : "July 19-26",
         "parish_id" : "",
         "parish" : "St. Kath Towers",
@@ -1330,6 +1418,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "88",
         "date_descriptive" : "July 19-26",
         "parish_id" : "11",
         "parish" : "Trin. Minories",
@@ -1345,6 +1434,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "89",
         "date_descriptive" : "July 19-26",
         "parish_id" : "",
         "parish" : "St. Len. Shoreditch",
@@ -1360,6 +1450,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "90",
         "date_descriptive" : "July 19-26",
         "parish_id" : "",
         "parish" : "St. But. Bishopsg.",
@@ -1375,6 +1466,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "91",
         "date_descriptive" : "July 19-26",
         "parish_id" : "",
         "parish" : "St. Giles Crippl.",
@@ -1390,6 +1482,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "92",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "",
         "parish" : "Algate",
@@ -1405,6 +1498,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "93",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -1420,6 +1514,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "94",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "28",
         "parish" : "White Chappel",
@@ -1435,6 +1530,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "95",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "",
         "parish" : "St. Kath Towers",
@@ -1450,6 +1546,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "96",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "11",
         "parish" : "Trin. Minories",
@@ -1465,6 +1562,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "97",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "",
         "parish" : "St. Len. Shoreditch",
@@ -1480,6 +1578,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "98",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "",
         "parish" : "St. But. Bishopsg.",
@@ -1495,6 +1594,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "99",
         "date_descriptive" : "July 27-August 3",
         "parish_id" : "",
         "parish" : "St. Giles Crippl.",
@@ -1510,6 +1610,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "100",
         "date_descriptive" : "July 4-11",
         "parish_id" : "",
         "parish" : "Islington",
@@ -1525,6 +1626,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "101",
         "date_descriptive" : "July 11-18",
         "parish_id" : "",
         "parish" : "Islington",
@@ -1540,6 +1642,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "102",
         "date_descriptive" : "July 25",
         "parish_id" : "",
         "parish" : "",
@@ -1555,6 +1658,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "103",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "",
@@ -1570,6 +1674,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "104",
         "date_descriptive" : "Aug. 8 - 15",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1585,6 +1690,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "105",
         "date_descriptive" : "Aug. 15 - 22",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1600,6 +1706,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "106",
         "date_descriptive" : "Aug. 22 - 29",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1615,6 +1722,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "107",
         "date_descriptive" : "Aug. 29 - Sept. 5",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1630,6 +1738,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "108",
         "date_descriptive" : "Sept. 5 - 12",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1645,6 +1754,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "109",
         "date_descriptive" : "Sept. 12 - 19",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1660,6 +1770,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "110",
         "date_descriptive" : "Sept. 19 - 26",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1675,6 +1786,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "111",
         "date_descriptive" : "Sept. 26 - Oct. 3",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1690,6 +1802,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "112",
         "date_descriptive" : "Oct. 3 - 10",
         "parish_id" : "",
         "parish" : "London and Suburbs",
@@ -1705,6 +1818,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "113",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "",
@@ -1720,6 +1834,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "114",
         "date_descriptive" : "Beginning of Sept.",
         "parish_id" : "",
         "parish" : "Algate",
@@ -1735,6 +1850,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "115",
         "date_descriptive" : "Beginning of Sept.",
         "parish_id" : "28",
         "parish" : "White Chapel",
@@ -1750,6 +1866,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "117",
         "date_descriptive" : "February - May",
         "parish_id" : "",
         "parish" : "The Town",
@@ -1765,6 +1882,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "118",
         "date_descriptive" : "August 8 - 15",
         "parish_id" : "",
         "parish" : "St. Giles's in the Fields",
@@ -1780,6 +1898,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "119",
         "date_descriptive" : "August 8 - 15",
         "parish_id" : "",
         "parish" : "Cripplegate",
@@ -1795,6 +1914,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "120",
         "date_descriptive" : "August 8 - 15",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -1810,6 +1930,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "121",
         "date_descriptive" : "August 8 - 15",
         "parish_id" : "26",
         "parish" : "St. Mag. Bermondsey",
@@ -1825,6 +1946,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "122",
         "date_descriptive" : "August 8 - 15",
         "parish_id" : "",
         "parish" : "Rotherhith",
@@ -1840,6 +1962,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "123",
         "date_descriptive" : "August 15 - 22",
         "parish_id" : "",
         "parish" : "St. Giles's in the Fields",
@@ -1855,6 +1978,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "124",
         "date_descriptive" : "August 15 - 22",
         "parish_id" : "",
         "parish" : "Cripplegate",
@@ -1870,6 +1994,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "125",
         "date_descriptive" : "August 15 - 22",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -1885,6 +2010,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "126",
         "date_descriptive" : "August 15 - 22",
         "parish_id" : "26",
         "parish" : "St. Mag. Bermondsey",
@@ -1900,6 +2026,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "127",
         "date_descriptive" : "August 15 - 22",
         "parish_id" : "",
         "parish" : "Rotherhith",
@@ -1915,6 +2042,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "128",
         "date_descriptive" : "Sept. and Oct.",
         "parish_id" : "",
         "parish" : "Norwood, Camberwell, Dullege, Lusum",
@@ -1930,6 +2058,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "129",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Enfield",
@@ -1945,6 +2074,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "130",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Hornsey",
@@ -1960,6 +2090,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "131",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Newington",
@@ -1975,6 +2106,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "132",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Tottenham",
@@ -1990,6 +2122,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "133",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Edmonton",
@@ -2005,6 +2138,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "134",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Barnet and Hadly",
@@ -2020,6 +2154,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "135",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "St. Albans",
@@ -2035,6 +2170,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "136",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Watford",
@@ -2050,6 +2186,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "137",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Uxbridge",
@@ -2065,6 +2202,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "138",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Hertford",
@@ -2080,6 +2218,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "139",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Ware",
@@ -2095,6 +2234,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "140",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Hodsdon",
@@ -2110,6 +2250,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "141",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Waltham-Abby",
@@ -2125,6 +2266,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "142",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Epping",
@@ -2140,6 +2282,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "143",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Deptford",
@@ -2155,6 +2298,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "144",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Greenwich",
@@ -2170,6 +2314,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "145",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Eltham and Lusum",
@@ -2185,6 +2330,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "146",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Croydon",
@@ -2200,6 +2346,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "147",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Brent-Wood",
@@ -2215,6 +2362,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "148",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Rumford",
@@ -2230,6 +2378,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "149",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Barking abt.",
@@ -2245,6 +2394,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "150",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Branford",
@@ -2260,6 +2410,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "151",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Kingston",
@@ -2275,6 +2426,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "152",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Stanes",
@@ -2290,6 +2442,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "153",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Chertsey",
@@ -2305,6 +2458,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "154",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "Windsor",
@@ -2320,6 +2474,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "155",
         "date_descriptive" : "August 22 - 29",
         "parish_id" : "",
         "parish" : "",
@@ -2335,6 +2490,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "156",
         "date_descriptive" : "August 29 - September 7",
         "parish_id" : "",
         "parish" : "",
@@ -2350,6 +2506,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "157",
         "date_descriptive" : "September 7 - 12",
         "parish_id" : "",
         "parish" : "",
@@ -2365,6 +2522,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "158",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "",
         "parish" : "",
@@ -2380,6 +2538,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "159",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "",
         "parish" : "",
@@ -2395,6 +2554,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "160",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "St. Giles's, Westminister",
@@ -2410,6 +2570,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "161",
         "date_descriptive" : "Middle of July",
         "parish_id" : "",
         "parish" : "St. Giles in the Fields, St. Andrew's Holborn, St. Clement-Danes, St. Martins in the Fields, Westminster",
@@ -2425,6 +2586,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "162",
         "date_descriptive" : "End of July",
         "parish_id" : "",
         "parish" : "Cripplegate, St. Sepulchers, St. Ja. Clarkenwell, St. Brides, Aldersgate",
@@ -2440,6 +2602,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "163",
         "date_descriptive" : "End of July",
         "parish_id" : "",
         "parish" : "The City (97 Parishes), Southwark (All Parishes), Stepney, White-Chapel, Aldgate, Wapping, Ratcliff",
@@ -2455,6 +2618,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "164",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "20",
         "parish" : "St. Giles Cripplegate",
@@ -2470,6 +2634,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "165",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "29",
         "parish" : "St. Sepulchers",
@@ -2485,6 +2650,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "166",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "",
         "parish" : "Clarkenwell",
@@ -2500,6 +2666,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "167",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "",
         "parish" : "Bishopsgate",
@@ -2515,6 +2682,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "168",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "",
         "parish" : "Shoreditch",
@@ -2530,6 +2698,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "169",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -2545,6 +2714,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "170",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "10",
         "parish" : "Aldgate",
@@ -2560,6 +2730,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "171",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "28",
         "parish" : "White-Chappel",
@@ -2575,6 +2746,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "172",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -2590,6 +2762,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "173",
         "date_descriptive" : "July 25 - August 1",
         "parish_id" : "",
         "parish" : "Southwark (All Parishes)",
@@ -2605,6 +2778,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "174",
         "date_descriptive" : "Beginning of September",
         "parish_id" : "",
         "parish" : "The City (97 Parishes), Southwark (All Parishes)",
@@ -2620,6 +2794,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "175",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "20",
         "parish" : "St. Giles's Cripplegate",
@@ -2635,6 +2810,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "176",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
@@ -2650,6 +2826,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "177",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "",
         "parish" : "Clarkenwell",
@@ -2665,6 +2842,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "178",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "29",
         "parish" : "St. Sepulchers",
@@ -2680,6 +2858,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "179",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "",
         "parish" : "St. Leonard Shoreditch",
@@ -2695,6 +2874,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "180",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -2710,6 +2890,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "181",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "10",
         "parish" : "Aldgate",
@@ -2725,6 +2906,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "182",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "28",
         "parish" : "White-Chapel",
@@ -2740,6 +2922,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "183",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -2755,6 +2938,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "184",
         "date_descriptive" : "September 12 - 19",
         "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
@@ -2770,6 +2954,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "185",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "",
         "parish" : "St. Giles's Cripplegate",
@@ -2785,6 +2970,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "186",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
@@ -2800,6 +2986,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "187",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "",
         "parish" : "Clarkenwell",
@@ -2815,6 +3002,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "188",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "29",
         "parish" : "St. Sepulchers",
@@ -2830,6 +3018,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "189",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "",
         "parish" : "St. Leonard Shoreditch",
@@ -2845,6 +3034,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "190",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -2860,6 +3050,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "191",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "10",
         "parish" : "Aldgate",
@@ -2875,6 +3066,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "192",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "28",
         "parish" : "White-Chapel",
@@ -2890,6 +3082,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "193",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -2905,6 +3098,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "194",
         "date_descriptive" : "September 19 - 26",
         "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
@@ -2920,6 +3114,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "195",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "",
         "parish" : "St. Giles's Cripplegate",
@@ -2935,6 +3130,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "196",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "21",
         "parish" : "St. Giles in the Fields",
@@ -2950,6 +3146,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "197",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "",
         "parish" : "Clarkenwell",
@@ -2965,6 +3162,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "198",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "29",
         "parish" : "St. Sepulchers",
@@ -2980,6 +3178,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "199",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "",
         "parish" : "St. Leonard Shoreditch",
@@ -2995,6 +3194,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "200",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "",
         "parish" : "Stepney",
@@ -3010,6 +3210,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "201",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "10",
         "parish" : "Aldgate",
@@ -3025,6 +3226,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "202",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "28",
         "parish" : "White-Chapel",
@@ -3040,6 +3242,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "203",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -3055,6 +3258,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "204",
         "date_descriptive" : "September 26 - October 3",
         "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
@@ -3070,6 +3274,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "205",
         "date_descriptive" : "- July 1",
         "parish_id" : "30",
         "parish" : "The City (97 Parishes)",
@@ -3085,6 +3290,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "206",
         "date_descriptive" : "- July 1",
         "parish_id" : "",
         "parish" : "Liberties",
@@ -3100,6 +3306,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "207",
         "date_descriptive" : "- July 1",
         "parish_id" : "12",
         "parish" : "Southwark (8 Parishes)",
@@ -3115,6 +3322,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "208",
         "date_descriptive" : "- July 1",
         "parish_id" : "",
         "parish" : "Stepney, Aldgate, White-Chappel",
@@ -3130,6 +3338,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "209",
         "date_descriptive" : "2nd to Last Week of September",
         "parish_id" : "",
         "parish" : "",
@@ -3145,6 +3354,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "210",
         "date_descriptive" : "Last Week of September",
         "parish_id" : "",
         "parish" : "",
@@ -3160,6 +3370,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "211",
         "date_descriptive" : "First Week of October",
         "parish_id" : "",
         "parish" : "",
@@ -3175,6 +3386,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "212",
         "date_descriptive" : "",
         "parish_id" : "",
         "parish" : "",
@@ -3190,6 +3402,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "213",
         "date_descriptive" : "Another Week of October",
         "parish_id" : "",
         "parish" : "",
@@ -3205,6 +3418,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "214",
         "date_descriptive" : "Next Week of October",
         "parish_id" : "",
         "parish" : "",
@@ -3220,6 +3434,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "215",
         "date_descriptive" : "First Week of November",
         "parish_id" : "",
         "parish" : "",
@@ -3235,6 +3450,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "216",
         "date_descriptive" : "November",
         "parish_id" : "",
         "parish" : "",
@@ -3250,6 +3466,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "217",
         "date_descriptive" : "December",
         "parish_id" : "",
         "parish" : "",
@@ -3265,6 +3482,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "218",
         "date_descriptive" : "First Three Weeks of September",
         "parish_id" : "",
         "parish" : "",
@@ -3280,6 +3498,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "219",
         "date_descriptive" : "To the End of the Year",
         "parish_id" : "",
         "parish" : "",
@@ -3295,6 +3514,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "220",
         "date_descriptive" : "First Week of October?",
         "parish_id" : "",
         "parish" : "",
@@ -3310,6 +3530,7 @@
     
     {
         "year" : "1665",
+        "sequence" : "221",
         "date_descriptive" : "Last Three Weeks",
         "parish_id" : "",
         "parish" : "",
