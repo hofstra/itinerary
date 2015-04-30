@@ -22,7 +22,7 @@ id,parish-name,color,background-color,source-filename,notes
 "24","","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. katherines.geojson","There appears to be no parish instance of 'katherine' in the Plague data. There are entries for 'St. Kath Towers'."
 "25","St. Martins in the Fields","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. martins in the fields.geojson","Added 4.28"
 "26","St. Mag. Bermondsey","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. mary magdalen bermondsey.geojson","Added 4.28"
-"27","","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. mary rotherhithe.geojson","There are two entries that are just 'Rothernith' - Does this map to those?"
+"27","St. Mary Rotherhithe","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. mary rotherhithe.geojson","There are two entries that are just 'Rothernith' - Does this map to those? Went ahead and mapped those."
 "28","St. Mary White Chappel","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. mary white chappel.geojson","I assumed this mapped to instances of 'White-Chappel', 'White-Chapel', 'White Chappel', and 'White Chapel'; Added 4.28"
 "29","St. Sepulchers","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. sepulchres.geojson","Added 4.28"
 "30","The City (97 Parishes)","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","the city (97 parishes).geojson","Added 4.28"
