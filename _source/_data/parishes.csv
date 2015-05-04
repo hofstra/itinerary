@@ -26,3 +26,5 @@ id,parish-name,color,background-color,source-filename,notes
 "28","St. Mary White Chappel","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. mary white chappel.geojson","I assumed this mapped to instances of 'White-Chappel', 'White-Chapel', 'White Chappel', and 'White Chapel'; Added 4.28"
 "29","St. Sepulchers","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","st. sepulchres.geojson","Added 4.28"
 "30","The City (97 Parishes)","rgb(0, 116, 217)","rgba(0, 116, 217, .4)","the city (97 parishes).geojson","Added 4.28"
+"31","St. James Clerkenwall","rgb(0, 116, 217)","rgba(0,116,217, .4)","st._james_clerkenwell.geojson","Added 5.4"
+"32","St. Mary Woolchurch Haw","rgb(0, 116, 217)","rgba(0,116,217, .4)","st._mary_woolchurch.geojson","Added 5.4"

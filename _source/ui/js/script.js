@@ -58,16 +58,16 @@ $(document).ready(function() {
 
                 var $itineraryEventContent = '';
                 $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
-                $itineraryEventContent += "<h3>" + $event.parish + "</h3>";
+                //$itineraryEventContent += "<h3>" + $event.parish + "</h3>";
                 $itineraryEventContent += '<p>';
-                if ($event.date_descriptive != '')
-                    $itineraryEventContent += $event.date_descriptive + '<br />';
+                /*if ($event.date_descriptive != '')
+                    $itineraryEventContent += $event.date_descriptive + '<br />';*/
                 if ($event.location_descriptive != '')
                     $itineraryEventContent += $event.location_descriptive + '<br />';
                 if ($event.buried_parish_total != '')
                     $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $event.buried_parish_total + '</span><br />';
-                if ($event.notes != '')
-                    $itineraryEventContent += $event.notes + '<br />';
+                /*if ($event.notes != '')
+                    $itineraryEventContent += $event.notes + '<br />';*/
                 $itineraryEventContent += '</p>';
                 $itineraryEventContent += '</div>';
                 $marker.bindPopup( $itineraryEventContent );
@@ -186,6 +186,9 @@ $(document).ready(function() {
             polygon.polygon.closePopup();
             polygon.polygon.bindPopup( polygon.content );
         });
+        $.each( $locationMarkers, function( $i, marker) {
+            marker.marker.closePopup();
+        });
 
         $speed = 175;
 
@@ -202,6 +205,21 @@ $(document).ready(function() {
                 $.each( $locationMarkers, function( $i, marker ) {
                     //console.log($itineraryData[$itineraryIndex].location_latitude);
                     if (marker.latitude == $itineraryData[$itineraryIndex].location_latitude && marker.longitude == $itineraryData[$itineraryIndex].location_longitude) {
+                        var $itineraryEventContent = '';
+                        $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
+                        $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
+                        $itineraryEventContent += '<p>';
+                        if ($itineraryData[$itineraryIndex].date_descriptive != '')
+                            $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
+                        if ($itineraryData[$itineraryIndex].location_descriptive != '')
+                            $itineraryEventContent += $itineraryData[$itineraryIndex].location_descriptive + '<br />';
+                        if ($itineraryData[$itineraryIndex].buried_parish_total != '')
+                            $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
+                        if ($itineraryData[$itineraryIndex].notes != '')
+                            $itineraryEventContent += $itineraryData[$itineraryIndex].notes + '<br />';
+                        $itineraryEventContent += '</p>';
+                        $itineraryEventContent += '</div>';
+                        marker.marker.bindPopup( $itineraryEventContent );
                         marker.marker.openPopup();
                     }
                 })

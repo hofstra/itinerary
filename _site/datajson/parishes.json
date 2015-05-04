@@ -162,6 +162,18 @@
         "id" : "30",
         "color" : "rgb(0, 116, 217)",
         "parish_name" : "The City (97 Parishes)"
+    },
+    
+    {
+        "id" : "31",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. James Clerkenwall"
+    },
+    
+    {
+        "id" : "32",
+        "color" : "rgb(0, 116, 217)",
+        "parish_name" : "St. Mary Woolchurch Haw"
     }
     
     ]
