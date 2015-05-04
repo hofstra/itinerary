@@ -209,8 +209,8 @@
         "buried_plague_total" : "",
         "buried_total" : "",
         "location_descriptive" : "Long-Acre, Drury-Lane",
-        "location_latitude" : "",
-        "location_longitude" : "",
+        "location_latitude" : "51.51525930707282",
+        "location_longitude" : "-0.12265205383300781",
         "notes" : "H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City."
     }
     ,
@@ -972,15 +972,15 @@
         "year" : "1665",
         "sequence" : "60",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "30",
+        "parish_id" : "",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "1",
         "buried_parish_total" : "",
         "buried_plague_total" : "4",
         "buried_total" : "",
         "location_descriptive" : "Wood-street",
-        "location_latitude" : "",
-        "location_longitude" : "",
+        "location_latitude" : "51.51661464098204",
+        "location_longitude" : "-0.09323358535766602",
         "notes" : "H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however."
     },
     
@@ -988,15 +988,15 @@
         "year" : "1665",
         "sequence" : "61",
         "date_descriptive" : "June 9-16",
-        "parish_id" : "30",
+        "parish_id" : "",
         "parish" : "The City (97 Parishes)",
         "buried_plague" : "1",
         "buried_parish_total" : "",
         "buried_plague_total" : "4",
         "buried_total" : "",
         "location_descriptive" : "Fenchurch-street",
-        "location_latitude" : "",
-        "location_longitude" : "",
+        "location_latitude" : "51.511613726102865",
+        "location_longitude" : "-0.08135676383972168",
         "notes" : "The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving."
     },
     
