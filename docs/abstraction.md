@@ -1,6 +1,6 @@
 Note that this is supplemental to the current iteration of Itinerary's [how-to write-up](https://github.com/hofstra/itinerary/blob/master/docs/write-up.md).
 
-#h3 Resolved Items
+### Resolved Items
 
 * Jekyll & JavaScript-based rendering of Itinerary data, in tabular and interactive timeline formats respectively.
 * Rendering of parishes, as referenced at the time of "A Plague Year." (Polygons)
