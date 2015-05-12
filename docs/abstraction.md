@@ -18,9 +18,10 @@ Note that this is supplemental to the current iteration of Itinerary's [how-to w
 
 ### Melville in Rome-inspired Items
 
-* Route itineraries: Within the overall itinerary, we need map individual points along a route. In the Melville example, these span multiple events (entries) on a single date, implying a common date field along with a common route field to link them together. These should presumably follow a line rendered on the map, while also allowing each point to be highlighted.
+* Route itineraries: Within the overall itinerary, we need to map individual points along a route. In the Melville example, these span multiple events (entries) on a single date, implying a common date field along with a common route field to link them together. These should presumably follow a line rendered on the map, while also allowing each point to be highlighted.
   * Melville indicates distances and cumulative distances. Straight lines connecting points on the rendered map will likely differ from these.
-* Melville has times and elapsed times for these route events. Could times impact sort order when rendered in the timeline? Note that timeline current relies on sequence rather than date for sorting.
+  * It may make sense to store these in a lookup table as we currently do for parishes/regions, so that they can appear at render time. Is this duplicative effort? Are there too many of these, compared to "static" shapes like parishes, to be useful until they're clicked on? Should they be labeled or feature core metadata common to all shared events?
+* Melville has times and elapsed times for these route events. Could times impact sort order when rendered in the timeline? Note that timeline current relies on sequence rather than date for sorting, and will likely continue to, so this is a non-issue in that regard.
 * The Melville Itinerary has literary comments as well as editorial notes. Similar to the disparate content fields in "A Plague Year," these will need to be mapped to templates for display.
 * The Melville Itinerary identifies a companion, which would be displayed in the timeline as content and otherwise have no bearing on timeline or map rendering.
 * The Melville Itinerary identifies weather, conveyance and observed sights, which would be displayed in the timeline as content and otherwise have no bearing on timeline or map rendering.
@@ -29,7 +30,7 @@ Note that this is supplemental to the current iteration of Itinerary's [how-to w
 
 `currentEvent` is a JavaScript function that takes the following parameters:
 
-* `itineraryIndex`: `currentEvent` will highlight the specified event in the timeline and "light it up" on the map, and is callable from any context: The prev/next step arrows, the event in the tabular data, etc. This is the index of the event in the Itinerary sequence, which will match the events loaded via JSON or Jekyll.
+* `itineraryIndex`: `currentEvent` will highlight the specified event in the timeline and "light it up" on the map, and is callable from any context: The prev/next step arrows, the event in the tabular data, etc. This is the index of the specified event in the Itinerary sequence, which will match the events loaded via JSON or Jekyll.
 * `parishPolygons`: The array of polygons that were loaded and rendered at the onset, so we can light up the corresponding region. The reference should be changed to "Regions."
 * `itineraryData`: The array of Itinerary events (entries) loaded from JSON.
 * `locationMarkers`: The array of location markers loaded and rendered on the map at the onset. Note that only 1 pin will be rendered for each identically named location.
