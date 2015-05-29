@@ -94,7 +94,11 @@ page_nav: 'map-plague'
                     <td>{{ event.buried_parish_total }}</td>
                     <td>{{ event.buried_plague_total }}</td>
                     <td>{{ event.buried_total }}</td>
-                    <td>{{ event.location_descriptive }}</td>
+                    {% if event.location_latitude!='' %}
+                    <td id="event-{{ i }}"><a href="#" class="location-descriptive" data-event-id="{{ i }}">{{ event.location_descriptive }}</a></td>
+                    {% else %}
+                    <td id="event-{{ i }}">{{ event.location_descriptive }}</td>
+                    {% endif %}
                     <td>{{ event.notes }}</td>
                 </tr>
                 {% assign i = i| plus:'1' %}

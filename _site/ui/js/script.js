@@ -48,7 +48,6 @@ $(document).ready(function() {
         $.each( $itineraryData, function(i, $event) {
 
             var $timelineEventShape = '';
-            //$timelineEventShape = '<span class="timeline-event" style="width: ' + $timelineEventWidth + '%;"><span></span></span>';
             $timelineEventShape = '<a href="#" class="timeline-event" style="width: 4px;"><span></span></a>';
             $( $timelineEventShape ).appendTo(".timeline");
 
@@ -58,12 +57,11 @@ $(document).ready(function() {
 
                 var $itineraryEventContent = '';
                 $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
-                //$itineraryEventContent += "<h3>" + $event.parish + "</h3>";
+                if ($event.location_descriptive != '')
+                    $itineraryEventContent += '<h3>' + $event.location_descriptive + '</h3>';
                 $itineraryEventContent += '<p>';
                 /*if ($event.date_descriptive != '')
                     $itineraryEventContent += $event.date_descriptive + '<br />';*/
-                if ($event.location_descriptive != '')
-                    $itineraryEventContent += $event.location_descriptive + '<br />';
                 if ($event.buried_parish_total != '')
                     $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $event.buried_parish_total + '</span><br />';
                 /*if ($event.notes != '')
@@ -173,6 +171,12 @@ $(document).ready(function() {
             })*/
         })
 
+        // When a location in the data table is clicked
+        $("a.location-descriptive").on('click', function(e) {
+            var $itinerarySequence = $(this).data('event-id');
+            currentEvent($itinerarySequence, $parishPolygons, $itineraryData, $locationMarkers);
+        })
+
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
         //console.log( "Request Failed: " + err );
@@ -208,11 +212,11 @@ $(document).ready(function() {
                         var $itineraryEventContent = '';
                         $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
                         $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
+                        if ($itineraryData[$itineraryIndex].location_descriptive != '')
+                            $itineraryEventContent += '<h3>' + $itineraryData[$itineraryIndex].location_descriptive + '</h3>';
                         $itineraryEventContent += '<p>';
                         if ($itineraryData[$itineraryIndex].date_descriptive != '')
                             $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
-                        if ($itineraryData[$itineraryIndex].location_descriptive != '')
-                            $itineraryEventContent += $itineraryData[$itineraryIndex].location_descriptive + '<br />';
                         if ($itineraryData[$itineraryIndex].buried_parish_total != '')
                             $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
                         if ($itineraryData[$itineraryIndex].notes != '')
