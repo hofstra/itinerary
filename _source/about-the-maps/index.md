@@ -1,7 +1,7 @@
 ---
 page_nav: 'about-the-maps'
 layout: content
-page_title: 'About the Maps'
+page_title: 'About the Maps (Placeholder)'
 ---
 ### This is an H3 heading
 
