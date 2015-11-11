@@ -1,5 +1,5 @@
 page-nav,link-name,link-href
-"map-plague","Map: Plague",/
+"map-plague","Map: Plague",/itinerary/
 "map-hf","Map: HF",#
 "about-the-project","About the Project",https://github.com/hofstra/itinerary/blob/master/docs/write-up.md
-"about-the-maps","About the Maps",/about-the-maps
+"about-the-maps","About the Maps",/itinerary/about-the-maps
