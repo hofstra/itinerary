@@ -135,11 +135,27 @@ table {
     table.data {
         margin-bottom: 40px;
     }
+/* .data-table comes from the design framework established after this project started. */
+.data-table {
+    margin-bottom: 40px;
+    overflow-x: scroll;
+}
+    .data-table table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+        .data-table table th {
+                padding-top: 12px;
+                padding-right: 10px;
+                padding-bottom: 12px;
+                padding-left: 10px;
+                text-align: left;
+                vertical-align: bottom;
+            }
 .itinerary th {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 16px;
     font-weight: 400 !important; /* Not sure what's overriding this...*/
-    text-align: center !important;
 }
 .itinerary td {
     /*font-size: 13px;
@@ -321,4 +337,16 @@ table {
         margin-left: auto;
         max-width: 40%;
     }
+}
+
+.project-notes {
+
+}
+    .project-notes p {
+        font-size: 12px;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+    }
+span.code {
+    font-family: monospace;
 }

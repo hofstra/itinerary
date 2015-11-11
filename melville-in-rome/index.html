@@ -8,7 +8,7 @@ page_nav: 'map-melville-rome'
 <!--
      Here's where we set things up!
 -->
-{% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
+{% assign events = site.data.MelvilleInRome2 | group_by:"date_year" %}
 <script type="text/javascript">
     // Set datajson file that matches the source data specified for {{ events }}
     //var datajson = 'a-frightful-number-plague.json';
@@ -38,6 +38,90 @@ page_nav: 'map-melville-rome'
 <div id="map-container"><noscript>
     <p>An interactive map resides here.</p>
 </noscript></div>
+<div class="wrapper">
+    <div class="itinerary">
+        <!--
+             Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
+             so that we have a page loaded with content if JS is an issue.
+        -->
+        <!--
+             Note that the HTML structure here is dependent on the structure of the data.
+             Some data has different fields/schema.
+        -->
+        <h2>The Data</h2>
+        <div class="project-notes">
+            <p>Note: We will want to establish a convention to include unofficial or non-waypoint lat &amp; long points in this data. Such points will not be represented in the output, but will be used to craft the route between waypoints.</p>
+            <p>Question: Why do some entries not contain a waypoint name? ('waypoint' represents the <span class="code">Start_Point</span>, <span class="code">Route_Point1</span>, <span class="code">Route_Point2</span>, <span class="code">Route_Point3</span>, <span class="code">Route_Point4</span>, <span class="code">Route_Point5</span>, <span class="code">End_Point</span> entries consolidated. We need to have each plotted point, regardless of significance, as a distinct entry. If it falls along a route, that is asserted by its sequence.)</p>
+            <p>Question: Why are HM_Sight2, 3, 4 used where HM_Sight1 is empty? Should additional sights not follow a first sight? (See Thursday entries.)</p>
+            <p>To do: Determine lat/long for waypoints, and in-between route points.</p>
+            <p>Question: Does route always correspond to Itinerary Day? Or might there be multiple routes on a given day? (Where a route is a significant sequence of waypoints with start and end points.)</p>
+            <p>Question: Confirm that the mapped points will essentially start on day 2 in this project, as the first day&rsquo;s points are in Naples?</p>
+        </div>
+
+        {% assign i = 0 %}
+        {% for year in events %}
+        <table border="0" cellpadding="0" cellspacing="0" class="year">
+            <tr>
+                <th><h3>{{ year.name }}</h3></th>
+            </tr>
+        </table>
+        <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+            <thead><tr>
+                <th>Date</th>
+                <th>Itinerary Day</th>
+                <th>Location</th>
+                <th>Lat, Long</th>
+                <th>Source</th>
+                <th>Route</th>
+                <th>Waypoint</th>
+                <th>Sight 1</th>
+                <th>Sight 2</th>
+                <th>Sight 3</th>
+                <th>Sight 4</th>
+                <th>HM Comment</th>
+                <th>Editorial Note</th>
+            </tr></thead>
+
+            {% for event in year.items %}
+            <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
+                <td id="event-{{ i }}">{% if event.weekday != null %}{{ event.weekday }}, {% endif %}{{ event.date_descriptive }}</td>
+                <td>{{ event.itinerary_day }}</td>
+                <td>{{ event.location_descriptive }}</td>
+                <td>{% if event.location_latitude != null %}{{ event.location_latitude }}{% else %}##.#####{% endif %}, {% if event.location_longitude != null %}{{ event.location_longitude }}{% else %}##.#####{% endif %}</td>
+                <td>{% if event.source_page != null %}p. {{ event.source_page }}, {% endif %}{{ event.source }}</td>
+                <td>{{ event.route }}</td>
+                <td>{{ event.waypoint }}</td>
+                <td>{{ event.HM_Sight1 }}</td>
+                <td>{{ event.HM_Sight2 }}</td>
+                <td>{{ event.HM_Sight3 }}</td>
+                <td>{{ event.HM_Sight4 }}</td>
+                <td>{{ event.HM_Comment }}</td>
+                <td>{{ event.Editorial_Note }}</td>
+            </tr>
+            {% assign i = i| plus:'1' %}
+            {% endfor %}
+        </table></div>
+        {% endfor %}
+        <!-- A bit of redundant entry is required to make a pure CSS solution work... -->
+        <style type="text/css">
+            @media screen and (max-width: 940px) {
+                td:nth-of-type(1):before { content: "Date"; }
+                td:nth-of-type(2):before { content: "Itinerary Da"; }
+                td:nth-of-type(3):before { content: "Location"; }
+                td:nth-of-type(4):before { content: "Lat, Long"; }
+                td:nth-of-type(5):before { content: "Source"; }
+                td:nth-of-type(6):before { content: "Route"; }
+                td:nth-of-type(7):before { content: "Waypoint"; }
+                td:nth-of-type(8):before { content: "Sight 1"; }
+                td:nth-of-type(9):before { content: "Sight 2"; }
+                td:nth-of-type(10):before { content: "Sight 3"; }
+                td:nth-of-type(11):before { content: "Sight 4"; }
+                td:nth-of-type(11):before { content: "HM Comment"; }
+                td:nth-of-type(12):before { content: "Editorial Note"; }
+            }
+        </style>
+    </div>
+</div>
 
 {% include footer-melville-rome.html %}
 </body>
