@@ -1,0 +1,44 @@
+---
+page_nav: 'map-melville-rome'
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+<!--
+     Here's where we set things up!
+-->
+{% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
+<script type="text/javascript">
+    // Set datajson file that matches the source data specified for {{ events }}
+    //var datajson = 'a-frightful-number-plague.json';
+
+    // Set map values for this page that will be used in script.js
+    var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+    var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+
+    var tile_layer_historic = 'http://mapwarper.net/maps/tile/9175/{z}/{x}/{y}.png';
+    var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+
+    var mapbox_id = 'clearbold.l4gjpd88';
+
+    // Need to find a way to do this; These are on the left side of object assignment
+    // [variable] worked in Firefox, but halted the JS in Chrome
+    var historic_toggle_label = 'Rome 1748';
+    var modern_toggle_label = 'Rome 2015';
+    // So this isn't actually being used. These are set in the scripts file.
+
+    var map_center = [41.8922136, 12.4810397];
+    var map_zoom = 15;
+</script>
+</head>
+
+<body>
+{% include header-melville-rome.html %}
+<div id="map-container"><noscript>
+    <p>An interactive map resides here.</p>
+</noscript></div>
+
+{% include footer-melville-rome.html %}
+</body>
+</html>
