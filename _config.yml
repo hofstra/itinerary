@@ -1,21 +1,25 @@
 # Site settings
 title: "Hofstra Digital Research Center: Mapping the Plague"
-email: mjr@clearbold.com
+email: drc@hofstra.edu
 description: ""
 baseurl: ""
-url: "#"
-twitter_username: tbd
+url: "http://hofstradrc.org"
+twitter_username:
 github_username:  hofstra
 
 # Where things are
 destination:      ./_site
-source:           ./_source
+# source:           ./_source
 
 
 # Handling Reading
-exclude:           ["Gemfile", "Gemfile.lock", "README.md", "LICENSE"]
+exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
 
 # Conversion
 markdown: kramdown
 
-# $ bundle exec jekyll serve --watch
+# Compensating for gh-pages project site
+baseurl: /access-scholar
+# https://github.com/jekyll/jekyll/issues/332
+
+asset_url: https://hofstra.github.io/design-framework
