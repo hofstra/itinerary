@@ -19,7 +19,7 @@ exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitign
 markdown: kramdown
 
 # Compensating for gh-pages project site
-baseurl: /access-scholar
+baseurl: /itinerary
 # https://github.com/jekyll/jekyll/issues/332
 
 asset_url: https://hofstra.github.io/design-framework
