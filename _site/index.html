@@ -6,35 +6,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link type="text/css" media="screen" rel="stylesheet" href="/ui/css/styles.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="/itinerary/ui/css/styles.css" />
     <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js"></script>
     <link type="text/css" rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400Italic|IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'><!-- There's an italic font as well -->
 
-    <link type="text/css" media="screen" rel="stylesheet" href="/ui/css/responsive-tables.css" />
+    <!--link type="text/css" media="screen" rel="stylesheet" href="/itinerary/ui/css/responsive-tables.css" /-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="/ui/js/responsive-tables.js"></script>
+    <!--script type="text/javascript" src="/itinerary/ui/js/responsive-tables.js"></script-->
 
     <!-- Favicons -->
     <!--link rel="shortcut icon" sizes="16x16" href="/favicon.ico" /-->
-    <link rel="shortcut icon" sizes="32x32" href="/favicon.png" />
+    <link rel="shortcut icon" sizes="32x32" href="/itinerary/favicon.png" />
     <!-- 57x57 (not precomposed) for non-retina iPhone/iPod iOS 7 and older Android devices -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/ui/img/drc.square.rcon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/itinerary/ui/img/drc.square.rcon.png" />
     <!-- 72x72 (not precomposed) for non-retina iPad pre iOS 7 -->
-    <link rel="apple-touch-icon" sizes="72x72" href="/ui/img/drc.square.rcon72.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/itinerary/ui/img/drc.square.rcon72.png" />
     <!-- 76x76 (not precomposed) for non-retina iPad iOS 7 -->
-    <link rel="apple-touch-icon" sizes="76x76" href="/ui/img/drc.square.rcon76.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/itinerary/ui/img/drc.square.rcon76.png" />
     <!-- 114x114 (not precomposed) for retina iPhone pre iOS 7 and post-2011 iPod Touch -->
-    <link rel="apple-touch-icon" sizes="114x114" href="/ui/img/drc.square.rcon114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/itinerary/ui/img/drc.square.rcon114.png" />
     <!-- 120x120 (not precomposed) for retina iPhone iOS 7 -->
-    <link rel="apple-touch-icon" sizes="120x120" href="/ui/img/drc.square.rcon120.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/itinerary/ui/img/drc.square.rcon120.png" />
     <!-- 144x144 (not precomposed) for retina iPad pre iOS 7 -->
-    <link rel="apple-touch-icon" sizes="144x144" href="/ui/img/drc.square.rcon144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/itinerary/ui/img/drc.square.rcon144.png" />
     <!-- 152x152 (not precomposed) for retina iPad iOS 7 -->
-    <link rel="apple-touch-icon" sizes="152x152" href="/ui/img/drc.square.rcon152.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/itinerary/ui/img/drc.square.rcon152.png" />
 
     <!-- Windows 8 / RT -->
-    <meta name="msapplication-TileImage" content="/ui/img/drc.square.rcon144.png" />
+    <meta name="msapplication-TileImage" content="/itinerary/ui/img/drc.square.rcon144.png" />
+
 
     <style type="text/css">
         /* Dynamically set up CSS styles for event data in the timeline based on corresponding parishes */
@@ -129,23 +130,24 @@
 <body>
 
     <div class="logo-header-wrapper"><div class="logo-header">
-        <img src="/ui/img/drc.pl.itinerary.png" width="247" height="43" alt="Digital Research Center at Hofstra" />
+        <img src="/itinerary/ui/img/drc.pl.itinerary.png" width="247" height="43" alt="Digital Research Center at Hofstra" />
     </div></div>
     <div class="wrapper">
         <h1>A &ldquo;Frightful Number!&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s <em>A Journal of the Plague Year</em></h1>
 
         <div class="nav">
             
-            <a href="/" class="active">Map: Plague</a>
+            <a href="/itinerary/" class="active">Map: Plague</a>
             
             <a href="#">Map: HF</a>
             
             <a href="https://github.com/hofstra/itinerary/blob/master/docs/write-up.md">About the Project</a>
             
-            <a href="/about-the-maps">About the Maps</a>
+            <a href="/itinerary/about-the-maps">About the Maps</a>
             
         </div>
     </div>
+
     <div id="map-container"><noscript>
         <p>An interactive map resides here.</p>
     </noscript></div>
@@ -178,8 +180,8 @@
                     <th><h3>1663</h3></th>
                 </tr>
             </table>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-                <tr>
+            <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <thead><tr>
                     <th width="8%">Date</th>
                     <th width="12%">Parish</th>
                     <th width="8%">Buried Plague</th>
@@ -188,7 +190,7 @@
                     <th width="6%">Buried Total</th>
                     <th width="12%">Location</th>
                     <th width="40%">Notes</th>
-                </tr>
+                </tr></thead>
 
                 
                 <tr class="odd parish-">
@@ -215,19 +217,19 @@
                     
                     <td id="event-1">Rotterdam, Holland</td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
-            </table>
+            </table></div>
             
             <table border="0" cellpadding="0" cellspacing="0" class="year">
                 <tr>
                     <th><h3>1664</h3></th>
                 </tr>
             </table>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-                <tr>
+            <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <thead><tr>
                     <th width="8%">Date</th>
                     <th width="12%">Parish</th>
                     <th width="8%">Buried Plague</th>
@@ -236,7 +238,7 @@
                     <th width="6%">Buried Total</th>
                     <th width="12%">Location</th>
                     <th width="40%">Notes</th>
-                </tr>
+                </tr></thead>
 
                 
                 <tr class="odd parish-">
@@ -291,7 +293,7 @@
                     
                     <td id="event-5"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -319,7 +321,7 @@
                     
                     <td id="event-7"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -333,7 +335,7 @@
                     
                     <td id="event-8"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -347,7 +349,7 @@
                     
                     <td id="event-9"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -361,7 +363,7 @@
                     
                     <td id="event-10"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -375,7 +377,7 @@
                     
                     <td id="event-11"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -393,15 +395,15 @@
                 </tr>
                 
                 
-            </table>
+            </table></div>
             
             <table border="0" cellpadding="0" cellspacing="0" class="year">
                 <tr>
                     <th><h3>1665</h3></th>
                 </tr>
             </table>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-                <tr>
+            <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <thead><tr>
                     <th width="8%">Date</th>
                     <th width="12%">Parish</th>
                     <th width="8%">Buried Plague</th>
@@ -410,7 +412,7 @@
                     <th width="6%">Buried Total</th>
                     <th width="12%">Location</th>
                     <th width="40%">Notes</th>
-                </tr>
+                </tr></thead>
 
                 
                 <tr class="even parish-">
@@ -437,7 +439,7 @@
                     
                     <td id="event-14"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -451,7 +453,7 @@
                     
                     <td id="event-15"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -465,7 +467,7 @@
                     
                     <td id="event-16"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -479,7 +481,7 @@
                     
                     <td id="event-17"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -493,7 +495,7 @@
                     
                     <td id="event-18"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -507,7 +509,7 @@
                     
                     <td id="event-19"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -521,7 +523,7 @@
                     
                     <td id="event-20"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -535,7 +537,7 @@
                     
                     <td id="event-21"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -549,7 +551,7 @@
                     
                     <td id="event-22"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -563,7 +565,7 @@
                     
                     <td id="event-23"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -577,7 +579,7 @@
                     
                     <td id="event-24"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -591,7 +593,7 @@
                     
                     <td id="event-25"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -605,7 +607,7 @@
                     
                     <td id="event-26"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -619,7 +621,7 @@
                     
                     <td id="event-27"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -633,7 +635,7 @@
                     
                     <td id="event-28"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -647,7 +649,7 @@
                     
                     <td id="event-29"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -661,7 +663,7 @@
                     
                     <td id="event-30"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -675,7 +677,7 @@
                     
                     <td id="event-31"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -689,7 +691,7 @@
                     
                     <td id="event-32"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -717,7 +719,7 @@
                     
                     <td id="event-34"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -731,7 +733,7 @@
                     
                     <td id="event-35"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -745,7 +747,7 @@
                     
                     <td id="event-36"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -759,7 +761,7 @@
                     
                     <td id="event-37"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -773,7 +775,7 @@
                     
                     <td id="event-38"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -787,7 +789,7 @@
                     
                     <td id="event-39"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -801,7 +803,7 @@
                     
                     <td id="event-40"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -815,7 +817,7 @@
                     
                     <td id="event-41"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -885,7 +887,7 @@
                     
                     <td id="event-46"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -899,7 +901,7 @@
                     
                     <td id="event-47"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -913,7 +915,7 @@
                     
                     <td id="event-48"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -927,7 +929,7 @@
                     
                     <td id="event-49"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -941,7 +943,7 @@
                     
                     <td id="event-50"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -955,7 +957,7 @@
                     
                     <td id="event-51"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -969,7 +971,7 @@
                     
                     <td id="event-52"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -983,7 +985,7 @@
                     
                     <td id="event-53"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -997,7 +999,7 @@
                     
                     <td id="event-54"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1039,7 +1041,7 @@
                     
                     <td id="event-57"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1109,7 +1111,7 @@
                     
                     <td id="event-62">Crooked-lane</td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1123,7 +1125,7 @@
                     
                     <td id="event-63"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1137,7 +1139,7 @@
                     
                     <td id="event-64"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1151,7 +1153,7 @@
                     
                     <td id="event-65"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1165,7 +1167,7 @@
                     
                     <td id="event-66"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1193,7 +1195,7 @@
                     
                     <td id="event-68"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1221,7 +1223,7 @@
                     
                     <td id="event-70"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1235,7 +1237,7 @@
                     
                     <td id="event-71"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1249,7 +1251,7 @@
                     
                     <td id="event-72"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1263,7 +1265,7 @@
                     
                     <td id="event-73"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1277,7 +1279,7 @@
                     
                     <td id="event-74"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1291,7 +1293,7 @@
                     
                     <td id="event-75"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1305,7 +1307,7 @@
                     
                     <td id="event-76"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1319,7 +1321,7 @@
                     
                     <td id="event-77"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1333,7 +1335,7 @@
                     
                     <td id="event-78"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1347,7 +1349,7 @@
                     
                     <td id="event-79"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1361,7 +1363,7 @@
                     
                     <td id="event-80"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1375,7 +1377,7 @@
                     
                     <td id="event-81"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1389,7 +1391,7 @@
                     
                     <td id="event-82"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1403,7 +1405,7 @@
                     
                     <td id="event-83"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1417,7 +1419,7 @@
                     
                     <td id="event-84"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1431,7 +1433,7 @@
                     
                     <td id="event-85"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1445,7 +1447,7 @@
                     
                     <td id="event-86"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1459,7 +1461,7 @@
                     
                     <td id="event-87"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1473,7 +1475,7 @@
                     
                     <td id="event-88"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1487,7 +1489,7 @@
                     
                     <td id="event-89"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1501,7 +1503,7 @@
                     
                     <td id="event-90"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1515,7 +1517,7 @@
                     
                     <td id="event-91"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1529,7 +1531,7 @@
                     
                     <td id="event-92"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1543,7 +1545,7 @@
                     
                     <td id="event-93"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1557,7 +1559,7 @@
                     
                     <td id="event-94"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1571,7 +1573,7 @@
                     
                     <td id="event-95"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1585,7 +1587,7 @@
                     
                     <td id="event-96"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1599,7 +1601,7 @@
                     
                     <td id="event-97"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1613,7 +1615,7 @@
                     
                     <td id="event-98"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1627,7 +1629,7 @@
                     
                     <td id="event-99"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1641,7 +1643,7 @@
                     
                     <td id="event-100"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1655,7 +1657,7 @@
                     
                     <td id="event-101"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1725,7 +1727,7 @@
                     
                     <td id="event-106"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1739,7 +1741,7 @@
                     
                     <td id="event-107"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1753,7 +1755,7 @@
                     
                     <td id="event-108"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1767,7 +1769,7 @@
                     
                     <td id="event-109"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1781,7 +1783,7 @@
                     
                     <td id="event-110"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1795,7 +1797,7 @@
                     
                     <td id="event-111"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1809,7 +1811,7 @@
                     
                     <td id="event-112"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1893,7 +1895,7 @@
                     
                     <td id="event-118"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1921,7 +1923,7 @@
                     
                     <td id="event-120"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1935,7 +1937,7 @@
                     
                     <td id="event-121"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1963,7 +1965,7 @@
                     
                     <td id="event-123"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1977,7 +1979,7 @@
                     
                     <td id="event-124"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -1991,7 +1993,7 @@
                     
                     <td id="event-125"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2005,7 +2007,7 @@
                     
                     <td id="event-126"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2033,7 +2035,7 @@
                     
                     <td id="event-128"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2047,7 +2049,7 @@
                     
                     <td id="event-129"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2061,7 +2063,7 @@
                     
                     <td id="event-130"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2075,7 +2077,7 @@
                     
                     <td id="event-131"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2089,7 +2091,7 @@
                     
                     <td id="event-132"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2103,7 +2105,7 @@
                     
                     <td id="event-133"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2117,7 +2119,7 @@
                     
                     <td id="event-134"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2131,7 +2133,7 @@
                     
                     <td id="event-135"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2145,7 +2147,7 @@
                     
                     <td id="event-136"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2159,7 +2161,7 @@
                     
                     <td id="event-137"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2173,7 +2175,7 @@
                     
                     <td id="event-138"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2187,7 +2189,7 @@
                     
                     <td id="event-139"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2201,7 +2203,7 @@
                     
                     <td id="event-140"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2215,7 +2217,7 @@
                     
                     <td id="event-141"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2229,7 +2231,7 @@
                     
                     <td id="event-142"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2243,7 +2245,7 @@
                     
                     <td id="event-143"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2257,7 +2259,7 @@
                     
                     <td id="event-144"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2271,7 +2273,7 @@
                     
                     <td id="event-145"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2285,7 +2287,7 @@
                     
                     <td id="event-146"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2299,7 +2301,7 @@
                     
                     <td id="event-147"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2313,7 +2315,7 @@
                     
                     <td id="event-148"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2327,7 +2329,7 @@
                     
                     <td id="event-149"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2341,7 +2343,7 @@
                     
                     <td id="event-150"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2355,7 +2357,7 @@
                     
                     <td id="event-151"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2369,7 +2371,7 @@
                     
                     <td id="event-152"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2383,7 +2385,7 @@
                     
                     <td id="event-153"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2411,7 +2413,7 @@
                     
                     <td id="event-155"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2425,7 +2427,7 @@
                     
                     <td id="event-156"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2439,7 +2441,7 @@
                     
                     <td id="event-157"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2453,7 +2455,7 @@
                     
                     <td id="event-158"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2523,7 +2525,7 @@
                     
                     <td id="event-163"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2537,7 +2539,7 @@
                     
                     <td id="event-164"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2551,7 +2553,7 @@
                     
                     <td id="event-165"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2565,7 +2567,7 @@
                     
                     <td id="event-166"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2579,7 +2581,7 @@
                     
                     <td id="event-167"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2593,7 +2595,7 @@
                     
                     <td id="event-168"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2607,7 +2609,7 @@
                     
                     <td id="event-169"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2621,7 +2623,7 @@
                     
                     <td id="event-170"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2635,7 +2637,7 @@
                     
                     <td id="event-171"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2649,7 +2651,7 @@
                     
                     <td id="event-172"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2691,7 +2693,7 @@
                     
                     <td id="event-175"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2705,7 +2707,7 @@
                     
                     <td id="event-176"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2719,7 +2721,7 @@
                     
                     <td id="event-177"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2733,7 +2735,7 @@
                     
                     <td id="event-178"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2747,7 +2749,7 @@
                     
                     <td id="event-179"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2761,7 +2763,7 @@
                     
                     <td id="event-180"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2775,7 +2777,7 @@
                     
                     <td id="event-181"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2789,7 +2791,7 @@
                     
                     <td id="event-182"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2803,7 +2805,7 @@
                     
                     <td id="event-183"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2831,7 +2833,7 @@
                     
                     <td id="event-185"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2845,7 +2847,7 @@
                     
                     <td id="event-186"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2859,7 +2861,7 @@
                     
                     <td id="event-187"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2873,7 +2875,7 @@
                     
                     <td id="event-188"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2887,7 +2889,7 @@
                     
                     <td id="event-189"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2901,7 +2903,7 @@
                     
                     <td id="event-190"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2915,7 +2917,7 @@
                     
                     <td id="event-191"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2929,7 +2931,7 @@
                     
                     <td id="event-192"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2943,7 +2945,7 @@
                     
                     <td id="event-193"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2957,7 +2959,7 @@
                     
                     <td id="event-194"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2971,7 +2973,7 @@
                     
                     <td id="event-195"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2985,7 +2987,7 @@
                     
                     <td id="event-196"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -2999,7 +3001,7 @@
                     
                     <td id="event-197"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3013,7 +3015,7 @@
                     
                     <td id="event-198"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3027,7 +3029,7 @@
                     
                     <td id="event-199"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3041,7 +3043,7 @@
                     
                     <td id="event-200"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3055,7 +3057,7 @@
                     
                     <td id="event-201"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3069,7 +3071,7 @@
                     
                     <td id="event-202"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3083,7 +3085,7 @@
                     
                     <td id="event-203"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3111,7 +3113,7 @@
                     
                     <td id="event-205"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3125,7 +3127,7 @@
                     
                     <td id="event-206"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3139,7 +3141,7 @@
                     
                     <td id="event-207"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3181,7 +3183,7 @@
                     
                     <td id="event-210"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3251,7 +3253,7 @@
                     
                     <td id="event-215"></td>
                     
-                    <td></td>
+                    <td>&#160;</td>
                 </tr>
                 
                 
@@ -3325,10 +3327,24 @@
                 </tr>
                 
                 
-            </table>
+            </table></div>
             
+            <!-- A bit of redundant entry is required to make a pure CSS solution work... -->
+            <style type="text/css">
+                @media screen and (max-width: 940px) {
+                    td:nth-of-type(1):before { content: "Date"; }
+                    td:nth-of-type(2):before { content: "Parish"; }
+                    td:nth-of-type(3):before { content: "Buried Plague"; }
+                    td:nth-of-type(4):before { content: "Buried Parish"; }
+                    td:nth-of-type(5):before { content: "Buried Plague Total"; }
+                    td:nth-of-type(6):before { content: "Buried Total"; }
+                    td:nth-of-type(7):before { content: "Location"; }
+                    td:nth-of-type(8):before { content: "Notes"; }
+                }
+            </style>
         </div>
     </div>
-    <script type="text/javascript" src="/ui/js/script.js"></script>
+    <script type="text/javascript" src="/itinerary/ui/js/script.js"></script>
+
 </body>
 </html>

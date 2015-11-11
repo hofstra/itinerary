@@ -74,8 +74,8 @@ page_nav: 'map-plague'
                     <th><h3>{{ year.name }}</h3></th>
                 </tr>
             </table>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-                <tr>
+            <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <thead><tr>
                     <th width="8%">Date</th>
                     <th width="12%">Parish</th>
                     <th width="8%">Buried Plague</th>
@@ -84,7 +84,7 @@ page_nav: 'map-plague'
                     <th width="6%">Buried Total</th>
                     <th width="12%">Location</th>
                     <th width="40%">Notes</th>
-                </tr>
+                </tr></thead>
 
                 {% for event in year.items %}
                 <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
@@ -99,12 +99,25 @@ page_nav: 'map-plague'
                     {% else %}
                     <td id="event-{{ i }}">{{ event.location_descriptive }}</td>
                     {% endif %}
-                    <td>{{ event.notes }}</td>
+                    <td>{% if event.notes %}{{ event.notes }}{% else %}&#160;{% endif %}</td>
                 </tr>
                 {% assign i = i| plus:'1' %}
                 {% endfor %}
-            </table>
+            </table></div>
             {% endfor %}
+            <!-- A bit of redundant entry is required to make a pure CSS solution work... -->
+            <style type="text/css">
+                @media screen and (max-width: 940px) {
+                    td:nth-of-type(1):before { content: "Date"; }
+                    td:nth-of-type(2):before { content: "Parish"; }
+                    td:nth-of-type(3):before { content: "Buried Plague"; }
+                    td:nth-of-type(4):before { content: "Buried Parish"; }
+                    td:nth-of-type(5):before { content: "Buried Plague Total"; }
+                    td:nth-of-type(6):before { content: "Buried Total"; }
+                    td:nth-of-type(7):before { content: "Location"; }
+                    td:nth-of-type(8):before { content: "Notes"; }
+                }
+            </style>
         </div>
     </div>
 {% include footer.html %}

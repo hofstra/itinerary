@@ -142,8 +142,16 @@ table {
     text-align: center !important;
 }
 .itinerary td {
-    font-size: 13px;
-    padding: 4px;
+    /*font-size: 13px;
+    padding: 4px;*/
+    font-size: 12px;
+    letter-spacing: .25px;
+    line-height: 1.25em;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    vertical-align: top;
 }
 .itinerary tr.odd td {
     background: #f2ebd3;
@@ -232,7 +240,57 @@ table {
         background-color: #d31603;
     }
 
+@media screen and (max-width: 940px) {
+    .year th {
+        padding-left: 10px;
+    }
+    .data-table table,
+    .data-table table thead,
+    .data-table table tbody,
+    .data-table table th,
+    .data-table table td,
+    .data-table table tr {
+        display: block;
+    }
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+            .data-table table tr.even td {
+                background: none;
+            }
+            .data-table table tr.odd td {
+                background: #FFFFFF;
+            }
+            .data-table table tr th:first-child {
+                padding-left: 10px;
+            }
+            .data-table table tr td,
+            .data-table table tr td:first-child,
+            .data-table table tr td:last-child {
+                /* Behave  like a "row" */
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                padding-right: 20px;
+            }
+            .data-table table td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 12px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+}
 @media screen and (max-width: 800px) {
+    .timeline {
+        display: none;
+    }
     #stepper a {
         width: 20%;
     }
@@ -257,5 +315,10 @@ table {
     h1, .nav {
         padding-right: 20px;
         padding-left: 20px;
+    }
+    #stepper p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 40%;
     }
 }
