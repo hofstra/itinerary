@@ -24,3 +24,5 @@ CNAME
 # OS garbage.
 Thumbs.db
 .DS_Store
+
+*.~lock*
