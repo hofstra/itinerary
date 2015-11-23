@@ -29,11 +29,11 @@ page_nav: 'map-melville-rome'
     // So this isn't actually being used. These are set in the scripts file.
 
     var map_center = [41.8922136, 12.4810397];
-    var map_zoom = 15;
+    var map_zoom = 16;
 </script>
 </head>
 
-<body>
+<body class="melville-rome">
 {% include header-melville-rome.html %}
 <div id="map-container"><noscript>
     <p>An interactive map resides here.</p>
@@ -49,14 +49,8 @@ page_nav: 'map-melville-rome'
              Some data has different fields/schema.
         -->
         <h2>The Data</h2>
-        <div class="project-notes">
-            <p>Note: We will want to establish a convention to include unofficial or non-waypoint lat &amp; long points in this data. Such points will not be represented in the output, but will be used to craft the route between waypoints.</p>
-            <p>Question: Why do some entries not contain a waypoint name? ('waypoint' represents the <span class="code">Start_Point</span>, <span class="code">Route_Point1</span>, <span class="code">Route_Point2</span>, <span class="code">Route_Point3</span>, <span class="code">Route_Point4</span>, <span class="code">Route_Point5</span>, <span class="code">End_Point</span> entries consolidated. We need to have each plotted point, regardless of significance, as a distinct entry. If it falls along a route, that is asserted by its sequence.)</p>
-            <p>Question: Why are HM_Sight2, 3, 4 used where HM_Sight1 is empty? Should additional sights not follow a first sight? (See Thursday entries.)</p>
-            <p>To do: Determine lat/long for waypoints, and in-between route points.</p>
-            <p>Question: Does route always correspond to Itinerary Day? Or might there be multiple routes on a given day? (Where a route is a significant sequence of waypoints with start and end points.)</p>
-            <p>Question: Confirm that the mapped points will essentially start on day 2 in this project, as the first day&rsquo;s points are in Naples?</p>
-        </div>
+        <!-- <div class="project-notes">
+        </div> -->
 
         {% assign i = 0 %}
         {% for year in events %}

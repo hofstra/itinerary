@@ -118,6 +118,9 @@ h1 {
     width: 100%;
     height: 400px;
 }
+.melville-rome #map-container {
+    height: 700px;
+}
 
 .leaflet-popup-content dt {
     font-weight: bold;
