@@ -1,0 +1,23 @@
+---
+---
+{
+    "events":
+    [
+    {% assign events = site.data.melville-model | group_by:"route" %}
+    {% for route in events %}
+    {% assign i = 0 %}
+    {% for event in route.items %}
+    {% if event.type == 'w' %}
+    {% assign i = i| plus:'1' %}
+    {% endif %}
+    {
+        "route" : "{{ route.name }}",
+        "date_descriptive" : "{{ event.display_date }}",
+        "waypoint" : "{{ event.waypoint }}",
+        "latitude" : "{{ event.latitude }}",
+        "longitude" : "{{ event.longitude }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}

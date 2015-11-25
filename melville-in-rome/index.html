@@ -8,10 +8,10 @@ page_nav: 'map-melville-rome'
 <!--
      Here's where we set things up!
 -->
-{% assign events = site.data.MelvilleInRome2 | group_by:"date_year" %}
+{% assign events = site.data.melville-model | group_by:"route" %}
 <script type="text/javascript">
     // Set datajson file that matches the source data specified for {{ events }}
-    //var datajson = 'a-frightful-number-plague.json';
+    var datajson = 'melville-in-rome.json';
 
     // Set map values for this page that will be used in script.js
     var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
@@ -52,66 +52,61 @@ page_nav: 'map-melville-rome'
         <!-- <div class="project-notes">
         </div> -->
 
+        {% for route in events %}
         {% assign i = 0 %}
-        {% for year in events %}
         <table border="0" cellpadding="0" cellspacing="0" class="year">
             <tr>
-                <th><h3>{{ year.name }}</h3></th>
+                <th><h3>Route {{ route.name }}</h3></th>
             </tr>
         </table>
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
             <thead><tr>
+                <th>Event</th>
                 <th>Date</th>
-                <th>Itinerary Day</th>
-                <th>Location</th>
-                <th>Lat, Long</th>
-                <th>Source</th>
-                <th>Route</th>
                 <th>Waypoint</th>
-                <th>Sight 1</th>
-                <th>Sight 2</th>
-                <th>Sight 3</th>
-                <th>Sight 4</th>
+                <th>Location</th>
+                <th>Observation</th>
+                <th>Lat, Long</th>
                 <th>HM Comment</th>
                 <th>Editorial Note</th>
             </tr></thead>
 
-            {% for event in year.items %}
+            {% for event in route.items %}
+            {% if event.type == 'w' %}{% assign i = i| plus:'1' %}{% endif %}
             <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
-                <td id="event-{{ i }}">{% if event.weekday != null %}{{ event.weekday }}, {% endif %}{{ event.date_descriptive }}</td>
-                <td>{{ event.itinerary_day }}</td>
-                <td>{{ event.location_descriptive }}</td>
-                <td>{% if event.location_latitude != null %}{{ event.location_latitude }}{% else %}##.#####{% endif %}, {% if event.location_longitude != null %}{{ event.location_longitude }}{% else %}##.#####{% endif %}</td>
-                <td>{% if event.source_page != null %}p. {{ event.source_page }}, {% endif %}{{ event.source }}</td>
-                <td>{{ event.route }}</td>
-                <td>{{ event.waypoint }}</td>
-                <td>{{ event.HM_Sight1 }}</td>
-                <td>{{ event.HM_Sight2 }}</td>
-                <td>{{ event.HM_Sight3 }}</td>
-                <td>{{ event.HM_Sight4 }}</td>
-                <td>{{ event.HM_Comment }}</td>
-                <td>{{ event.Editorial_Note }}</td>
+                <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
+                <td class="date" id="event-{{ i }}">{% if event.type == 'w' %}{{ event.display_date }}{% endif %}</td>
+                <td td class="waypoint">{% if event.type == 'w' %}<a href="#">{{ event.waypoint }}</a>{% if event.city %}<br />({{ event.city }}){% endif %}{% endif %}</td>
+                <td class="location">{% if event.type == 'l' %}{{ event.observed }}{% endif %}</td>
+                <td class="observation">{% if event.type == 'o' %}{{ event.observed }}{% endif %}</td>
+                <td class="coords">{% if event.latitude != null %}{{ event.latitude }}{% else %}##.#####{% endif %}, {% if event.longitude != null %}{{ event.longitude }}{% else %}##.#####{% endif %}</td>
+                <td class="text">{{ event.text }}</td>
+                <td class="editorial">{% if event.editorial %}{{ event.editorial }}{% else %}&#160;{% endif %}</td>
             </tr>
-            {% assign i = i| plus:'1' %}
             {% endfor %}
         </table></div>
         {% endfor %}
         <!-- A bit of redundant entry is required to make a pure CSS solution work... -->
         <style type="text/css">
+            td.date, td.coords { white-space: nowrap; }
+            td { min-width: 150px; }
+            td.waypoint, td.location, td.observation {
+                max-width: 150px;
+            }
+            td.text, td.editorial { max-width: 300px; }
             @media screen and (max-width: 940px) {
-                td:nth-of-type(1):before { content: "Date"; }
-                td:nth-of-type(2):before { content: "Itinerary Da"; }
-                td:nth-of-type(3):before { content: "Location"; }
-                td:nth-of-type(4):before { content: "Lat, Long"; }
-                td:nth-of-type(5):before { content: "Source"; }
-                td:nth-of-type(6):before { content: "Route"; }
-                td:nth-of-type(7):before { content: "Waypoint"; }
-                td:nth-of-type(8):before { content: "Sight 1"; }
-                td:nth-of-type(9):before { content: "Sight 2"; }
-                td:nth-of-type(10):before { content: "Sight 3"; }
-                td:nth-of-type(11):before { content: "Sight 4"; }
-                td:nth-of-type(11):before { content: "HM Comment"; }
-                td:nth-of-type(12):before { content: "Editorial Note"; }
+                td {
+                    min-width: none;
+                }
+                td.waypoint, td.location, td.observation,
+                td.text, td.editorial { max-width: none; }
+                td:nth-of-type(2):before { content: "Date"; }
+                td:nth-of-type(3):before { content: "Waypoint"; }
+                td:nth-of-type(4):before { content: "Location"; }
+                td:nth-of-type(5):before { content: "Observation"; }
+                td:nth-of-type(6):before { content: "Lat, Long"; }
+                td:nth-of-type(7):before { content: "HM Comment"; }
+                td:nth-of-type(8):before { content: "Editorial Note"; }
             }
         </style>
     </div>
