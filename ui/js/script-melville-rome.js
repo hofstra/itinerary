@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-    var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
-    var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
-
     var map = L.map('map-container', {layers:map_historic});
 
     // Setting the map interaction defaults. I find that when using a map that fills the page, allowing zoom based on scroll wheel, which is also used to scroll up and down the page, is problematic.
@@ -11,23 +8,67 @@ $(document).ready(function() {
     map.doubleClickZoom.enable();
     map.scrollWheelZoom.disable();
 
-    // Create a variable to hold all tile sets and name them so we can use it for the toggler
-    // Chrome is balking at this!!!
-    /*var baseMaps = {
-        [modern_toggle_label]: map_mapbox,
-        [historic_toggle_label]: map_historic
-    };*/
-    var baseMaps = {
-        'Rome 2015': map_mapbox,
-        'Historic Map': map_historic
-    };
-
     // Add the tile layer switcher control (toggler)
     L.control.layers(baseMaps).addTo(map);
 
     // Zoom and center in
     // TODO: Make this dynamic based on the map's contents
     map.setView(map_center, map_zoom);
+
+    var $paths = new Array();
+
+    $.getJSON( "/itinerary/datajson/paths.json", function (paths) {
+        $.each( paths.paths, function(i, $path) {
+            $.getJSON( '/itinerary/geojson/path-'+$path.route+'-'+$path.event+'-'+$path.id+'.geojson', function (geodata) {
+                console.log(geodata);
+                var $vertices = [];
+                $.each(geodata.features, function(i, $feature) {
+                    $.each($feature.geometry['coordinates'], function(i, $coordinates) {
+                        $vertices.push([ $coordinates[1], $coordinates[0] ]);
+                    })
+                })
+                var $pathLine = L.polyline($vertices).addTo(map);
+
+                // It's too bad this doesn't work as a featureLayer where we can just load in GeoJson! But then we have a layer of objects; Not each object.
+                //var linelayer = L.mapbox.featureLayer().addTo(map);
+                //linelayer.setGeoJSON(data);
+                switch (i) {
+                    case 0:
+                        $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
+                        break;
+                    case 1:
+                        $pathLine.setStyle({color: '#0f0', weight: 5, opacity: 0.4});
+                        break;
+                    case 2:
+                        $pathLine.setStyle({color: '#00f', weight: 5, opacity: 0.4});
+                        break;
+                    default:
+                        $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
+                        break;
+                }
+                $paths.push(
+                    {
+                        'id' : $path.id,
+                        'path' : $pathLine,
+                        'content' : $path.content
+                    }
+                );
+                $pathLine.bindPopup($paths[i].content);
+                $pathLine.on( 'click', function(e) {
+                    $.each( $paths, function( $i, path ) {
+                        path.path.setStyle({ weight: 5, opacity: .4 });
+                    })
+                    $pathLine.setStyle({ weight: 3, opacity: 1.0 });
+                })
+            }).fail(function( jqxhr, textStatus, error ) {
+                var err = textStatus + ", " + error;
+                //console.log( "Request Failed: " + err );
+            });
+        })
+    }).fail(function( jqxhr, textStatus, error ) {
+        var err = textStatus + ", " + error;
+        //console.log( "Request Failed: " + err );
+    });
 
     console.log('pre-json');
     $.getJSON( '/itinerary/datajson/'+datajson, function (events) {
@@ -41,7 +82,7 @@ $(document).ready(function() {
             // Let's put locations on the map!
             var $locationMarkers = new Array();
 
-            if ($event.latitude != '' && $event.longitude != '')
+            if ( $event.latitude != '' && $event.longitude != '' && $event.type == 'w' )
             {
                 console.log( $event.latitude );
                 console.log( $event.longitude );
@@ -59,7 +100,11 @@ $(document).ready(function() {
                 )
 
                 // Fetch and fill in template here
-                $itineraryEventContent = '';
+                $itineraryEventContent = $event.waypoint;
+                console.log($itineraryEventContent);
+                // TODO: Roll up locations and observations for each event into the popup, using template approach
+                // ...But that should really happen in the Jekyll-generated JSON file, so that we have a consistent
+                // variable for the template to output.
                 $marker.bindPopup( $itineraryEventContent );
 
             }
@@ -68,5 +113,7 @@ $(document).ready(function() {
         var err = textStatus + ", " + error;
         //console.log( "Request Failed: " + err );
     })
+
+    // TODO: Enable links from Itinerary below to pop open map pins
 
 })

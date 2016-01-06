@@ -12,6 +12,7 @@
     {% endif %}
     {
         "route" : "{{ route.name }}",
+        "type" : "{{ event.type }}",
         "date_descriptive" : "{{ event.display_date }}",
         "waypoint" : "{{ event.waypoint }}",
         "latitude" : "{{ event.latitude }}",

@@ -1,0 +1,15 @@
+---
+---
+{
+    "paths":
+    [
+    {% for path in site.data.paths %}
+    {
+        "id" : "{{ path.id }}",
+        "route" : {{ path.route }},
+        "event" : {{ path.event }},
+        "content" : "{{ path.content }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}

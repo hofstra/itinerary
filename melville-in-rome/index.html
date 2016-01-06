@@ -26,10 +26,24 @@ page_nav: 'map-melville-rome'
     // [variable] worked in Firefox, but halted the JS in Chrome
     var historic_toggle_label = 'Rome 1748';
     var modern_toggle_label = 'Rome 2015';
-    // So this isn't actually being used. These are set in the scripts file.
+    // So this isn't actually being used. These are set <strike>in the scripts file</strike> below.
+
+    var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
+    var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
+
+    // Create a variable to hold all tile sets and name them so we can use it for the toggler
+    // Chrome is balking at this!!!
+    /*var baseMaps = {
+        [modern_toggle_label]: map_mapbox,
+        [historic_toggle_label]: map_historic
+    };*/
+    var baseMaps = {
+        'Rome 2015': map_mapbox,
+        'Historic Map': map_historic
+    };
 
     var map_center = [41.8922136, 12.4810397];
-    var map_zoom = 16;
+    var map_zoom = 15;
 </script>
 </head>
 
@@ -86,7 +100,7 @@ page_nav: 'map-melville-rome'
             {% endfor %}
         </table></div>
         {% endfor %}
-        <!-- A bit of redundant entry is required to make a pure CSS solution work... -->
+        <!-- A bit of redundant entry is required to make a pure CSS solution work... This flips the table vertical on a small screen. -->
         <style type="text/css">
             td.date, td.coords { white-space: nowrap; }
             td { min-width: 150px; }
