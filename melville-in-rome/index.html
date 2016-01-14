@@ -87,14 +87,14 @@ page_nav: 'map-melville-rome'
 
             {% for event in route.items %}
             {% if event.type == 'w' and event.latitude != null %}{% assign i = i| plus:'1' %}{% endif %}
-            <tr class="{% cycle 'odd', 'even' %}">
+            <tr class="{% cycle 'odd', 'even' %} waypoint-{{ i }}">
                 <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
                 <td class="date" id="event-{{ i }}">{% if event.type == 'w' %}{{ event.display_date }}{% endif %}</td>
                 <td td class="waypoint">{% if event.type == 'w' %}<a href="#" data-waypoint-id="waypoint-{{ i }}">{{ event.waypoint }}</a>{% if event.city %}<br />({{ event.city }}){% endif %}{% endif %}</td>
-                <td class="location" data-waypoint-id="waypoint-{{ i }}">{% if event.type == 'l' %}{{ event.observed }}{% endif %}</td>
-                <td class="observation" data-waypoint-id="waypoint-{{ i }}">{% if event.type == 'o' %}{{ event.observed }}{% endif %}</td>
-                <td class="coords" data-waypoint-id="waypoint-{{ i }}">{% if event.latitude != null %}{{ event.latitude }}{% else %}##.#####{% endif %}, {% if event.longitude != null %}{{ event.longitude }}{% else %}##.#####{% endif %}</td>
-                <td class="text" data-waypoint-id="waypoint-{{ i }}">{{ event.text }}</td>
+                <td class="location">{% if event.type == 'l' %}{{ event.observed }}{% endif %}</td>
+                <td class="observation">{% if event.type == 'o' %}{{ event.observed }}{% endif %}</td>
+                <td class="coords">{% if event.latitude != null %}{{ event.latitude }}{% else %}##.#####{% endif %}, {% if event.longitude != null %}{{ event.longitude }}{% else %}##.#####{% endif %}</td>
+                <td class="text">{{ event.text }}</td>
                 <td class="editorial">{% if event.editorial %}{{ event.editorial }}{% else %}&#160;{% endif %}</td>
             </tr>
             {% endfor %}
