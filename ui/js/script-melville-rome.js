@@ -71,16 +71,17 @@ $(document).ready(function() {
     });
 
     console.log('pre-json');
+    var $waypointId = 1;
+    var $waypointMarkers = new Array();;
     $.getJSON( '/itinerary/datajson/'+datajson, function (events) {
         console.log('pre-loop');
-        // Store all our events
+        // Store all our eventsmarker.marker.openPopup();
         var $itineraryData = events.events;
         // Loop through events
         $.each ($itineraryData, function(i, $event) {
             console.log($event);
 
             // Let's put locations on the map!
-            var $locationMarkers = new Array();
 
             if ( $event.latitude != '' && $event.longitude != '' && $event.type == 'w' )
             {
@@ -91,13 +92,15 @@ $(document).ready(function() {
 
                 // If we store the event object here, we should have access to the entire event object
                 // in our JS template...
-                $locationMarkers.push(
+                $waypointMarkers.push(
                     {
+                        'id' : $waypointId,
                         'marker' : $marker,
                         'latitude' : $event.latitude,
                         'longitude' : $event.longitude
                     }
                 )
+                $waypointId++;
 
                 // Fetch and fill in template here
                 $itineraryEventContent = $event.waypoint;
@@ -114,6 +117,21 @@ $(document).ready(function() {
         //console.log( "Request Failed: " + err );
     })
 
-    // TODO: Enable links from Itinerary below to pop open map pins
+    // When a parish in the data table is clicked
+    $(".waypoint a").on('click', function(e) {
+        //e.preventDefault(); // Let the # link scroll us to the top
+        var $waypointId = $(this).data('waypoint-id').split('-')[1];
+        var $itinerarySequence = $(this).data('waypoint-id');
 
+        //currentEvent($itinerarySequence, $parishPolygons, $itineraryData, $locationMarkers);
+        $.each( $waypointMarkers, function( $i, marker) {
+            marker.marker.closePopup();
+        });
+        $.each( $waypointMarkers, function( $i, marker ) {
+            console.log($i);
+            console.log($waypointId);
+            if ($i+1 == $waypointId)
+                marker.marker.openPopup();
+        })
+    })
 })
