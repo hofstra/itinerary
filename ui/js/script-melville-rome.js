@@ -113,17 +113,21 @@ $(document).ready(function() {
 
             }
         })
+        // TODO: This isn't working...How do we bind this?
+        $.each( $waypointMarkers, function( $i, marker) {
+            marker.marker.on('click', function(e) {
+                $.each( $waypointMarkers, function( $i, marker) {
+                    marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+                });
+                console.log(marker.waypoint);
+                marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+                marker.marker.openPopup;
+            })
+        });
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
         //console.log( "Request Failed: " + err );
     })
-
-    $.each( $waypointMarkers, function( $i, marker) {
-        marker.marker.on('click', function(e) {
-            $(this).bindPopup('<h3>' + marker.waypoint + '</h3>');
-            $(this).openPopup;
-        })
-    });
 
     $(".waypoint a").on('click', function(e) {
         //e.preventDefault(); // Let the # link scroll us to the top
@@ -139,7 +143,7 @@ $(document).ready(function() {
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
-            marker.marker.bindPopup(marker.waypoint);
+            marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
         });
         $.each( $waypointMarkers, function( $i, marker ) {
             if ($i+1 == $waypointId)
