@@ -1,3 +1,9 @@
+function applyTemplate($templateName, $itemName, $itemContent)
+{
+    $template = $('.js-templates .'+$templateName).html();
+    return $template;
+}
+
 $(document).ready(function() {
 
     var map = L.map('map-container', {layers:map_historic});
@@ -26,7 +32,7 @@ $(document).ready(function() {
     $colors.push('#d31603');
     $colors.push('#893201');
     $colors.push('#74b62d');
-    $colors.push('#85144be');
+    $colors.push('#85144b');
     $colors.push('#141e3c');
     $colors.push('#311431');
 
@@ -87,7 +93,6 @@ $(document).ready(function() {
     var $waypointId = 1;
     var $waypointMarkers = new Array();;
     $.getJSON( '/itinerary/datajson/'+datajson, function (events) {
-        // Store all our eventsmarker.marker.openPopup();
         var $itineraryData = events.events;
         // Loop through events
         $.each ($itineraryData, function(i, $event) {
@@ -99,8 +104,6 @@ $(document).ready(function() {
 
                 var $marker = L.marker([$event.latitude, $event.longitude]).addTo(map);
 
-                // If we store the event object here, we should have access to the entire event object
-                // in our JS template...
                 $waypointMarkers.push(
                     {
                         'id' : $waypointId,
@@ -113,10 +116,8 @@ $(document).ready(function() {
                 $waypointId++;
 
                 // This needs to go in a template.
+                console.log(applyTemplate('pin-name', '', ''));
                 $itineraryEventContent = '<h3>' + $event.waypoint + '</h3>';
-                // TODO: Roll up locations and observations for each event into the popup, using template approach
-                // ...But that should really happen in the Jekyll-generated JSON file, so that we have a consistent
-                // variable for the template to output.
                 $marker.bindPopup( $itineraryEventContent );
 
             }
@@ -144,8 +145,6 @@ $(document).ready(function() {
         var $waypointId = $(this).data('waypoint-id').split('-')[1];
         var $itinerarySequence = $(this).data('waypoint-id');
 
-        //currentEvent($itinerarySequence, $parishPolygons, $itineraryData, $locationMarkers);
-        // Per Itinerary I, this can go in a function
         $.each( $paths, function( $i, path) {
             path.path.closePopup();
         })

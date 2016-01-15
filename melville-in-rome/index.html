@@ -63,8 +63,7 @@ page_nav: 'map-melville-rome'
              Some data has different fields/schema.
         -->
         <h2>The Data</h2>
-        <!-- <div class="project-notes">
-        </div> -->
+        <!-- <div class="project-notes"></div> -->
 
         {% assign i = 0 %}
         {% for route in events %}
@@ -125,7 +124,17 @@ page_nav: 'map-melville-rome'
         </style>
     </div>
 </div>
-
+<div style="display: none;" class="js-templates">
+    <div class="js-template pin-name">
+        <h3>[% itemName %]</h3>
+    </div>
+    <div class="js-template pin-waypoint">
+        <div style="max-height: 175px; overflow-y: scroll;">
+            <h3>[% itemName %]</h3>
+            [% itemContent %]
+        </div>
+    </div>
+</div>
 {% include footer-melville-rome.html %}
 </body>
 </html>
