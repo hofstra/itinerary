@@ -35,7 +35,6 @@ $(document).ready(function() {
     $.getJSON( "/itinerary/datajson/paths.json", function (paths) {
         $.each( paths.paths, function(i, $path) {
             $.getJSON( '/itinerary/geojson/path-'+$path.route+'-'+$path.event+'-'+$path.id+'.geojson', function (geodata) {
-                console.log(geodata);
                 var $vertices = [];
                 $.each(geodata.features, function(i, $feature) {
                     $.each($feature.geometry['coordinates'], function(i, $coordinates) {
@@ -48,21 +47,7 @@ $(document).ready(function() {
                 //var linelayer = L.mapbox.featureLayer().addTo(map);
                 //linelayer.setGeoJSON(data);
 
-                $pathLine.setStyle({color: $colors[i], weight: 6, opacity: 0.5});
-                // switch (i) {
-                //     case 0:
-                //         $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
-                //         break;
-                //     case 1:
-                //         $pathLine.setStyle({color: '#0f0', weight: 5, opacity: 0.4});
-                //         break;
-                //     case 2:
-                //         $pathLine.setStyle({color: '#00f', weight: 5, opacity: 0.4});
-                //         break;
-                //     default:
-                //         $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
-                //         break;
-                // }
+                $pathLine.setStyle({color: $colors[i], weight: 8, opacity: 0.5});
 
                 $paths.push(
                     {
@@ -74,7 +59,7 @@ $(document).ready(function() {
                 $pathLine.bindPopup($path.content);
                 $pathLine.on( 'click', function(e) {
                     $.each( $paths, function( $i, path ) {
-                        path.path.setStyle({ weight: 6, opacity: .5 });
+                        path.path.setStyle({ weight: 8, opacity: .5 });
                     })
                     $pathLine.setStyle({ weight: 3, opacity: 1.0 });
                 })
@@ -83,28 +68,34 @@ $(document).ready(function() {
                 //console.log( "Request Failed: " + err );
             });
         })
+        $.each( $paths, function( $i, path) {
+            path.path.on('click', function(e) {
+                $.each( $waypointMarkers, function( $i, marker) {
+                    // This needs to go in a template.
+                    marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+                });
+                // This needs to go in a template.
+                path.path.bindPopup('<h3>' + path.content + '</h3>');
+                path.path.openPopup;
+            })
+        });
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
         //console.log( "Request Failed: " + err );
     });
 
-    console.log('pre-json');
     var $waypointId = 1;
     var $waypointMarkers = new Array();;
     $.getJSON( '/itinerary/datajson/'+datajson, function (events) {
-        console.log('pre-loop');
         // Store all our eventsmarker.marker.openPopup();
         var $itineraryData = events.events;
         // Loop through events
         $.each ($itineraryData, function(i, $event) {
-            console.log($event);
 
             // Let's put locations on the map!
 
             if ( $event.latitude != '' && $event.longitude != '' && $event.type == 'w' )
             {
-                console.log( $event.latitude );
-                console.log( $event.longitude );
 
                 var $marker = L.marker([$event.latitude, $event.longitude]).addTo(map);
 
@@ -123,7 +114,6 @@ $(document).ready(function() {
 
                 // This needs to go in a template.
                 $itineraryEventContent = '<h3>' + $event.waypoint + '</h3>';
-                console.log($itineraryEventContent);
                 // TODO: Roll up locations and observations for each event into the popup, using template approach
                 // ...But that should really happen in the Jekyll-generated JSON file, so that we have a consistent
                 // variable for the template to output.
@@ -131,14 +121,12 @@ $(document).ready(function() {
 
             }
         })
-        // TODO: This isn't working...How do we bind this?
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.on('click', function(e) {
                 $.each( $waypointMarkers, function( $i, marker) {
                     // This needs to go in a template.
                     marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
                 });
-                console.log(marker.waypoint);
                 // This needs to go in a template.
                 marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
                 marker.marker.openPopup;
@@ -171,11 +159,9 @@ $(document).ready(function() {
             {
                 // This needs to go in a template
                 $popup = '<div style="max-height: 175px; overflow-y: scroll;">';
-                console.log($waypointName);
                 // This should be the itemName field in a template.
                 $popup += '<h3>' + $waypointName + '</h3>';
                 $.each( $('tr.'+$waypoint), function( $i, tr ) {
-                    console.log(tr);
                     // All of the following should be the itemContent for events that match the waypoint.
                     // But we need to go back to the JSON for those.
                     // The Jekyll-driven JSON file should apply the if empty logic and HTML markup in its loop.
