@@ -15,6 +15,21 @@ $(document).ready(function() {
     // TODO: Make this dynamic based on the map's contents
     map.setView(map_center, map_zoom);
 
+    var $colors = new Array();
+    $colors.push('#1438bd');
+    $colors.push('#e9b829');
+    $colors.push('#900503');
+    $colors.push('#fb6b02');
+    $colors.push('#038911');
+    $colors.push('#281e5d');
+    $colors.push('#f9a602');
+    $colors.push('#d31603');
+    $colors.push('#893201');
+    $colors.push('#74b62d');
+    $colors.push('#85144be');
+    $colors.push('#141e3c');
+    $colors.push('#311431');
+
     var $paths = new Array();
 
     $.getJSON( "/itinerary/datajson/paths.json", function (paths) {
@@ -32,20 +47,23 @@ $(document).ready(function() {
                 // It's too bad this doesn't work as a featureLayer where we can just load in GeoJson! But then we have a layer of objects; Not each object.
                 //var linelayer = L.mapbox.featureLayer().addTo(map);
                 //linelayer.setGeoJSON(data);
-                switch (i) {
-                    case 0:
-                        $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
-                        break;
-                    case 1:
-                        $pathLine.setStyle({color: '#0f0', weight: 5, opacity: 0.4});
-                        break;
-                    case 2:
-                        $pathLine.setStyle({color: '#00f', weight: 5, opacity: 0.4});
-                        break;
-                    default:
-                        $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
-                        break;
-                }
+
+                $pathLine.setStyle({color: $colors[i], weight: 6, opacity: 0.5});
+                // switch (i) {
+                //     case 0:
+                //         $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
+                //         break;
+                //     case 1:
+                //         $pathLine.setStyle({color: '#0f0', weight: 5, opacity: 0.4});
+                //         break;
+                //     case 2:
+                //         $pathLine.setStyle({color: '#00f', weight: 5, opacity: 0.4});
+                //         break;
+                //     default:
+                //         $pathLine.setStyle({color: '#f00', weight: 5, opacity: 0.4});
+                //         break;
+                // }
+
                 $paths.push(
                     {
                         'id' : $path.id,
@@ -53,10 +71,10 @@ $(document).ready(function() {
                         'content' : $path.content
                     }
                 );
-                $pathLine.bindPopup($paths[i].content);
+                $pathLine.bindPopup($path.content);
                 $pathLine.on( 'click', function(e) {
                     $.each( $paths, function( $i, path ) {
-                        path.path.setStyle({ weight: 5, opacity: .4 });
+                        path.path.setStyle({ weight: 6, opacity: .5 });
                     })
                     $pathLine.setStyle({ weight: 3, opacity: 1.0 });
                 })
@@ -103,7 +121,7 @@ $(document).ready(function() {
                 )
                 $waypointId++;
 
-                // Fetch and fill in template here
+                // This needs to go in a template.
                 $itineraryEventContent = '<h3>' + $event.waypoint + '</h3>';
                 console.log($itineraryEventContent);
                 // TODO: Roll up locations and observations for each event into the popup, using template approach
@@ -117,9 +135,11 @@ $(document).ready(function() {
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.on('click', function(e) {
                 $.each( $waypointMarkers, function( $i, marker) {
+                    // This needs to go in a template.
                     marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
                 });
                 console.log(marker.waypoint);
+                // This needs to go in a template.
                 marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
                 marker.marker.openPopup;
             })
@@ -143,6 +163,7 @@ $(document).ready(function() {
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
+            // This needs to go in a template.
             marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
         });
         $.each( $waypointMarkers, function( $i, marker ) {
@@ -151,9 +172,15 @@ $(document).ready(function() {
                 // This needs to go in a template
                 $popup = '<div style="max-height: 175px; overflow-y: scroll;">';
                 console.log($waypointName);
+                // This should be the itemName field in a template.
                 $popup += '<h3>' + $waypointName + '</h3>';
                 $.each( $('tr.'+$waypoint), function( $i, tr ) {
                     console.log(tr);
+                    // All of the following should be the itemContent for events that match the waypoint.
+                    // But we need to go back to the JSON for those.
+                    // The Jekyll-driven JSON file should apply the if empty logic and HTML markup in its loop.
+                    // Then we just have a handful of itemContent vars to line up.
+                    // This should be the itemContent field in a template.
                     ($(tr).children('td.date').html().length == 0) ? console.log('Empty') : console.log($(tr).children('td.date').html());
                     if ( $(tr).children('td.date').html().length > 0 )
                         $popup += '<p><b>' + $(tr).children('td.date').html() + '</b></p>';
@@ -167,6 +194,7 @@ $(document).ready(function() {
                     if ( $(tr).children('td.text').html().length > 0 )
                         $popup += '<p><i>' + $(tr).children('td.text').html() + '</i></p>';
                 } )
+                // This needs to go in a template.
                 $popup += '</div>';
                 marker.marker.bindPopup($popup);
                 marker.marker.openPopup();
