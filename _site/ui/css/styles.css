@@ -72,7 +72,8 @@ h1 {
     }
 
 .itinerary h2,
-.content h2 {
+.content h2,
+#path-nav h2 {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 32px;
     font-weight: 400;
@@ -81,6 +82,11 @@ h1 {
 }
     .content h2 {
         margin-bottom: 1em;
+    }
+    #path-nav h2 {
+        font-size: 26px;
+        padding-top: .5em;
+        padding-bottom: .5em;
     }
 .content {
     font-family: 'IM Fell DW Pica', serif;
@@ -155,6 +161,13 @@ table {
                 text-align: left;
                 vertical-align: bottom;
             }
+        .data-table table tr.path-primary td,
+        .data-table table tr.path-alternate td {
+            display: none;
+        }
+        td.toggle span {
+            cursor: pointer; cursor: hand;
+        }
 .itinerary th {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 16px;
@@ -175,7 +188,8 @@ table {
 .itinerary tr.odd td {
     background: #f2ebd3;
 }
-.itinerary h3 {
+.itinerary h3,
+#path-nav > div h3 {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 36px;
     font-weight: 400;
@@ -184,6 +198,11 @@ table {
         color: #3d3934;
         font-family: 'IM Fell DW Pica SC', serif;
         font-weight: 400;
+    }
+    #path-nav > div h3 {
+        font-size: 20px;
+        padding-bottom: .5em;
+        text-align: center;
     }
     .leaflet-popup-content p {
         color: #3d3934;
@@ -234,6 +253,31 @@ table {
     line-height: 1.2em;
 }
 
+#path-nav {
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+    #path-nav > div {
+        float: left;
+        padding-right: 60px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+    }
+    #path-nav > div {
+        width: 33%;
+    }
+    #path-nav > div:nth-of-type(2) {
+        width: 34%;
+    }
+        #path-nav > div > ul {
+            list-style: none;
+            padding-left: 60px;
+        }
+            #path-nav > div > ul li {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
 .timeline {
     border-bottom: 3px solid #3d3934;
     height: 30px;
@@ -271,6 +315,9 @@ table {
     .data-table table tr {
         display: block;
     }
+    .data-table table td:nth-of-type(2) {
+        display: none;
+    }
         thead tr {
             position: absolute;
             top: -9999px;
@@ -305,6 +352,21 @@ table {
                 padding-right: 10px;
                 white-space: nowrap;
             }
+            .data-table table tr.path-primary td,
+            .data-table table tr.path-alternate td {
+                display: none;
+            }
+    #path-nav > div,
+    #path-nav > div:nth-of-type(2) {
+        float: none;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+        #path-nav > div > ul {
+            padding-left: 0;
+        }
 }
 @media screen and (max-width: 800px) {
     .timeline {

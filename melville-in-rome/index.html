@@ -53,6 +53,31 @@ page_nav: 'map-melville-rome'
     <p>An interactive map resides here.</p>
 </noscript></div>
 <div class="wrapper">
+    <div id="path-nav">
+        <h2>Routes Taken</h2>
+        <div class="day">
+            <h3>Day 1</h3>
+            <ul>
+                <li><label><input type="checkbox" /> Primary path</label></li>
+                <li><label><input type="checkbox" /> Alternate paths</label></li>
+            </ul>
+        </div>
+        <div class="day">
+            <h3>Day 2</h3>
+            <ul>
+                <li><label><input type="checkbox" checked="checked" /> Primary path</label></li>
+                <li><label><input type="checkbox" /> Alternate paths</label></li>
+            </ul>
+        </div>
+        <div class="day">
+            <h3>Day 3</h3>
+            <ul>
+                <li><label><input type="checkbox" /> Primary path</label></li>
+                <li><label><input type="checkbox" /> Alternate paths</label></li>
+            </ul>
+        </div>
+        <br style="clear:both;" />
+    </div>
     <div class="itinerary">
         <!--
              Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
@@ -75,6 +100,7 @@ page_nav: 'map-melville-rome'
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
             <thead><tr>
                 <th>Event</th>
+                <th></th>
                 <th>Date</th>
                 <th>Waypoint</th>
                 <th>Location</th>
@@ -88,6 +114,7 @@ page_nav: 'map-melville-rome'
             {% if event.type == 'w' and event.latitude != null %}{% assign i = i| plus:'1' %}{% endif %}
             <tr class="{% cycle 'odd', 'even' %} waypoint-{{ i }}">
                 <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
+                <td class="toggle">{% if i == 4 and event.type == 'w' %}<span class="collapsed">[ + ]</span>{% endif %}</td>
                 <td class="date" id="event-{{ i }}">{% if event.type == 'w' %}{{ event.display_date }}{% endif %}</td>
                 <td td class="waypoint">{% if event.type == 'w' %}<a href="#" data-waypoint-id="waypoint-{{ i }}">{{ event.waypoint }}</a>{% if event.city %}<br />({{ event.city }}){% endif %}{% endif %}</td>
                 <td class="location">{% if event.type == 'l' %}{{ event.observed }}{% endif %}</td>
@@ -96,6 +123,20 @@ page_nav: 'map-melville-rome'
                 <td class="text">{{ event.text }}</td>
                 <td class="editorial">{% if event.editorial %}{{ event.editorial }}{% else %}&#160;{% endif %}</td>
             </tr>
+            {% if i == 4 and event.type == 'w' %}
+            <tr class="path-primary">
+                <td colspan="3" style="background: #f4fefd;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
+                <td colspan="8" style="background: #f4fefd;"><a href="#">Primary path</a></td>
+            </tr>
+            <tr class="path-alternate">
+                <td colspan="3" style="background: #fbfcf7;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
+                <td colspan="8" style="background: #fbfcf7;"><a href="#">Alternate path 1</a></td>
+            </tr>
+            <tr class="path-alternate">
+                <td colspan="3" style="background: #fbfcf7;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
+                <td colspan="8" style="background: #fbfcf7;"><a href="#">Alternate path 2</a></td>
+            </tr>
+            {% endif %}
             {% endfor %}
         </table></div>
         {% endfor %}
@@ -107,19 +148,20 @@ page_nav: 'map-melville-rome'
                 max-width: 150px;
             }
             td.text, td.editorial { max-width: 300px; }
+            td.toggle { max-width: 80px; min-width: 80px; }
             @media screen and (max-width: 940px) {
                 td {
                     min-width: none;
                 }
                 td.waypoint, td.location, td.observation,
                 td.text, td.editorial { max-width: none; }
-                td:nth-of-type(2):before { content: "Date"; }
-                td:nth-of-type(3):before { content: "Waypoint"; }
-                td:nth-of-type(4):before { content: "Location"; }
-                td:nth-of-type(5):before { content: "Observation"; }
-                td:nth-of-type(6):before { content: "Lat, Long"; }
-                td:nth-of-type(7):before { content: "HM Comment"; }
-                td:nth-of-type(8):before { content: "Editorial Note"; }
+                td:nth-of-type(3):before { content: "Date"; }
+                td:nth-of-type(4):before { content: "Waypoint"; }
+                td:nth-of-type(5):before { content: "Location"; }
+                td:nth-of-type(6):before { content: "Observation"; }
+                td:nth-of-type(7):before { content: "Lat, Long"; }
+                td:nth-of-type(8):before { content: "HM Comment"; }
+                td:nth-of-type(9):before { content: "Editorial Note"; }
             }
         </style>
     </div>

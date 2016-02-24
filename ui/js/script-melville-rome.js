@@ -138,6 +138,27 @@ $(document).ready(function() {
         //console.log( "Request Failed: " + err );
     })
 
+    $(window).on('resize', function(e) {
+        $('tr.path-primary').children('td').css('display','none');
+        $('tr.path-alternate').children('td').css('display','none');
+        $("td.toggle span").html('[ + ]')
+    })
+
+    $("td.toggle span").on('click', function(e) {
+        if ( $(this).html() == '[ + ]' )
+        {
+            $(this).html('[ - ]');
+            $(this).parent('td').parent('tr').parent('tbody').children('tr.path-primary').children('td').css('display','table-cell');
+            $(this).parent('td').parent('tr').parent('tbody').children('tr.path-alternate').children('td').css('display','table-cell');
+        }
+        else
+        {
+            $(this).html('[ + ]');
+            $(this).parent('td').parent('tr').parent('tbody').children('tr.path-primary').children('td').css('display','none');
+            $(this).parent('td').parent('tr').parent('tbody').children('tr.path-alternate').children('td').css('display','none');
+        }
+    })
+
     $(".waypoint a").on('click', function(e) {
         //e.preventDefault(); // Let the # link scroll us to the top
         var $waypoint = $(this).data('waypoint-id');
