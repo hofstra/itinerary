@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
+    var map_historic2 = L.tileLayer( tile_layer_historic2, { attribution: attribution_historic2 } );
     var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
 
     var map = L.map('map-container', {layers:map_historic});
@@ -19,7 +20,8 @@ $(document).ready(function() {
     };*/
     var baseMaps = {
         'London 2015': map_mapbox,
-        'Historic Map': map_historic
+        'London 1658': map_historic2,
+        'London 1720': map_historic
     };
 
     // Add the tile layer switcher control (toggler)

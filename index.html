@@ -22,9 +22,11 @@ page_nav: 'map-plague'
         var datajson = 'a-frightful-number-plague.json';
 
         // Set map values for this page that will be used in script.js
-        var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_historic2 = 'Map image from <a href="http://hofstradrc.org">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_historic = 'Map image from <a href="http://hofstradrc.org">Hofstra DRC</a> via <a href=#">Source</a>';
         var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
 
+        var tile_layer_historic2 = 'http://mapwarper.net/maps/tile/12282/{z}/{x}/{y}.png ';
         var tile_layer_historic = 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png';
         var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
@@ -32,6 +34,7 @@ page_nav: 'map-plague'
 
         // Need to find a way to do this; These are on the left side of object assignment
         // [variable] worked in Firefox, but halted the JS in Chrome
+        var historic_toggle_label2 = 'London 1658';
         var historic_toggle_label = 'London 1720';
         var modern_toggle_label = 'London 2015';
 
