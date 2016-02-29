@@ -53,7 +53,10 @@ $(document).ready(function() {
                 //var linelayer = L.mapbox.featureLayer().addTo(map);
                 //linelayer.setGeoJSON(data);
 
-                $pathLine.setStyle({color: $colors[i], weight: 8, opacity: 0.5});
+                if ($path.primary == '1')
+                    $pathLine.setStyle({color: $colors[i], weight: 8, opacity: 0.5});
+                else
+                    $pathLine.setStyle({color: '#4b371c', weight: 8, opacity: 0.5});
 
                 $paths.push(
                     {
