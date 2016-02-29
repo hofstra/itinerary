@@ -118,7 +118,31 @@ page_nav: 'map-melville-rome'
             </tr></thead>
 
             {% for event in route.items %}
-            {% if event.type == 'w' and event.latitude != null %}{% assign i = i| plus:'1' %}{% endif %}
+            {% if event.type == 'w' and event.latitude != null %}{% assign i = i|plus:'1' %}{% endif %}
+
+            {% for path in site.data.paths %}
+            {% if path.primary == '1' %}
+            {% comment %}Number to string conversion!!!{% endcomment %}
+            {% capture i_str %}{{ i }}{% endcapture %}
+            {% if event.type == 'w' and path.event == i_str %}
+            <tr class="path-primary">
+                <td colspan="3" style="background: #f4fefd;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
+                <td class="path" colspan="8" style="background: #f4fefd;"><a href="#" data-path-id="path-{{ path.event }}-{{ path.id }}">{{ path.content }}</a></td>
+            </tr>
+            {% endif %}
+            {% endif %}
+            {% if path.primary == '0' %}
+            {% comment %}Number to string conversion!!!{% endcomment %}
+            {% capture i_str %}{{ i }}{% endcapture %}
+            {% if event.type == 'w' and path.event == i_str %}
+            <tr class="path-alternate">
+                <td colspan="3" style="background: #fbfcf7;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
+                <td class="path" colspan="8" style="background: #fbfcf7;"><a href="#" data-path-id="path-{{ path.event }}-{{ path.id }}">{{ path.content }}</a></td>
+            </tr>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
             <tr class="{% cycle 'odd', 'even' %} waypoint-{{ i }}">
                 <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
                 <td class="toggle">{% if false and event.type == 'w' %}<span class="collapsed">[ + ]</span>{% endif %}</td>
@@ -130,20 +154,6 @@ page_nav: 'map-melville-rome'
                 <td class="text">{{ event.text }}</td>
                 <td class="editorial">{% if event.editorial %}{{ event.editorial }}{% else %}&#160;{% endif %}</td>
             </tr>
-            {% if false and event.type == 'w' %}
-            <tr class="path-primary">
-                <td colspan="3" style="background: #f4fefd;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
-                <td colspan="8" style="background: #f4fefd;"><a href="#">Primary path</a></td>
-            </tr>
-            <tr class="path-alternate">
-                <td colspan="3" style="background: #fbfcf7;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
-                <td colspan="8" style="background: #fbfcf7;"><a href="#">Alternate path 1</a></td>
-            </tr>
-            <tr class="path-alternate">
-                <td colspan="3" style="background: #fbfcf7;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
-                <td colspan="8" style="background: #fbfcf7;"><a href="#">Alternate path 2</a></td>
-            </tr>
-            {% endif %}
             {% endfor %}
         </table></div>
         {% endfor %}

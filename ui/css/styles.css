@@ -163,7 +163,7 @@ table {
             }
         .data-table table tr.path-primary td,
         .data-table table tr.path-alternate td {
-            display: none;
+            /*display: none;*/
         }
         td.toggle span {
             cursor: pointer; cursor: hand;

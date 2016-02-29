@@ -61,6 +61,7 @@ $(document).ready(function() {
                 $paths.push(
                     {
                         'id' : $path.id,
+                        'event' : $path.event,
                         'path' : $pathLine,
                         'content' : $path.content
                     }
@@ -160,6 +161,38 @@ $(document).ready(function() {
             $(this).parent('td').parent('tr').parent('tbody').children('tr.path-primary').children('td').css('display','none');
             $(this).parent('td').parent('tr').parent('tbody').children('tr.path-alternate').children('td').css('display','none');
         }
+    })
+
+    $(".path a").on('click', function(e) {
+        //e.preventDefault(); // Let the # link scroll us to the top
+        var $path = $(this).data('path-id');
+        var $pathName = $(this).html();
+        var $pathEventId = $(this).data('path-id').split('-')[1];
+        var $pathId = $(this).data('path-id').split('-')[2];
+
+        $.each( $paths, function( $i, path) {
+            path.path.closePopup();
+            path.path.setStyle({ weight: 8, opacity: .5 });
+        })
+        $.each( $waypointMarkers, function( $i, marker) {
+            marker.marker.closePopup();
+            // This needs to go in a template.
+            marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+        });
+        $.each( $paths, function( $i, path) {
+            if ( (path.id == $pathId) && (path.event == $pathEventId) )
+            {
+                // This needs to go in a template
+                $popup = '<div style="max-height: 175px; overflow-y: scroll;">';
+                // This should be the itemName field in a template.
+                $popup += '<h3>' + $pathName + '</h3>';
+                // This needs to go in a template.
+                $popup += '</div>';
+                path.path.setStyle({ weight: 3, opacity: 1.0 });
+                path.path.bindPopup($popup);
+                path.path.openPopup();
+            }
+        })
     })
 
     $(".waypoint a").on('click', function(e) {
