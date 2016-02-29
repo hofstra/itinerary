@@ -2,11 +2,11 @@ id,route,event,content,primary
 1,3,9,"Hotel Minerva to Torloni's",1
 1,3,10,"Torloni's to Coliseum",1
 1,3,11,"Coliseum to Capitoline",1
-1,3,12,"Capitoline to Pinician Hill",1
-1,3,13,"Pinician Hill to Caffe Greco",1
-1,3,14,"Caffe Greco to Pinician Hill",1
+1,3,12,"Capitoline to Pincian Hill",1
+1,3,13,"Pincian Hill to Caffe Greco",1
+1,3,14,"Caffe Greco to Pincian Hill",1
 2,3,9,"Alternate Hotel Minerva to Torloni's",0
 2,3,10,"Alternate Torloni's to Coliseum",0
-2,3,12,"Alternate Capitoline to Pinician Hill",0
-2,3,13,"Alternate Pinician Hill to Caffe Greco",0
+2,3,12,"Alternate Capitoline to Pincian Hill",0
+2,3,13,"Alternate Pincian Hill to Caffe Greco",0
 2,3,14,"Alternate Caffe Greco to Hotel Minerva",0

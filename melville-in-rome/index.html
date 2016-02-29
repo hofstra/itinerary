@@ -121,7 +121,7 @@ page_nav: 'map-melville-rome'
             {% if event.type == 'w' and event.latitude != null %}{% assign i = i| plus:'1' %}{% endif %}
             <tr class="{% cycle 'odd', 'even' %} waypoint-{{ i }}">
                 <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
-                <td class="toggle">{% if i == 4 and event.type == 'w' %}<span class="collapsed">[ + ]</span>{% endif %}</td>
+                <td class="toggle">{% if false and event.type == 'w' %}<span class="collapsed">[ + ]</span>{% endif %}</td>
                 <td class="date" id="event-{{ i }}">{% if event.type == 'w' %}{{ event.display_date }}{% endif %}</td>
                 <td td class="waypoint">{% if event.type == 'w' %}<a href="#" data-waypoint-id="waypoint-{{ i }}">{{ event.waypoint }}</a>{% if event.city %}<br />({{ event.city }}){% endif %}{% endif %}</td>
                 <td class="location">{% if event.type == 'l' %}{{ event.observed }}{% endif %}</td>
@@ -130,7 +130,7 @@ page_nav: 'map-melville-rome'
                 <td class="text">{{ event.text }}</td>
                 <td class="editorial">{% if event.editorial %}{{ event.editorial }}{% else %}&#160;{% endif %}</td>
             </tr>
-            {% if i == 4 and event.type == 'w' %}
+            {% if false and event.type == 'w' %}
             <tr class="path-primary">
                 <td colspan="3" style="background: #f4fefd;"><img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" /></td>
                 <td colspan="8" style="background: #f4fefd;"><a href="#">Primary path</a></td>
