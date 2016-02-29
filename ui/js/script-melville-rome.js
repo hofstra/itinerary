@@ -21,6 +21,13 @@ $(document).ready(function() {
     // TODO: Make this dynamic based on the map's contents
     map.setView(map_center, map_zoom);
 
+    map.on('click', function(e) {
+        $.each( $paths, function( $i, path) {
+            path.path.closePopup();
+            path.path.setStyle({ weight: 8, opacity: .5 });
+        })
+    })
+
     var $colors = new Array();
     $colors.push('#1438bd');
     $colors.push('#e9b829');
@@ -72,6 +79,9 @@ $(document).ready(function() {
                         path.path.setStyle({ weight: 8, opacity: .5 });
                     })
                     $pathLine.setStyle({ weight: 3, opacity: 1.0 });
+                })
+                $pathLine.on( 'popupclose', function(e) {
+                    $pathLine.setStyle({ weight: 8, opacity: .5 });
                 })
             }).fail(function( jqxhr, textStatus, error ) {
                 var err = textStatus + ", " + error;
@@ -135,6 +145,10 @@ $(document).ready(function() {
                 // This needs to go in a template.
                 marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
                 marker.marker.openPopup;
+                $.each( $paths, function( $i, path) {
+                    path.path.closePopup();
+                    path.path.setStyle({ weight: 8, opacity: .5 });
+                })
             })
         });
     }).fail(function( jqxhr, textStatus, error ) {
@@ -204,6 +218,7 @@ $(document).ready(function() {
 
         $.each( $paths, function( $i, path) {
             path.path.closePopup();
+            path.path.setStyle({ weight: 8, opacity: .5 });
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
