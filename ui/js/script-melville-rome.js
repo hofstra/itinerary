@@ -61,7 +61,7 @@ $(document).ready(function() {
                 //linelayer.setGeoJSON(data);
 
                 if ($path.primary == '1')
-                    $pathLine.setStyle({color: $colors[i], weight: 8, opacity: 0.5});
+                    $pathLine.setStyle({color: $colors[i%13], weight: 8, opacity: 0.5});
                 else
                     $pathLine.setStyle({color: '#4b371c', weight: 8, opacity: 0.5});
 
@@ -73,7 +73,7 @@ $(document).ready(function() {
                         'content' : $path.content
                     }
                 );
-                $pathLine.bindPopup($path.content);
+                $pathLine.bindPopup('<h3>' + $path.content + '</h3>');
                 $pathLine.on( 'click', function(e) {
                     $.each( $paths, function( $i, path ) {
                         path.path.setStyle({ weight: 8, opacity: .5 });

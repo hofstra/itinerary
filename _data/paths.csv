@@ -10,3 +10,17 @@ id,route,event,content,primary
 2,3,12,"Alternate Capitoline to Pincian Hill",0
 2,3,13,"Alternate Pincian Hill to Caffe Greco",0
 2,3,14,"Alternate Caffe Greco to Hotel Minerva",0
+1,4,16,"Hotel Minerva to American Consulate",1
+1,4,17,"American Consulate to Baths of Caracalla",1
+1,4,18,"Baths of Caracalla to Protestant Burial Ground",1
+1,4,19,"Protestant Burial Ground to Suspension Bridge",1
+1,4,20,"Suspension Bridge to Isola Tiberina",1
+1,4,21,"Isola Tiberina to Teatro Marcello, Palazzo Orsini",1
+1,4,22,"Teatro Marcello, Palazzo Orsini to Palazzo di Cenci",1
+1,4,23,"Palazzo di Cenci to Palazzo di Farnese",1
+1,4,24,"Palazzo di Farnese to Ponte Sant'Angelo",1
+1,4,25,"Ponte Sant'Angelo to Piazza San Pietro",1
+1,4,26,"Piazza San Pietro to Hotel Minerva",1
+2,4,18,"Baths of Caracalla to Protestant Burial Ground",0
+3,4,18,"Baths of Caracalla to Protestant Burial Ground",0
+4,4,18,"Baths of Caracalla to Protestant Burial Ground",0
