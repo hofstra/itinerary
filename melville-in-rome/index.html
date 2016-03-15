@@ -60,6 +60,7 @@ page_nav: 'map-melville-rome'
             <ul>
                 <li><label><input type="checkbox" readonly="true" /> Primary route</label></li>
                 <li><label><input type="checkbox" readonly="true" /> Alternate paths</label></li>
+                <li><label><input type="checkbox" readonly="true" /> Waypoints</label></li>
             </ul>
         </div>
         <div class="day" style="opacity: .5;">
@@ -67,6 +68,7 @@ page_nav: 'map-melville-rome'
             <ul>
                 <li><label><input type="checkbox" readonly="true" /> Primary route</label></li>
                 <li><label><input type="checkbox" readonly="true" /> Alternate paths</label></li>
+                <li><label><input type="checkbox" readonly="true" /> Waypoints</label></li>
             </ul>
         </div>
         <div class="day">
@@ -74,6 +76,7 @@ page_nav: 'map-melville-rome'
             <ul>
                 <li><label><input class="path-toggle" type="checkbox" data-route="3" data-primary="1" checked="checked" /> Primary route</label></li>
                 <li><label><input class="path-toggle" type="checkbox" data-route="3" data-primary="0" checked="checked" /> Alternate paths</label></li>
+                <li><label><input class="waypoint-toggle" type="checkbox" data-route="3" checked="checked" /> Waypoints</label></li>
             </ul>
         </div>
         <div class="day">
@@ -81,6 +84,7 @@ page_nav: 'map-melville-rome'
             <ul>
                 <li><label><input class="path-toggle" type="checkbox" data-route="4" data-primary="1" checked="checked" /> Primary route</label></li>
                 <li><label><input class="path-toggle" type="checkbox" data-route="4" data-primary="0" checked="checked" /> Alternate paths</label></li>
+                <li><label><input class="waypoint-toggle" type="checkbox" data-route="4" checked="checked" /> Waypoints</label></li>
             </ul>
         </div>
         <br style="clear:both;" />
@@ -147,7 +151,7 @@ page_nav: 'map-melville-rome'
                 <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
                 <td class="toggle">{% if false and event.type == 'w' %}<span class="collapsed">[ + ]</span>{% endif %}</td>
                 <td class="date" id="event-{{ i }}">{% if event.type == 'w' %}{{ event.display_date }}{% endif %}</td>
-                <td td class="waypoint">{% if event.type == 'w' %}<a href="#" data-waypoint-id="waypoint-{{ i }}">{{ event.waypoint }}</a>{% if event.city %}<br />({{ event.city }}){% endif %}{% endif %}</td>
+                <td td class="waypoint">{% if event.type == 'w' %}{% if event.latitude %}<a href="#" data-waypoint-id="waypoint-{{ i }}">{% endif %}{{ event.waypoint }}{% if event.latitude %}</a>{% endif %}{% if event.city %}<br />({{ event.city }}){% endif %}{% endif %}</td>
                 <td class="location">{% if event.type == 'l' %}{{ event.observed }}{% endif %}</td>
                 <td class="observation">{% if event.type == 'o' %}{{ event.observed }}{% endif %}</td>
                 <td class="coords">{% if event.latitude != null %}{{ event.latitude }}{% else %}##.#####{% endif %}, {% if event.longitude != null %}{{ event.longitude }}{% else %}##.#####{% endif %}</td>
