@@ -24,7 +24,10 @@ $(document).ready(function() {
     map.on('click', function(e) {
         $.each( $paths, function( $i, path) {
             path.path.closePopup();
-            path.path.setStyle({ weight: 8, opacity: .5 });
+            if (path.path.opacity > 0) {
+                path.path.clickable = true;
+                path.path.setStyle({ weight: 8, opacity: .5 });
+            }
         })
     })
 
@@ -78,9 +81,13 @@ $(document).ready(function() {
                 $pathLine.bindPopup('<h3>' + $path.content + '</h3>');
                 $pathLine.on( 'click', function(e) {
                     $.each( $paths, function( $i, path ) {
-                        path.path.setStyle({ weight: 8, opacity: .5 });
+                        if (path.path.opacity > 0) {
+                            path.path.clickable = true;
+                            path.path.setStyle({ weight: 8, opacity: .5 });
+                        }
                     })
                     $pathLine.setStyle({ weight: 3, opacity: 1.0 });
+
                 })
                 $pathLine.on( 'popupclose', function(e) {
                     $pathLine.setStyle({ weight: 8, opacity: .5 });
@@ -149,7 +156,10 @@ $(document).ready(function() {
                 marker.marker.openPopup;
                 $.each( $paths, function( $i, path) {
                     path.path.closePopup();
-                    path.path.setStyle({ weight: 8, opacity: .5 });
+                    if (path.path.opacity > 0) {
+                        path.path.clickable = true;
+                        path.path.setStyle({ weight: 8, opacity: .5 });
+                    }
                 })
             })
         });
@@ -175,6 +185,7 @@ $(document).ready(function() {
                 if ( (path.route == $checkbox.data('route')) && (path.primary == $checkbox.data('primary')) )
                 {
                     path.path.closePopup();
+                    path.path.clickable = true;
                     path.path.setStyle({ weight: 8, opacity: .5 });
                 }
             })
@@ -186,8 +197,9 @@ $(document).ready(function() {
                 console.log($checkbox.data('route') + ' ' + $checkbox.data('primary')); */
                 if ( (path.route == $checkbox.data('route')) && (path.primary == $checkbox.data('primary')) )
                 {
-                    console.log(path.path);
+                    // console.log(path.path);
                     path.path.closePopup();
+                    path.path.clickable = false;
                     path.path.setStyle({ weight: 8, opacity: 0 });
                 }
             })
@@ -218,7 +230,10 @@ $(document).ready(function() {
 
         $.each( $paths, function( $i, path) {
             path.path.closePopup();
-            path.path.setStyle({ weight: 8, opacity: .5 });
+            if (path.path.opacity > 0) {
+                path.path.clickable = true;
+                path.path.setStyle({ weight: 8, opacity: .5 });
+            }
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
@@ -250,7 +265,10 @@ $(document).ready(function() {
 
         $.each( $paths, function( $i, path) {
             path.path.closePopup();
-            path.path.setStyle({ weight: 8, opacity: .5 });
+            if (path.path.opacity > 0) {
+                path.path.clickable = true;
+                path.path.setStyle({ weight: 8, opacity: .5 });
+            }
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
