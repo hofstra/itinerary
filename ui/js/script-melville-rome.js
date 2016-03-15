@@ -70,7 +70,9 @@ $(document).ready(function() {
                         'id' : $path.id,
                         'event' : $path.event,
                         'path' : $pathLine,
-                        'content' : $path.content
+                        'content' : $path.content,
+                        'route' : $path.route,
+                        'primary' : $path.primary
                     }
                 );
                 $pathLine.bindPopup('<h3>' + $path.content + '</h3>');
@@ -130,7 +132,7 @@ $(document).ready(function() {
                 $waypointId++;
 
                 // This needs to go in a template.
-                console.log(applyTemplate('pin-name', '', ''));
+                //console.log(applyTemplate('pin-name', '', ''));
                 $itineraryEventContent = '<h3>' + $event.waypoint + '</h3>';
                 $marker.bindPopup( $itineraryEventContent );
 
@@ -160,6 +162,36 @@ $(document).ready(function() {
         $('tr.path-primary').children('td').css('display','none');
         $('tr.path-alternate').children('td').css('display','none');
         $("td.toggle span").html('[ + ]')
+    })
+
+    $(".path-toggle").prop('checked', true);
+    $(".path-toggle").on('click', function(e) {
+        $checkbox = $(this);
+        if ($(this).prop('checked')) {
+            console.log("checked");
+            $.each( $paths, function( $i, path) {
+                /*console.log(path.route + ' ' + path.primary);
+                console.log($checkbox.data('route') + ' ' + $checkbox.data('primary')); */
+                if ( (path.route == $checkbox.data('route')) && (path.primary == $checkbox.data('primary')) )
+                {
+                    path.path.closePopup();
+                    path.path.setStyle({ weight: 8, opacity: .5 });
+                }
+            })
+        }
+        else {
+            console.log("unchecked");
+            $.each( $paths, function( $i, path) {
+                /*console.log(path.route + ' ' + path.primary);
+                console.log($checkbox.data('route') + ' ' + $checkbox.data('primary')); */
+                if ( (path.route == $checkbox.data('route')) && (path.primary == $checkbox.data('primary')) )
+                {
+                    console.log(path.path);
+                    path.path.closePopup();
+                    path.path.setStyle({ weight: 8, opacity: 0 });
+                }
+            })
+        }
     })
 
     $("td.toggle span").on('click', function(e) {
