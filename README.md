@@ -1,12 +1,20 @@
 # Itinerary
 
-## Phase 2 Project Notes
+## Current State
 
-I've been considering ways to support interactivity and crowdsourcing, and how we might implement a model for accepting community input on routes and alt routes.
+Thus far our efforts have served to produce two working demonstrations using mapping technology to navigate historical data or literature:
 
-At this time, I'm choosing to stick with CSV files as our data model, which can be consumed directly in Jekyll to generate JSON for JavaScript processing **and** HTML for in-page content. This is important from an accessibility perspective. I am wary of any solution that would only function via a JavaScript solution, and the implications for accessibility.
+* "Plague Year," which provides a timeline-based navigation tool to step through events recorded from Defoe's *A Journal of the Plague Year*.
+* Melville in Rome, which enables the exploration of possible routes taken by Melville in between events recorded in his journal of his time spent there.
 
-For example:
+Our present goal is to decouple both demonstrations from any specific references to the data or content, such that they can be utilized by anyone to illustrate similar data or content. A scholar could fork the GitHub repository, enter their own CSV data, provide their own set of GeoJSON files, and render a new, unique map UI for timeline or route-based exploration. As long as the data provided conforms to an assumed JSON spec, the UI layer can parse and render that data.
 
-* Storing itinerary/route data in Google Docs spreadsheets: While this can be consumed as CSV data, there is no way to do so in Jekyll. We would be required to do so at run-time with JavaScript, or switch to a PHP backend to parse and present data. While Google Docs would support concurrent/community editing, it would have all members editing one live, master version.
-* PHP/database backend: I think, whether as a bespoke PHP application or based on a CMS or framework, this implies more scope than is currently supported. However, our current efforts to model data records for itinerary events and routes should be undertaken with this goal in mind.
+We also seek to fully document both demonstrations so that such efforts are approachable, albeit with a degree of savvy when it comes to website technologies. Some assistance is likely required, but such assistance is not proprietary to the Itinerary team. The project uses widely-embraced and familiar technologies.
+
+## Going Forward
+
+Our next phase of development will focus on better realizing the UI layer as a portable JavaScript application that can sit atop any backend technology, as long as the data to be consumed conforms to the prescribed JSON spec. This will enable other projects to add a mapping UI layer to existing applications, or to work with their preferred technologies. We will have further explored *event*, *route*, *path*, and *region* concepts such that those can be universally adapted to different data and geographies. We will look to provide template examples for outputting data from other platforms.
+
+Also important in our next phase will be addressing the need for unique, persistent URIs for *events*, which is our term for entries on the itinerary. As the current phase uses Jekyll to spin up a static site based on the current state of the data (in CSV format) and JavaScript to pull together that data at run-time, there is no persistent data store for itinerary entries so that those can be reliably linked to or referenced by unique identifiers. Thus it is not presently possible to reference one event in another event's notes, which is a stated goal.
+
+As Itinerary evolves, our goal is to enable collaborative and crowdsourcing features so that scholarly communities can share insight and help refine mapped data.
