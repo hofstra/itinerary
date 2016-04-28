@@ -1,0 +1,50 @@
+## Map Rectification and Export Process
+
+After uploading the map image to Map Warper, we must rectify the map. This is the process in which the map is warped so that designated points align with true latitudinal and longitudinal points on a modern mapping system.
+
+Map Warper presents us with a two-pane view: Our map image is on the left; A modern OpenStreetMap is on the right. In the case of the "1667 Surveigh" map, I zoomed the OpenStreetMap in to London and then further so that I had Tower of London and London Bridge in view.
+
+In this process, it is helpful for us to have a high-resolution historical map image. Urban geography has changed a great deal in ~350 years. While some streets and intersections are identifiable, others are very obscure or have been re-routed or disappeared. I was able to zoom in on our historical map and identify locations such as Fleet Street, St. Paul's, Bride's Lane, etc, and use those as control points. In many cases, with the map image at my disposal, a sufficient zoom level to identify those labels still fell short. In some cases, I was simply making assumptions about the shapes of letters and corresponding words they formed.
+
+I was able to place 15 control points, documented in the screenshot [posted to Trello](https://trello.com/c/wKtLWHQ1/31-phase-1-map-test-completed). I could certainly have continued to identify more, for greater accuracy, but was only working to establish a proof of concept. Map Warper provides a list of those control points in its UI (under a collapsed "Control Points" label), so that you can fetch the corresponding Lat and Long for each.
+
+With a sufficient number of control points in place (it requires 3 or 4; the more we provide, the better the accuracy of the result), you can click the "Warp Image" button. I did change the Resampling Method to "Cubic Spline" ("Slowest, best quality"), as the NYPL write-up recommend, and observed no real impact in terms of speed.
+
+The rectified, or warped, map is now available in Map Warper, to share or view. Our intent at this step is to export the map.
+
+Per the NYPL write-up, the most direct route to utilizing our map is to reference its "tiles" URL from Map Warper. Map Warper provides us tile-ready PNG files (where PNGs are web-ready images and tiles are the squares in an interactive map that re-render as you zoom or pan) via its URL. That URL looks like:
+
+http://mapwarper.net/maps/tile/8221/{z}/{x}/{y}.png
+
+Where `8221` is the ID of our map within the Map Warper database. (Jamie and I have discussed hosting our own version of the open source Map Warper so that we own this URL for our purposes.)
+
+That URL is referenced in our Leaflet/MapBox JavaScript code to render the map image as a map layer on a MapBox map. We can now turn that layer on and off over a native MapBox map layer, and see that it's aligned. We can plot locations on that layer using lat/long from our list of itinerary events.
+
+### Notes on Image Preparation or Specifications
+
+* The higher the historical map image's resolution, the easier it is to zoom in, read text in the map image and identify a greater number of control points, which will result in a more accurate rectified map. Again, in many cases, I derived control points from street and place name labels, where map topography would not have visually matched up sufficiently otherwise.
+* Similarly, the higher the resolution of the map image, the more zoom levels it will support with clarity in our rendered itinerary/timeline map. Because, as I understand it, Map Warper is converting our source image into PNG map tiles, any concerns about filesize *should* be managed by Map Warper. The better source material we can give it, the better detail we can provide when users of the MVP zoom in.
+
+### Notes on Deriving Lat & Long
+
+* To plot a sample event on my demo, I put a marker on a MapBox map and captured its lat and long values. Anyone on the team can do this via [Google Maps](http://maps.google.com) or [OpenStreetMap](http://www.openstreetmap.org) to fill in the CSV files. Our intent is to load timeline events on the map directly from the CSV.
+* That said, Map Warper reveals the lat & long of each control point I established to rectify the map. If the team's process of rectifying the map includes using a sample of the itinerary data as control points, some of those lat and long values needed in the CSV data could come from that exercise.
+
+### Demo Notes
+
+See http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com/
+
+Features include:
+
+* The ability to zoom and pan our map
+* The ability to toggle between the 1667 Surveigh map and the current OpenStreetMap map
+* The ability to implement a custom annotation on the map (bottom right)
+* The ability to plot a point with metadata popup via JavaScript code
+
+The 2015 layer is a MapBox map from my MapBox account.
+
+* That account is free.
+* That map ID can be changed easily and can come from a DRC account.
+* There was no configuration done there. I just needed a Map ID.
+* That said, down the road, MapBox can be used to customize the modern map layer. (Color palette, markers, etc)
+* We're controlling the default center & zoom in our code. The NYPL example does describe how to "snap" the map's bounds to fit the markers loaded (from the CSV data in our case).

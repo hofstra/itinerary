@@ -1,0 +1,721 @@
+{
+    "events":
+    [
+    
+    
+    
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Post Office",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "8 Mile Stop",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    {
+        "route" : "1",
+        "type" : "o",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "8 Mile Stop",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Fondi",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    {
+        "route" : "1",
+        "type" : "o",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Fondi",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    {
+        "route" : "1",
+        "type" : "o",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Fondi",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Terracina",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Alban Mount",
+        "latitude" : "",
+        "longitude" : ""
+    },
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 24, 1857",
+        "waypoint" : "Porta San Giovanni",
+        "latitude" : "41.885892",
+        "longitude" : "12.5071393"
+    },
+    
+    
+    
+    
+    {
+        "route" : "1",
+        "type" : "w",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Piazza San Silvestro",
+        "latitude" : "41.9028145",
+        "longitude" : "12.4787139"
+    }
+    ,
+    
+    
+    
+    
+    
+    
+    {
+        "route" : "2",
+        "type" : "w",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Piazza San Silvestro",
+        "latitude" : "41.9028145",
+        "longitude" : "12.4787139"
+    },
+    
+    
+    {
+        "route" : "2",
+        "type" : "l",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Piazza San Silvestro",
+        "latitude" : "41.9028145",
+        "longitude" : "12.4787139"
+    },
+    
+    
+    
+    
+    {
+        "route" : "2",
+        "type" : "w",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    },
+    
+    
+    {
+        "route" : "2",
+        "type" : "o",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    },
+    
+    
+    
+    
+    {
+        "route" : "2",
+        "type" : "w",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Capitoline Hill",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "2",
+        "type" : "l",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Capitoline Hill",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "2",
+        "type" : "o",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Capitoline Hill",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "2",
+        "type" : "o",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Capitoline Hill",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    
+    
+    {
+        "route" : "2",
+        "type" : "w",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "St. Peter's",
+        "latitude" : "41.9022309",
+        "longitude" : "12.4562399"
+    },
+    
+    
+    
+    
+    {
+        "route" : "2",
+        "type" : "w",
+        "date_descriptive" : "February 25, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    }
+    ,
+    
+    
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    },
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Torloni's, banker",
+        "latitude" : "41.9058703302",
+        "longitude" : "12.4822068214"
+    },
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Coliseum",
+        "latitude" : "41.8902180817",
+        "longitude" : "12.4923563004"
+    },
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Capitoline Museum",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "l",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Capitoline",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "o",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Capitoline Museum",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "o",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Capitoline Museum",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "o",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Capitoline Museum",
+        "latitude" : "41.8929175697",
+        "longitude" : "12.4825823307"
+    },
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Pincian Hill",
+        "latitude" : "41.9110962087",
+        "longitude" : "12.4781674147"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "l",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Pincian Hill",
+        "latitude" : "41.9110962087",
+        "longitude" : "12.4781674147"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "o",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Pincian Hill",
+        "latitude" : "41.9110962087",
+        "longitude" : "12.4781674147"
+    },
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Caffé Greco",
+        "latitude" : "41.9052834401",
+        "longitude" : "12.4807691574"
+    },
+    
+    
+    {
+        "route" : "3",
+        "type" : "l",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Caffé Greco",
+        "latitude" : "41.9052834401",
+        "longitude" : "12.4807691574"
+    },
+    
+    
+    
+    
+    {
+        "route" : "3",
+        "type" : "w",
+        "date_descriptive" : "February 26, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    }
+    ,
+    
+    
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "American Consulate [Pzza del Popolo]",
+        "latitude" : "41.9104215395",
+        "longitude" : "12.4765205383"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "American Consulate [Pzza del Popolo]",
+        "latitude" : "41.9104215395",
+        "longitude" : "12.4765205383"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "American Consulate [Pzza del Popolo]",
+        "latitude" : "41.9104215395",
+        "longitude" : "12.4765205383"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Baths of Caracalla",
+        "latitude" : "41.8811124583",
+        "longitude" : "12.4929141998"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Baths of Caracalla",
+        "latitude" : "41.8811124583",
+        "longitude" : "12.4929141998"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Baths of Caracalla",
+        "latitude" : "41.8811124583",
+        "longitude" : "12.4929141998"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Protestant Burial Ground ",
+        "latitude" : "41.8767349074",
+        "longitude" : "12.480275631"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Protestant Burial Ground ",
+        "latitude" : "41.8767349074",
+        "longitude" : "12.480275631"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Protestant Burial Ground ",
+        "latitude" : "41.8767349074",
+        "longitude" : "12.480275631"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Suspension Bridge,",
+        "latitude" : "41.8894513424",
+        "longitude" : "12.480275631"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Suspension Bridge,",
+        "latitude" : "41.8894513424",
+        "longitude" : "12.480275631"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Isola Tiberina",
+        "latitude" : "41.8905295669",
+        "longitude" : "12.4777114391"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Isola Tiberina",
+        "latitude" : "41.8905295669",
+        "longitude" : "12.4777114391"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Teatro Marcello, Palazzo Orsini",
+        "latitude" : "41.892438379",
+        "longitude" : "12.4787092209"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Teatro Marcello, Palazzo Orsini",
+        "latitude" : "41.892438379",
+        "longitude" : "12.4787092209"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Teatro Marcello, Palazzo Orsini",
+        "latitude" : "41.892438379",
+        "longitude" : "12.4787092209"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Palazzo di Cenci",
+        "latitude" : "41.8928696508",
+        "longitude" : "12.4768531322"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Palazzo di Cenci",
+        "latitude" : "41.8928696508",
+        "longitude" : "12.4768531322"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Palazzo di Cenci",
+        "latitude" : "41.8928696508",
+        "longitude" : "12.4768531322"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Palazzo di Farnese",
+        "latitude" : "41.8948822141",
+        "longitude" : "12.4711024761"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Palazzo di Farnese",
+        "latitude" : "41.8948822141",
+        "longitude" : "12.4711024761"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Palazzo di Farnese",
+        "latitude" : "41.8948822141",
+        "longitude" : "12.4711024761"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Ponte Sant'Angelo",
+        "latitude" : "41.9020933785",
+        "longitude" : "12.4665105343"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Ponte Sant'Angelo",
+        "latitude" : "41.9020933785",
+        "longitude" : "12.4665105343"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Ponte Sant'Angelo",
+        "latitude" : "41.9020933785",
+        "longitude" : "12.4665105343"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Piazza San Pietro",
+        "latitude" : "41.9020534518",
+        "longitude" : "12.4560713768"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "l",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "St. Peter's",
+        "latitude" : "41.9020534518",
+        "longitude" : "12.4560713768"
+    },
+    
+    
+    
+    
+    {
+        "route" : "4",
+        "type" : "w",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    },
+    
+    
+    {
+        "route" : "4",
+        "type" : "o",
+        "date_descriptive" : "February 27, 1857",
+        "waypoint" : "Hotel de Minerva",
+        "latitude" : "41.897789138",
+        "longitude" : "12.4776363373"
+    }
+    
+    
+    ]
+}

@@ -1,0 +1,119 @@
+We'll be focusing on the 3 spreadsheets that contain a Location column, as this is most pertinent to the map. The tallies in the other two sheets are ancillary timeline data.
+
+* A Frightful Number - H.F.
+* A Frightful Number - The Three Kinsmen
+* A Frightful Number - Plague
+
+Our goal is to determine a consistent data model to store location/event data that we can store in CSV files and work with.
+
+In an attempt to establish consistent fields and data formats, I propose the following for any data that goes on a map:
+
+#### Year (date_year)
+
+**Integer**, **Required** for sorting.
+
+#### Month (date_month)
+
+**Integer, 2 digits**, **Required** for sorting, even if it defaults to 01.
+
+#### Date (date_day)
+
+**Integer, 2 digits**, **Required** for sorting, even if it defaults to 01.
+
+#### Season (season)
+
+**Text**, from the following:
+
+* `null` (empty)
+* `winter`
+* `spring`
+* `summer`
+* `fall`
+
+#### Exact Month? (date_month_exact)
+
+**Boolean**, **Required**
+
+If `false`, we should aspire to group such events on a timeline per **Season** (if provided) or **Year**.
+
+#### Exact Date? (date_day_exact)
+
+**Boolean**, **Required**
+
+If `false`, we should aspire to group such events on a timeline per **Month**.
+
+#### Descriptive Date (date_descriptive)
+
+**Text**, Optional
+
+Matches the value provided in the initial spreadsheets.
+
+*Ex: "End of November-Beginning of December", "January 10-17"*
+
+#### Parish (parish)
+
+**Text**, Optional
+
+Matches the value provided in the initial spreadsheets. Displayed as metadata / is not used in timeline or location mapping.
+
+Questions:
+
+* Is there a way to define this more generically to be applicable for other projects?
+
+#### Location (location_descriptive)
+
+**Text**, Optional
+
+Matches the value provided in the initial spreadsheets. Displayed as metadata / is not used in timeline or location mapping.
+
+#### Location: Latitude (location_latitude)
+
+**Float**, **Required**
+
+It will be necessary to obtain and store a latitude for each location on the map.
+
+#### Location: Longitude (location_longitude)
+
+**Float**, **Required**
+
+It will be necessary to obtain and store a longitude for each location on the map.
+
+#### Page Number (source_page)
+
+**Text**, Optional
+
+Matches the value provided in the initial spreadsheets. Displayed as metadata / is not used in timeline or location mapping. Corresponds to an identified source.
+
+*Ex: "84", "86-87"*
+
+#### Source (source)
+
+**Integer**, Optional
+
+Source should be an integer ID value corresponding to another dataset of sources. Displayed as metadata / is not used in timeline or location mapping. May be used to group location/event points on a timeline or map.
+
+*Ex: "1"*
+
+ID | Title | Author | Editor | Published | Location | Citation
+---|-------|--------|--------|-----------|----------|---------
+1|A Journal of the Plague Year|Defoe, Daniel|Ed. Cynthia Wall|Penguin, 2003|New York|Defoe, Daniel. A Journal of the Plague Year. Ed. Cynthia Wall. New York: Penguin, 2003.
+
+#### Notes (notes)
+
+**Text**, Optional
+
+Freetext notes that match the values provided in the initial spreadsheets. Displayed as metadata / not used in timeline or location mapping.
+
+#### Burial Numbers ()
+
+It would be best to have these as pure numbers. Currently there are some notational characters in the fields. See [a-frightful-number-plague.csv](https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-plague.csv)
+
+***
+
+> The first one - https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-hf.csv - is a good starting point for desired data. Not all rows are complete, and I filled in a lot of the date values based on the descriptive dates I was seeing. Where the date value is not 01, it's likely that Adam provided a real date. You'll see real dates are few and far between.
+
+> The three kinsmen is similar, but a much smaller sheet - https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-the-three-kinsmen.csv
+
+> If you look at line 14 in https://github.com/hofstra/itinerary/blob/master/_data/a-frightful-number-plague.csv, what we need to do is split Adam's value in the `burial_change` field into a number, and then indicate increase or decrease in the next field.
+
+> Wherever possible, new data should follow the formatting I've prescribed. My methodology was to download Adam's Google Docs sheet, open it locally in Numbers, do some default formatting on columns/cells, fill in data where I could based on prescriptive data, and then save that out as a CSV.

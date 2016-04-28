@@ -1,0 +1,206 @@
+{
+    "paths":
+    [
+    
+    {
+        "id" : "1",
+        "route" : 3,
+        "event" : 9,
+        "content" : "Hotel Minerva to Torloni's",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 3,
+        "event" : 10,
+        "content" : "Torloni's to Coliseum",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 3,
+        "event" : 11,
+        "content" : "Coliseum to Capitoline",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 3,
+        "event" : 12,
+        "content" : "Capitoline to Pincian Hill",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 3,
+        "event" : 13,
+        "content" : "Pincian Hill to Caffe Greco",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 3,
+        "event" : 14,
+        "content" : "Caffe Greco to Pincian Hill",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "2",
+        "route" : 3,
+        "event" : 9,
+        "content" : "Alternate Hotel Minerva to Torloni's",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "2",
+        "route" : 3,
+        "event" : 10,
+        "content" : "Alternate Torloni's to Coliseum",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "2",
+        "route" : 3,
+        "event" : 12,
+        "content" : "Alternate Capitoline to Pincian Hill",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "2",
+        "route" : 3,
+        "event" : 13,
+        "content" : "Alternate Pincian Hill to Caffe Greco",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "2",
+        "route" : 3,
+        "event" : 14,
+        "content" : "Alternate Caffe Greco to Hotel Minerva",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 16,
+        "content" : "Hotel Minerva to American Consulate",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 17,
+        "content" : "American Consulate to Baths of Caracalla",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 18,
+        "content" : "Baths of Caracalla to Protestant Burial Ground",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 19,
+        "content" : "Protestant Burial Ground to Suspension Bridge",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 20,
+        "content" : "Suspension Bridge to Isola Tiberina",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 21,
+        "content" : "Isola Tiberina to Teatro Marcello, Palazzo Orsini",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 22,
+        "content" : "Teatro Marcello, Palazzo Orsini to Palazzo di Cenci",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 23,
+        "content" : "Palazzo di Cenci to Palazzo di Farnese",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 24,
+        "content" : "Palazzo di Farnese to Ponte Sant'Angelo",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 25,
+        "content" : "Ponte Sant'Angelo to Piazza San Pietro",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "1",
+        "route" : 4,
+        "event" : 26,
+        "content" : "Piazza San Pietro to Hotel Minerva",
+        "primary" : 1
+    },
+    
+    {
+        "id" : "2",
+        "route" : 4,
+        "event" : 18,
+        "content" : "Baths of Caracalla to Protestant Burial Ground",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "3",
+        "route" : 4,
+        "event" : 18,
+        "content" : "Baths of Caracalla to Protestant Burial Ground",
+        "primary" : 0
+    },
+    
+    {
+        "id" : "4",
+        "route" : 4,
+        "event" : 18,
+        "content" : "Baths of Caracalla to Protestant Burial Ground",
+        "primary" : 0
+    }
+    
+    ]
+}
