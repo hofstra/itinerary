@@ -17,7 +17,8 @@
         "location_descriptive" : "Amsterdam, Holland",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin."
+        "notes" : "The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.",
+        "content" : ""
     },
     
     {
@@ -33,7 +34,8 @@
         "location_descriptive" : "Rotterdam, Holland",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     }
     ,
     
@@ -51,7 +53,8 @@
         "location_descriptive" : "Long Acre, Upper End of Drury-Lane",
         "location_latitude" : "51.51525930707282",
         "location_longitude" : "-0.12265205383300781",
-        "notes" : "2 Frenchmen die."
+        "notes" : "2 Frenchmen die.",
+        "content" : ""
     },
     
     {
@@ -67,7 +70,8 @@
         "location_descriptive" : "Long Acre, Upper End of Drury-Lane",
         "location_latitude" : "51.51525930707282",
         "location_longitude" : "-0.12265205383300781",
-        "notes" : "Another man dies in the same house."
+        "notes" : "Another man dies in the same house.",
+        "content" : ""
     },
     
     {
@@ -83,7 +87,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) ."
+        "notes" : "Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .",
+        "content" : ""
     },
     
     {
@@ -99,7 +104,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -115,7 +121,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers."
+        "notes" : "H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.",
+        "content" : ""
     },
     
     {
@@ -131,7 +138,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -147,7 +155,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -163,7 +172,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -179,7 +189,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -195,7 +206,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -211,7 +223,8 @@
         "location_descriptive" : "Long-Acre, Drury-Lane",
         "location_latitude" : "51.51525930707282",
         "location_longitude" : "-0.12265205383300781",
-        "notes" : "H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City."
+        "notes" : "H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.",
+        "content" : ""
     }
     ,
     
@@ -229,7 +242,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that a man died in a different house, but in the same parish and also of the plague."
+        "notes" : "H.F. notes that a man died in a different house, but in the same parish and also of the plague.",
+        "content" : ""
     },
     
     {
@@ -245,7 +259,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -261,7 +276,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -277,7 +293,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -293,7 +310,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -309,7 +327,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -325,7 +344,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -341,7 +361,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -357,7 +378,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -373,7 +395,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -389,7 +412,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -405,7 +429,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -421,7 +446,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -437,7 +463,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -453,7 +480,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -469,7 +497,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -485,7 +514,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -501,7 +531,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -517,7 +548,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -533,7 +565,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -549,7 +582,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "In second bills of mortality for St. Brides and St. James, the date reads Jan. 31."
+        "notes" : "In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.",
+        "content" : ""
     },
     
     {
@@ -565,7 +599,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -581,7 +616,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -597,7 +633,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -613,7 +650,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -629,7 +667,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -645,7 +684,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -661,7 +701,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -677,7 +718,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -693,7 +735,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "8 die from spotted fever, which H.F. notes was often considered the same as the plague."
+        "notes" : "8 die from spotted fever, which H.F. notes was often considered the same as the plague.",
+        "content" : ""
     },
     
     {
@@ -709,7 +752,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "4 die from spotted fever."
+        "notes" : "4 die from spotted fever.",
+        "content" : ""
     },
     
     {
@@ -725,7 +769,8 @@
         "location_descriptive" : "Bearbinder-lane, near the Stocks-market",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected."
+        "notes" : "This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.",
+        "content" : ""
     },
     
     {
@@ -741,7 +786,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "6 total die from spotted fever."
+        "notes" : "6 total die from spotted fever.",
+        "content" : ""
     },
     
     {
@@ -757,7 +803,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -773,7 +820,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -789,7 +837,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -805,7 +854,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -821,7 +871,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -837,7 +888,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -853,7 +905,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -869,7 +922,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -885,7 +939,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -901,7 +956,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50."
+        "notes" : "The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.",
+        "content" : ""
     },
     
     {
@@ -917,7 +973,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague."
+        "notes" : "The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.",
+        "content" : ""
     },
     
     {
@@ -933,7 +990,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -949,7 +1007,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\""
+        "notes" : "H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\"",
+        "content" : ""
     },
     
     {
@@ -965,7 +1024,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. suspects the actual number of dead from the plague is closer to 100."
+        "notes" : "H.F. suspects the actual number of dead from the plague is closer to 100.",
+        "content" : ""
     },
     
     {
@@ -981,7 +1041,8 @@
         "location_descriptive" : "Wood-street",
         "location_latitude" : "51.51661464098204",
         "location_longitude" : "-0.09323358535766602",
-        "notes" : "H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however."
+        "notes" : "H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.",
+        "content" : ""
     },
     
     {
@@ -997,7 +1058,8 @@
         "location_descriptive" : "Fenchurch-street",
         "location_latitude" : "51.511613726102865",
         "location_longitude" : "-0.08135676383972168",
-        "notes" : "The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving."
+        "notes" : "The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.",
+        "content" : ""
     },
     
     {
@@ -1013,7 +1075,8 @@
         "location_descriptive" : "Crooked-lane",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1029,7 +1092,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1045,7 +1109,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1061,7 +1126,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1077,7 +1143,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1093,7 +1160,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end."
+        "notes" : "H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.",
+        "content" : ""
     },
     
     {
@@ -1109,7 +1177,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1125,7 +1194,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths."
+        "notes" : "H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.",
+        "content" : ""
     },
     
     {
@@ -1141,7 +1211,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1157,7 +1228,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1173,7 +1245,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1189,7 +1262,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1205,7 +1279,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1221,7 +1296,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1237,7 +1313,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1253,7 +1330,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1269,7 +1347,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1285,7 +1364,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1301,7 +1381,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1317,7 +1398,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1333,7 +1415,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1349,7 +1432,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1365,7 +1449,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1381,7 +1466,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1397,7 +1483,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1413,7 +1500,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1429,7 +1517,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1445,7 +1534,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1461,7 +1551,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1477,7 +1568,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1493,7 +1585,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1509,7 +1602,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1525,7 +1619,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1541,7 +1636,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1557,7 +1653,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1573,7 +1670,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1589,7 +1687,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1605,7 +1704,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1621,7 +1721,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1637,7 +1738,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1653,7 +1755,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. cites this weekly number for roughly the end of July."
+        "notes" : "H.F. cites this weekly number for roughly the end of July.",
+        "content" : ""
     },
     
     {
@@ -1669,7 +1772,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is."
+        "notes" : "It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.",
+        "content" : ""
     },
     
     {
@@ -1685,7 +1789,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97)."
+        "notes" : "H.F. rounds up the total number of dead from the plague to 50,000 to account for the days missing from the official record. H.F. believes the total number of dead from the plague is not the official 68,590, but closer to 100,000 (96-97).",
+        "content" : ""
     },
     
     {
@@ -1701,7 +1806,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97)."
+        "notes" : "H.F. disputes the Bills of Mortality for the period in Algate, Cripplegate, White-Chappel, and Stepney. They report between 500 and 800 dead a week, but H.F. believes it is closer to 2,000 (96-97).",
+        "content" : ""
     },
     
     {
@@ -1717,7 +1823,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1733,7 +1840,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1749,7 +1857,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1765,7 +1874,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1781,7 +1891,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1797,7 +1908,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1813,7 +1925,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1829,7 +1942,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. speculates that between 1500 and 1700 people died a day from the plague during its height."
+        "notes" : "H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.",
+        "content" : ""
     },
     
     {
@@ -1845,7 +1959,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. speculates that the parish buried over a 1000 a week for two weeks."
+        "notes" : "H.F. speculates that the parish buried over a 1000 a week for two weeks.",
+        "content" : ""
     },
     
     {
@@ -1861,7 +1976,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. speculates that the number was twice the 600 that was officially recorded."
+        "notes" : "H.F. speculates that the number was twice the 600 that was officially recorded.",
+        "content" : ""
     },
     
     {
@@ -1877,7 +1993,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned."
+        "notes" : "H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.",
+        "content" : ""
     },
     
     {
@@ -1893,7 +2010,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads."
+        "notes" : "H.F. compares St. Giles and Cripplegate against the other three parishes to suggest a tilt toward the latter during this period, while the overall numbers are going up as the plague spreads.",
+        "content" : ""
     },
     
     {
@@ -1909,7 +2027,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1925,7 +2044,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower."
+        "notes" : "These numbers are largely from the part of Stepney that is adjacent to Shoreditch (Spittle-fields) and not that part which is next to Lime-House, Ratcliff-high-way, and St. Katherine's, where the numbers were far lower.",
+        "content" : ""
     },
     
     {
@@ -1941,7 +2061,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1957,7 +2078,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -1973,7 +2095,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving."
+        "notes" : "H.F. observes that people in Stepney Parish, which includes Lime-House, Redcliff, Wapping, and Ratcliff, felt relatively safe from the worst of the plague, so they didn't take necessary precautions, like leaving.",
+        "content" : ""
     },
     
     {
@@ -1989,7 +2112,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2005,7 +2129,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2021,7 +2146,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2037,7 +2163,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2053,7 +2180,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection."
+        "notes" : "H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.",
+        "content" : ""
     },
     
     {
@@ -2069,7 +2197,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2085,7 +2214,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2101,7 +2231,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2117,7 +2248,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2133,7 +2265,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2149,7 +2282,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2165,7 +2299,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2181,7 +2316,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2197,7 +2333,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2213,7 +2350,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2229,7 +2367,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2245,7 +2384,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2261,7 +2401,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2277,7 +2418,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2293,7 +2435,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2309,7 +2452,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2325,7 +2469,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2341,7 +2486,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2357,7 +2503,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2373,7 +2520,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2389,7 +2537,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2405,7 +2554,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2421,7 +2571,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2437,7 +2588,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2453,7 +2605,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2469,7 +2622,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2485,7 +2639,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. believes the weekly numbers are closer to 10,000."
+        "notes" : "H.F. believes the weekly numbers are closer to 10,000.",
+        "content" : ""
     },
     
     {
@@ -2501,7 +2656,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2517,7 +2673,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2533,7 +2690,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2549,7 +2707,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2565,7 +2724,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. locates the origin of the plague here."
+        "notes" : "H.F. locates the origin of the plague here.",
+        "content" : ""
     },
     
     {
@@ -2581,7 +2741,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that this was when the plague was at its height in this part of London."
+        "notes" : "H.F. notes that this was when the plague was at its height in this part of London.",
+        "content" : ""
     },
     
     {
@@ -2597,7 +2758,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes."
+        "notes" : "H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.",
+        "content" : ""
     },
     
     {
@@ -2613,7 +2775,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that, at the same time, these parishes were barely affected by the plague."
+        "notes" : "H.F. notes that, at the same time, these parishes were barely affected by the plague.",
+        "content" : ""
     },
     
     {
@@ -2629,7 +2792,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2645,7 +2809,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2661,7 +2826,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2677,7 +2843,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2693,7 +2860,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2709,7 +2877,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2725,7 +2894,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2741,7 +2911,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2757,7 +2928,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2773,7 +2945,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2789,7 +2962,8 @@
         "location_descriptive" : "Eastern Suburbs",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London."
+        "notes" : "H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.",
+        "content" : ""
     },
     
     {
@@ -2805,7 +2979,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another."
+        "notes" : "H.F. offers the following Bills of Mortality as evidence of the plague's movement and how, as it abated in one part of London, it grew worse in another.",
+        "content" : ""
     },
     
     {
@@ -2821,7 +2996,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2837,7 +3013,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2853,7 +3030,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2869,7 +3047,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2885,7 +3064,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2901,7 +3081,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2917,7 +3098,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2933,7 +3115,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2949,7 +3132,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2965,7 +3149,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183)."
+        "notes" : "H.F. disputes the official numbers, which but the total number of burials at about 8,000-9,000. He believes the number is closer to 10,000-12,000 (183).",
+        "content" : ""
     },
     
     {
@@ -2981,7 +3166,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -2997,7 +3183,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3013,7 +3200,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3029,7 +3217,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3045,7 +3234,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3061,7 +3251,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3077,7 +3268,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3093,7 +3285,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3109,7 +3302,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3125,7 +3319,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3141,7 +3336,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3157,7 +3353,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3173,7 +3370,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3189,7 +3387,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3205,7 +3404,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3221,7 +3421,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3237,7 +3438,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3253,7 +3455,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3269,7 +3472,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3285,7 +3489,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. refers here to the entire period of the plague up to this date."
+        "notes" : "H.F. refers here to the entire period of the plague up to this date.",
+        "content" : ""
     },
     
     {
@@ -3301,7 +3506,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3317,7 +3523,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3333,7 +3540,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3349,7 +3557,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down."
+        "notes" : "H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.",
+        "content" : ""
     },
     
     {
@@ -3365,7 +3574,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague."
+        "notes" : "H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.",
+        "content" : ""
     },
     
     {
@@ -3381,7 +3591,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3397,7 +3608,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear."
+        "notes" : "Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.",
+        "content" : ""
     },
     
     {
@@ -3413,7 +3625,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421."
+        "notes" : "It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.",
+        "content" : ""
     },
     
     {
@@ -3429,7 +3642,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London."
+        "notes" : "H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.",
+        "content" : ""
     },
     
     {
@@ -3445,7 +3659,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear."
+        "notes" : "H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.",
+        "content" : ""
     },
     
     {
@@ -3461,7 +3676,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : ""
+        "notes" : "",
+        "content" : ""
     },
     
     {
@@ -3477,7 +3693,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed."
+        "notes" : "H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.",
+        "content" : ""
     },
     
     {
@@ -3493,7 +3710,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week."
+        "notes" : "H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.",
+        "content" : ""
     },
     
     {
@@ -3509,7 +3727,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes that there were still deaths from the plague to the end of 1665."
+        "notes" : "H.F. notes that there were still deaths from the plague to the end of 1665.",
+        "content" : ""
     },
     
     {
@@ -3525,7 +3744,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned."
+        "notes" : "H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.",
+        "content" : ""
     },
     
     {
@@ -3541,7 +3761,8 @@
         "location_descriptive" : "",
         "location_latitude" : "",
         "location_longitude" : "",
-        "notes" : "H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills."
+        "notes" : "H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.",
+        "content" : ""
     }
     
     

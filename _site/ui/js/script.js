@@ -16,10 +16,6 @@ $(document).ready(function() {
     // TODO: Make this dynamic based on the map's contents
     map.setView(map_center, map_zoom);
 
-    // TODO: Code for single location markers
-    // var testMarker = L.marker([51.5133631072273, -0.0889500975608826]).addTo(map);
-    // testMarker.bindPopup("This is <b>formatted</b> content about this location.").openPopup();
-
     $.getJSON( 'datajson/'+datajson, function (events) {
         // Store all our events
         var $itineraryData = events.events;
@@ -30,7 +26,6 @@ $(document).ready(function() {
         var $locationMarkers = new Array();
 
         $timelineEventWidth = 100 / $itineraryData.length;
-        //console.log($timelineEventWidth);
 
         $.each( $itineraryData, function(i, $event) {
 
@@ -47,11 +42,9 @@ $(document).ready(function() {
                 if ($event.location_descriptive != '')
                     $itineraryEventContent += '<h3>' + $event.location_descriptive + '</h3>';
                 $itineraryEventContent += '<p>';
-                /*if ($event.date_descriptive != '')
                     $itineraryEventContent += $event.date_descriptive + '<br />';*/
                 if ($event.buried_parish_total != '')
                     $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $event.buried_parish_total + '</span><br />';
-                /*if ($event.notes != '')
                     $itineraryEventContent += $event.notes + '<br />';*/
                 $itineraryEventContent += '</p>';
                 $itineraryEventContent += '</div>';
@@ -105,7 +98,6 @@ $(document).ready(function() {
 
                 }).fail(function( jqxhr, textStatus, error ) {
                     var err = textStatus + ", " + error;
-                    //console.log( "Request Failed: " + err );
                 })
             })
             // After all our parishes are drawn...
@@ -116,7 +108,6 @@ $(document).ready(function() {
 
         }).fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
-            //console.log( "Request Failed: " + err );
         })
 
         // When prev is clicked
@@ -130,7 +121,6 @@ $(document).ready(function() {
 
         // When next is clicked
         $('#stepper a#step-next').on('click', function(e) {
-            //console.log('click');
             e.preventDefault();
             if ( $itineraryIndex < $itineraryData.length) {
                 $itineraryIndex++;
@@ -151,11 +141,6 @@ $(document).ready(function() {
             var $parishId = $(this).data('parish-id');
             var $itinerarySequence = $(this).data('event-id');
             currentEvent($itinerarySequence, $parishPolygons, $itineraryData, $locationMarkers);
-            /*$.each( $parishPolygons, function( $i, polygon) {
-                if (polygon.id==$parishId) {
-                    polygon.polygon.openPopup();
-                }
-            })*/
         })
 
         // When a location in the data table is clicked
@@ -166,7 +151,6 @@ $(document).ready(function() {
 
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
-        //console.log( "Request Failed: " + err );
     });
 
     function currentEvent($itineraryIndex, $parishPolygons, $itineraryData, $locationMarkers) {
@@ -194,7 +178,6 @@ $(document).ready(function() {
                     $itineraryData[$itineraryIndex].date_descriptive + '<br />' + $itineraryData[$itineraryIndex].location_descriptive + " " + $itineraryData[$itineraryIndex].parish + '<span class="buried-parish">' + $itineraryData[$itineraryIndex].buried_parish_total + '</span>'
                 ).fadeIn($speed);
                 $.each( $locationMarkers, function( $i, marker ) {
-                    //console.log($itineraryData[$itineraryIndex].location_latitude);
                     if (marker.latitude == $itineraryData[$itineraryIndex].location_latitude && marker.longitude == $itineraryData[$itineraryIndex].location_longitude) {
                         var $itineraryEventContent = '';
                         $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';

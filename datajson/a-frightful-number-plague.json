@@ -19,7 +19,8 @@
         "location_descriptive" : "{{ event.location_descriptive | strip_newlines | replace: '', '' | replace: '"', '\"' }}",
         "location_latitude" : "{{ event.location_latitude }}",
         "location_longitude" : "{{ event.location_longitude }}",
-        "notes" : "{{ event.notes | strip_newlines | replace: '', '' | replace: '"', '\"' }}"
+        "notes" : "{{ event.notes | strip_newlines | replace: '', '' | replace: '"', '\"' }}",
+        "content" : ""
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}{% unless forloop.last %},{% endunless %}
     {% endfor %}
