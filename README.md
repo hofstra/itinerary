@@ -7,8 +7,7 @@
 * [ ] Ensure that the Plague JS routine is using templates for content rather than hard-coded HTML.
 * [x] Ensure that all explicit references to data in the Rome HTML file are removed **or** documented.
 * [x] Ensure that the Rome JS routine is using templates for content rather than hard-coded HTML.
-* [x] Ensure that all explicit references to data in the Rome datajson are mapped to 1 field and NOT in the JS.
-** Note that this is not doable based on the current configuration, where common classes on table rows are the interface for these.
+* [x] Ensure that all explicit references to data in the Rome datajson are mapped to 1 field and NOT in the JS. (Note that this is not doable based on the current configuration, where common classes on table rows are the interface for these. However, the JS refers to specific CSS classes in the markup as hooks for this data.)
 
 ## Current State
 
