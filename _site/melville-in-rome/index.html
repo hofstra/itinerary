@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>A &ldquo;Frightful Number!&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</title>
+    <title>Melville in Rome</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -37,45 +37,43 @@
     <meta name="msapplication-TileImage" content="/itinerary/ui/img/drc.square.rcon144.png" />
 
 <!--
-     Here's where we set things up!
+    Here's where we set things up!
+    melville-model is the name of a CSV file in the _data folder, for this project.
+    This Jekyll variable (events) is used in the body of this document to render the itinerary table.
 -->
+    
+    <script type="text/javascript">
+        // Set datajson file that matches the source data specified for {"name"=>"1", "items"=>[{"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Post Office", "type"=>"w", "observed"=>nil, "text"=>"Feeling \"snug\"; Smart postilion–one continual gallop & crack of the whip from post to post.", "editorial"=>"Stagecoach horse speed = 5/6mph. Horses change every 10/12 miles or Two hours.", nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"8 Mile Stop", "type"=>"w", "observed"=>nil, "text"=>"Change horses every 8 miles", "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"8 Mile Stop", "type"=>"o", "observed"=>"100 horses at diligence", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Fondi", "type"=>"w", "observed"=>nil, "text"=>"Fine level country about Naples. Vines abundant.", "editorial"=>"\"level\"<?>", nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Fondi", "type"=>"o", "observed"=>"Friend in Veturino", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Fondi", "type"=>"o", "observed"=>"Various ruins", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Terracina", "type"=>"w", "observed"=>nil, "text"=>"The tower & sea at Terracina. Night.", "editorial"=>"Ausoni Mountains; Monte San Biaggi<?>;  65 miles from Naples to Fondi.  Coach would have arrived at 'nightfall,' which was at 5:52pm, having made 6 stops for new horses on the way.", nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Alban Mount", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"[The Alban Hills are about 25 miles Southeast from the center of Rome", nil=>nil}, {"latitude"=>"41.885892", "longitude"=>"12.5071393", "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Porta San Giovanni", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"HM reached Rome on Via Appia Nuova (built in 1784 between Rome and Alban Hills, parallel to Via Appia and would have entered the city at Porta di San Giovanni.", nil=>nil}, {"latitude"=>"41.9028145", "longitude"=>"12.4787139", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Piazza San Silvestro", "type"=>"w", "observed"=>nil, "text"=>"First letter from home.", "editorial"=>"Since HM left from the Naples Post Office, he might have arrived at Rome's central post office in Piazza San Silvestro.", nil=>nil}]}{"name"=>"2", "items"=>[{"latitude"=>"41.9028145", "longitude"=>"12.4787139", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Piazza San Silvestro", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"Though his hotel was only half a mile away, HM might have taken a cab rather than negotiate the streets with his luggage.", nil=>nil}, {"latitude"=>"41.9028145", "longitude"=>"12.4787139", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Piazza San Silvestro", "type"=>"l", "observed"=>"Post Office", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"o", "observed"=>"obelisk & elephant", "text"=>"In square is obelisk on elephant", "editorial"=>"Monument in front of hotel, erected in 1667 and  consisting of an obelisk found in nearby ruins mounted atop an elephant sculpted by Bernini in  in Piazza della Minerva", nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"w", "observed"=>nil, "text"=>"took view from tower: chafed mood: Rome fell flat on me. Oppressively flat... Tiber a ditch, yellow as saffron... St Peters looks small from Tower of Capitol", "editorial"=>"HM walked to the Capitoline Hill (Piazza del Campidoglio), climbed clock tower of Palazzo  Senatorio, viewed entire city, writes (as did most tourists to Rome) of disappointment; sees St. Peter's in the distance.", nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"l", "observed"=>"Capitoline Hill", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"o", "observed"=>"Tiber River", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"o", "observed"=>"St. Peter's (in distance)", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9022309", "longitude"=>"12.4562399", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"St. Peter's", "type"=>"w", "observed"=>nil, "text"=>"Front view disappointing. But grand approach – dome not as wonderful as St: Sophia's. Exhausted at 3. PM.", "editorial"=>"Walked from Campidoglio probably to Tiber, then up the river and across to St. Peter's.", nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>"Dined at 6 & to bed", "editorial"=>nil, nil=>nil}]}{"name"=>"3", "items"=>[{"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"Exhausted from his 24 hour journey from Naples and afternoon of touring, HM probably slept in or relaxed waiting for Torloni's bank to open, probably at 10am.", nil=>nil}, {"latitude"=>"41.9058703302", "longitude"=>"12.4822068214", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Torloni's, banker", "type"=>"w", "observed"=>nil, "text"=>"to find out about S[am] Shaw, or letters.  Learnt nothing.", "editorial"=>"HM refers to the Torlonia family, whose bank, according Murray's Hand Book, was located in Via Condotti, just off Piazza di Spagna.", nil=>nil}, {"latitude"=>"41.8902180817", "longitude"=>"12.4923563004", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Coliseum", "type"=>"w", "observed"=>"Coliseum", "text"=>"Coliseum like great hollow among hills. Hopper of Greylock.  Slope of concentric ruins overgrown. Mountainous.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"w", "observed"=>"Museum of Capitol.", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline", "type"=>"l", "observed"=>" Hall of Emperors", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"o", "observed"=>"Tiberius", "text"=>"That Tiberius? He dont look so bad at all'–It was he.  A look of sickly evel, intellect without manliness & sadness without goodness.  Great brain overrefinements. Solitude.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"o", "observed"=>"Dying Gladiator.", "text"=>"Shows that humanity existed amid the barberousness of the Roman time, as it now among Christian barberousness", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"o", "observed"=>"Antinous", "text"=>"beautiful", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9110962087", "longitude"=>"12.4781674147", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Pincian Hill", "type"=>"w", "observed"=>nil, "text"=>"(Music on Pincian) Fashion & Rank–Preposterous posturing within stone's throw of Antinous. How little influence has truth on the world!–Fashion evrywhere ridiculous, but most so in Rome. No place where lonely man will feel more lonely than in Rome. (or Jerusalem).", "editorial"=>"Since HM mentions the gardens overlooking Piazza del Popolo, he probably reached Pincian Hill by retracing his route back to and up the Spanish Steps, then further up on Vialle dellaTrinit… dei Monti to Piazza the belvedere overlooking Piazza del Popolo.", nil=>nil}, {"latitude"=>"41.9110962087", "longitude"=>"12.4781674147", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Pincian Hill", "type"=>"l", "observed"=>"gardens & statuary overlooking Piazza del Populo", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9110962087", "longitude"=>"12.4781674147", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Pincian Hill", "type"=>"o", "observed"=>"St. Peter's", "text"=>"Fine view of St. Peters from Pincian.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9052834401", "longitude"=>"12.4807691574", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Caffé Greco", "type"=>"w", "observed"=>"Caffé Greco", "text"=>"In the evening walked to Cafe Greco in Via Condotti. 'English sculptor' with dirty hands &c. Dense smoke. Rowdy looking chaps. &c", "editorial"=>"HM probably retraced his steps back to and down the Spanish Steps.  An alternative route would have been to descend from Pincian Hill to Piazza del Popolo and walked to the Spanish Steps down Via del Babuino.", nil=>nil}, {"latitude"=>"41.9052834401", "longitude"=>"12.4807691574", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Caffé Greco", "type"=>"l", "observed"=>"Spanish Steps", "text"=>"Stopped at evening in picture dealers: offered a Cenci for $4. Surprising cheap). Fine lounge in Piazza di Espagna among picture & curiosity dealers, & in Via Condotti, also", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>"Home & to bed.", "editorial"=>nil, nil=>nil}]}{"name"=>"4", "items"=>[{"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9104215395", "longitude"=>"12.4765205383", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"American Consulate [Pzza del Popolo]", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9104215395", "longitude"=>"12.4765205383", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"American Consulate [Pzza del Popolo]", "type"=>"l", "observed"=>nil, "text"=>nil, "editorial"=>"Murray's Handbook (3rd ed. 1853) places the US Legation in Pzza del Popolo; Murray's 6th ed (1862) places it at 220 Circo di Ripetta, off of Pzza del Popolo.", nil=>nil}, {"latitude"=>"41.9104215395", "longitude"=>"12.4765205383", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"American Consulate [Pzza del Popolo]", "type"=>"o", "observed"=>nil, "text"=>"tried to find A[merican]. Consul, Page, & Jarves. Failed in all. ", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8811124583", "longitude"=>"12.4929141998", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Baths of Caracalla", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8811124583", "longitude"=>"12.4929141998", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Baths of Caracalla", "type"=>"l", "observed"=>nil, "text"=>nil, "editorial"=>"Period maps indicate two entrances to the Baths of Caracalla.  HM arrived by carriage at the front and dismissed his driver.", nil=>nil}, {"latitude"=>"41.8811124583", "longitude"=>"12.4929141998", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Baths of Caracalla", "type"=>"o", "observed"=>nil, "text"=>"Wonderful. Massive. Ruins form as it were natural bridges of thousands of arches.  There are glades, &c thickets among the ruins—high up. —Thought of Shelley.  Truly he got his inspiration here.  Corresponds with his drama & mind.  Still magestic, & desolate grandure.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8767349074", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Protestant Burial Ground ", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8767349074", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Protestant Burial Ground ", "type"=>"l", "observed"=>nil, "text"=>"Traveled “by natural process”", "editorial"=>"HM had dismissed his guide and probably continued on foot to the Protestant Cemetery, either along the wall or the way he had come, or more directly through fields surrounding the Church of San Saba", nil=>nil}, {"latitude"=>"41.8767349074", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Protestant Burial Ground ", "type"=>"o", "observed"=>"Keats's and Shelley's graves", "text"=>" Pyramid of Cestius", "editorial"=>"Keats' epitaph. Separated from the adjacent ground by trench. —Shelley in other ground. Plain stone.— (Went from Caracalla to Shelley's grave by natural process)", nil=>"The pyramid of Cestius straddles the city wall, which also borders the Cimitero Acatollica, or Protestant Cemetery.  Keats and Shelley were buried in separate sections of the cemetery, then separated by a sunken pathway or trench."}, {"latitude"=>"41.8894513424", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Suspension Bridge,", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8894513424", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Suspension Bridge,", "type"=>"l", "observed"=>nil, "text"=>nil, "editorial"=>"By 1857, a suspension bridge had been built to reconnect the ancient Ponte Roto, or broken bridge, to the Tiber's left bank.  Only three arches of the bridge ruin, on the Trastevere side, had remained. The suspension bridge was subsequently demolished.  Today a modern bridge makes the span, skirting one remaining arch of the Ponte Roto in mid river.", nil=>nil}, {"latitude"=>"41.8905295669", "longitude"=>"12.4777114391", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Isola Tiberina", "type"=>"w", "observed"=>" ", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8905295669", "longitude"=>"12.4777114391", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Isola Tiberina", "type"=>"l", "observed"=>"Isle of Tiber", "text"=>nil, "editorial"=>"Located in the Tiber between Trastever on the right bank and the Ghetto on the left, it continues to be the site of a hospital.", nil=>nil}, {"latitude"=>"41.892438379", "longitude"=>"12.4787092209", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Teatro Marcello, Palazzo Orsini", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.892438379", "longitude"=>"12.4787092209", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Teatro Marcello, Palazzo Orsini", "type"=>"l", "observed"=>"Theater of Marcellus, Orsini Palace", "text"=>nil, "editorial"=>"HM would have circumnavigated the ruins of Teatro Marcellus, a huge amphitheatre that for centuries had been used for commerce and shops.  Visible from the opposite side, the Palazzo Orsini was built during the Renaissance atop the theater's upper tier, and remains inhabited.  The theater ruins and palazzo are on the eastern border of the Jewish Ghetto.  HM's walk around the site would have placed him in the center of the Ghetto.", nil=>nil}, {"latitude"=>"41.892438379", "longitude"=>"12.4787092209", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Teatro Marcello, Palazzo Orsini", "type"=>"o", "observed"=>"Theater of Marcellus, Orsini Palace", "text"=>"(blacksmiths shops &c in arches—black with centuries grime & soot—built upon above & inhabited) & Orsini Palace & Ghetto.  ", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8928696508", "longitude"=>"12.4768531322", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Cenci", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8928696508", "longitude"=>"12.4768531322", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Cenci", "type"=>"l", "observed"=>"Ghetto, Cenci Palace", "text"=>nil, "editorial"=>"The Palazzo di Cenci is on the Ghetto's western border and is the site of Beatrice Cenci's murder of her incestuous father.  Guido's portrait of Cenci was iconic, and Shelley's tragic play was well known.  ", nil=>nil}, {"latitude"=>"41.8928696508", "longitude"=>"12.4768531322", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Cenci", "type"=>"o", "observed"=>"Ghetto, Cenci Palace", "text"=>"Tragic looking place enough.  The big sloping arch.—part of it inhabited, part desolate.", "editorial"=>"Chances are HM's \"tragic looking place\" refers to the Cenci Palace; however, it might also describe the Ghetto.", nil=>nil}, {"latitude"=>"41.8948822141", "longitude"=>"12.4711024761", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Farnese", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8948822141", "longitude"=>"12.4711024761", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Farnese", "type"=>"l", "observed"=>"Farnese Palace", "text"=>"finest architecture of all the palaces (private). ", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8948822141", "longitude"=>"12.4711024761", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Farnese", "type"=>"o", "observed"=>"Statues of Hercules and Bull", "text"=>"Farnese Hercules & Farnese Toro formerly here.  Now in Museum Borbonico, Naples.", "editorial"=>"The s two statues had been looted from the Baths of Caracalla, along with two massive marble bathing tubs.  The statues were subsequently removed to Naples's national museum, but the tubs remained as the basins for fountains in Piazza Farnese.", nil=>nil}, {"latitude"=>"41.9020933785", "longitude"=>"12.4665105343", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Ponte Sant'Angelo", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9020933785", "longitude"=>"12.4665105343", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Ponte Sant'Angelo", "type"=>"l", "observed"=>"Sant'Angelo Bridge", "text"=>nil, "editorial"=>"Beatrice Cenci was executed on the bridge, an unstated fact in HM's journal but one that adds a further association to more explicit references to Shelley and his tragic plays at Caracalla, the Cemetery, and Palazzo di Cenci. ", nil=>nil}, {"latitude"=>"41.9020933785", "longitude"=>"12.4665105343", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Ponte Sant'Angelo", "type"=>"o", "observed"=>nil, "text"=>"Remarked the banks of Tiber near St: Angelo—fresh, alluvial look near masonry—primeval as Ohio in the midst of all these monuments of the centureis.", "editorial"=>"HM traveled up the Ohio River by steamboat on his return home from his trip to visit his uncle in Galena, Illinois, in the summer of 1840.", nil=>nil}, {"latitude"=>"41.9020534518", "longitude"=>"12.4560713768", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Piazza San Pietro", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9020534518", "longitude"=>"12.4560713768", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"St. Peter's", "type"=>"l", "observed"=>"St. Peter's", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"o", "observed"=>nil, "text"=>"dinner & bed", "editorial"=>nil, nil=>nil}]}
+        // The CSV file referenced above generates HTML in the body of this document as well as a JSON data file
+        // referenced by JavaScript code.
+        var datajson = 'melville-in-rome.json';
 
-<script type="text/javascript">
-    // Set datajson file that matches the source data specified for {"name"=>"1", "items"=>[{"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Post Office", "type"=>"w", "observed"=>nil, "text"=>"Feeling \"snug\"; Smart postilion–one continual gallop & crack of the whip from post to post.", "editorial"=>"Stagecoach horse speed = 5/6mph. Horses change every 10/12 miles or Two hours.", nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"8 Mile Stop", "type"=>"w", "observed"=>nil, "text"=>"Change horses every 8 miles", "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"8 Mile Stop", "type"=>"o", "observed"=>"100 horses at diligence", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Fondi", "type"=>"w", "observed"=>nil, "text"=>"Fine level country about Naples. Vines abundant.", "editorial"=>"\"level\"<?>", nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Fondi", "type"=>"o", "observed"=>"Friend in Veturino", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Fondi", "type"=>"o", "observed"=>"Various ruins", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Terracina", "type"=>"w", "observed"=>nil, "text"=>"The tower & sea at Terracina. Night.", "editorial"=>"Ausoni Mountains; Monte San Biaggi<?>;  65 miles from Naples to Fondi.  Coach would have arrived at 'nightfall,' which was at 5:52pm, having made 6 stops for new horses on the way.", nil=>nil}, {"latitude"=>nil, "longitude"=>nil, "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Naples", "waypoint"=>"Alban Mount", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"[The Alban Hills are about 25 miles Southeast from the center of Rome", nil=>nil}, {"latitude"=>"41.885892", "longitude"=>"12.5071393", "year"=>"1857", "month"=>"2", "day"=>"24", "day_name"=>"Tuesday", "display_date"=>"February 24, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Porta San Giovanni", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"HM reached Rome on Via Appia Nuova (built in 1784 between Rome and Alban Hills, parallel to Via Appia and would have entered the city at Porta di San Giovanni.", nil=>nil}, {"latitude"=>"41.9028145", "longitude"=>"12.4787139", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"1", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Piazza San Silvestro", "type"=>"w", "observed"=>nil, "text"=>"First letter from home.", "editorial"=>"Since HM left from the Naples Post Office, he might have arrived at Rome's central post office in Piazza San Silvestro.", nil=>nil}]}{"name"=>"2", "items"=>[{"latitude"=>"41.9028145", "longitude"=>"12.4787139", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Piazza San Silvestro", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"Though his hotel was only half a mile away, HM might have taken a cab rather than negotiate the streets with his luggage.", nil=>nil}, {"latitude"=>"41.9028145", "longitude"=>"12.4787139", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Piazza San Silvestro", "type"=>"l", "observed"=>"Post Office", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"o", "observed"=>"obelisk & elephant", "text"=>"In square is obelisk on elephant", "editorial"=>"Monument in front of hotel, erected in 1667 and  consisting of an obelisk found in nearby ruins mounted atop an elephant sculpted by Bernini in  in Piazza della Minerva", nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"w", "observed"=>nil, "text"=>"took view from tower: chafed mood: Rome fell flat on me. Oppressively flat... Tiber a ditch, yellow as saffron... St Peters looks small from Tower of Capitol", "editorial"=>"HM walked to the Capitoline Hill (Piazza del Campidoglio), climbed clock tower of Palazzo  Senatorio, viewed entire city, writes (as did most tourists to Rome) of disappointment; sees St. Peter's in the distance.", nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"l", "observed"=>"Capitoline Hill", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"o", "observed"=>"Tiber River", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Hill", "type"=>"o", "observed"=>"St. Peter's (in distance)", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9022309", "longitude"=>"12.4562399", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"St. Peter's", "type"=>"w", "observed"=>nil, "text"=>"Front view disappointing. But grand approach – dome not as wonderful as St: Sophia's. Exhausted at 3. PM.", "editorial"=>"Walked from Campidoglio probably to Tiber, then up the river and across to St. Peter's.", nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"25", "day_name"=>"Wednesday", "display_date"=>"February 25, 1857", "route"=>"2", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>"Dined at 6 & to bed", "editorial"=>nil, nil=>nil}]}{"name"=>"3", "items"=>[{"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>"Exhausted from his 24 hour journey from Naples and afternoon of touring, HM probably slept in or relaxed waiting for Torloni's bank to open, probably at 10am.", nil=>nil}, {"latitude"=>"41.9058703302", "longitude"=>"12.4822068214", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Torloni's, banker", "type"=>"w", "observed"=>nil, "text"=>"to find out about S[am] Shaw, or letters.  Learnt nothing.", "editorial"=>"HM refers to the Torlonia family, whose bank, according Murray's Hand Book, was located in Via Condotti, just off Piazza di Spagna.", nil=>nil}, {"latitude"=>"41.8902180817", "longitude"=>"12.4923563004", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Coliseum", "type"=>"w", "observed"=>"Coliseum", "text"=>"Coliseum like great hollow among hills. Hopper of Greylock.  Slope of concentric ruins overgrown. Mountainous.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"w", "observed"=>"Museum of Capitol.", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline", "type"=>"l", "observed"=>" Hall of Emperors", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"o", "observed"=>"Tiberius", "text"=>"That Tiberius? He dont look so bad at all'–It was he.  A look of sickly evel, intellect without manliness & sadness without goodness.  Great brain overrefinements. Solitude.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"o", "observed"=>"Dying Gladiator.", "text"=>"Shows that humanity existed amid the barberousness of the Roman time, as it now among Christian barberousness", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8929175697", "longitude"=>"12.4825823307", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Capitoline Museum", "type"=>"o", "observed"=>"Antinous", "text"=>"beautiful", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9110962087", "longitude"=>"12.4781674147", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Pincian Hill", "type"=>"w", "observed"=>nil, "text"=>"(Music on Pincian) Fashion & Rank–Preposterous posturing within stone's throw of Antinous. How little influence has truth on the world!–Fashion evrywhere ridiculous, but most so in Rome. No place where lonely man will feel more lonely than in Rome. (or Jerusalem).", "editorial"=>"Since HM mentions the gardens overlooking Piazza del Popolo, he probably reached Pincian Hill by retracing his route back to and up the Spanish Steps, then further up on Vialle dellaTrinit… dei Monti to Piazza the belvedere overlooking Piazza del Popolo.", nil=>nil}, {"latitude"=>"41.9110962087", "longitude"=>"12.4781674147", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Pincian Hill", "type"=>"l", "observed"=>"gardens & statuary overlooking Piazza del Populo", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9110962087", "longitude"=>"12.4781674147", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Pincian Hill", "type"=>"o", "observed"=>"St. Peter's", "text"=>"Fine view of St. Peters from Pincian.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9052834401", "longitude"=>"12.4807691574", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Caffé Greco", "type"=>"w", "observed"=>"Caffé Greco", "text"=>"In the evening walked to Cafe Greco in Via Condotti. 'English sculptor' with dirty hands &c. Dense smoke. Rowdy looking chaps. &c", "editorial"=>"HM probably retraced his steps back to and down the Spanish Steps.  An alternative route would have been to descend from Pincian Hill to Piazza del Popolo and walked to the Spanish Steps down Via del Babuino.", nil=>nil}, {"latitude"=>"41.9052834401", "longitude"=>"12.4807691574", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Caffé Greco", "type"=>"l", "observed"=>"Spanish Steps", "text"=>"Stopped at evening in picture dealers: offered a Cenci for $4. Surprising cheap). Fine lounge in Piazza di Espagna among picture & curiosity dealers, & in Via Condotti, also", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"26", "day_name"=>"Thursday", "display_date"=>"February 26, 1857", "route"=>"3", "alt_route"=>"0", "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>"Home & to bed.", "editorial"=>nil, nil=>nil}]}{"name"=>"4", "items"=>[{"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9104215395", "longitude"=>"12.4765205383", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"American Consulate [Pzza del Popolo]", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9104215395", "longitude"=>"12.4765205383", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"American Consulate [Pzza del Popolo]", "type"=>"l", "observed"=>nil, "text"=>nil, "editorial"=>"Murray's Handbook (3rd ed. 1853) places the US Legation in Pzza del Popolo; Murray's 6th ed (1862) places it at 220 Circo di Ripetta, off of Pzza del Popolo.", nil=>nil}, {"latitude"=>"41.9104215395", "longitude"=>"12.4765205383", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"American Consulate [Pzza del Popolo]", "type"=>"o", "observed"=>nil, "text"=>"tried to find A[merican]. Consul, Page, & Jarves. Failed in all. ", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8811124583", "longitude"=>"12.4929141998", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Baths of Caracalla", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8811124583", "longitude"=>"12.4929141998", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Baths of Caracalla", "type"=>"l", "observed"=>nil, "text"=>nil, "editorial"=>"Period maps indicate two entrances to the Baths of Caracalla.  HM arrived by carriage at the front and dismissed his driver.", nil=>nil}, {"latitude"=>"41.8811124583", "longitude"=>"12.4929141998", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Baths of Caracalla", "type"=>"o", "observed"=>nil, "text"=>"Wonderful. Massive. Ruins form as it were natural bridges of thousands of arches.  There are glades, &c thickets among the ruins—high up. —Thought of Shelley.  Truly he got his inspiration here.  Corresponds with his drama & mind.  Still magestic, & desolate grandure.", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8767349074", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Protestant Burial Ground ", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8767349074", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Protestant Burial Ground ", "type"=>"l", "observed"=>nil, "text"=>"Traveled “by natural process”", "editorial"=>"HM had dismissed his guide and probably continued on foot to the Protestant Cemetery, either along the wall or the way he had come, or more directly through fields surrounding the Church of San Saba", nil=>nil}, {"latitude"=>"41.8767349074", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Protestant Burial Ground ", "type"=>"o", "observed"=>"Keats's and Shelley's graves", "text"=>" Pyramid of Cestius", "editorial"=>"Keats' epitaph. Separated from the adjacent ground by trench. —Shelley in other ground. Plain stone.— (Went from Caracalla to Shelley's grave by natural process)", nil=>"The pyramid of Cestius straddles the city wall, which also borders the Cimitero Acatollica, or Protestant Cemetery.  Keats and Shelley were buried in separate sections of the cemetery, then separated by a sunken pathway or trench."}, {"latitude"=>"41.8894513424", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Suspension Bridge,", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8894513424", "longitude"=>"12.480275631", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Suspension Bridge,", "type"=>"l", "observed"=>nil, "text"=>nil, "editorial"=>"By 1857, a suspension bridge had been built to reconnect the ancient Ponte Roto, or broken bridge, to the Tiber's left bank.  Only three arches of the bridge ruin, on the Trastevere side, had remained. The suspension bridge was subsequently demolished.  Today a modern bridge makes the span, skirting one remaining arch of the Ponte Roto in mid river.", nil=>nil}, {"latitude"=>"41.8905295669", "longitude"=>"12.4777114391", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Isola Tiberina", "type"=>"w", "observed"=>" ", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8905295669", "longitude"=>"12.4777114391", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Isola Tiberina", "type"=>"l", "observed"=>"Isle of Tiber", "text"=>nil, "editorial"=>"Located in the Tiber between Trastever on the right bank and the Ghetto on the left, it continues to be the site of a hospital.", nil=>nil}, {"latitude"=>"41.892438379", "longitude"=>"12.4787092209", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Teatro Marcello, Palazzo Orsini", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.892438379", "longitude"=>"12.4787092209", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Teatro Marcello, Palazzo Orsini", "type"=>"l", "observed"=>"Theater of Marcellus, Orsini Palace", "text"=>nil, "editorial"=>"HM would have circumnavigated the ruins of Teatro Marcellus, a huge amphitheatre that for centuries had been used for commerce and shops.  Visible from the opposite side, the Palazzo Orsini was built during the Renaissance atop the theater's upper tier, and remains inhabited.  The theater ruins and palazzo are on the eastern border of the Jewish Ghetto.  HM's walk around the site would have placed him in the center of the Ghetto.", nil=>nil}, {"latitude"=>"41.892438379", "longitude"=>"12.4787092209", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Teatro Marcello, Palazzo Orsini", "type"=>"o", "observed"=>"Theater of Marcellus, Orsini Palace", "text"=>"(blacksmiths shops &c in arches—black with centuries grime & soot—built upon above & inhabited) & Orsini Palace & Ghetto.  ", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8928696508", "longitude"=>"12.4768531322", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Cenci", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8928696508", "longitude"=>"12.4768531322", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Cenci", "type"=>"l", "observed"=>"Ghetto, Cenci Palace", "text"=>nil, "editorial"=>"The Palazzo di Cenci is on the Ghetto's western border and is the site of Beatrice Cenci's murder of her incestuous father.  Guido's portrait of Cenci was iconic, and Shelley's tragic play was well known.  ", nil=>nil}, {"latitude"=>"41.8928696508", "longitude"=>"12.4768531322", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Cenci", "type"=>"o", "observed"=>"Ghetto, Cenci Palace", "text"=>"Tragic looking place enough.  The big sloping arch.—part of it inhabited, part desolate.", "editorial"=>"Chances are HM's \"tragic looking place\" refers to the Cenci Palace; however, it might also describe the Ghetto.", nil=>nil}, {"latitude"=>"41.8948822141", "longitude"=>"12.4711024761", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Farnese", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8948822141", "longitude"=>"12.4711024761", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Farnese", "type"=>"l", "observed"=>"Farnese Palace", "text"=>"finest architecture of all the palaces (private). ", "editorial"=>nil, nil=>nil}, {"latitude"=>"41.8948822141", "longitude"=>"12.4711024761", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Palazzo di Farnese", "type"=>"o", "observed"=>"Statues of Hercules and Bull", "text"=>"Farnese Hercules & Farnese Toro formerly here.  Now in Museum Borbonico, Naples.", "editorial"=>"The s two statues had been looted from the Baths of Caracalla, along with two massive marble bathing tubs.  The statues were subsequently removed to Naples's national museum, but the tubs remained as the basins for fountains in Piazza Farnese.", nil=>nil}, {"latitude"=>"41.9020933785", "longitude"=>"12.4665105343", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Ponte Sant'Angelo", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9020933785", "longitude"=>"12.4665105343", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Ponte Sant'Angelo", "type"=>"l", "observed"=>"Sant'Angelo Bridge", "text"=>nil, "editorial"=>"Beatrice Cenci was executed on the bridge, an unstated fact in HM's journal but one that adds a further association to more explicit references to Shelley and his tragic plays at Caracalla, the Cemetery, and Palazzo di Cenci. ", nil=>nil}, {"latitude"=>"41.9020933785", "longitude"=>"12.4665105343", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Ponte Sant'Angelo", "type"=>"o", "observed"=>nil, "text"=>"Remarked the banks of Tiber near St: Angelo—fresh, alluvial look near masonry—primeval as Ohio in the midst of all these monuments of the centureis.", "editorial"=>"HM traveled up the Ohio River by steamboat on his return home from his trip to visit his uncle in Galena, Illinois, in the summer of 1840.", nil=>nil}, {"latitude"=>"41.9020534518", "longitude"=>"12.4560713768", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Piazza San Pietro", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.9020534518", "longitude"=>"12.4560713768", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"St. Peter's", "type"=>"l", "observed"=>"St. Peter's", "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"w", "observed"=>nil, "text"=>nil, "editorial"=>nil, nil=>nil}, {"latitude"=>"41.897789138", "longitude"=>"12.4776363373", "year"=>"1857", "month"=>"2", "day"=>"27", "day_name"=>"Friday", "display_date"=>"February 27, 1857", "route"=>"4", "alt_route"=>nil, "city"=>"Rome", "waypoint"=>"Hotel de Minerva", "type"=>"o", "observed"=>nil, "text"=>"dinner & bed", "editorial"=>nil, nil=>nil}]}
-    var datajson = 'melville-in-rome.json';
+        // Set map values for this page that will be used in script.js
+        // Unfortunately we do need to spell out some content and references for each map layer we enable
+        var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
 
-    // Set map values for this page that will be used in script.js
-    var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
-    var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+        var tile_layer_historic = 'http://mapwarper.net/maps/tile/9175/{z}/{x}/{y}.png';
+        var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
-    var tile_layer_historic = 'http://mapwarper.net/maps/tile/9175/{z}/{x}/{y}.png';
-    var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+        // Please use your own Mapbox ID; not ours!
+        var mapbox_id = 'clearbold.l4gjpd88';
 
-    var mapbox_id = 'clearbold.l4gjpd88';
+        // These values should correspond to your own map.
+        var map_center = [41.897789138, 12.4776363373];
+        var map_zoom = 15;
 
-    // Need to find a way to do this; These are on the left side of object assignment
-    // [variable] worked in Firefox, but halted the JS in Chrome
-    var historic_toggle_label = 'Rome 1748';
-    var modern_toggle_label = 'Rome 2015';
-    // So this isn't actually being used. These are set <strike>in the scripts file</strike> below.
+        // Enable the map layer/tiles, attribution.
+        var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
+        var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
 
-    var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
-    var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
+        // Give each layer a name in the UI.
+        var baseMaps = {
+            'Rome 2015': map_mapbox,
+            'Historic Map': map_historic
+        };
 
-    // Create a variable to hold all tile sets and name them so we can use it for the toggler
-    // Chrome is balking at this!!!
-    /*var baseMaps = {
-        [modern_toggle_label]: map_mapbox,
-        [historic_toggle_label]: map_historic
-    };*/
-    var baseMaps = {
-        'Rome 2015': map_mapbox,
-        'Historic Map': map_historic
-    };
-
-    var map_center = [41.897789138, 12.4776363373];
-    var map_zoom = 15;
-</script>
+    </script>
 </head>
 
 <body class="melville-rome">
@@ -159,6 +157,7 @@
             </tr>
         </table>
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+            <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
             <thead><tr>
                 <th>Event</th>
                 <th></th>
@@ -351,6 +350,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-0">
                 <td>0</td>
                 <td class="toggle"></td>
@@ -542,6 +542,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-0">
                 <td>0</td>
                 <td class="toggle"></td>
@@ -733,6 +734,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-0">
                 <td></td>
                 <td class="toggle"></td>
@@ -924,6 +926,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-0">
                 <td>0</td>
                 <td class="toggle"></td>
@@ -1115,6 +1118,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-0">
                 <td></td>
                 <td class="toggle"></td>
@@ -1306,6 +1310,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-0">
                 <td></td>
                 <td class="toggle"></td>
@@ -1497,6 +1502,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-0">
                 <td>0</td>
                 <td class="toggle"></td>
@@ -1688,6 +1694,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-0">
                 <td>0</td>
                 <td class="toggle"></td>
@@ -1879,6 +1886,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-1">
                 <td>1</td>
                 <td class="toggle"></td>
@@ -2070,6 +2078,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-2">
                 <td>2</td>
                 <td class="toggle"></td>
@@ -2090,6 +2099,7 @@
             </tr>
         </table>
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+            <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
             <thead><tr>
                 <th>Event</th>
                 <th></th>
@@ -2282,6 +2292,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-3">
                 <td>3</td>
                 <td class="toggle"></td>
@@ -2473,6 +2484,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-3">
                 <td></td>
                 <td class="toggle"></td>
@@ -2664,6 +2676,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-4">
                 <td>4</td>
                 <td class="toggle"></td>
@@ -2855,6 +2868,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-4">
                 <td></td>
                 <td class="toggle"></td>
@@ -3046,6 +3060,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-5">
                 <td>5</td>
                 <td class="toggle"></td>
@@ -3237,6 +3252,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-5">
                 <td></td>
                 <td class="toggle"></td>
@@ -3428,6 +3444,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-5">
                 <td></td>
                 <td class="toggle"></td>
@@ -3619,6 +3636,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-5">
                 <td></td>
                 <td class="toggle"></td>
@@ -3810,6 +3828,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-6">
                 <td>6</td>
                 <td class="toggle"></td>
@@ -4001,6 +4020,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-7">
                 <td>7</td>
                 <td class="toggle"></td>
@@ -4021,6 +4041,7 @@
             </tr>
         </table>
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+            <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
             <thead><tr>
                 <th>Event</th>
                 <th></th>
@@ -4213,6 +4234,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-8">
                 <td>8</td>
                 <td class="toggle"></td>
@@ -4414,6 +4436,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-9">
                 <td>9</td>
                 <td class="toggle"></td>
@@ -4615,6 +4638,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-10">
                 <td>10</td>
                 <td class="toggle"></td>
@@ -4811,6 +4835,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-11">
                 <td>11</td>
                 <td class="toggle"></td>
@@ -5002,6 +5027,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-11">
                 <td></td>
                 <td class="toggle"></td>
@@ -5193,6 +5219,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-11">
                 <td></td>
                 <td class="toggle"></td>
@@ -5384,6 +5411,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-11">
                 <td></td>
                 <td class="toggle"></td>
@@ -5575,6 +5603,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-11">
                 <td></td>
                 <td class="toggle"></td>
@@ -5776,6 +5805,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-12">
                 <td>12</td>
                 <td class="toggle"></td>
@@ -5967,6 +5997,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-12">
                 <td></td>
                 <td class="toggle"></td>
@@ -6158,6 +6189,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-12">
                 <td></td>
                 <td class="toggle"></td>
@@ -6359,6 +6391,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-13">
                 <td>13</td>
                 <td class="toggle"></td>
@@ -6550,6 +6583,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-13">
                 <td></td>
                 <td class="toggle"></td>
@@ -6751,6 +6785,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-14">
                 <td>14</td>
                 <td class="toggle"></td>
@@ -6771,6 +6806,7 @@
             </tr>
         </table>
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+            <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
             <thead><tr>
                 <th>Event</th>
                 <th></th>
@@ -6963,6 +6999,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-15">
                 <td>15</td>
                 <td class="toggle"></td>
@@ -7159,6 +7196,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-16">
                 <td>16</td>
                 <td class="toggle"></td>
@@ -7350,6 +7388,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-16">
                 <td></td>
                 <td class="toggle"></td>
@@ -7541,6 +7580,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-16">
                 <td></td>
                 <td class="toggle"></td>
@@ -7737,6 +7777,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-17">
                 <td>17</td>
                 <td class="toggle"></td>
@@ -7928,6 +7969,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-17">
                 <td></td>
                 <td class="toggle"></td>
@@ -8119,6 +8161,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-17">
                 <td></td>
                 <td class="toggle"></td>
@@ -8330,6 +8373,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-18">
                 <td>18</td>
                 <td class="toggle"></td>
@@ -8521,6 +8565,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-18">
                 <td></td>
                 <td class="toggle"></td>
@@ -8712,6 +8757,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-18">
                 <td></td>
                 <td class="toggle"></td>
@@ -8908,6 +8954,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-19">
                 <td>19</td>
                 <td class="toggle"></td>
@@ -9099,6 +9146,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-19">
                 <td></td>
                 <td class="toggle"></td>
@@ -9295,6 +9343,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-20">
                 <td>20</td>
                 <td class="toggle"></td>
@@ -9486,6 +9535,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-20">
                 <td></td>
                 <td class="toggle"></td>
@@ -9682,6 +9732,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-21">
                 <td>21</td>
                 <td class="toggle"></td>
@@ -9873,6 +9924,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-21">
                 <td></td>
                 <td class="toggle"></td>
@@ -10064,6 +10116,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-21">
                 <td></td>
                 <td class="toggle"></td>
@@ -10260,6 +10313,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-22">
                 <td>22</td>
                 <td class="toggle"></td>
@@ -10451,6 +10505,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-22">
                 <td></td>
                 <td class="toggle"></td>
@@ -10642,6 +10697,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-22">
                 <td></td>
                 <td class="toggle"></td>
@@ -10838,6 +10894,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-23">
                 <td>23</td>
                 <td class="toggle"></td>
@@ -11029,6 +11086,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-23">
                 <td></td>
                 <td class="toggle"></td>
@@ -11220,6 +11278,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-23">
                 <td></td>
                 <td class="toggle"></td>
@@ -11416,6 +11475,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-24">
                 <td>24</td>
                 <td class="toggle"></td>
@@ -11607,6 +11667,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-24">
                 <td></td>
                 <td class="toggle"></td>
@@ -11798,6 +11859,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-24">
                 <td></td>
                 <td class="toggle"></td>
@@ -11994,6 +12056,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-25">
                 <td>25</td>
                 <td class="toggle"></td>
@@ -12185,6 +12248,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-25">
                 <td></td>
                 <td class="toggle"></td>
@@ -12381,6 +12445,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="odd waypoint-26">
                 <td>26</td>
                 <td class="toggle"></td>
@@ -12572,6 +12637,7 @@
             
             
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="even waypoint-26">
                 <td></td>
                 <td class="toggle"></td>
@@ -12612,6 +12678,7 @@
         </style>
     </div>
 </div>
+<!-- These are templates used in the corresponding JavaScript to swap values from the datajson file. -->
 <div style="display: none;" class="js-templates">
     <div class="js-template pin-name">
         <h3>[% itemName %]</h3>

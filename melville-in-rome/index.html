@@ -4,47 +4,46 @@ page_nav: 'map-melville-rome'
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% assign data_title = "Melville in Rome" %}
 {% include head.html %}
 <!--
-     Here's where we set things up!
+    Here's where we set things up!
+    melville-model is the name of a CSV file in the _data folder, for this project.
+    This Jekyll variable (events) is used in the body of this document to render the itinerary table.
 -->
-{% assign events = site.data.melville-model | group_by:"route" %}
-<script type="text/javascript">
-    // Set datajson file that matches the source data specified for {{ events }}
-    var datajson = 'melville-in-rome.json';
+    {% assign events = site.data.melville-model | group_by:"route" %}
+    <script type="text/javascript">
+        // Set datajson file that matches the source data specified for {{ events }}
+        // The CSV file referenced above generates HTML in the body of this document as well as a JSON data file
+        // referenced by JavaScript code.
+        var datajson = 'melville-in-rome.json';
 
-    // Set map values for this page that will be used in script.js
-    var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
-    var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+        // Set map values for this page that will be used in script.js
+        // Unfortunately we do need to spell out some content and references for each map layer we enable
+        var attribution_historic = 'Map image from <a href="#">Hofstra DRC</a> via <a href=#">Source</a>';
+        var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
 
-    var tile_layer_historic = 'http://mapwarper.net/maps/tile/9175/{z}/{x}/{y}.png';
-    var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+        var tile_layer_historic = 'http://mapwarper.net/maps/tile/9175/{z}/{x}/{y}.png';
+        var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
-    var mapbox_id = 'clearbold.l4gjpd88';
+        // Please use your own Mapbox ID; not ours!
+        var mapbox_id = 'clearbold.l4gjpd88';
 
-    // Need to find a way to do this; These are on the left side of object assignment
-    // [variable] worked in Firefox, but halted the JS in Chrome
-    var historic_toggle_label = 'Rome 1748';
-    var modern_toggle_label = 'Rome 2015';
-    // So this isn't actually being used. These are set <strike>in the scripts file</strike> below.
+        // These values should correspond to your own map.
+        var map_center = [41.897789138, 12.4776363373];
+        var map_zoom = 15;
 
-    var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
-    var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
+        // Enable the map layer/tiles, attribution.
+        var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
+        var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
 
-    // Create a variable to hold all tile sets and name them so we can use it for the toggler
-    // Chrome is balking at this!!!
-    /*var baseMaps = {
-        [modern_toggle_label]: map_mapbox,
-        [historic_toggle_label]: map_historic
-    };*/
-    var baseMaps = {
-        'Rome 2015': map_mapbox,
-        'Historic Map': map_historic
-    };
+        // Give each layer a name in the UI.
+        var baseMaps = {
+            'Rome 2015': map_mapbox,
+            'Historic Map': map_historic
+        };
 
-    var map_center = [41.897789138, 12.4776363373];
-    var map_zoom = 15;
-</script>
+    </script>
 </head>
 
 <body class="melville-rome">
@@ -109,6 +108,7 @@ page_nav: 'map-melville-rome'
             </tr>
         </table>
         <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+            <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
             <thead><tr>
                 <th>Event</th>
                 <th></th>
@@ -147,6 +147,7 @@ page_nav: 'map-melville-rome'
             {% endif %}
             {% endfor %}
 
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <tr class="{% cycle 'odd', 'even' %} waypoint-{{ i }}">
                 <td>{% if event.type == 'w' %}{{ i }}{% endif %}</td>
                 <td class="toggle">{% if false and event.type == 'w' %}<span class="collapsed">[ + ]</span>{% endif %}</td>
@@ -187,6 +188,7 @@ page_nav: 'map-melville-rome'
         </style>
     </div>
 </div>
+<!-- These are templates used in the corresponding JavaScript to swap values from the datajson file. -->
 <div style="display: none;" class="js-templates">
     <div class="js-template pin-name">
         <h3>[% itemName %]</h3>

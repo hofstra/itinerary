@@ -4,24 +4,30 @@ page_nav: 'map-plague'
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% assign data_title = "A &ldquo;Frightful Number!&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year" %}
 {% include head.html %}
-
+    <!--
+        If your parishes data file contains colors, this will apply them to their corresponding itinerary table entries.
+    -->
     <style type="text/css">
-        /* Dynamically set up CSS styles for event data in the timeline based on corresponding parishes */
-        /* This is Jekyll-based, so it lives in the HTML file. */
     {% for parish in site.data.parishes %}
         .itinerary tr.parish-{{ parish.id }} td { background: {{ parish.background-color }}; }
     {% endfor %}
     </style>
     <!--
-         Here's where we set things up!
+        Here's where we set things up!
+        a-frightful-number-plague is the name of a CSV file in the _data folder, for this project.
+        This Jekyll variable (events) is used in the body of this document to render the itinerary table.
     -->
     {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
     <script type="text/javascript">
         // Set datajson file that matches the source data specified for {{ events }}
+        // The CSV file referenced above generates HTML in the body of this document as well as a JSON data file
+        // referenced by JavaScript code.
         var datajson = 'a-frightful-number-plague.json';
 
         // Set map values for this page that will be used in script.js
+        // Unfortunately we do need to spell out some content and references for each map layer we enable
         var attribution_historic2 = 'Map image from <a href="http://hofstradrc.org">Hofstra DRC</a> via <a href=#">Source</a>';
         var attribution_historic = 'Map image from <a href="http://hofstradrc.org">Hofstra DRC</a> via <a href=#">Source</a>';
         var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
@@ -30,16 +36,25 @@ page_nav: 'map-plague'
         var tile_layer_historic = 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png';
         var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
+        // Please use your own Mapbox ID; not ours!
         var mapbox_id = 'clearbold.l4gjpd88';
 
-        // Need to find a way to do this; These are on the left side of object assignment
-        // [variable] worked in Firefox, but halted the JS in Chrome
-        var historic_toggle_label2 = 'London 1658';
-        var historic_toggle_label = 'London 1720';
-        var modern_toggle_label = 'London 2015';
-
+        // These values should correspond to your own map.
         var map_center = [51.514, -0.0881481171];
         var map_zoom = 14;
+
+        // Enable the map layer/tiles, attribution.
+        var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
+        var map_historic2 = L.tileLayer( tile_layer_historic2, { attribution: attribution_historic2 } );
+        var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
+
+        // Give each layer a name in the UI.
+        var baseMaps = {
+            'London 2015': map_mapbox,
+            'London 1658': map_historic2,
+            'London 1720': map_historic
+        };
+
     </script>
 </head>
 
@@ -78,6 +93,7 @@ page_nav: 'map-plague'
                 </tr>
             </table>
             <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
+                <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
                 <thead><tr>
                     <th width="8%">Date</th>
                     <th width="12%">Parish</th>
@@ -90,6 +106,7 @@ page_nav: 'map-plague'
                 </tr></thead>
 
                 {% for event in year.items %}
+                <!-- You can change these columns based on the data you're tracking in your CSV file. -->
                 <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
                     <td id="event-{{ i }}">{{ event.date_descriptive }}</td>
                     <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-event-id="{{ i }}" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
@@ -108,7 +125,8 @@ page_nav: 'map-plague'
                 {% endfor %}
             </table></div>
             {% endfor %}
-            <!-- A bit of redundant entry is required to make a pure CSS solution work... -->
+            <!-- A bit of redundant entry is required to make a pure CSS solution for a responsive table work... -->
+            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
             <style type="text/css">
                 @media screen and (max-width: 940px) {
                     td:nth-of-type(1):before { content: "Date"; }

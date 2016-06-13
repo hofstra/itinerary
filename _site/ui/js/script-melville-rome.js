@@ -1,11 +1,13 @@
 function applyTemplate($templateName, $itemName, $itemContent)
 {
     $template = $('.js-templates .'+$templateName).html();
+    $template = $template.replace('[% itemName %]', $itemName).replace('[% itemContent %]', $itemContent);
     return $template;
 }
 
 $(document).ready(function() {
 
+    // Load the map into the div specified.
     var map = L.map('map-container', {layers:map_historic});
 
     // Setting the map interaction defaults. I find that when using a map that fills the page, allowing zoom based on scroll wheel, which is also used to scroll up and down the page, is problematic.
@@ -59,10 +61,6 @@ $(document).ready(function() {
                 })
                 var $pathLine = L.polyline($vertices).addTo(map);
 
-                // It's too bad this doesn't work as a featureLayer where we can just load in GeoJson! But then we have a layer of objects; Not each object.
-                //var linelayer = L.mapbox.featureLayer().addTo(map);
-                //linelayer.setGeoJSON(data);
-
                 if ($path.primary == '1')
                     $pathLine.setStyle({color: $colors[i%13], weight: 8, opacity: 0.5});
                 else
@@ -78,7 +76,8 @@ $(document).ready(function() {
                         'primary' : $path.primary
                     }
                 );
-                $pathLine.bindPopup('<h3>' + $path.content + '</h3>');
+                $popup = applyTemplate('pin-name', $path.content, '');
+                $pathLine.bindPopup($popup);
                 $pathLine.on( 'click', function(e) {
                     $.each( $paths, function( $i, path ) {
                         if (path.path.opacity > 0) {
@@ -94,23 +93,21 @@ $(document).ready(function() {
                 })
             }).fail(function( jqxhr, textStatus, error ) {
                 var err = textStatus + ", " + error;
-                //console.log( "Request Failed: " + err );
             });
         })
         $.each( $paths, function( $i, path) {
             path.path.on('click', function(e) {
                 $.each( $waypointMarkers, function( $i, marker) {
-                    // This needs to go in a template.
-                    marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+                    $popup = applyTemplate('pin-name', marker.waypoint, '');
+                    marker.marker.bindPopup($popup);
                 });
-                // This needs to go in a template.
-                path.path.bindPopup('<h3>' + path.content + '</h3>');
+                $popup = applyTemplate('pin-name', path.content, '');
+                path.path.bindPopup($popup);
                 path.path.openPopup;
             })
         });
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
-        //console.log( "Request Failed: " + err );
     });
 
     var $waypointId = 1;
@@ -139,9 +136,7 @@ $(document).ready(function() {
                 )
                 $waypointId++;
 
-                // This needs to go in a template.
-                //console.log(applyTemplate('pin-name', '', ''));
-                $itineraryEventContent = '<h3>' + $event.waypoint + '</h3>';
+                $itineraryEventContent = applyTemplate('pin-name', $event.waypoint, '');
                 $marker.bindPopup( $itineraryEventContent );
 
             }
@@ -149,11 +144,11 @@ $(document).ready(function() {
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.on('click', function(e) {
                 $.each( $waypointMarkers, function( $i, marker) {
-                    // This needs to go in a template.
-                    marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+                    $popup = applyTemplate('pin-name', $event.waypoint, '');
+                    marker.marker.bindPopup($popup);
                 });
-                // This needs to go in a template.
-                marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+                $popup = applyTemplate('pin-name', marker.waypoint, '');
+                marker.marker.bindPopup($popup);
                 marker.marker.openPopup;
                 $.each( $paths, function( $i, path) {
                     path.path.closePopup();
@@ -166,7 +161,6 @@ $(document).ready(function() {
         });
     }).fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
-        //console.log( "Request Failed: " + err );
     })
 
     $(window).on('resize', function(e) {
@@ -181,8 +175,6 @@ $(document).ready(function() {
         if ($(this).prop('checked')) {
             console.log("checked");
             $.each( $paths, function( $i, path) {
-                /*console.log(path.route + ' ' + path.primary);
-                console.log($checkbox.data('route') + ' ' + $checkbox.data('primary')); */
                 if ( (path.route == $checkbox.data('route')) && (path.primary == $checkbox.data('primary')) )
                 {
                     path.path.closePopup();
@@ -194,11 +186,8 @@ $(document).ready(function() {
         else {
             console.log("unchecked");
             $.each( $paths, function( $i, path) {
-                /*console.log(path.route + ' ' + path.primary);
-                console.log($checkbox.data('route') + ' ' + $checkbox.data('primary')); */
                 if ( (path.route == $checkbox.data('route')) && (path.primary == $checkbox.data('primary')) )
                 {
-                    // console.log(path.path);
                     path.path.closePopup();
                     path.path.clickable = false;
                     path.path.setStyle({ weight: 8, opacity: 0 });
@@ -238,18 +227,14 @@ $(document).ready(function() {
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
-            // This needs to go in a template.
-            marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+            $popup = applyTemplate('pin-name', marker.waypoint, '');
+            marker.marker.bindPopup($popup);
         });
         $.each( $paths, function( $i, path) {
             if ( (path.id == $pathId) && (path.event == $pathEventId) )
             {
-                // This needs to go in a template
-                $popup = '<div style="max-height: 175px; overflow-y: scroll;">';
-                // This should be the itemName field in a template.
-                $popup += '<h3>' + $pathName + '</h3>';
-                // This needs to go in a template.
-                $popup += '</div>';
+                $popup = applyTemplate('pin-name', $pathName, '');
+
                 path.path.setStyle({ weight: 3, opacity: 1.0 });
                 path.path.bindPopup($popup);
                 path.path.openPopup();
@@ -273,37 +258,27 @@ $(document).ready(function() {
         })
         $.each( $waypointMarkers, function( $i, marker) {
             marker.marker.closePopup();
-            // This needs to go in a template.
-            marker.marker.bindPopup('<h3>' + marker.waypoint + '</h3>');
+            $popup = applyTemplate('pin-name', marker.waypoint, '');
+            marker.marker.bindPopup($popup);
         });
         $.each( $waypointMarkers, function( $i, marker ) {
             if ($i+1 == $waypointId)
             {
-                // This needs to go in a template
-                $popup = '<div style="max-height: 175px; overflow-y: scroll;">';
-                // This should be the itemName field in a template.
-                $popup += '<h3>' + $waypointName + '</h3>';
+                $itemContent = '';
                 $.each( $('tr.'+$waypoint), function( $i, tr ) {
                     // All of the following should be the itemContent for events that match the waypoint.
-                    // But we need to go back to the JSON for those.
-                    // The Jekyll-driven JSON file should apply the if empty logic and HTML markup in its loop.
-                    // Then we just have a handful of itemContent vars to line up.
-                    // This should be the itemContent field in a template.
-                    ($(tr).children('td.date').html().length == 0) ? console.log('Empty') : console.log($(tr).children('td.date').html());
+                    // In this case there *is* markup in the JS because the itinerary table is the interface for this data.
+                    // ...It's where the entries are grouped by waypoint-id.
                     if ( $(tr).children('td.date').html().length > 0 )
-                        $popup += '<p><b>' + $(tr).children('td.date').html() + '</b></p>';
-                    ($(tr).children('td.location').html().length == 0) ? console.log('Empty') : console.log($(tr).children('td.location').html());
+                        $itemContent += '<p><b>' + $(tr).children('td.date').html() + '</b></p>';
                     if ( $(tr).children('td.location').html().length > 0 )
-                        $popup += '<p>' + $(tr).children('td.location').html() + '</p>';
-                    ($(tr).children('td.observation').html().length == 0) ? console.log('Empty') : console.log($(tr).children('td.observation').html());
+                        $itemContent += '<p>' + $(tr).children('td.location').html() + '</p>';
                     if ( $(tr).children('td.observation').html().length > 0 )
-                        $popup += '<p><i>' + $(tr).children('td.observation').html() + '</i></p>';
-                    ($(tr).children('td.text').html().length == 0) ? console.log('Empty') : console.log($(tr).children('td.text').html());
+                        $itemContent += '<p><i>' + $(tr).children('td.observation').html() + '</i></p>';
                     if ( $(tr).children('td.text').html().length > 0 )
-                        $popup += '<p><i>' + $(tr).children('td.text').html() + '</i></p>';
+                        $itemContent += '<p><i>' + $(tr).children('td.text').html() + '</i></p>';
                 } )
-                // This needs to go in a template.
-                $popup += '</div>';
+                $popup = applyTemplate('pin-waypoint', $waypointName, $itemContent);
                 marker.marker.bindPopup($popup);
                 marker.marker.openPopup();
             }

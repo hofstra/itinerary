@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
-    var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
-    var map_historic2 = L.tileLayer( tile_layer_historic2, { attribution: attribution_historic2 } );
-    var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
-
+    // Load the map into the div specified.
     var map = L.map('map-container', {layers:map_historic});
 
     // Setting the map interaction defaults. I find that when using a map that fills the page, allowing zoom based on scroll wheel, which is also used to scroll up and down the page, is problematic.
@@ -11,18 +8,6 @@ $(document).ready(function() {
     map.touchZoom.disable();
     map.doubleClickZoom.enable();
     map.scrollWheelZoom.disable();
-
-    // Create a variable to hold all tile sets and name them so we can use it for the toggler
-    // Chrome is balking at this!!!
-    /*var baseMaps = {
-        [modern_toggle_label]: map_mapbox,
-        [historic_toggle_label]: map_historic
-    };*/
-    var baseMaps = {
-        'London 2015': map_mapbox,
-        'London 1658': map_historic2,
-        'London 1720': map_historic
-    };
 
     // Add the tile layer switcher control (toggler)
     L.control.layers(baseMaps).addTo(map);
