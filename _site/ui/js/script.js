@@ -1,3 +1,10 @@
+function applyTemplate($templateName, $itemName, $itemContent)
+{
+    $template = $('.js-templates .'+$templateName).html();
+    $template = $template.replace('[% itemName %]', $itemName).replace('[% itemContent %]', $itemContent);
+    return $template;
+}
+
 $(document).ready(function() {
 
     // Load the map into the div specified.
@@ -37,18 +44,14 @@ $(document).ready(function() {
             {
                 var $marker = L.marker([$event.location_latitude, $event.location_longitude]).addTo(map);
 
-                var $itineraryEventContent = '';
-                $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
-                if ($event.location_descriptive != '')
-                    $itineraryEventContent += '<h3>' + $event.location_descriptive + '</h3>';
-                $itineraryEventContent += '<p>';
-                    $itineraryEventContent += $event.date_descriptive + '<br />';*/
-                if ($event.buried_parish_total != '')
-                    $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $event.buried_parish_total + '</span><br />';
-                    $itineraryEventContent += $event.notes + '<br />';*/
-                $itineraryEventContent += '</p>';
-                $itineraryEventContent += '</div>';
-                $marker.bindPopup( $itineraryEventContent );
+                // var $itineraryEventContent = '';
+                // $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
+                // if ($event.location_descriptive != '')
+                //     $itineraryEventContent += '<h3>' + $event.location_descriptive + '</h3>';
+                // $itineraryEventContent += $event.content;
+                // $itineraryEventContent += '</div>';
+                $popup = applyTemplate('pin-event', '', $event.content);
+                $marker.bindPopup( $popup );
 
                 $locationMarkers.push(
                     {
@@ -82,9 +85,10 @@ $(document).ready(function() {
                     // Create a map polygon with that data and the color for that parish
                     var $polygon = L.polygon([ $vertices ], { color: $parish.color }).addTo(map);
                     // Load up our default infoPanel content
-                    $parishPopUp =  '<div style="max-height: 175px; overflow-y: scroll;">';
-                    $parishPopUp += "<h3>" + $parish.parish_name + "</h3>";
-                    $parishPopUp += '</div>';
+                    // $parishPopUp =  '<div style="max-height: 175px; overflow-y: scroll;">';
+                    // $parishPopUp += "<h3>" + $parish.parish_name + "</h3>";
+                    // $parishPopUp += '</div>';
+                    $parishPopUp = applyTemplate('pin-event', $parish.parish_name, '');
                     // Push the new map polygon into an array to access it later on
                     $parishPolygons.push(
                         {
@@ -180,19 +184,11 @@ $(document).ready(function() {
                 $.each( $locationMarkers, function( $i, marker ) {
                     if (marker.latitude == $itineraryData[$itineraryIndex].location_latitude && marker.longitude == $itineraryData[$itineraryIndex].location_longitude) {
                         var $itineraryEventContent = '';
-                        $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
-                        $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
-                        if ($itineraryData[$itineraryIndex].location_descriptive != '')
-                            $itineraryEventContent += '<h3>' + $itineraryData[$itineraryIndex].location_descriptive + '</h3>';
-                        $itineraryEventContent += '<p>';
-                        if ($itineraryData[$itineraryIndex].date_descriptive != '')
-                            $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
-                        if ($itineraryData[$itineraryIndex].buried_parish_total != '')
-                            $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
-                        if ($itineraryData[$itineraryIndex].notes != '')
-                            $itineraryEventContent += $itineraryData[$itineraryIndex].notes + '<br />';
-                        $itineraryEventContent += '</p>';
-                        $itineraryEventContent += '</div>';
+                        // $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
+                        // $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
+                        // $itineraryEventContent += $itineraryData[$itineraryIndex].content;
+                        // $itineraryEventContent += '</div>';
+                        $itineraryEventContent = applyTemplate('pin-event', $itineraryData[$itineraryIndex].parish, $itineraryData[$itineraryIndex].content);
                         marker.marker.bindPopup( $itineraryEventContent );
                         marker.marker.openPopup();
                     }
@@ -206,19 +202,11 @@ $(document).ready(function() {
                     if (polygon.id==$itineraryData[$itineraryIndex].parish_id) {
                         polygon.polygon.setStyle({'color': '#d31603'});
                         var $itineraryEventContent = '';
-                        $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
-                        $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
-                        $itineraryEventContent += '<p>';
-                        if ($itineraryData[$itineraryIndex].date_descriptive != '')
-                            $itineraryEventContent += $itineraryData[$itineraryIndex].date_descriptive + '<br />';
-                        if ($itineraryData[$itineraryIndex].location_descriptive != '')
-                            $itineraryEventContent += $itineraryData[$itineraryIndex].location_descriptive + '<br />';
-                        if ($itineraryData[$itineraryIndex].buried_parish_total != '')
-                            $itineraryEventContent += '<span style="color: #d31603;">Buried Parish: ' + $itineraryData[$itineraryIndex].buried_parish_total + '</span><br />';
-                        if ($itineraryData[$itineraryIndex].notes != '')
-                            $itineraryEventContent += $itineraryData[$itineraryIndex].notes + '<br />';
-                        $itineraryEventContent += '</p>';
-                        $itineraryEventContent += '</div>';
+                        // $itineraryEventContent =  '<div style="max-height: 175px; overflow-y: scroll;">';
+                        // $itineraryEventContent += "<h3>" + $itineraryData[$itineraryIndex].parish + "</h3>";
+                        // $itineraryEventContent += $itineraryData[$itineraryIndex].content;
+                        // $itineraryEventContent += '</div>';
+                        $itineraryEventContent = applyTemplate('pin-event', $itineraryData[$itineraryIndex].parish, $itineraryData[$itineraryIndex].content);
                         polygon.polygon.bindPopup( $itineraryEventContent );
                         polygon.polygon.openPopup();
                     }

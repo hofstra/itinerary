@@ -3,48 +3,6 @@
     [
     
     {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. Andrew's-Holborn"
-    },
-    
-    {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. Brides"
-    },
-    
-    {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. James Clarkenwell"
-    },
-    
-    {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. Giles"
-    },
-    
-    {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. Andrew's"
-    },
-    
-    {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. Mary-Wool-Church"
-    },
-    
-    {
-        "id" : "0",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : "St. Clement's-Danes"
-    },
-    
-    {
         "id" : "10",
         "color" : "rgb(0, 116, 217)",
         "parish_name" : "Aldgate"
@@ -108,12 +66,6 @@
         "id" : "21",
         "color" : "rgb(0, 116, 217)",
         "parish_name" : "St. Giles in the Fields"
-    },
-    
-    {
-        "id" : "22",
-        "color" : "rgb(0, 116, 217)",
-        "parish_name" : ""
     },
     
     {

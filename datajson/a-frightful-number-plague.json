@@ -20,7 +20,7 @@
         "location_latitude" : "{{ event.location_latitude }}",
         "location_longitude" : "{{ event.location_longitude }}",
         "notes" : "{{ event.notes | strip_newlines | replace: '', '' | replace: '"', '\"' }}",
-        "content" : ""
+        "content" : "{% if event.location_descriptive!='' And event.parish=='' %}<h3>{{ event.location_descriptive }}</h3>{% endif %}<p>{% if event.date_descriptive!='' %}{{ event.date_descriptive }}<br />{% endif %}{% if event.buried_parish_total!='' %}<span style='color: #d31603;'>Buried Parish: {{ event.buried_parish_total }}</span><br />{% endif %}{% if event.buried_total!='' %}<span style='color: #d31603;'>Buried Total: {{ event.buried_total }}</span><br />{% endif %}{% if event.notes!='' %}{{ event.notes | strip_newlines | replace: '', '' | replace: '"', '\"'  }}{% endif %}</p>"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}{% unless forloop.last %},{% endunless %}
     {% endfor %}
