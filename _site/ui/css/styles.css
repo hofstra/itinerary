@@ -116,8 +116,12 @@ h1 {
         }
 
 .video {
+    background: rgba(45, 45, 45, .5);
+    margin-top: 40px;
+    margin-right: -20px;
     margin-bottom: 40px;
-    padding-top: 20px;
+    margin-left: -20px;
+    padding: 20px;
 }
 
 #map-container {
