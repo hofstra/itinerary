@@ -1,8 +1,6 @@
-The goal of the Itinerary project, with source data found in Daniel Defoe's *A Journal of the Plague Year*, is to render a sequence of events—an itinerary—found in historic literature congruently on modern maps and historic map images, accompanied by a navigable timeline. In doing so, we can bring the narrative to life and follow along in real-world context. The project's aim is not limited to Defoe's *Plague Year*. While the application developed has been coded to suit the available data, the concepts, design patterns and thinking can be abstracted out as the project evolves in order to support other works.
-
 ## The Data
 
-All source data for the Defoe project (A “Frightful Number!” – Mapping Daniel Defoe’s A Journal of the Plague Year) was catalogued by Adam Sills in spreadsheets, with one record for each *event*. An itinerary event consists of a time period, which may be a specific date or generalized, a parish or specific location, optional notes, and optional number dead or buried.
+All source data for the Defoe project ([A “Frightful Number!”](/plague-year) – Mapping Daniel Defoe’s A Journal of the Plague Year) was catalogued by Adam Sills in spreadsheets, with one record for each *event*. An itinerary event consists of a time period, which may be a specific date or generalized, a parish or specific location, optional notes, and optional number dead or buried.
 
 For the purpose of the navigable timeline and data view, we've thus far simply relied on the sequence of events. Many events contain very broad date ranges, based on a portion of the narrative, or very general time periods, consisting of seasons or "late in the year" descriptions. Without translating these time periods into specific calendar dates, it becomes very difficult to rely on date values as a sorting mechanism to render a timeline. This should be acknowledged and addressed in future Itinerary projects as well.
 

@@ -1,8 +1,0 @@
-x 1. Drop in a few more parishes (start at 990)
-2. Hook those in to itinerary data
-x 3. Get itinerary data into JSON
-4. Step through itinerary data descriptions
-5. Work on lighting up parishes and popping info panels
-6. Zoom map to fit parishes
-
-Left off at trying to change the color of a polygon on the map.
