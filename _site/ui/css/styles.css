@@ -18,7 +18,7 @@ body {
 }
 
 a {
-    color: #2632c2;
+    color: #003593;
 }
 
 .logo-header-wrapper {
@@ -114,6 +114,11 @@ h1 {
             line-height: 1.5em;
             margin-bottom: .5em;
         }
+
+.video {
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
 
 #map-container {
     border-top: 3px solid #3d3934;

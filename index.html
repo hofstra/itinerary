@@ -1,154 +1,23 @@
 ---
-page_nav: 'map-plague'
+page_nav: 'home'
+layout: home
+page_title: 'Itinerary at Hofstra Digital Research Center'
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-{% assign data_title = "A &ldquo;Frightful Number!&rdquo; &ndash; Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year" %}
-{% include head.html %}
-    <!--
-        If your parishes data file contains colors, this will apply them to their corresponding itinerary table entries.
-    -->
-    <style type="text/css">
-    {% for parish in site.data.parishes %}
-        .itinerary tr.parish-{{ parish.id }} td { background: {{ parish.background-color }}; }
-    {% endfor %}
-    </style>
-    <!--
-        Here's where we set things up!
-        a-frightful-number-plague is the name of a CSV file in the _data folder, for this project.
-        This Jekyll variable (events) is used in the body of this document to render the itinerary table.
-    -->
-    {% assign events = site.data.a-frightful-number-plague | group_by:"date_year" %}
-    <script type="text/javascript">
-        // Set datajson file that matches the source data specified for {{ events }}
-        // The CSV file referenced above generates HTML in the body of this document as well as a JSON data file
-        // referenced by JavaScript code.
-        var datajson = 'a-frightful-number-plague.json';
+<div class="video">Video #1 here</div>
+<h3>Links and Notes</h3>
 
-        // Set map values for this page that will be used in script.js
-        // Unfortunately we do need to spell out some content and references for each map layer we enable
-        var attribution_historic2 = 'Map image from <a href="http://hofstradrc.org">Hofstra DRC</a> via <a href=#">Source</a>';
-        var attribution_historic = 'Map image from <a href="http://hofstradrc.org">Hofstra DRC</a> via <a href=#">Source</a>';
-        var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+<p>For questions about Itinerary, please contact John Bryant and team at <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'&'+'#'+'9'+'7'+';'+'i'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'%'+
+'&'+'#'+'5'+'4'+';'+'4'+'%'+'7'+'2'+'c'+'&'+'#'+'6'+'4'+';'+'h'+'o'+'f'+'%'+'&'+'#'+'5'+'5'+';'+'&'+
+'#'+'5'+'1'+';'+'t'+'%'+'7'+'2'+'%'+'6'+'1'+'&'+'#'+'4'+'6'+';'+'%'+'6'+'5'+'d'+'u'+"'"+'>'+'d'+'r'+
+'c'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'1'+'0'+'4'+';'+'o'+'f'+'&'+'#'+'1'+'1'+'5'+';'+'t'+'r'+'a'+'&'+'#'+
+'4'+'6'+';'+'&'+'#'+'1'+'0'+'1'+';'+'&'+'#'+'1'+'0'+'0'+';'+'u'+'<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript> or <a href="http://hofstradrc.org/contact/">via&nbsp;hofstradrc.org</a>.</p>
 
-        var tile_layer_historic2 = 'http://mapwarper.net/maps/tile/12282/{z}/{x}/{y}.png ';
-        var tile_layer_historic = 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png';
-        var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+<p><a href="http://mapwarper.net">Map Warper</a> is the tool cited for rectifying and hosting historic map images. You can refer to <a href="https://github.com/hofstra/itinerary/blob/gh-pages/docs/write-up.md#historic-map-images">our summary of the steps outlined</a>, which also references the <a href="http://www.nypl.org/blog/2015/01/05/web-maps-primer">NYPL&rsquo;s&nbsp;article</a>.</p>
 
-        // Please use your own Mapbox ID; not ours!
-        var mapbox_id = 'clearbold.l4gjpd88';
+<p>You may also reference <a href="https://github.com/hofstra/itinerary/blob/gh-pages/docs/write-up.md#plotting-points-and-drawing-boundaries-with-geojsonio">our steps to use GeoJSON.io</a> to capture vertices of regions as .geojson files. We follow similar steps with the line tool for the paths on the Melville project.</p>
 
-        // These values should correspond to your own map.
-        var map_center = [51.514, -0.0881481171];
-        var map_zoom = 14;
+<p>We generate HTML and JSON files using <a href="http://jekyllrb.com/">Jekyll</a> and host the site using <a href="https://pages.github.com/">GitHub Pages</a>. We follow the GitHub Pages <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">recommendation</a> when using Jekyll.</p>
 
-        // Enable the map layer/tiles, attribution.
-        var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
-        var map_historic2 = L.tileLayer( tile_layer_historic2, { attribution: attribution_historic2 } );
-        var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
+<p>To create your own Itinerary project, <a href="https://help.github.com/articles/about-forks/">fork</a> our <a href="http://github.com/hofstra/itinerary">GitHub-hosted repository</a> and edit or replace the project files to use your own data.</p>
 
-        // Give each layer a name in the UI.
-        var baseMaps = {
-            'London 2015': map_mapbox,
-            'London 1658': map_historic2,
-            'London 1720': map_historic
-        };
-
-    </script>
-</head>
-
-<body>
-{% include header.html %}
-    <div id="map-container"><noscript>
-        <p>An interactive map resides here.</p>
-    </noscript></div>
-    <div class="wrapper">
-
-        <div id="stepper">
-            <a href="#" id="step-prev">&laquo;</a>
-            <h2></h2>
-            <p></p>
-            <noscript>
-                <p>An interactive timeline tool resides here.</p>
-            </noscript>
-            <a href="#" id="step-next">&raquo;</a>
-        </div>
-        <div class="timeline"></div>
-        <div class="itinerary">
-            <!--
-                 Stick to rendering Itinerary data in HTML with Jekyll despite other JS dependencies
-                 so that we have a page loaded with content if JS is an issue.
-            -->
-            <!--
-                 Note that the HTML structure here is dependent on the structure of the data.
-                 Some data has different fields/schema.
-            -->
-            <h2>The Data</h2>
-            {% assign i = 0 %}
-            {% for year in events %}
-            <table border="0" cellpadding="0" cellspacing="0" class="year">
-                <tr>
-                    <th><h3>{{ year.name }}</h3></th>
-                </tr>
-            </table>
-            <div class="data-table"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive data">
-                <!-- You can change these column headings based on the data you're tracking in your CSV file. -->
-                <thead><tr>
-                    <th width="8%">Date</th>
-                    <th width="12%">Parish</th>
-                    <th width="8%">Buried Plague</th>
-                    <th width="6%">Buried Parish</th>
-                    <th width="8%">Buried Plague Total</th>
-                    <th width="6%">Buried Total</th>
-                    <th width="12%">Location</th>
-                    <th width="40%">Notes</th>
-                </tr></thead>
-
-                {% for event in year.items %}
-                <!-- You can change these columns based on the data you're tracking in your CSV file. -->
-                <tr class="{% cycle 'odd', 'even' %} parish-{{ event.parish_id }}">
-                    <td id="event-{{ i }}">{{ event.date_descriptive }}</td>
-                    <td>{% if event.parish_id != null %}<a href="#" class="parish-name" data-event-id="{{ i }}" data-parish-id="{{ event.parish_id }}">{% endif %}{{ event.parish }}{% if event.parish_id != null %}</a>{% endif %}</td>
-                    <td>{{ event.buried_plague }}</td>
-                    <td>{{ event.buried_parish_total }}</td>
-                    <td>{{ event.buried_plague_total }}</td>
-                    <td>{{ event.buried_total }}</td>
-                    {% if event.location_latitude!='' %}
-                    <td id="event-{{ i }}"><a href="#" class="location-descriptive" data-event-id="{{ i }}">{{ event.location_descriptive }}</a></td>
-                    {% else %}
-                    <td id="event-{{ i }}">{{ event.location_descriptive }}</td>
-                    {% endif %}
-                    <td>{% if event.notes %}{{ event.notes }}{% else %}&#160;{% endif %}</td>
-                </tr>
-                {% assign i = i| plus:'1' %}
-                {% endfor %}
-            </table></div>
-            {% endfor %}
-            <!-- A bit of redundant entry is required to make a pure CSS solution for a responsive table work... -->
-            <!-- You can change these columns based on the data you're tracking in your CSV file. -->
-            <style type="text/css">
-                @media screen and (max-width: 940px) {
-                    td:nth-of-type(1):before { content: "Date"; }
-                    td:nth-of-type(2):before { content: "Parish"; }
-                    td:nth-of-type(3):before { content: "Buried Plague"; }
-                    td:nth-of-type(4):before { content: "Buried Parish"; }
-                    td:nth-of-type(5):before { content: "Buried Plague Total"; }
-                    td:nth-of-type(6):before { content: "Buried Total"; }
-                    td:nth-of-type(7):before { content: "Location"; }
-                    td:nth-of-type(8):before { content: "Notes"; }
-                }
-            </style>
-        </div>
-    </div>
-    <div style="display: none;" class="js-templates">
-        <div class="js-template pin-event">
-            <div style="max-height: 175px; overflow-y: scroll;">
-                <h3>[% itemName %]</h3>
-                [% itemContent %]
-            </div>
-        </div>
-    </div>
-{% include footer.html %}
-</body>
-</html>
+<p>&ldquo;A Frightful Number!&rdquo; uses the <a href="https://github.com/hofstra/itinerary/blob/gh-pages/_data/a-frightful-number-plague.csv">_data/a-frightful-number-plague.csv</a> file as a data source along with the <a href="https://github.com/hofstra/itinerary/blob/gh-pages/_data/parishes.csv">_data/parishes.csv</a> file. Melville in Rome uses <a href="https://github.com/hofstra/itinerary/blob/gh-pages/_data/melville-model.csv">_data/melville-model.csv</a> and <a href="https://github.com/hofstra/itinerary/blob/gh-pages/_data/paths.csv">_data/paths.csv</a>. Both projects also fill in their own datajson templates.</p>

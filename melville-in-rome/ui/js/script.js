@@ -50,9 +50,9 @@ $(document).ready(function() {
 
     var $paths = new Array();
 
-    $.getJSON( "/itinerary/datajson/paths.json", function (paths) {
+    $.getJSON( "datajson/paths.json", function (paths) {
         $.each( paths.paths, function(i, $path) {
-            $.getJSON( '/itinerary/geojson/path-'+$path.route+'-'+$path.event+'-'+$path.id+'.geojson', function (geodata) {
+            $.getJSON( 'geojson/path-'+$path.route+'-'+$path.event+'-'+$path.id+'.geojson', function (geodata) {
                 var $vertices = [];
                 $.each(geodata.features, function(i, $feature) {
                     $.each($feature.geometry['coordinates'], function(i, $coordinates) {
@@ -112,7 +112,7 @@ $(document).ready(function() {
 
     var $waypointId = 1;
     var $waypointMarkers = new Array();;
-    $.getJSON( '/itinerary/datajson/'+datajson, function (events) {
+    $.getJSON( 'datajson/'+datajson, function (events) {
         var $itineraryData = events.events;
         // Loop through events
         $.each ($itineraryData, function(i, $event) {

@@ -1,5 +1,6 @@
 page-nav,link-name,link-href
-"map-plague","Map: Plague",/itinerary/
-"about-a-frightful-number","About &ldquo;A Frightful Number!&rdquo;",/itinerary/about-a-frightful-number/
+"home","Home",/itinerary/
+"map-plague","Map: &ldquo;A Frightful Number!&rdquo;",/itinerary/plague-year/
+"about-a-frightful-number","About &ldquo;A Frightful Number!&rdquo;",/itinerary/plague-year/about/
 "map-melville-rome","Map: Melville in Rome",/itinerary/melville-in-rome/
-"about-the-maps","About the Maps",https://github.com/hofstra/itinerary/blob/master/docs/write-up.md
+"github","Make Your Own Map",http://github.com/hofstra/itinerary

@@ -86,8 +86,6 @@ To draw polygons, which we are using to render parish boundaries, simply continu
 
 When complete, hover over the **Save** link at the top and choose *GeoJSON*. This will immediately download a file to your computer. Rename that file in the `parish-###.geojson` convention to match your lookup table (see below) and connect the parish coordinates to your dataset.
 
-Both of these steps can be reviewed in [a video screencast (.mp4)](http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com/itinerary-mapwarper-geojson.mp4) ([.zip](http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com/itinerary-mapwarper-geojson.mp4.zip)).
-
 ## The Application
 
 ### Jekyll for Data
