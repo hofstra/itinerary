@@ -11,6 +11,10 @@ Thus far our efforts have served to produce two working demonstrations using map
 
 The project uses widely-embraced and familiar technologies and we encourage others to fork this codebase and render their own maps using their own data.
 
+## Feedback
+
+We invite and encourage your feedback to make Itinerary better! Please use [GitHub Issues](https://github.com/hofstra/itinerary/issues) to provide feedback.
+
 ## Going Forward
 
 Our next phase of development will focus on better realizing the UI layer as a portable JavaScript application that can sit atop any backend technology, as long as the data to be consumed conforms to the prescribed JSON spec. This will enable other projects to add a mapping UI layer to existing applications, or to work with their preferred technologies. We will have further explored *event*, *route*, *path*, and *region* concepts such that those can be universally adapted to different data and geographies. We will look to provide template examples for outputting data from other platforms.
