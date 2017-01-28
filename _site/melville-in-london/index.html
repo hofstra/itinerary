@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+  
+      <title>Melville in London</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -36,13 +37,12 @@
     <meta name="msapplication-TileImage" content="/itinerary/ui/img/drc.square.rcon144.png" />
 
 </head>
-
-<body>
-    <div class="logo-header-wrapper"><div class="logo-header">
+<body class="melville-london">
+      <div class="logo-header-wrapper"><div class="logo-header">
         <img src="/itinerary/ui/img/drc.pl.itinerary.png" width="247" height="43" alt="Digital Research Center at Hofstra" />
     </div></div>
     <div class="wrapper">
-        <h1>Itinerary at The Digital Research Center at Hofstra University</h1>
+        <h1>Melville in London</h1>
 
         <div class="nav">
             
@@ -54,32 +54,45 @@
             
             <a href="/itinerary/melville-in-rome/">Map: Melville in Rome</a>
             
-            <a href="/itinerary/melville-in-london/">Map: Melville in London</a>
+            <a href="/itinerary/melville-in-london/" class="active">Map: Melville in London</a>
             
-            <a href="/itinerary/videos/" class="active">Watch the Videos</a>
+            <a href="/itinerary/videos/">Watch the Videos</a>
             
             <a href="https://github.com/hofstra/itinerary#fork-destination-box">Fork the Codebase</a>
             
         </div>
     </div>
 
-    <div class="wrapper wrapper-content">
-        <div class="content">
-<figure class="video"><iframe src="https://player.vimeo.com/video/172448288" width="640" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <figcaption>Video 1: Introduction to Itinerary.</figcaption>
-</figure>
-
-<figure class="video"><iframe src="https://player.vimeo.com/video/172460654" width="640" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <figcaption>Video 2: Itinerary: Plague Year Codebase.</figcaption>
-</figure>
-
-<figure class="video"><iframe src="https://player.vimeo.com/video/172613320" width="640" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <figcaption>Video 3: Itinerary: Melville in Rome Codebase.</figcaption>
-</figure>
-
-        </div>
+  <div id="map-container"><noscript>
+    <p>An interactive map resides here.</p>
+  </noscript></div>
+  <div class="wrapper">
+    <div id="path-nav">
+      <h2>Routes Taken</h2>
+      <div id="path-nav-table-holder"><table><tbody><tr id="path-nav-row">
+        <td class='row-legend'><h3 class='day-nav-header'>Day</h3><ul><li>Primary route</li><li>Alternate routes</li></ul></td>
+      </tr></tbody></table></div>
     </div>
-    <script type="text/javascript" src="/itinerary/ui/js/script.js"></script>
+    <div class="itinerary">
+      <h2>The Data</h2>
+      <div id="data-container" class="data-table"></div>
+    </div>
+  </div>
 
+  <!-- These are templates used in the corresponding JavaScript to swap values from the datajson file. -->
+  <div style="display: none;" class="js-templates">
+      <div class="js-template pin-name">
+          <h3>[% itemName %]</h3>
+      </div>
+      <div class="js-template pin-waypoint">
+          <div style="max-height: 175px; overflow-y: scroll;">
+              <h3>[% itemName %]</h3>
+              [% itemContent %]
+          </div>
+      </div>
+  </div>
+  <!-- End templates -->
+
+  <script type="text/javascript" src="ui/js/script.js"></script>
 </body>
 </html>

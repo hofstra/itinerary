@@ -1,0 +1,45 @@
+---
+page_nav: 'map-melville-london'
+page_title: Melville in London
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% assign data_title = "Melville in London" %}
+  {% include head.html %}
+</head>
+<body class="melville-london">
+  {% include header.html %}
+  <div id="map-container"><noscript>
+    <p>An interactive map resides here.</p>
+  </noscript></div>
+  <div class="wrapper">
+    <div id="path-nav">
+      <h2>Routes Taken</h2>
+      <div id="path-nav-table-holder"><table><tbody><tr id="path-nav-row">
+        <td class='row-legend'><h3 class='day-nav-header'>Day</h3><ul><li>Primary route</li><li>Alternate routes</li></ul></td>
+      </tr></tbody></table></div>
+    </div>
+    <div class="itinerary">
+      <h2>The Data</h2>
+      <div id="data-container" class="data-table"></div>
+    </div>
+  </div>
+
+  <!-- These are templates used in the corresponding JavaScript to swap values from the datajson file. -->
+  <div style="display: none;" class="js-templates">
+      <div class="js-template pin-name">
+          <h3>[% itemName %]</h3>
+      </div>
+      <div class="js-template pin-waypoint">
+          <div style="max-height: 175px; overflow-y: scroll;">
+              <h3>[% itemName %]</h3>
+              [% itemContent %]
+          </div>
+      </div>
+  </div>
+  <!-- End templates -->
+
+  <script type="text/javascript" src="ui/js/script.js"></script>
+</body>
+</html>
