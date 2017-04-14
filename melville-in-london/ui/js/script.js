@@ -149,7 +149,7 @@ $(document).ready(function() {
     L.geoJson(data.itinerary_paths.map(function(path, index) {
       var geo = path.geo_object;
       geo._index = index;
-      geo._color = colors[index];
+      geo._color = colors[index % colors.length];
       geo._unit = path.group;
       geo._text = path.text;
       geo._primacy = path.primacy;
@@ -239,6 +239,6 @@ $(document).ready(function() {
       tempShownLayer = null;
     }
 
-    $(".day-nav-header").first().click();
+    $(".day .day-nav-header").first().click();
   });
 });
