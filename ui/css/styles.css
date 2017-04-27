@@ -452,6 +452,10 @@ span.code {
   margin-bottom: 40px;
 }
 
+#data-container table td {
+  max-width: 400px;
+}
+
 div#path-nav-table-holder {
   float: none;
 
@@ -475,4 +479,29 @@ div#path-nav-table-holder {
   position: absolute;
   background-color: white;
   left: 90px;
+}
+
+#path-nav-row td.row-scroll {
+  position: absolute;
+  display: none;
+}
+
+#path-nav-row td.row-scroll a {
+  text-decoration: none;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-size: 42px;
+  font-weight: lighter;
+  color: #AAA;
+}
+
+#path-nav-row td.row-scroll a:hover {
+  color: #3d3934;
+}
+
+#path-nav-row td.row-scroll-left {
+  left: 225px;
+}
+
+#path-nav-row td.row-scroll-right {
+  right: 40px;
 }
