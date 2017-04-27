@@ -79,7 +79,7 @@ $(document).ready(function() {
     tableHeaderMarkup = "<thead><tr>";
     for (var key in columns) {
       if (columns.hasOwnProperty(key)) {
-        tableHeaderMarkup += "<th>" + columns[key] + "</th>";
+        tableHeaderMarkup += "<th data-key='" + key + "'>" + columns[key] + "</th>";
       }
     }
     tableHeaderMarkup += "</tr></thead>";
@@ -92,7 +92,7 @@ $(document).ready(function() {
     for (var unit in grouped) {
       if (grouped.hasOwnProperty(unit)) {
         var headerMarkup = "<h3>Day " + unit + "</h3>";
-        var tableMarkup = "<table>" + tableHeaderMarkup + "<tbody>";
+        var tableMarkup = "<table id='table-for-group-" + unit + "'>" + tableHeaderMarkup + "<tbody>";
 
         stepMarkers[unit] = {};
         pathMarkers[unit] = {};
@@ -144,6 +144,39 @@ $(document).ready(function() {
       }
     }
 
+    grouped = groupBy(data.itinerary_paths, groupBasis);
+    var index = 0;
+    for (var unit in grouped) {
+      if (grouped.hasOwnProperty(unit)) {
+        var $table = $("#table-for-group-" + unit);
+        var columnCount = $table.find("thead th").length;
+        var waypointIndex = $table.find("thead th").index($table.find("thead th[data-key='waypoint']"));
+        var editorialIndex = $table.find("thead th").index($table.find("thead th[data-key='editorial']"));
+        $.each(grouped[unit], function(i, item) {
+          var rowMarkup = "<tr>";
+          for (var j = 0; j < columnCount; j++) {
+            rowMarkup += "<td>";
+            if (j == 0)
+              rowMarkup += '<img src="/itinerary/ui/img/path.png" style="width: 80px; height: auto;" />';
+            if (j == waypointIndex) {
+              rowMarkup += "<a class='route-link' data-unit='" + unit + "' data-index='" + index + "' data-primary='" + (item.primacy == 1 ? "1" : "0") + "' href='#map-container'>";
+              if (item.hasOwnProperty("primacy") && item.primacy > 1)
+                rowMarkup += "Alternate route";
+              else
+                rowMarkup += "Primary route";
+              rowMarkup += "</a>";
+            }
+            if (j == editorialIndex && item.hasOwnProperty("editorial"))
+              rowMarkup += item.editorial;
+            rowMarkup += "</td>";
+          }
+          rowMarkup += "</tr>";
+          $("#table-for-group-" + unit).append(rowMarkup);
+          index ++;
+        });
+      }
+    }
+
     $("#path-nav").append("<br style='clear:both;'>");
 
     L.geoJson(data.itinerary_paths.map(function(path, index) {
@@ -151,7 +184,11 @@ $(document).ready(function() {
       geo._index = index;
       geo._color = colors[index % colors.length];
       geo._unit = path.group;
-      geo._text = path.text;
+      geo._text = path.editorial || "";
+      if (geo._text.length == 0)
+        geo._text = path.text || "";
+      if (geo._text.length == 0)
+        geo._text = path.primacy == 1 ? "Primary route" : "Alternate route";
       geo._primacy = path.primacy;
       return geo;
     }), {
@@ -165,6 +202,34 @@ $(document).ready(function() {
         pathMarkers[feature._unit][feature._index] = layer;
       }
     });
+
+    $(".row-scroll-right a").click(function(event) {
+      event.preventDefault();
+      $(this).closest("#path-nav-table-holder").animate({
+        scrollLeft: "+=300"
+      }, 500);
+    });
+
+    $(".row-scroll-left a").click(function(event) {
+      event.preventDefault();
+      $(this).closest("#path-nav-table-holder").animate({
+        scrollLeft: "-=300"
+      }, 500);
+    });
+
+    $("#path-nav-table-holder").scroll(function(event) {
+      if ($(this).scrollLeft() + $(this).width() + 105 >= $(this).find("table").width())
+        $(this).find(".row-scroll-right").fadeOut();
+      else
+        $(this).find(".row-scroll-right").fadeIn();
+      if ($(this).scrollLeft() < 30)
+        $(this).find(".row-scroll-left").fadeOut();
+      else {
+        $(this).find(".row-scroll-left").fadeIn();
+      }
+    });
+
+    $("#path-nav-table-holder").scroll();
 
     $(".day .day-nav-header").click(function(event) {
       var $navGroup = $(this).closest(".day");
@@ -230,6 +295,18 @@ $(document).ready(function() {
         stepMarker.marker.openPopup();
         map.panTo(stepMarker.marker.getLatLng());
         tempShownLayer = stepMarker.marker;
+      }
+    });
+
+    $(".route-link").click(function() {
+      clearTempShownLayer();
+      var unit = $(this).data("unit");
+      var index = $(this).data("index");
+      var primary = $(this).data("primary");
+      var pathMarker = pathMarkers[unit][index];
+      $(".path-toggle[data-route='" + unit + "'][data-primary='" + primary + "']").prop("checked", true).change();
+      if (pathMarker) {
+        pathMarker.openPopup();
       }
     });
 
