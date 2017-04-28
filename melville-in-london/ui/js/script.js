@@ -10,7 +10,8 @@ function applyTemplate($templateName, $itemName, $itemContent)
 
 function groupBy(array, key) {
   return array.reduce(function(group, item) {
-    (group[item[key]] = group[item[key]] || []).push(item);
+    var unit = item[key] || "other";
+    (group[unit] = group[unit] || []).push(item);
     return group;
   }, {});
 }
@@ -108,13 +109,13 @@ $(document).ready(function() {
         L.geoJson(grouped[unit].map(function(step, index) {
           var geo = step.geo_object;
           geo._index = index;
-          geo._waypoint = step.waypoint;
+          geo._waypoint = step.waypoint || "";
           geo._stepId = step.id;
-          geo._route = step.route;
+          geo._group = step.group;
           return geo;
         }), {
           onEachFeature: function(feature, layer) {
-            var stepMarkup = applyTemplate("pin-name", feature._waypoint, "");
+            var stepMarkup = applyTemplate("pin-name", "Day " + feature._group + " — Waypoint " + feature._index + (feature._waypoint.length > 0 ? "<br /><br />" + feature._waypoint : ""), "");
             layer.bindPopup(stepMarkup);
             stepMarkers[unit][feature._index] = {
               "id": feature._stepId,
@@ -122,7 +123,7 @@ $(document).ready(function() {
               "waypoint": feature._waypoint,
               "latitude": layer.getLatLng()[0],
               "longitude": layer.getLatLng()[1],
-              "route": feature._route
+              "route": feature._group
             };
           }
         });
@@ -185,10 +186,7 @@ $(document).ready(function() {
       geo._color = colors[index % colors.length];
       geo._unit = path.group;
       geo._text = path.editorial || "";
-      if (geo._text.length == 0)
-        geo._text = path.text || "";
-      if (geo._text.length == 0)
-        geo._text = path.primacy == 1 ? "Primary route" : "Alternate route";
+      if (geo._text.length == 0) geo._text = geo.text || "";
       geo._primacy = path.primacy;
       return geo;
     }), {
@@ -196,7 +194,7 @@ $(document).ready(function() {
         return {color: feature._color, opacity: 0.5};
       },
       onEachFeature: function(feature, layer) {
-        var stepMarkup = applyTemplate("pin-name", feature._text, "");
+        var stepMarkup = applyTemplate("pin-name", "Day " + feature._unit + " — " + (feature._primacy == 1 ? "Primary Route" : "Alternate Route") + (feature._text.length > 0 ? "<br /><br />" + feature._text : ""), "");
         layer.bindPopup(stepMarkup);
         layer._primacy = feature._primacy;
         pathMarkers[feature._unit][feature._index] = layer;
