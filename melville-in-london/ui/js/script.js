@@ -115,7 +115,7 @@ $(document).ready(function() {
           return geo;
         }), {
           onEachFeature: function(feature, layer) {
-            var stepMarkup = applyTemplate("pin-name", "Day " + feature._group + " — Waypoint " + feature._index + (feature._waypoint.length > 0 ? "<br /><br />" + feature._waypoint : ""), "");
+            var stepMarkup = applyTemplate("pin-name", "Day " + feature._group + " — Waypoint " + (feature._index + 1) + (feature._waypoint.length > 0 ? "<br /><br />" + feature._waypoint : ""), "");
             layer.bindPopup(stepMarkup);
             stepMarkers[unit][feature._index] = {
               "id": feature._stepId,
