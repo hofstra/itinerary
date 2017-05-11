@@ -63,9 +63,14 @@
         </div>
     </div>
 
-  <div id="map-container"><noscript>
-    <p>An interactive map resides here.</p>
-  </noscript></div>
+  <div class="dynamic-containers">
+    <div id="map-container"><noscript>
+      <p>An interactive map resides here.</p>
+    </noscript></div>
+    <div id="image-viewer">
+      <a href="#" class="hide-image-viewer">X</a>
+    </div>
+  </div>
   <div class="wrapper">
     <div id="path-nav">
       <h2>Routes Taken</h2>
@@ -95,6 +100,7 @@
   </div>
   <!-- End templates -->
 
+  <script type="text/javascript" src="/itinerary/ui/openseadragon/openseadragon.min.js"></script>
   <script type="text/javascript" src="ui/js/script.js"></script>
 </body>
 </html>
