@@ -10,9 +10,14 @@ page_title: Melville in London
 </head>
 <body class="melville-london">
   {% include header.html %}
-  <div id="map-container"><noscript>
-    <p>An interactive map resides here.</p>
-  </noscript></div>
+  <div class="dynamic-containers">
+    <div id="map-container"><noscript>
+      <p>An interactive map resides here.</p>
+    </noscript></div>
+    <div id="image-viewer">
+      <a href="#" class="hide-image-viewer">X</a>
+    </div>
+  </div>
   <div class="wrapper">
     <div id="path-nav">
       <h2>Routes Taken</h2>
@@ -42,6 +47,7 @@ page_title: Melville in London
   </div>
   <!-- End templates -->
 
+  <script type="text/javascript" src="{{ site.baseurl }}/ui/openseadragon/openseadragon.min.js"></script>
   <script type="text/javascript" src="ui/js/script.js"></script>
 </body>
 </html>

@@ -89,6 +89,13 @@ $(document).ready(function() {
     var pathMarkers = {};
     var tempShownLayer;
 
+    var imageViewer;
+    var imageTileSources = [];
+    var stepTileSourceTable = {};
+    var pathTileSourceTable = {};
+    var tileSourceMarkerTable = {};
+    var ignorePageEvent = false;
+
     var grouped = groupBy(data.itinerary_steps, groupBasis);
     for (var unit in grouped) {
       if (grouped.hasOwnProperty(unit)) {
@@ -135,7 +142,59 @@ $(document).ready(function() {
             if ((key === "waypoint" || key === "display_location") && stepMarkers[unit][i])
               tableMarkup += "<a class='waypoint-link' data-unit='" + unit + "' data-index='" + i + "' href='#map-container'>"  + (item[key] === null? "[See map]" : item[key]) + "</a>";
             else
-              tableMarkup += (item[key] === null? "" : item[key]);
+              tableMarkup += (item[key] === null ? "" : item[key]);
+            if (key === "waypoint" || key === "display_location") {
+              if (item.attachments.length > 0) {
+                tableMarkup += "<br />";
+                var firstImage = true;
+                var existing = false;
+                $.each(item.attachments, function(j, attachment) {
+                  var tileSourceIndex = imageTileSources.length;
+                  if (attachment.iiif_uri) {
+                    var sourceString = attachment.iiif_uri + "/info.json";
+                    $.each(imageTileSources, function(k, tileSource) {
+                      if (tileSource == sourceString) {
+                        tileSourceIndex = k;
+                        existing = true;
+                      }
+                    });
+                    if (!existing)
+                      imageTileSources.push(sourceString);
+                  }
+                  else if (attachment.image_url) {
+                    $.each(imageTileSources, function(k, tileSource) {
+                      if (typeof tileSource === "object" && tileSource[url] == attachment.image_url) {
+                        tileSourceIndex = k;
+                        existing = true;
+                      }
+                    });
+                    if (!existing) {
+                      imageTileSources.push({
+                        type: "image",
+                        url: attachment.image_url
+                      });
+                    }
+                  }
+                  else {
+                    return true; // don't add a link without tilesource
+                  }
+                  if (firstImage) {
+                    stepTileSourceTable[unit] = stepTileSourceTable[unit] || {}
+                    stepTileSourceTable[unit][i] = tileSourceIndex;
+                    firstImage = false;
+                  }
+                  if (!existing) {
+                    tileSourceMarkerTable[tileSourceIndex] = stepMarkers[unit][i];
+                  }
+                  var imageLinkMarkup = "<a class='image-link' href='#image-viewer' data-tilesource-index='" + (tileSourceIndex) + "'><img src='/itinerary/ui/img/camera.png' /></a>";
+                  tableMarkup += imageLinkMarkup;
+                  if (stepMarkers[unit][i] && stepMarkers[unit][i].marker) {
+                    var popup = stepMarkers[unit][i].marker.getPopup();
+                    popup.setContent(popup.getContent() + imageLinkMarkup);
+                  }
+                });
+              }
+            }
             tableMarkup += "</td>"
           }
           tableMarkup += "</tr>";
@@ -166,6 +225,56 @@ $(document).ready(function() {
               else
                 rowMarkup += "Primary route";
               rowMarkup += "</a>";
+              if (item.attachments.length > 0) {
+                rowMarkup += "<br />";
+                var firstImage = true;
+                var existing = false;
+                $.each(item.attachments, function(j, attachment) {
+                  var tileSourceIndex = imageTileSources.length;
+                  if (attachment.iiif_uri) {
+                    var sourceString = attachment.iiif_uri + "/info.json";
+                    $.each(imageTileSources, function(k, tileSource) {
+                      if (tileSource == sourceString) {
+                        tileSourceIndex = k;
+                        existing = true;
+                      }
+                    });
+                    if (!existing)
+                      imageTileSources.push(sourceString);
+                  }
+                  else if (attachment.image_url) {
+                    $.each(imageTileSources, function(k, tileSource) {
+                      if (typeof tileSource === "object" && tileSource[url] == attachment.image_url) {
+                        tileSourceIndex = k;
+                        existing = true;
+                      }
+                    });
+                    if (!existing) {
+                      imageTileSources.push({
+                        type: "image",
+                        url: attachment.image_url
+                      });
+                    }
+                  }
+                  else {
+                    return true; // don't add a link without tilesource
+                  }
+                  if (firstImage) {
+                    pathTileSourceTable[unit] = pathTileSourceTable[unit] || {}
+                    pathTileSourceTable[unit][i] = tileSourceIndex;
+                    firstImage = false;
+                  }
+                  if (!existing) {
+                    tileSourceMarkerTable[tileSourceIndex] = pathMarkers[unit][i];
+                  }
+                  var imageLinkMarkup = "<a class='image-link' href='#image-viewer' data-tilesource-index='" + (tileSourceIndex) + "'><img src='/itinerary/ui/img/camera.png' /></a>";
+                  rowMarkup += imageLinkMarkup;
+                  if (pathMarkers[unit][i]) {
+                    var popup = pathMarkers[unit][i].getPopup();
+                    popup.setContent(popup.getContent() + imageLinkMarkup);
+                  }
+                });
+              }
             }
             if (j == editorialIndex && item.hasOwnProperty("editorial"))
               rowMarkup += item.editorial;
@@ -294,6 +403,10 @@ $(document).ready(function() {
         map.panTo(stepMarker.marker.getLatLng());
         tempShownLayer = stepMarker.marker;
       }
+      ignorePageEvent = true;
+      if (stepTileSourceTable[unit] && stepTileSourceTable[unit].hasOwnProperty(index)) {
+        imageViewer.goToPage(stepTileSourceTable[unit][index]);
+      }
     });
 
     $(".route-link").click(function() {
@@ -314,6 +427,49 @@ $(document).ready(function() {
       tempShownLayer = null;
     }
 
+    imageViewer = OpenSeadragon({
+      id: "image-viewer",
+      prefixUrl: "/itinerary/ui/openseadragon/images/",
+      sequenceMode: true,
+      showReferenceStrip: true,
+      gestureSettingsMouse: {
+        scrollToZoom: false
+      },
+      tileSources: imageTileSources
+    });
+
+    $(document).on("click", ".image-link", function(event) {
+      $("#image-viewer").show();
+      map.invalidateSize();
+      var index = $(event.target).closest(".image-link").data("tilesource-index");
+      if (index) {
+        ignorePageEvent = true;
+        imageViewer.goToPage(index);
+      }
+    });
+
+    imageViewer.addHandler("page", function(event) {
+      if (!ignorePageEvent) {
+        clearTempShownLayer();
+        var marker = tileSourceMarkerTable[event.page];
+        if (marker && marker.marker) {
+          marker.marker.addTo(map);
+          marker.marker.openPopup();
+          map.panTo(marker.marker.getLatLng());
+          tempShownLayer = marker.marker;
+        }
+      }
+      ignorePageEvent = false;
+    });
+
+    $(".hide-image-viewer").click(function(event) {
+      event.preventDefault();
+      $("#image-viewer").hide();
+      map.invalidateSize();
+    });
+
+    $("#image-viewer").hide();
+    map.invalidateSize();
     $(".day .day-nav-header").first().click();
   });
 });
