@@ -163,7 +163,7 @@ $(document).ready(function() {
                   }
                   else if (attachment.image_url) {
                     $.each(imageTileSources, function(k, tileSource) {
-                      if (typeof tileSource === "object" && tileSource[url] == attachment.image_url) {
+                      if (typeof tileSource === "object" && tileSource.url == attachment.image_url) {
                         tileSourceIndex = k;
                         existing = true;
                       }
@@ -244,7 +244,7 @@ $(document).ready(function() {
                   }
                   else if (attachment.image_url) {
                     $.each(imageTileSources, function(k, tileSource) {
-                      if (typeof tileSource === "object" && tileSource[url] == attachment.image_url) {
+                      if (typeof tileSource === "object" && tileSource.url == attachment.image_url) {
                         tileSourceIndex = k;
                         existing = true;
                       }
