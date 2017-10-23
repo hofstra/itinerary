@@ -1,0 +1,3 @@
+<div class="smallSearch">
+	{% include searchbox placeholder=include.placeholder id="smallSearch" %}
+</div>

@@ -14,7 +14,9 @@ destination:      ./_site
 
 
 # Handling Reading
-exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
+include:
+- _pages
+exclude: ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore", "preflight"]
 
 # Conversion
 markdown: kramdown
@@ -24,3 +26,6 @@ baseurl: /itinerary
 # https://github.com/jekyll/jekyll/issues/332
 
 asset_url: https://hofstra.github.io/design-framework
+
+sass:
+  sass_dir: ui/css

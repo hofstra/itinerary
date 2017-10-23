@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# preflight hook, runs a bunch of scripts on the jekyll dir
+#
+####################
+
+# Where do the jekyll source files live? (relative to the project root)
+JEKYLL_PROJECT_SASS=ui/css
+JEKYLL_PROJECT_JS=assets/js
+
+
+############################################################
+# DO NOT EDIT BELOW
+############################################################
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#PREFLIGHT_DIR=$DIR/preflightSupport
+
+# Search
+# script EXECDIR SASSDIR JSDIR
+$DIR/../jekyll-shared/preflight/search/_preflight_search $DIR $JEKYLL_PROJECT_SASS $JEKYLL_PROJECT_JS

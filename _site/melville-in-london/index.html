@@ -36,6 +36,119 @@
     <!-- Windows 8 / RT -->
     <meta name="msapplication-TileImage" content="/itinerary/ui/img/drc.square.rcon144.png" />
 
+	<!--
+search_support_head.html
+
+This file should be included in any page you want to support search and typeahead.
+It may be included harmlessly in more than one file
+-->
+<!--
+search_js_include_once
+
+Some black magic to include javascript only one time. Checks to see if the path is already loaded,
+if not it injects it via document write.
+
+Note: Chrome issues a warning because it may (optionally) block this kind of JS inclusion on slow networks
+
+-->
+<script>
+	var src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js";
+	var isIncluded=false;
+	var scripts = document.getElementsByTagName("script");
+    for(var i = 0; i < scripts.length; i++){
+		if(scripts[i].getAttribute('src') == src){
+			isIncluded=true;
+			break;
+		}
+	}
+	if(!isIncluded){
+		// Weird syntax to insist we really mean this (otherwise browser blocks)
+		document.write('<script type="text/javascript" src="'+src+'"><\/scr'+'ipt>');
+	}
+</script>
+
+
+
+<!--
+search_js_include_once
+
+Some black magic to include javascript only one time. Checks to see if the path is already loaded,
+if not it injects it via document write.
+
+Note: Chrome issues a warning because it may (optionally) block this kind of JS inclusion on slow networks
+
+-->
+<script>
+	var src="/itinerary/assets/js/search_typeahead.js";
+	var isIncluded=false;
+	var scripts = document.getElementsByTagName("script");
+    for(var i = 0; i < scripts.length; i++){
+		if(scripts[i].getAttribute('src') == src){
+			isIncluded=true;
+			break;
+		}
+	}
+	if(!isIncluded){
+		// Weird syntax to insist we really mean this (otherwise browser blocks)
+		document.write('<script type="text/javascript" src="'+src+'"><\/scr'+'ipt>');
+	}
+</script>
+
+
+<!--
+search_js_include_once
+
+Some black magic to include javascript only one time. Checks to see if the path is already loaded,
+if not it injects it via document write.
+
+Note: Chrome issues a warning because it may (optionally) block this kind of JS inclusion on slow networks
+
+-->
+<script>
+	var src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.4/lunr.min.js";
+	var isIncluded=false;
+	var scripts = document.getElementsByTagName("script");
+    for(var i = 0; i < scripts.length; i++){
+		if(scripts[i].getAttribute('src') == src){
+			isIncluded=true;
+			break;
+		}
+	}
+	if(!isIncluded){
+		// Weird syntax to insist we really mean this (otherwise browser blocks)
+		document.write('<script type="text/javascript" src="'+src+'"><\/scr'+'ipt>');
+	}
+</script>
+
+
+
+<!--
+search_js_include_once
+
+Some black magic to include javascript only one time. Checks to see if the path is already loaded,
+if not it injects it via document write.
+
+Note: Chrome issues a warning because it may (optionally) block this kind of JS inclusion on slow networks
+
+-->
+<script>
+	var src="/itinerary/assets/js/search.js";
+	var isIncluded=false;
+	var scripts = document.getElementsByTagName("script");
+    for(var i = 0; i < scripts.length; i++){
+		if(scripts[i].getAttribute('src') == src){
+			isIncluded=true;
+			break;
+		}
+	}
+	if(!isIncluded){
+		// Weird syntax to insist we really mean this (otherwise browser blocks)
+		document.write('<script type="text/javascript" src="'+src+'"><\/scr'+'ipt>');
+	}
+</script>
+
+
+
 </head>
 <body class="melville-london">
       <div class="logo-header-wrapper"><div class="logo-header">

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ page.title }}</title>
+	{% include head.html %}
+	{% include search_support_head.html %}
+
+	<!-- Build a store for lunr -->
+	<script>
+	  window.store = {
+	    {% for post in site.posts %}
+	      "{{ post.url | slugify }}": {
+	        "title": "{{ post.title | xml_escape }}",
+	        "author": "{{ post.author | xml_escape }}",
+	        "category": "{{ post.category | xml_escape }}",
+	        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+	        "url": "{{ post.url | xml_escape }}"
+	      }
+	      {% unless forloop.last %},{% endunless %}
+	    {% endfor %}
+	  };
+	</script>
+</head>
+
+<body>
+	<div class="outer">
+		<div class="wrapper content-wrapper">
+
+			<br><br>
+
+			{% include searchbox placeholder=""%}
+
+			{{ content }}
+
+			<div id="search-results">
+				<div class="searchMsgWrapper">
+					<div class="searchMsg">Searching...</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	{% include footer.html %}
+
+</body>
+</html>

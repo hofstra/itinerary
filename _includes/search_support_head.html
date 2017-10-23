@@ -1,0 +1,15 @@
+<!--
+search_support_head.html
+
+This file should be included in any page you want to support search and typeahead.
+It may be included harmlessly in more than one file
+-->
+{% include search_js_include_once src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js" %}
+
+{% assign path="/assets/js/search_typeahead.js" | prepend:site.baseurl %}
+{% include search_js_include_once src=path %}
+
+{% include search_js_include_once src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.4/lunr.min.js" %}
+
+{% assign path="/assets/js/search.js" | prepend:site.baseurl %}
+{% include search_js_include_once src=path %}

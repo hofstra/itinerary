@@ -1,0 +1,24 @@
+<!--
+search_js_include_once
+
+Some black magic to include javascript only one time. Checks to see if the path is already loaded,
+if not it injects it via document write.
+
+Note: Chrome issues a warning because it may (optionally) block this kind of JS inclusion on slow networks
+
+-->
+<script>
+	var src="{{ include.src }}";
+	var isIncluded=false;
+	var scripts = document.getElementsByTagName("script");
+    for(var i = 0; i < scripts.length; i++){
+		if(scripts[i].getAttribute('src') == src){
+			isIncluded=true;
+			break;
+		}
+	}
+	if(!isIncluded){
+		// Weird syntax to insist we really mean this (otherwise browser blocks)
+		document.write('<script type="text/javascript" src="'+src+'"><\/scr'+'ipt>');
+	}
+</script>
