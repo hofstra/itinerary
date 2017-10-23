@@ -46,7 +46,7 @@ h1 {
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 20px;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   width: 100%; }
 
 h1 em {
@@ -63,13 +63,13 @@ h1 em {
   padding-right: 20px;
   text-decoration: none; }
 
-.nav a:hover,
-.nav a.active {
+.nav a.active,
+.nav a:hover {
   text-decoration: underline; }
 
-.itinerary h2,
+#path-nav h2,
 .content h2,
-#path-nav h2 {
+.itinerary h2 {
   font-family: 'IM Fell DW Pica SC', serif;
   font-size: 32px;
   font-weight: 400;
@@ -81,8 +81,8 @@ h1 em {
 
 #path-nav h2 {
   font-size: 26px;
-  padding-top: .5em;
-  padding-bottom: .5em; }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
 
 .content {
   font-family: 'IM Fell DW Pica', serif;
@@ -90,12 +90,12 @@ h1 em {
   padding-bottom: 32px; }
 
 .content h3 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-size: 28px;
   font-weight: 400; }
 
 .content h4 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-size: 22px;
   font-weight: 400; }
 
@@ -108,14 +108,11 @@ h1 em {
 
 .content ul li {
   line-height: 1.5em;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
 .video {
   background: rgba(45, 45, 45, 0.5);
-  margin-top: 40px;
-  margin-right: -20px;
-  margin-bottom: 40px;
-  margin-left: -20px;
+  margin: 40px -20px;
   padding: 20px 20px 10px; }
 
 .video iframe {
@@ -147,7 +144,8 @@ h1 em {
   flex-grow: 2;
   flex-shrink: 0; }
 
-.melville-rome #map-container, .melville-london #map-container {
+.melville-london #map-container,
+.melville-rome #map-container {
   height: 700px; }
 
 #image-viewer {
@@ -209,15 +207,12 @@ table.data {
   width: 100%; }
 
 .data-table table th {
-  padding-top: 12px;
-  padding-right: 10px;
-  padding-bottom: 12px;
-  padding-left: 10px;
+  padding: 12px 10px;
   text-align: left;
   vertical-align: bottom; }
 
-.data-table table tr.path-primary td,
-.data-table table tr.path-alternate td {
+.data-table table tr.path-alternate td,
+.data-table table tr.path-primary td {
   /*display: none;*/ }
 
 td.toggle span {
@@ -231,15 +226,12 @@ td.toggle span {
   /* Not sure what's overriding this...*/ }
 
 .itinerary td {
-  /*font-size: 13px;
-  padding: 4px;*/
+  	/*font-size: 13px;
+      padding: 4px;*/
   font-size: 12px;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   line-height: 1.25em;
-  padding-top: 12px;
-  padding-right: 10px;
-  padding-bottom: 12px;
-  padding-left: 10px;
+  padding: 12px 10px;
   vertical-align: top; }
 
 .itinerary tr.odd td {
@@ -248,8 +240,8 @@ td.toggle span {
 #data-container tr:nth-child(odd) td {
   background: #f2ebd3; }
 
-.itinerary h3,
-#path-nav > div h3 {
+#path-nav > div h3,
+.itinerary h3 {
   font-family: 'IM Fell DW Pica SC', serif;
   font-size: 36px;
   font-weight: 400; }
@@ -261,7 +253,7 @@ td.toggle span {
 
 #path-nav > div h3 {
   font-size: 20px;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   text-align: center; }
 
 .leaflet-popup-content p {
@@ -296,12 +288,12 @@ td.toggle span {
   width: 30%; }
 
 #stepper a#step-prev {
-  left: 0px;
+  left: 0;
   text-align: right;
   top: 10px; }
 
 #stepper a#step-next {
-  right: 0px;
+  right: 0;
   top: 10px;
   text-align: left; }
 
@@ -364,10 +356,10 @@ td.toggle span {
     padding-left: 10px; }
 
   .data-table table,
-  .data-table table thead,
   .data-table table tbody,
-  .data-table table th,
   .data-table table td,
+  .data-table table th,
+  .data-table table thead,
   .data-table table tr {
     display: block; }
 
@@ -407,8 +399,8 @@ td.toggle span {
     padding-right: 10px;
     white-space: nowrap; }
 
-  .data-table table tr.path-primary td,
-  .data-table table tr.path-alternate td {
+  .data-table table tr.path-alternate td,
+  .data-table table tr.path-primary td {
     display: none; }
 
   #path-nav > div,
@@ -432,19 +424,20 @@ td.toggle span {
     font-size: 18px; } }
 @media screen and (max-width: 600px) {
   body {
-    padding-right: 0px;
-    padding-left: 0px; }
+    padding-right: 0;
+    padding-left: 0; }
 
   .wrapper {
-    padding-right: 0px;
-    padding-left: 0px; }
+    padding-right: 0;
+    padding-left: 0; }
 
   .wrapper-content {
     padding-right: 20px;
     padding-left: 20px; }
 
   .logo-header,
-  h1, .nav {
+  .nav,
+  h1 {
     padding-right: 20px;
     padding-left: 20px; }
 

@@ -1,553 +1,608 @@
 * {
-    margin: 0; padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-text-size-adjust:none !important; -ms-text-size-adjust:none !important;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: none !important;
+	-ms-text-size-adjust: none !important;
 }
-
 /*
    font-family: 'IM Fell DW Pica', serif;
    font-family: 'IM Fell DW Pica SC', serif;
 */
-
 body {
-    background: #e7dfcc;
-    color: #3d3934;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #e7dfcc;
+	color: #3d3934;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
-    color: #003593;
+	color: #003593;
 }
 
 .logo-header-wrapper {
-    background: white;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+	background: white;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
-    .logo-header {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
+
+.logo-header {
+	padding-right: 40px;
+	padding-left: 40px;
+}
 
 .wrapper {
-    padding-right: 40px;
-    padding-left: 40px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
+
 .wrapper-content {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 900px;
 }
 
 h1 {
-    border-bottom: 3px solid #3d3934;
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: .5em;
-    width: 100%;
+	border-bottom: 3px solid #3d3934;
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 32px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	padding-bottom: 0.5em;
+	width: 100%;
 }
-    h1 em {
-        font-family: 'IM Fell DW Pica', serif;
-        font-style: italic;
-    }
+
+h1 em {
+	font-family: 'IM Fell DW Pica', serif;
+	font-style: italic;
+}
 
 .nav {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
-    .nav a {
-        color: #3d3934;
-        display: inline-block;
-        font-family: 'IM Fell DW Pica', serif;
-        padding-right: 20px;
-        text-decoration: none;
-    }
-    .nav a:hover,
-    .nav a.active {
-        text-decoration: underline;
-    }
 
-.itinerary h2,
+.nav a {
+	color: #3d3934;
+	display: inline-block;
+	font-family: 'IM Fell DW Pica', serif;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+.nav a.active,
+.nav a:hover {
+	text-decoration: underline;
+}
+
+#path-nav h2,
 .content h2,
+.itinerary h2 {
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 32px;
+	font-weight: 400;
+	padding-top: 1.5em;
+	text-align: center;
+}
+
+.content h2 {
+	margin-bottom: 1em;
+}
+
 #path-nav h2 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 32px;
-    font-weight: 400;
-    padding-top: 1.5em;
-    text-align: center;
+	font-size: 26px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
-    .content h2 {
-        margin-bottom: 1em;
-    }
-    #path-nav h2 {
-        font-size: 26px;
-        padding-top: .5em;
-        padding-bottom: .5em;
-    }
+
 .content {
-    font-family: 'IM Fell DW Pica', serif;
-    font-size: 20px;
-    padding-bottom: 32px;
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 20px;
+	padding-bottom: 32px;
 }
-    .content h3 {
-        margin-bottom: .5em;
-        font-size: 28px;
-        font-weight: 400;
-    }
-    .content h4 {
-        margin-bottom: .5em;
-        font-size: 22px;
-        font-weight: 400;
-    }
-    .content p {
-        line-height: 1.5em;
-        margin-bottom: 2em;
-    }
-    .content ul {
-        margin-bottom: 2em;
-    }
-        .content ul li {
-            line-height: 1.5em;
-            margin-bottom: .5em;
-        }
+
+.content h3 {
+	margin-bottom: 0.5em;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.content h4 {
+	margin-bottom: 0.5em;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.content p {
+	line-height: 1.5em;
+	margin-bottom: 2em;
+}
+
+.content ul {
+	margin-bottom: 2em;
+}
+
+.content ul li {
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+}
 
 .video {
-    background: rgba(45, 45, 45, .5);
-    margin-top: 40px;
-    margin-right: -20px;
-    margin-bottom: 40px;
-    margin-left: -20px;
-    padding: 20px 20px 10px;
+	background: rgba(45, 45, 45, .5);
+	margin: 40px -20px;
+	padding: 20px 20px 10px;
 }
-    .video iframe {
-        height: 484px;
-        width: 100%;
-    }
+
+.video iframe {
+	height: 484px;
+	width: 100%;
+}
 @media screen and (max-width: 940px) {
-    .video iframe {
-        height: 400px;
-    }
+	.video iframe {
+		height: 400px;
+	}
 }
 @media screen and (max-width: 800px) {
-    .video iframe {
-        height: 320px;
-    }
+	.video iframe {
+		height: 320px;
+	}
 }
 @media screen and (max-width: 500px) {
-    .video iframe {
-        height: 280px;
-    }
+	.video iframe {
+		height: 280px;
+	}
 }
 
 .dynamic-containers {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #map-container {
-    border-top: 3px solid #3d3934;
-    border-bottom: 3px solid #3d3934;
-    background: #e7dfcc;
-    clear: both;
-    margin-bottom: 20px;
-    /*width: 100%;*/
-    height: 400px;
-    flex-basis: 600px;
-    flex-grow: 2;
-    flex-shrink: 0;
+	border-top: 3px solid #3d3934;
+	border-bottom: 3px solid #3d3934;
+	background: #e7dfcc;
+	clear: both;
+	margin-bottom: 20px;
+	/*width: 100%;*/
+	height: 400px;
+	flex-basis: 600px;
+	flex-grow: 2;
+	flex-shrink: 0;
 }
-.melville-rome #map-container, .melville-london #map-container {
-    height: 700px;
+
+.melville-london #map-container,
+.melville-rome #map-container {
+	height: 700px;
 }
 
 #image-viewer {
-    height: 400px;
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    border-top: 3px solid #3d3934;
-    border-bottom: 3px solid #3d3934;
-    position: relative;
+	height: 400px;
+	flex-basis: 300px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	border-top: 3px solid #3d3934;
+	border-bottom: 3px solid #3d3934;
+	position: relative;
 }
 
 .hide-image-viewer {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: black;
-  background-color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 4px 6px;
-  border-radius: 6px;
-  display: inline-block;
-  z-index: 1000;
-  font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: black;
+	background-color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 4px 6px;
+	border-radius: 6px;
+	display: inline-block;
+	z-index: 1000;
+	font-size: 12px;
 }
+
 .hide-image-viewer:hover {
-  color: #666;
+	color: #666;
 }
 
 .melville-london #image-viewer {
-    height: 700px;
+	height: 700px;
 }
 
 .image-link img {
-  width: 12px;
-  margin-right: 4px;
-  margin-top: 4px;
+	width: 12px;
+	margin-right: 4px;
+	margin-top: 4px;
 }
 
 .leaflet-popup-content dt {
-    font-weight: bold;
+	font-weight: bold;
 }
+
 .leaflet-popup-content dd {
-    margin-bottom: 10px;
-    margin-left: 0;
-    padding-left: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 table {
-    border-spacing: 2px;
-    border-collapse: separate;
+	border-spacing: 2px;
+	border-collapse: separate;
 }
-    table.data {
-        margin-bottom: 40px;
-    }
+
+table.data {
+	margin-bottom: 40px;
+}
 /* .data-table comes from the design framework established after this project started. */
 .data-table {
-    margin-bottom: 40px;
-    overflow-x: scroll;
+	margin-bottom: 40px;
+	overflow-x: scroll;
 }
-    .data-table table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-        .data-table table th {
-                padding-top: 12px;
-                padding-right: 10px;
-                padding-bottom: 12px;
-                padding-left: 10px;
-                text-align: left;
-                vertical-align: bottom;
-            }
-        .data-table table tr.path-primary td,
-        .data-table table tr.path-alternate td {
-            /*display: none;*/
-        }
-        td.toggle span {
-            cursor: pointer; cursor: hand;
-        }
+
+.data-table table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.data-table table th {
+	padding: 12px 10px;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.data-table table tr.path-alternate td,
+.data-table table tr.path-primary td {
+	/*display: none;*/
+}
+
+td.toggle span {
+	cursor: pointer;
+	cursor: hand;
+}
+
 .itinerary th {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 16px;
-    font-weight: 400 !important; /* Not sure what's overriding this...*/
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 16px;
+	font-weight: 400 !important;
+	/* Not sure what's overriding this...*/
 }
+
 .itinerary td {
-    /*font-size: 13px;
+	/*font-size: 13px;
     padding: 4px;*/
-    font-size: 12px;
-    letter-spacing: .25px;
-    line-height: 1.25em;
-    padding-top: 12px;
-    padding-right: 10px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    vertical-align: top;
+	font-size: 12px;
+	letter-spacing: 0.25px;
+	line-height: 1.25em;
+	padding: 12px 10px;
+	vertical-align: top;
 }
+
 .itinerary tr.odd td {
-    background: #f2ebd3;
+	background: #f2ebd3;
 }
+
 #data-container tr:nth-child(odd) td {
-    background: #f2ebd3;
+	background: #f2ebd3;
 }
-.itinerary h3,
+
+#path-nav > div h3,
+.itinerary h3 {
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.leaflet-popup-content h3 {
+	color: #3d3934;
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-weight: 400;
+}
+
 #path-nav > div h3 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 36px;
-    font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 0.5em;
+	text-align: center;
 }
-    .leaflet-popup-content h3 {
-        color: #3d3934;
-        font-family: 'IM Fell DW Pica SC', serif;
-        font-weight: 400;
-    }
-    #path-nav > div h3 {
-        font-size: 20px;
-        padding-bottom: .5em;
-        text-align: center;
-    }
-    .leaflet-popup-content p {
-        color: #3d3934;
-        font-size: 12px !important;
-    }
+
+.leaflet-popup-content p {
+	color: #3d3934;
+	font-size: 12px !important;
+}
 
 #stepper {
-    min-height: 140px;
-    position: relative;
+	min-height: 140px;
+	position: relative;
 }
+
 #stepper h2 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-weight: 400;
-    margin-bottom: 10px;
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-weight: 400;
+	margin-bottom: 10px;
 }
+
 #stepper h2,
 #stepper p {
-    line-height: 1em;
-    text-align: center;
+	line-height: 1em;
+	text-align: center;
 }
+
 #stepper p {
-    font-family: 'IM Fell DW Pica', serif;
-    line-height: 1.2em;
+	font-family: 'IM Fell DW Pica', serif;
+	line-height: 1.2em;
 }
+
 #stepper a {
-    color: #333;
-    display: inline-block;
-    font-family: 'IM Fell DW Pica', serif;
-    font-size: 48px;
-    position: absolute;
-    text-decoration: none;
-    width: 30%;
+	color: #333;
+	display: inline-block;
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 48px;
+	position: absolute;
+	text-decoration: none;
+	width: 30%;
 }
+
 #stepper a#step-prev {
-    left: 0px;
-    text-align: right;
-    top: 10px;
+	left: 0;
+	text-align: right;
+	top: 10px;
 }
+
 #stepper a#step-next {
-    right: 0px;
-    top: 10px;
-    text-align: left;
+	right: 0;
+	top: 10px;
+	text-align: left;
 }
+
 #stepper .buried-parish {
-    color: #d31603;
-    display: block;
-    font-size: 32px;
-    line-height: 1.2em;
+	color: #d31603;
+	display: block;
+	font-size: 32px;
+	line-height: 1.2em;
 }
 
 #path-nav {
-    background: #ffffff;
-    padding-bottom: 30px;
+	background: #ffffff;
+	padding-bottom: 30px;
 }
-    #path-nav > div {
-        float: left;
-        padding-right: 60px;
-        padding-bottom: 40px;
-        padding-left: 60px;
-    }
-    #path-nav > div {
-        width: 33%;
-    }
-    #path-nav > div:nth-of-type(2) {
-        width: 34%;
-    }
-        #path-nav > div > ul {
-            list-style: none;
-            padding-left: 60px;
-        }
-            #path-nav > div > ul li {
-                font-size: 14px;
-                line-height: 20px;
-            }
+
+#path-nav > div {
+	float: left;
+	padding-right: 60px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+}
+
+#path-nav > div {
+	width: 33%;
+}
+
+#path-nav > div:nth-of-type(2) {
+	width: 34%;
+}
+
+#path-nav > div > ul {
+	list-style: none;
+	padding-left: 60px;
+}
+
+#path-nav > div > ul li {
+	font-size: 14px;
+	line-height: 20px;
+}
 
 .timeline {
-    border-bottom: 3px solid #3d3934;
-    height: 30px;
-    text-align: center;
+	border-bottom: 3px solid #3d3934;
+	height: 30px;
+	text-align: center;
 }
+
 .timeline-event {
-    display: inline-block;
-    padding-right: 1px;
-    padding-left: 1px;
+	display: inline-block;
+	padding-right: 1px;
+	padding-left: 1px;
 }
+
 .timeline-event:hover > span {
-    background-color: rgb(0, 116, 217);
+	background-color: rgb(0, 116, 217);
 }
+
 .timeline-event > span {
-    background-color: #3d3934;
-    display: inline-block;
-    font-size: 0;
-    height: 26px;
-    line-height: 0;
-    width: 100%;
+	background-color: #3d3934;
+	display: inline-block;
+	font-size: 0;
+	height: 26px;
+	line-height: 0;
+	width: 100%;
 }
-    .timeline-event > span.active {
-        background-color: #d31603;
-    }
 
+.timeline-event > span.active {
+	background-color: #d31603;
+}
 @media screen and (max-width: 940px) {
-    .year th {
-        padding-left: 10px;
-    }
-    .data-table table,
-    .data-table table thead,
-    .data-table table tbody,
-    .data-table table th,
-    .data-table table td,
-    .data-table table tr {
-        display: block;
-    }
-    .data-table table td:nth-of-type(2) {
-        display: none;
-    }
-        thead tr {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-        }
+	.year th {
+		padding-left: 10px;
+	}
 
-            .data-table table tr.even td {
-                background: none;
-            }
-            .data-table table tr.odd td {
-                background: #FFFFFF;
-            }
-            .data-table table tr th:first-child {
-                padding-left: 10px;
-            }
-            .data-table table tr td,
-            .data-table table tr td:first-child,
-            .data-table table tr td:last-child {
-                /* Behave  like a "row" */
-                border: none;
-                position: relative;
-                padding-left: 50%;
-                padding-right: 20px;
-            }
-            .data-table table td:before {
-                /* Now like a table header */
-                position: absolute;
-                /* Top/left values mimic padding */
-                top: 12px;
-                left: 10px;
-                width: 45%;
-                padding-right: 10px;
-                white-space: nowrap;
-            }
-            .data-table table tr.path-primary td,
-            .data-table table tr.path-alternate td {
-                display: none;
-            }
-    #path-nav > div,
-    #path-nav > div:nth-of-type(2) {
-        float: none;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        width: 100%;
-    }
-        #path-nav > div > ul {
-            padding-left: 0;
-        }
+	.data-table table,
+	.data-table table tbody,
+	.data-table table td,
+	.data-table table th,
+	.data-table table thead,
+	.data-table table tr {
+		display: block;
+	}
+
+	.data-table table td:nth-of-type(2) {
+		display: none;
+	}
+
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.data-table table tr.even td {
+		background: none;
+	}
+
+	.data-table table tr.odd td {
+		background: #FFFFFF;
+	}
+
+	.data-table table tr th:first-child {
+		padding-left: 10px;
+	}
+
+	.data-table table tr td,
+	.data-table table tr td:first-child,
+	.data-table table tr td:last-child {
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 50%;
+		padding-right: 20px;
+	}
+
+	.data-table table td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 12px;
+		left: 10px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	.data-table table tr.path-alternate td,
+	.data-table table tr.path-primary td {
+		display: none;
+	}
+
+	#path-nav > div,
+	#path-nav > div:nth-of-type(2) {
+		float: none;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		width: 100%;
+	}
+
+	#path-nav > div > ul {
+		padding-left: 0;
+	}
 }
 @media screen and (max-width: 800px) {
-    .timeline {
-        display: none;
-    }
-    #stepper a {
-        width: 20%;
-    }
-    .content {
-        font-size: 18px;
-    }
+	.timeline {
+		display: none;
+	}
+
+	#stepper a {
+		width: 20%;
+	}
+
+	.content {
+		font-size: 18px;
+	}
 }
 @media screen and (max-width: 600px) {
-    body {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .wrapper {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .wrapper-content {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .logo-header,
-    h1, .nav {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    #stepper p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 40%;
-    }
+	body {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.wrapper {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.wrapper-content {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.logo-header,
+	.nav,
+	h1 {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	#stepper p {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 40%;
+	}
 }
 
 .project-notes {
-    padding-right: 20px;
-    padding-left: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
 }
-    .project-notes p {
-        font-size: 12px;
-        line-height: 1.5em;
-        margin-bottom: 1em;
-    }
+
+.project-notes p {
+	font-size: 12px;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
 span.code {
-    font-family: monospace;
+	font-family: monospace;
 }
 
 #data-container table {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 #data-container table td {
-  max-width: 400px;
+	max-width: 400px;
 }
 
 div#path-nav-table-holder {
-  float: none;
-
-  overflow-x: scroll;
-
-  width: 80%;
-
-  margin-left: 180px;
+	float: none;
+	overflow-x: scroll;
+	width: 80%;
+	margin-left: 180px;
 }
 
 #path-nav-row td {
-  padding-right: 40px;
+	padding-right: 40px;
 }
 
 #path-nav-row h3.day-nav-header {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 #path-nav-row td.row-legend {
-  white-space: nowrap;
-  position: absolute;
-  background-color: white;
-  left: 90px;
+	white-space: nowrap;
+	position: absolute;
+	background-color: white;
+	left: 90px;
 }
 
 #path-nav-row td.row-scroll {
-  position: absolute;
-  display: none;
+	position: absolute;
+	display: none;
 }
 
 #path-nav-row td.row-scroll a {
-  text-decoration: none;
-  font-family: 'IM Fell DW Pica SC', serif;
-  font-size: 42px;
-  font-weight: lighter;
-  color: #AAA;
+	text-decoration: none;
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 42px;
+	font-weight: lighter;
+	color: #AAA;
 }
 
 #path-nav-row td.row-scroll a:hover {
-  color: #3d3934;
+	color: #3d3934;
 }
 
 #path-nav-row td.row-scroll-left {
-  left: 225px;
+	left: 225px;
 }
 
 #path-nav-row td.row-scroll-right {
-  right: 40px;
+	right: 40px;
 }
