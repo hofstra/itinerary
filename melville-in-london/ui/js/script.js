@@ -34,7 +34,7 @@ $(document).ready(function() {
     "#311431"
   ];
 
-  $.getJSON("https://mel-catalog-staging.herokuapp.com/api/itineraries/8", function(data) {
+  $.getJSON("http://catalog.textlab.org/api/itineraries/8", function(data) {
     var tile_template_mapbox = 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGVyZm9ybWFudHNvZnR3YXJlIiwiYSI6ImNpeTRyN29qMzAwM3YycHNhOGlzdTd1YW8ifQ.RsLW5SB08l3biddzglEa5A';
     var attribution_mapbox = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © <a href="http://mapbox.com">Mapbox</a>';
 
