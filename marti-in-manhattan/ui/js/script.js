@@ -75,8 +75,8 @@ $(document).ready(function() {
       }
     });
     columns.text = "HM Comment";
-    columns["nn notes"] = "JB Editorial Note"
-    columns.editorial = "JB Editorial Note";
+    columns["nn notes"] = "KK Editorial Note"
+    columns.editorial = "KK Editorial Note";
     tableHeaderMarkup = "<thead><tr>";
     for (var key in columns) {
       if (columns.hasOwnProperty(key)) {
