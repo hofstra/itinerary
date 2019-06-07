@@ -21,6 +21,10 @@ a {
     color: #003593;
 }
 
+.blurb {
+    font-size: 1.5em;
+}
+
 .logo-header-wrapper {
     background: white;
     margin-bottom: 20px;
