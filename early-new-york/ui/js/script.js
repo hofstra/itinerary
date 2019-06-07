@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     baseMaps['Manhattan Today'] = L.tileLayer(tile_template_mapbox, {attribution: attribution_mapbox});
 
-    var map = L.map('map-container', {layers: baseMaps['1839 Bradford Map of New York City']});
+    var map = L.map('map-container', {layers: baseMaps['Outline and Index of New York City']});
 
     // Setting the map interaction defaults. I find that when using a map that fills the page, allowing zoom based on scroll wheel, which is also used to scroll up and down the page, is problematic.
     map.dragging.enable();
