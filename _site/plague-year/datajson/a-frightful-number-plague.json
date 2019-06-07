@@ -18,7 +18,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.",
-        "content" : "<h3>Amsterdam, Holland</h3><p>The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.</p>"
+        "content" : "<h3>Amsterdam, Holland</h3><p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />The plague arrives in Holland, but its origins are unknown. Italy, Turkey, Cyprus, and Crete are suspected points of origin.</p>"
     },
     
     {
@@ -35,7 +35,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<h3>Rotterdam, Holland</h3><p></p>"
+        "content" : "<h3>Rotterdam, Holland</h3><p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     }
     ,
     
@@ -54,7 +54,7 @@
         "location_latitude" : "51.51525930707282",
         "location_longitude" : "-0.12265205383300781",
         "notes" : "2 Frenchmen die.",
-        "content" : "<h3>Long Acre, Upper End of Drury-Lane</h3><p>End of November-Beginning of December<br />2 Frenchmen die.</p>"
+        "content" : "<h3>Long Acre, Upper End of Drury-Lane</h3><p>End of November-Beginning of December<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />2 Frenchmen die.</p>"
     },
     
     {
@@ -71,7 +71,7 @@
         "location_latitude" : "51.51525930707282",
         "location_longitude" : "-0.12265205383300781",
         "notes" : "Another man dies in the same house.",
-        "content" : "<h3>Long Acre, Upper End of Drury-Lane</h3><p>Last Week of December<br />Another man dies in the same house.</p>"
+        "content" : "<h3>Long Acre, Upper End of Drury-Lane</h3><p>Last Week of December<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />Another man dies in the same house.</p>"
     },
     
     {
@@ -88,7 +88,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .",
-        "content" : "<p>December 20-27<br /><span style='color: #d31603;'>Buried Parish: 0</span><br />Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .</p>"
+        "content" : "<p>December 20-27<br /><span style='color: #d31603;'>Buried Parish: 0</span><br /><span style='color: #d31603;'>Buried Total: </span><br />Both St. Brides and St. James Clarkenwell are adjacent to St. Andrews Holborn. H.F. notes that the usual number for burials per week in St. Giles and St. Andrews was roughly 12 to 17 or 19 (3). He also notes the usual number of burials per week in St. Brides and St. James were roughly 4 to 6 or 8 (5) .</p>"
     },
     
     {
@@ -105,7 +105,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>December 20-27<br /><span style='color: #d31603;'>Buried Parish: 8</span><br /></p>"
+        "content" : "<p>December 20-27<br /><span style='color: #d31603;'>Buried Parish: 8</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -122,7 +122,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.",
-        "content" : "<p>December 20-27<br /><span style='color: #d31603;'>Buried Total: 291</span><br />H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.</p>"
+        "content" : "<p>December 20-27<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 291</span><br />H.F. notes that the usual number of total burials per week was between 240 and 300 (6). It is not clear what parishes are included in these numbers.</p>"
     },
     
     {
@@ -139,7 +139,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 16</span><br /></p>"
+        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 16</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -156,7 +156,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 17</span><br /></p>"
+        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 17</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -173,7 +173,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 6</span><br /></p>"
+        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 6</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -190,7 +190,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 9</span><br /></p>"
+        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: 9</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -207,7 +207,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Total: 349</span><br /></p>"
+        "content" : "<p>December 27-January 3<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 349</span><br /></p>"
     },
     
     {
@@ -224,7 +224,7 @@
         "location_latitude" : "51.51525930707282",
         "location_longitude" : "-0.12265205383300781",
         "notes" : "H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.",
-        "content" : "<h3>Long-Acre, Drury-Lane</h3><p>December<br />H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.</p>"
+        "content" : "<h3>Long-Acre, Drury-Lane</h3><p>December<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. places the origin of the plague here, on the West Side, and observes that the plague then traveled gradually and slowly toward the City.</p>"
     }
     ,
     
@@ -243,7 +243,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that a man died in a different house, but in the same parish and also of the plague.",
-        "content" : "<p>February 12<br />H.F. notes that a man died in a different house, but in the same parish and also of the plague.</p>"
+        "content" : "<p>February 12<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that a man died in a different house, but in the same parish and also of the plague.</p>"
     },
     
     {
@@ -260,7 +260,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /></p>"
+        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -277,7 +277,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 25</span><br /></p>"
+        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 25</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -294,7 +294,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 11</span><br /></p>"
+        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 11</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -311,7 +311,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 7</span><br /></p>"
+        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: 7</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -328,7 +328,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Total: 394</span><br /></p>"
+        "content" : "<p>January 3-10<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 394</span><br /></p>"
     },
     
     {
@@ -345,7 +345,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 18</span><br /></p>"
+        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 18</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -362,7 +362,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 18</span><br /></p>"
+        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 18</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -379,7 +379,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /></p>"
+        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -396,7 +396,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 9</span><br /></p>"
+        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: 9</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -413,7 +413,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Total: 415</span><br /></p>"
+        "content" : "<p>January 10-17<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 415</span><br /></p>"
     },
     
     {
@@ -430,7 +430,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 23</span><br /></p>"
+        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 23</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -447,7 +447,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 16</span><br /></p>"
+        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 16</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -464,7 +464,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 9</span><br /></p>"
+        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 9</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -481,7 +481,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 15</span><br /></p>"
+        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: 15</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -498,7 +498,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Total: 474</span><br /></p>"
+        "content" : "<p>January 17-24<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 474</span><br /></p>"
     },
     
     {
@@ -515,7 +515,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 24</span><br /></p>"
+        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 24</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -532,7 +532,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 15</span><br /></p>"
+        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 15</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -549,7 +549,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 8</span><br /></p>"
+        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 8</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -566,7 +566,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /></p>"
+        "content" : "<p>January 24-31<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -583,7 +583,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.",
-        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 21</span><br />In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.</p>"
+        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 21</span><br /><span style='color: #d31603;'>Buried Total: </span><br />In second bills of mortality for St. Brides and St. James, the date reads Jan. 31.</p>"
     },
     
     {
@@ -600,7 +600,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 23</span><br /></p>"
+        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 23</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -617,7 +617,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 13</span><br /></p>"
+        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 13</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -634,7 +634,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 5</span><br /></p>"
+        "content" : "<p>January 30-February 7<br /><span style='color: #d31603;'>Buried Parish: 5</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -651,7 +651,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>February 7-14<br /><span style='color: #d31603;'>Buried Parish: 24</span><br /></p>"
+        "content" : "<p>February 7-14<br /><span style='color: #d31603;'>Buried Parish: 24</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -668,7 +668,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>February 7-14<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /></p>"
+        "content" : "<p>February 7-14<br /><span style='color: #d31603;'>Buried Parish: 12</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -685,7 +685,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>February 7-14<br /><span style='color: #d31603;'>Buried Parish: 6</span><br /></p>"
+        "content" : "<p>February 7-14<br /><span style='color: #d31603;'>Buried Parish: 6</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -702,7 +702,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>April 2-9<br /><span style='color: #d31603;'>Buried Parish: 25</span><br /></p>"
+        "content" : "<p>April 2-9<br /><span style='color: #d31603;'>Buried Parish: 25</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -719,7 +719,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>April 10-17<br /><span style='color: #d31603;'>Buried Parish: 25</span><br /></p>"
+        "content" : "<p>April 10-17<br /><span style='color: #d31603;'>Buried Parish: 25</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -736,7 +736,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "8 die from spotted fever, which H.F. notes was often considered the same as the plague.",
-        "content" : "<p>April 18-25<br /><span style='color: #d31603;'>Buried Parish: 30</span><br />8 die from spotted fever, which H.F. notes was often considered the same as the plague.</p>"
+        "content" : "<p>April 18-25<br /><span style='color: #d31603;'>Buried Parish: 30</span><br /><span style='color: #d31603;'>Buried Total: </span><br />8 die from spotted fever, which H.F. notes was often considered the same as the plague.</p>"
     },
     
     {
@@ -753,7 +753,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "4 die from spotted fever.",
-        "content" : "<p>April 26-May 2<br /><span style='color: #d31603;'>Buried Total: 388</span><br />4 die from spotted fever.</p>"
+        "content" : "<p>April 26-May 2<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 388</span><br />4 die from spotted fever.</p>"
     },
     
     {
@@ -770,7 +770,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.",
-        "content" : "<h3>Bearbinder-lane, near the Stocks-market</h3><p>May 1-8<br />This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.</p>"
+        "content" : "<h3>Bearbinder-lane, near the Stocks-market</h3><p>May 1-8<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />This parish is within the walls of the City. The Frenchmen who died of the plague had previously lived in Long Acre near infected houses and did not know he, himself, was infected.</p>"
     },
     
     {
@@ -787,7 +787,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "6 total die from spotted fever.",
-        "content" : "<p>May 1-8<br />6 total die from spotted fever.</p>"
+        "content" : "<p>May 1-8<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />6 total die from spotted fever.</p>"
     },
     
     {
@@ -804,7 +804,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 1-8<br /></p>"
+        "content" : "<p>May 1-8<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -821,7 +821,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 1-8<br /><span style='color: #d31603;'>Buried Parish: 54</span><br /></p>"
+        "content" : "<p>May 1-8<br /><span style='color: #d31603;'>Buried Parish: 54</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -838,7 +838,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 1-8<br /><span style='color: #d31603;'>Buried Total: 347</span><br /></p>"
+        "content" : "<p>May 1-8<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 347</span><br /></p>"
     },
     
     {
@@ -855,7 +855,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 32</span><br /></p>"
+        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 32</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -872,7 +872,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 15</span><br /></p>"
+        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 15</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -889,7 +889,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 3*</span><br /></p>"
+        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 3*</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -906,7 +906,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 0*</span><br /></p>"
+        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: 0*</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -923,7 +923,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Total: 343</span><br /></p>"
+        "content" : "<p>May 9-16<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 343</span><br /></p>"
     },
     
     {
@@ -940,7 +940,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 17-22<br /><span style='color: #d31603;'>Buried Parish: 40</span><br /></p>"
+        "content" : "<p>May 17-22<br /><span style='color: #d31603;'>Buried Parish: 40</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -957,7 +957,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.",
-        "content" : "<p>May 17-22<br /><span style='color: #d31603;'>Buried Total: 385</span><br />The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.</p>"
+        "content" : "<p>May 17-22<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 385</span><br />The official record says that 14 died of plague and 14 of spotted fever. H.F. suspects that the total number of deaths from the plague is closer to 50.</p>"
     },
     
     {
@@ -974,7 +974,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.",
-        "content" : "<p>May 23-30<br /><span style='color: #d31603;'>Buried Parish: 53</span><br />The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.</p>"
+        "content" : "<p>May 23-30<br /><span style='color: #d31603;'>Buried Parish: 53</span><br /><span style='color: #d31603;'>Buried Total: </span><br />The official records says that 9 died of plague, which was revised to 29 when 20 cases of spotted fever were later determined to be plague.</p>"
     },
     
     {
@@ -991,7 +991,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>May 23-30<br /></p>"
+        "content" : "<p>May 23-30<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1008,7 +1008,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\"",
-        "content" : "<p>June 1-8<br />H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\"</p>"
+        "content" : "<p>June 1-8<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. provides no numbers, but reports that the plague was beginning to spread more quickly. Causes of death are typically listed as \"Feaver, Spotted-Feaver, and Teeth.\"</p>"
     },
     
     {
@@ -1025,7 +1025,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. suspects the actual number of dead from the plague is closer to 100.",
-        "content" : "<p>June 9-16<br /><span style='color: #d31603;'>Buried Parish: 120</span><br />H.F. suspects the actual number of dead from the plague is closer to 100.</p>"
+        "content" : "<p>June 9-16<br /><span style='color: #d31603;'>Buried Parish: 120</span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. suspects the actual number of dead from the plague is closer to 100.</p>"
     },
     
     {
@@ -1042,7 +1042,7 @@
         "location_latitude" : "51.51661464098204",
         "location_longitude" : "-0.09323358535766602",
         "notes" : "H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.",
-        "content" : "<h3>Wood-street</h3><p>June 9-16<br />H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.</p>"
+        "content" : "<h3>Wood-street</h3><p>June 9-16<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that these are the first deaths in the City. The plague has not reached Southwerk yet however.</p>"
     },
     
     {
@@ -1059,7 +1059,7 @@
         "location_latitude" : "51.511613726102865",
         "location_longitude" : "-0.08135676383972168",
         "notes" : "The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.",
-        "content" : "<h3>Fenchurch-street</h3><p>June 9-16<br />The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.</p>"
+        "content" : "<h3>Fenchurch-street</h3><p>June 9-16<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />The bills of mortality are about 700 a week in the parishes around H.F.'s home just prior to his leaving.</p>"
     },
     
     {
@@ -1076,7 +1076,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<h3>Crooked-lane</h3><p>June 9-16<br /></p>"
+        "content" : "<h3>Crooked-lane</h3><p>June 9-16<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1093,7 +1093,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>June 9-16<br /></p>"
+        "content" : "<p>June 9-16<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1110,7 +1110,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>Mid-July<br /><span style='color: #d31603;'>Buried Total: 1268</span><br /></p>"
+        "content" : "<p>Mid-July<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 1268</span><br /></p>"
     },
     
     {
@@ -1127,7 +1127,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>Mid-July<br /></p>"
+        "content" : "<p>Mid-July<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1144,7 +1144,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>Mid-July<br /></p>"
+        "content" : "<p>Mid-July<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1161,7 +1161,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.",
-        "content" : "<p>July 4-11<br />H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.</p>"
+        "content" : "<p>July 4-11<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that the plague spreads through the parishes of Clerkenwell, Cripplegate, Shoreditch, and Bishopgate on its way to Aldgate, Whitechapel, and Stepney. The plagues begins to abate in the west end as it enters the east end.</p>"
     },
     
     {
@@ -1178,7 +1178,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 4-11<br /></p>"
+        "content" : "<p>July 4-11<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1195,7 +1195,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.",
-        "content" : "<p>July 4-11<br />H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.</p>"
+        "content" : "<p>July 4-11<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. refers to these parishes as the Tower-Hamlets, which had time to prepare for the plague by shutting up houses. The result were fewer deaths than surrounding parishes that same time period, such as St. Len. Shoreditch, St. But. Bishopsg. and St. Giles Crippl., which had far more deaths.</p>"
     },
     
     {
@@ -1212,7 +1212,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 4-11<br /></p>"
+        "content" : "<p>July 4-11<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1229,7 +1229,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 4-11<br /></p>"
+        "content" : "<p>July 4-11<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1246,7 +1246,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Total: 1761</span><br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 1761</span><br /></p>"
     },
     
     {
@@ -1263,7 +1263,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1280,7 +1280,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>2nd week of August<br /><span style='color: #d31603;'>Buried Total: 868</span><br /></p>"
+        "content" : "<p>2nd week of August<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 868</span><br /></p>"
     },
     
     {
@@ -1297,7 +1297,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>2nd week of August<br /><span style='color: #d31603;'>Buried Total: 155</span><br /></p>"
+        "content" : "<p>2nd week of August<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 155</span><br /></p>"
     },
     
     {
@@ -1314,7 +1314,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1331,7 +1331,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1348,7 +1348,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1365,7 +1365,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1382,7 +1382,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1450,7 +1450,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 19-26<br /></p>"
+        "content" : "<p>July 19-26<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1467,7 +1467,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 19-26<br /></p>"
+        "content" : "<p>July 19-26<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1484,7 +1484,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 19-26<br /></p>"
+        "content" : "<p>July 19-26<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1501,7 +1501,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 19-26<br /></p>"
+        "content" : "<p>July 19-26<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1518,7 +1518,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 19-26<br /></p>"
+        "content" : "<p>July 19-26<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1586,7 +1586,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 27-August 3<br /></p>"
+        "content" : "<p>July 27-August 3<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1603,7 +1603,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 27-August 3<br /></p>"
+        "content" : "<p>July 27-August 3<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1620,7 +1620,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 27-August 3<br /></p>"
+        "content" : "<p>July 27-August 3<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1637,7 +1637,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 27-August 3<br /></p>"
+        "content" : "<p>July 27-August 3<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1654,7 +1654,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 27-August 3<br /></p>"
+        "content" : "<p>July 27-August 3<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1722,7 +1722,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 4-11<br /></p>"
+        "content" : "<p>July 4-11<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1739,7 +1739,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: 17</span><br /></p>"
+        "content" : "<p>July 11-18<br /><span style='color: #d31603;'>Buried Parish: 17</span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -1756,7 +1756,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. cites this weekly number for roughly the end of July.",
-        "content" : "<p>July 25<br /><span style='color: #d31603;'>Buried Total: 550</span><br />H.F. cites this weekly number for roughly the end of July.</p>"
+        "content" : "<p>July 25<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 550</span><br />H.F. cites this weekly number for roughly the end of July.</p>"
     },
     
     {
@@ -1773,7 +1773,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.",
-        "content" : "<p><span style='color: #d31603;'>Buried Total: 4000</span><br />It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.</p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 4000</span><br />It is not clear what the time frame is for this number. Perhaps the height of the plague, whenever that is.</p>"
     },
     
     {
@@ -1943,7 +1943,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.",
-        "content" : "<p>H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.</p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. speculates that between 1500 and 1700 people died a day from the plague during its height.</p>"
     },
     
     {
@@ -1960,7 +1960,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. speculates that the parish buried over a 1000 a week for two weeks.",
-        "content" : "<p>Beginning of Sept.<br /><span style='color: #d31603;'>Buried Total: 1000</span><br />H.F. speculates that the parish buried over a 1000 a week for two weeks.</p>"
+        "content" : "<p>Beginning of Sept.<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 1000</span><br />H.F. speculates that the parish buried over a 1000 a week for two weeks.</p>"
     },
     
     {
@@ -1977,7 +1977,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. speculates that the number was twice the 600 that was officially recorded.",
-        "content" : "<p>Beginning of Sept.<br /><span style='color: #d31603;'>Buried Total: 600</span><br />H.F. speculates that the number was twice the 600 that was officially recorded.</p>"
+        "content" : "<p>Beginning of Sept.<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 600</span><br />H.F. speculates that the number was twice the 600 that was officially recorded.</p>"
     },
     
     {
@@ -1994,7 +1994,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.",
-        "content" : "<p>February - May<br />H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.</p>"
+        "content" : "<p>February - May<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. cites the previously noted 17 deaths at the end of May to underscore how slow the progression was. It is not until they reach 3000 deaths a week that Southwerk, Wapping, Ratclif and Redriff became concerned.</p>"
     },
     
     {
@@ -2181,7 +2181,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.",
-        "content" : "<p>Sept. and Oct.<br />H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.</p>"
+        "content" : "<p>Sept. and Oct.<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that many infected people wandered into Surrey, which is more woody and open. As a result, no one there would aid the poor and distressed out of fear of infection.</p>"
     },
     
     {
@@ -2198,7 +2198,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2215,7 +2215,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2232,7 +2232,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2249,7 +2249,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2266,7 +2266,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2283,7 +2283,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2300,7 +2300,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2317,7 +2317,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2334,7 +2334,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2351,7 +2351,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2368,7 +2368,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2385,7 +2385,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2402,7 +2402,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2419,7 +2419,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2436,7 +2436,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2453,7 +2453,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2470,7 +2470,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2487,7 +2487,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2504,7 +2504,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2521,7 +2521,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2538,7 +2538,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2555,7 +2555,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2572,7 +2572,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2589,7 +2589,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2606,7 +2606,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2623,7 +2623,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p></p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -2725,7 +2725,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. locates the origin of the plague here.",
-        "content" : "<p>H.F. locates the origin of the plague here.</p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. locates the origin of the plague here.</p>"
     },
     
     {
@@ -2742,7 +2742,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that this was when the plague was at its height in this part of London.",
-        "content" : "<p>Middle of July<br />H.F. notes that this was when the plague was at its height in this part of London.</p>"
+        "content" : "<p>Middle of July<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that this was when the plague was at its height in this part of London.</p>"
     },
     
     {
@@ -2759,7 +2759,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.",
-        "content" : "<p>End of July<br />H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.</p>"
+        "content" : "<p>End of July<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that, as the plague began to abate in the western part of the city, it moved east into these parishes.</p>"
     },
     
     {
@@ -2776,7 +2776,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that, at the same time, these parishes were barely affected by the plague.",
-        "content" : "<p>End of July<br />H.F. notes that, at the same time, these parishes were barely affected by the plague.</p>"
+        "content" : "<p>End of July<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that, at the same time, these parishes were barely affected by the plague.</p>"
     },
     
     {
@@ -2963,7 +2963,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.",
-        "content" : "<h3>Eastern Suburbs</h3><p>Beginning of September<br />H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.</p>"
+        "content" : "<h3>Eastern Suburbs</h3><p>Beginning of September<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that, as the plague abated in the West and North-West parishes, it began to rage in this part of London.</p>"
     },
     
     {
@@ -3490,7 +3490,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. refers here to the entire period of the plague up to this date.",
-        "content" : "<p>- July 1<br />H.F. refers here to the entire period of the plague up to this date.</p>"
+        "content" : "<p>- July 1<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. refers here to the entire period of the plague up to this date.</p>"
     },
     
     {
@@ -3507,7 +3507,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>- July 1<br /></p>"
+        "content" : "<p>- July 1<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -3524,7 +3524,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>- July 1<br /></p>"
+        "content" : "<p>- July 1<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -3541,7 +3541,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>- July 1<br /></p>"
+        "content" : "<p>- July 1<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br /></p>"
     },
     
     {
@@ -3558,7 +3558,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.",
-        "content" : "<p>2nd to Last Week of September<br /><span style='color: #d31603;'>Buried Total: 8297</span><br />H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.</p>"
+        "content" : "<p>2nd to Last Week of September<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 8297</span><br />H.F. notes that this was the highest Bill of Mortality during the plague, just prior to the following week when the numbers went down.</p>"
     },
     
     {
@@ -3575,7 +3575,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.",
-        "content" : "<p>Last Week of September<br /><span style='color: #d31603;'>Buried Total: 6460</span><br />H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.</p>"
+        "content" : "<p>Last Week of September<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 6460</span><br />H.F. speculates that the number of total deaths declined by nearly 2000, marking the beginning of the end of the plague.</p>"
     },
     
     {
@@ -3592,7 +3592,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>First Week of October<br /><span style='color: #d31603;'>Buried Total: 5720</span><br /></p>"
+        "content" : "<p>First Week of October<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 5720</span><br /></p>"
     },
     
     {
@@ -3609,7 +3609,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.",
-        "content" : "<p>Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.</p>"
+        "content" : "<p><br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />Dr. Heath predicts that no fewer than 60,000 were infected; 20, 477 died while 40,000 recovered. If things had continued as before, 50,000 of that number would have died while 50,000 more would have become infected. The source of these numbers is not clear.</p>"
     },
     
     {
@@ -3626,7 +3626,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.",
-        "content" : "<p>Another Week of October<br /><span style='color: #d31603;'>Buried Total: 2665</span><br />It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.</p>"
+        "content" : "<p>Another Week of October<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 2665</span><br />It is not clear if this is the next week. An 1,849 decrease from 5,720 does not equal 2,665, but 3,421.</p>"
     },
     
     {
@@ -3643,7 +3643,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.",
-        "content" : "<p>Next Week of October<br /><span style='color: #d31603;'>Buried Total: (1000-1800)</span><br />H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.</p>"
+        "content" : "<p>Next Week of October<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: (1000-1800)</span><br />H.F. notes that, while people were still dying of the plague, the numbers were getting lower and people were returning to London.</p>"
     },
     
     {
@@ -3660,7 +3660,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.",
-        "content" : "<p>First Week of November<br />H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.</p>"
+        "content" : "<p>First Week of November<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. believes that the increase is the result of people returning prematurely to London. The Physicians report that there were 3,000 new infections, but the source of this number is not clear.</p>"
     },
     
     {
@@ -3677,7 +3677,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "",
-        "content" : "<p>November<br /><span style='color: #d31603;'>Buried Total: 905</span><br /></p>"
+        "content" : "<p>November<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: 905</span><br /></p>"
     },
     
     {
@@ -3694,7 +3694,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.",
-        "content" : "<p>December<br />H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.</p>"
+        "content" : "<p>December<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that the winter weather helped the plague abate, yet the numbers still increased in some placed.</p>"
     },
     
     {
@@ -3711,7 +3711,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.",
-        "content" : "<p>First Three Weeks of September<br />H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.</p>"
+        "content" : "<p>First Three Weeks of September<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that some believe 20,000 died a week during this period, while others dispute that number. H.F. states his preference for the official numbers of 7,000-8,000 a week.</p>"
     },
     
     {
@@ -3728,7 +3728,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes that there were still deaths from the plague to the end of 1665.",
-        "content" : "<p>To the End of the Year<br />H.F. notes that there were still deaths from the plague to the end of 1665.</p>"
+        "content" : "<p>To the End of the Year<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes that there were still deaths from the plague to the end of 1665.</p>"
     },
     
     {
@@ -3745,7 +3745,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.",
-        "content" : "<p>First Week of October?<br />H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.</p>"
+        "content" : "<p>First Week of October?<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: </span><br />H.F. notes the decrease for the first week, but does not state the month. I assume October since the number echoes those previously mentioned.</p>"
     },
     
     {
@@ -3762,7 +3762,7 @@
         "location_latitude" : "",
         "location_longitude" : "",
         "notes" : "H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.",
-        "content" : "<p>Last Three Weeks<br /><span style='color: #d31603;'>Buried Total: (30,000)</span><br />H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.</p>"
+        "content" : "<p>Last Three Weeks<br /><span style='color: #d31603;'>Buried Parish: </span><br /><span style='color: #d31603;'>Buried Total: (30,000)</span><br />H.F. quotes a friends calculation's. He also posits 100,000 who had become infected. The date is not clear, but I assume he means the three week prior to the first decrease in the Weekly Bills.</p>"
     }
     
     
