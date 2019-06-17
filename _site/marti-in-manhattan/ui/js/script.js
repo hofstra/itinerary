@@ -116,7 +116,7 @@ $(document).ready(function() {
         L.geoJson(grouped[unit].map(function(step, index) {
           var geo = step.geo_object;
           geo._index = index;
-          geo._waypoint = step.waypoint || "";
+          geo._waypoint = step["publication/organization"] || "";
           geo._stepId = step.id;
           geo._group = step.group;
           return geo;
