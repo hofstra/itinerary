@@ -35,10 +35,12 @@ page_title: "A &ldquo;Frightful Number!&rdquo; &ndash; Mapping Daniel Defoe&rsqu
 
         var tile_layer_historic2 = 'http://mapwarper.net/maps/tile/12282/{z}/{x}/{y}.png ';
         var tile_layer_historic = 'http://mapwarper.net/maps/tile/8663/{z}/{x}/{y}.png';
-        var tile_layer_mapbox = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+        var tile_layer_mapbox = 'https://api.mapbox.com/styles/v1/{account}/{id}/tiles/{z}/{x}/{y}?access_token={token}';
 
         // Please use your own Mapbox ID; not ours!
-        var mapbox_id = 'pk.eyJ1IjoiamFtaWVwZXJmb3JtYW50IiwiYSI6ImNremlwaXA5MjFsdm4ybm9iMHEzYjIxOHQifQ.q4Vd5s0ytIss1eVenZ7ZNw';
+        var mapbox_style_id = 'cl1wbsb9u000n14mrw6kfsnxu';
+        var mapbox_username = 'jamieperformant';
+        var mapbox_access_token = 'pk.eyJ1IjoiamFtaWVwZXJmb3JtYW50IiwiYSI6ImNremlwaXA5MjFsdm4ybm9iMHEzYjIxOHQifQ.q4Vd5s0ytIss1eVenZ7ZNw';
 
         // These values should correspond to your own map.
         var map_center = [51.514, -0.0881481171];
@@ -47,7 +49,7 @@ page_title: "A &ldquo;Frightful Number!&rdquo; &ndash; Mapping Daniel Defoe&rsqu
         // Enable the map layer/tiles, attribution.
         var map_historic = L.tileLayer( tile_layer_historic, { attribution: attribution_historic } );
         var map_historic2 = L.tileLayer( tile_layer_historic2, { attribution: attribution_historic2 } );
-        var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_id, attribution: attribution_mapbox});
+        var map_mapbox = L.tileLayer( tile_layer_mapbox, {id: mapbox_style_id, account: mapbox_username, attribution: attribution_mapbox, token: mapbox_access_token});
 
         // Give each layer a name in the UI.
         var baseMaps = {
