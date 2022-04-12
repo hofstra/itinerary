@@ -3,7 +3,7 @@ title: "A Frightful Number!"
 email: jamie@performantsoftware.com
 description: "Mapping Daniel Defoe’s _A Journal of the Plague Year_"
 url: "https://a-frightful-number.netlify.app"
-twitter_username:
+twitter_username: performantsoft
 github_username:  performant-software
 
 # Where things are
@@ -21,4 +21,4 @@ markdown: kramdown
 
 # https://github.com/jekyll/jekyll/issues/332
 
-asset_url: https://hofstra.github.io/design-framework
+# asset_url: https://itinerary-maps.netlify.app/design-framework
