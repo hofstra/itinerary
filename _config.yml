@@ -1,12 +1,10 @@
 # Site settings
-host: 127.0.0.1
-title: "Hofstra Digital Research Center: Mapping the Plague"
-email: drc@hofstra.edu
-description: ""
-baseurl: ""
-url: "http://hofstradrc.org"
+title: "A Frightful Number!"
+email: jamie@performantsoftware.com
+description: "Mapping Daniel Defoe’s _A Journal of the Plague Year_"
+url: "https://a-frightful-number.netlify.app"
 twitter_username:
-github_username:  hofstra
+github_username:  performant-software
 
 # Where things are
 destination:      ./_site
@@ -20,7 +18,7 @@ exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitign
 markdown: kramdown
 
 # Compensating for gh-pages project site
-baseurl: /itinerary
+baseurl: "/"
 # https://github.com/jekyll/jekyll/issues/332
 
 asset_url: https://hofstra.github.io/design-framework
