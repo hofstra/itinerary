@@ -1,4 +1,4 @@
-Note that this is supplemental to the current iteration of Itinerary's [how-to write-up](https://github.com/hofstra/itinerary/blob/master/docs/write-up.md).
+Note that this is supplemental to the current iteration of Itinerary's [how-to write-up](https://github.com/performant-software/blob/master/docs/write-up.md).
 
 ### Resolved Items
 

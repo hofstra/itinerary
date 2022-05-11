@@ -26,3 +26,6 @@ Thumbs.db
 .DS_Store
 
 *.~lock*
+
+# Local Netlify folder
+.netlify

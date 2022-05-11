@@ -1,19 +1,19 @@
 # Itinerary
 
-[Visit the website to learn more about Itinerary](http://itinerary.hofstradrc.org).
+[Visit the website to learn more about Itinerary](http://itinerary-maps.netlify.app).
 
 ## Current State
 
 Thus far our efforts have served to produce two working demonstrations using mapping technology to navigate historical data or literature:
 
-* "[Plague Year](http://hofstra.github.io/itinerary/plague-year/)," which provides a timeline-based navigation tool to step through events recorded from Defoe's *A Journal of the Plague Year*.
-* [Melville in Rome](http://hofstra.github.io/itinerary/melville-in-rome/), which enables the exploration of possible routes taken by Melville in between events recorded in his journal of his time spent there.
+* "[Plague Year](http://itinerary-maps.netlify.app/plague-year/)," which provides a timeline-based navigation tool to step through events recorded from Defoe's *A Journal of the Plague Year*.
+* [Melville in Rome](http://itinerary-maps.netlify.app/melville-in-rome/), which enables the exploration of possible routes taken by Melville in between events recorded in his journal of his time spent there.
 
 The project uses widely-embraced and familiar technologies and we encourage others to fork this codebase and render their own maps using their own data.
 
 ## Feedback
 
-We invite and encourage your feedback to make Itinerary better! Please use [GitHub Issues](https://github.com/hofstra/itinerary/issues) to provide feedback.
+We invite and encourage your feedback to make Itinerary better! Please use [GitHub Issues](https://github.com/performant-software/issues) to provide feedback.
 
 ## Going Forward
 
